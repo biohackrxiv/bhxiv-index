@@ -1,0 +1,156 @@
+---
+layout: base
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {%- if page.doi -%}
+        <span class="post-meta"><i class="fa-solid fa-file"></i> <a style="color: #828282" href="https://doi.org/{{ page.doi }}">https://doi.org/{{ page.doi }}</a></span><br />
+      {%- endif -%}
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <i class="fa-regular fa-calendar-days"></i>
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.modified_date -%}
+        ~ 
+        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date: date_format }}
+        </time>
+      {%- endif -%}
+      {% assign authorCount = page.authors | size %}
+      {% if authorCount == 0 %}
+      {% else %}
+        <br/><span class="post-meta">
+        {% for author in page.authors %}
+          {% if forloop.first %}
+            {{ author.name }}
+          {% elsif forloop.last %}
+            and {{ author.name  }}
+          {% else %}
+            , {{ author.name }}
+          {% endif %}
+          <a class="u-url" style="color:grey" href="https://orcid.org/{{ author.orcid }}"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+        {% endfor %}
+        </span>
+      {% endif %}
+
+      {% if page.tags.size > 0 %}
+        <br /><br /><span class="post-meta">
+        {% for tag in page.tags %}
+          {% assign check = tag | split:':' %}
+          <!-- foo>{{ check.size }}</foo -->
+          {% if check.size == 1 %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            {% assign type = "tag" %} <!-- failsafe -->
+            {% assign icon = "tag" %}
+          {% else %}
+            {% capture tag_name %}{{ check[1] }}{% endcapture %}
+            {% if check[0] == "inchikey" %}
+              {% assign type = "molecule" %}
+              {% assign icon = "flask-vial" %}
+            {% elsif check[0] == "justdoi" %}
+              {% assign type = "skip" %}
+            {% elsif check[0] == "doi" %}
+              {% assign type = "work" %}
+              {% assign icon = "file" %}
+            {% elsif check[0] == "cito" %}
+              {% assign type = "skip" %}
+            {% else %}
+              {% assign type = "tag" %} <!-- failsafe -->
+              {% assign icon = "tag" %}
+            {% endif %}
+          {% endif %}
+          {% if type != "skip" %}
+          <nobr><i class="fa-solid fa-{{ icon }}"></i>&nbsp;<a href="{{ type | append:'/' | append: tag_name | relative_url }}"><code class="highligher-rouge">{{ tag_name }}</nobr></code></a>&nbsp;
+          {% endif %}
+        {% endfor %}
+        </span>
+      {% endif %}
+    </p>   
+
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+
+    {% if page.blogger-link %}
+    <p class="post-meta"><i>This post was originally posted as {{ page.blogger-link }}.</i></p>
+    {% endif %}
+  </div>
+
+<!-- grants.size = {{ page.grants.size }} -->
+{% if page.grants.size > 0 %}
+  <div class="post-footer" id="acksDIV">
+    <b class="post">Acknowledgements</b>
+    <p class="post-meta" id="acks">
+      {% for grant in page.grants %}
+        <i>This post describes research output that was funded by <a href="https://ror.org/{{ grant.funder.ror }}">{{ grant.funder.name }}</a>
+          under grant number
+          {% if grant.id %}
+            <a href="https://bioregistry.io/{{ grant.id }}">{{ grant.id }}</a>.</i>
+          {% else %}
+            <a href="{{ grant.uri }}">{% if grant.identifier %}{{ grant.identifier }}{% else %}{{ grant.uri }}{% endif %}</a>.</i>
+          {% endif %}
+      {% endfor %}
+    </p>
+  </div>
+{% endif %}
+
+{% if page.tags.size > 0 %}
+  <div class="post-footer" id="bibliographyDIV" style="visibility: hidden">
+  <b class="post">References</b>
+  <p class="post-meta" id="bibliography"></p>
+  </div>
+  <script>
+const cite = new Cite()
+dois = []
+intentionMap = new Map()
+{% for tag in page.tags %}
+  {% assign check = tag | split:':' %}
+  {% if check.size > 1 %}
+    {% if check[0] == "doi" %}
+      {% capture doi %}{{ check[1] }}{% endcapture %}
+dois.push("{{ doi }}")
+    {% elsif check[0] == "justdoi" %}
+      {% capture doi %}{{ check[1] }}{% endcapture %}
+dois.push("{{ doi }}")
+    {% elsif check[0] == "cito" %}
+      {% capture doi %}{{ check[2] }}{% endcapture %}
+dois.push("{{ doi }}")
+intentionMap.set("{{ doi }}", "{{ check[1] }}")
+    {% endif %}
+  {% endif %}
+{% endfor %}
+if (dois.length > 0) {
+  Cite.async(dois).then(function(cite) {
+    content = cite.format('bibliography', {
+      format: 'html', template : 'apa',
+      prepend: function (entry) {
+        return '<i class="fa-solid fa-file fa-xs"></i>&nbsp;'
+      },
+      append: function (entry) {
+        intentionStr = ""
+        if (intentionMap.has(entry.DOI)) {
+          intentionStr = " <b>[cito:" + intentionMap.get(entry.DOI) + "]</b>"
+        }
+        return intentionStr + ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + entry.DOI + '">Scholia</a>'
+      }
+    })
+    document.getElementById('bibliography').innerHTML = content
+    document.getElementById('bibliographyDIV').style.visibility = "visible"
+  })
+}
+  </script>
+{% endif %}
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+</article>

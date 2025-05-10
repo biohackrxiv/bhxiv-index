@@ -1,0 +1,75 @@
+---
+layout: base
+---
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<div class="post">
+{% if page.doi %}
+<div style="float: right; width: 200px" class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi="{{ page.doi }}"></div>
+{% endif %}
+<h1 class="tag-title">{{ page.title }}</h1>
+<p class="post-meta">
+{% if page.archivedAt %}
+{% assign link_split = page.archivedAt | split:'/' %}
+{% assign link_title = link_split.last %}
+<i class="fa-solid fa-link"></i> <a href="{{ page.archivedAt }}">{{ link_title }}</a> <br />
+{% endif %}
+<i class="fa-solid fa-file"></i> {{ page.tag }}
+</p>
+<p class="post-meta">
+<div class="post" id="bibliography"></div>
+<script>
+const cite = new Cite()
+dois = []
+{% for tag in page.tag %}
+  {% assign check = tag | split:':' %}
+  {% if check.size > 1 %}
+    {% if check[0] == "doi" %}
+      {% capture doi %}{{ check[1] }}{% endcapture %}
+dois.push("{{ doi }}")
+    {% endif %}
+  {% endif %}
+{% endfor %}
+if (dois.length > 0) {
+  Cite.async(dois).then(function(cite) {
+    content = cite.format('bibliography', {
+      format: 'html', template : 'apa',
+      append: function (entry) {
+        return ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + entry.DOI + '">Scholia</a>'
+      }
+    })
+    document.getElementById('bibliography').innerHTML = content
+  })
+}
+</script>
+</p>
+
+<p class="post">
+<h2>Blog posts</h2>
+<ul>
+{% for post in site.tags[page.tag] %}
+  {% if post.lang %}
+  <li lang="{{post.lang}}">
+  {% else %}
+  <li>
+  {% endif %}
+  	<a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+  	{{ post.description }}
+  	<!-- Tags: {{ post.tags | join: ", " }} -->
+  </li>
+{% endfor %}
+</ul>
+</div>
+</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.type %}{{ page.type }}{% else %}CreativeWork{% endif %}",
+  "@id": "https://doi.org/{{ page.tag }}",
+  "url": "{{ page.url | prepend: site.url }}",
+  "name": "{{ page.title | replace: '"', '\"' }}",
+  {% if page.archivedAt %}"archivedAt": "{{ page.archivedAt }}",{% endif %}
+  "identifier" : "{{ page.tag }}"
+}
+</script>

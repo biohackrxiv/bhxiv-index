@@ -1,0 +1,50 @@
+---
+layout: base
+---
+<!-- Source: https://github.com/qian256/qian256.github.io/blob/master/_includes/collecttags.html (MIT license) -->
+
+{% assign title_parts = page.title | split: ':' %}
+{% assign clean_title = title_parts[1] | strip %}
+{% assign down_title = clean_title | downcase %}
+
+{% assign inchikey_split = page.tag | split:':' %}
+{% assign inchikey = inchikey_split[1] %}
+
+{% if page.smiles %}
+<img src="https://cdkdepict.toolforge.org/depict/bow/svg?smi={{ page.smiles | url_encode }}&abbr=on&hdisp=bridgehead&showtitle=false&zoom=2&annotate=cip" style="width: 300px; float: right"></img>
+{% endif %}
+
+<div class="post">
+<h1 class="tag-title">{{ clean_title }}</h1>
+<p class="post-meta"><i class="fa-solid fa-flask-vial"></i> {{ page.tag }}</p>
+<ul>
+{% for post in site.tags[page.tag] %}
+  {% if post.lang %}
+  <li lang="{{post.lang}}">
+  {% else %}
+  <li>
+  {% endif %}
+  	<a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+  	{{ post.description }}
+  	<!-- Tags: {{ post.tags | join: ", " }} -->
+  </li>
+{% endfor %}
+</ul>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MolecularEntity",
+  "@id": "{{ page.url | prepend: site.url }}",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@type": "CreativeWork",
+    "@id": "https://bioschemas.org/profiles/MolecularEntity/0.5-RELEASE"
+  },
+  "url": "{{ page.url | prepend: site.url }}",
+  "name": "{{ down_title }}",
+  "description": "Molecule page for {{ down_title }} with chem-bla-ics blog posts about the molecule.",
+  "inChIKey": "{{ inchikey }}",
+  "smiles" : "{{ page.smiles }}"
+}
+</script>

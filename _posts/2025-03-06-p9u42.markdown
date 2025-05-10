@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "BioHackEU24 report: ORCID and ROR identifiers in BioHackrXiv reports"
+date:   2025-03-06
+tags: BH24EU
+doi: 10.37044/osf.io/p9u42_v1
+authors:
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+---
+
+The first BioHackrXiv preprint was published in 2020, using a platform based on the idea of using Markdown,
+and just weeks ago, BioHackrXiv published their 100th preprint. Machine-readable etadata added to the Markdown
+that is added includes the title, keywords, the author names, their affiliations, and details about the
+Biohackathon event the preprint is related to. The metadata in 2000 already supported listing the ORCID
+identifier of the authors, but this was not added to the author list in the generated PDF. This report
+describes two improvements of the platform: visualization of the ORCID identifiers in the preprint PDF
+and support for Research Organization Registry (ROR) identifiers of the affiliations.

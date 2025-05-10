@@ -1,0 +1,5 @@
+Gemfile.lock
+_site/
+_posts/template.markdown
+.bundle/
+tips.txt

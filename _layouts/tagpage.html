@@ -1,0 +1,34 @@
+---
+layout: base
+---
+<!-- Source: https://github.com/qian256/qian256.github.io/blob/master/_includes/collecttags.html (MIT license) -->
+
+<div class="post">
+<h1 class="tag-title">{{ page.title }}</h1>
+<p class="post-meta">
+  <a href="{{ '/feed/by_tag/' | append: page.tag | append: '.xml' | relative_url }} "><i style="color: #FFA500" class="fa-solid fa-square-rss"></i></a>&nbsp;
+  <i class="fa-solid fa-tag"></i> {{ page.tag }}&nbsp;
+</p>
+<p>{{ content }}</p>
+<h2>Preprints</h2>
+<ul class="post-list">
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{% for post in site.tags[page.tag] %}
+      <li>
+        <span class="post-meta"><i class="fa-regular fa-calendar-days"></i> {{ post.date | date: date_format }}</span>
+        <div>
+        {% if post.image %}<a href="{{ post.url | relative_url }}" ><img style="float: right;" src="{{ post.image }}" width="300px" />{% endif %}
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt | strip_html | normalize_whitespace }}
+        {%- endif -%}
+        <span class="post-meta"> <i class="fa-regular fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span>
+        </div>
+      </li>
+{% endfor %}
+</ul>
+</div>
