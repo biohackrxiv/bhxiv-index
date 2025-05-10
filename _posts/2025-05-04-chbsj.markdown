@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Reusable RDM Planning Environments for Trainings and Workshops: A BioHackathon Europe 2024 Report"
+date:   2025-05-04
+tags: BH24EU
+doi: 10.37044/osf.io/chbsj_v1
+---
+
+This report provides an overview of our activities and accomplishments related to the creation of reusable RDM
+(Research Data Management) Planning Environments for trainings and workshops conducted during the ELIXIR BioHackathon
+Europe 2024. ELIXIR recognizes the critical role of effective data management planning in enabling sustainable and
+reproducible research outcomes. This effectiveness is achieved through the use of appropriate Data Management
+Planning tools, such as the Data Stewardship Wizard. The Data Stewardship Wizard is used to conduct various trainings
+which require instance with data which are different for each training. Goal of this project was to provide easy and
+effective way to prepare “recipes” for DSW Data Seeder

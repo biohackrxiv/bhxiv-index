@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "BioHackSWAT4HCLS25 report: Towards AI-Ready Datasets for the Life Sciences"
+date:   2025-05-04
+tags: SWAT4HCLS25
+doi: 10.37044/osf.io/xqe8h_v1
+---
+
+At the SWAT4HCLS 2025 Hackathon, we continued our work on dataset interoperability and AI-readiness, extending our
+efforts from the 2024 Elixir Biohackathon. This report outlines the progress made in graph serialization, metadata
+embedding, and knowledge graph analysis, which further enhance machine learning workflows and data integration
