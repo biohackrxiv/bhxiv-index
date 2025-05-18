@@ -49,7 +49,7 @@ for (author in metadata.author) {
   ui.append(postFile, "  - name: ${author.given} ${author.family}\n")
   if (author."authenticated-orcid") {
     orcid = author.ORCID.replace("https://orcid.org/","")
-    ui.append(postFile, "  - orcid: ${orcid}\n")
+    ui.append(postFile, "    orcid: ${orcid}\n")
   }
 }
 
