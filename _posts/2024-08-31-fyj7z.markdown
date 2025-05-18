@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2024 Report for Project: Human Glycome Atlas"
+date:   2024-08-31
+tags: BH24JP
+doi: 10.37044/osf.io/fyj7z
+authors:
+  - name: Achille Zappa
+  - name: Kiyoko Flora Aoki-Kinoshita
+---
+
+As part of BioHackathon 2024, we here report on our analysis of tools reviewed by this group to implement a new knowledgebase called TOHSA for the Human Glycome Atlas (HGA) Project. In particular, we focus on the experiences of the integration process of the QLever framework, a promising Semantic Web tool for handling "Triple Stores" and SPARQL technologies in the scope of creating a reliable and performant Semantic Knowledge-Base (Infrastructure and Portal) for TOHSA. QLever highlights the ongoing relevance and potential of these technologies to deliver scalable and reliable solutions. It was nice to see that “Triple Stores” and SPARQL technology implementations and developments for the community are ongoing and that progressively useful and performant and scalable/reliable, open-source software is being implemented. And we did a general revision and comparison of relevant Semantic Web Frameworks  for our use-case.
+
