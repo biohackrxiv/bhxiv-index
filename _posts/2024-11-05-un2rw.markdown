@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "INTOXICOM Workshop Report: FAIRification of Toxicological Research Output: Leveraging ELIXIR Resources"
+date:   2024-11-05
+tags: INTOXICOM
+doi: 10.37044/osf.io/un2rw
+authors:
+  - name: Marvin Martens
+  - name: Iseult Lynch
+    orcid: 0000-0003-4250-4584
+  - name: Thomas Exner
+  - name: Rob Stierum
+  - name: Penny Nymark
+    orcid: 0000-0002-3435-7775
+  - name: Dominik Martinát
+  - name: Javier Millán Acosta
+  - name: Ulrike Wittig
+    orcid: 0000-0002-9077-5664
+  - name: Clemens Wittwehr
+  - name: Meike Bünger
+  - name: Tooba Abbassi-Daloii
+    orcid: 0000-0002-4904-3269
+  - name: Gerhard Burger
+    orcid: 0000-0003-1062-5576
+  - name: Uday Killi
+  - name: Jente Houweling
+  - name: Riju Roy Chowdhury
+  - name: Tamara Danilyuk
+    orcid: 0000-0001-6125-6147
+  - name: Lucy Sinke
+    orcid: 0000-0002-9209-1266
+  - name: Ozan Çınar
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+---
+
+This report documents the first workshop of the ELIXIR Toxicology Community (Martenset al., 2023), held in Utrecht on May 28-29, 2024 (FAIRification of
+Toxicological ResearchOutput: Leveraging ELIXIR Resources, 2024), as part of the INTOXICOM ImplementationStudy workshop series (Integrating the Toxicology
+Community into ELIXIR, 2024). The main topic of the meeting was the FAIRification of toxicological research outputs and exploring thepotential role of
+ELIXIR resources in this process. A team of ten people from the ELIXIRToxicology Community, including Marvin Martens, Penny Nymark, Iseult Lynch, Meike
+Bünger, Rob Stierum, Thomas Exner, Egon Willighagen, Ammar Ammar, Dominik Martinát, and Karel Berka, coordinated the event.
+
