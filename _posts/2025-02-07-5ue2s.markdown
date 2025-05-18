@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "BioHackJP24 report: Running a WikiBlitz"
+date:   2025-02-07
+tags: BH24JP
+doi: 10.37044/osf.io/5ue2s_v1
+authors:
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+  - name: Shuya Ikeda
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Erick Antezana
+    orcid: 0000-0002-2497-8236
+  - name: Julia Koblitz
+    orcid: 0000-0002-7260-2129
+---
+
+During BioHackathon 24 in Fukushima, we organized a WikiBlitz, a collaborative effort to integrate biodiversity observations from iNaturalist into the Wikimedia ecosystem. A WikiBlitz is inspired by the concept of a BioBlitz, where participants document as many species as possible within a limited time frame, while also contributing structured data to Wikidata, Wikimedia Commons, and Wikipedia. In this report, we describe the methodology and outcomes of this event, including the collection of 109 biodiversity observations and their subsequent verification and integration into Wikimedia platforms. We highlight the challenges and best practices for running a WikiBlitz, particularly around licensing and data quality, and demonstrate how tools such as iNaturalist2Commons and Wikidata queries can enhance the reuse of citizen science data. Finally, we provide a step-by-step tutorial to support future WikiBlitz events, ensuring broader participation and sustainable knowledge-sharing across platforms.
+

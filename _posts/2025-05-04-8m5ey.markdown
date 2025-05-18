@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Enhancing bio.tools by Semantic Literature Mining"
+date:   2025-05-04
+tags: BH24EU
+doi: 10.37044/osf.io/8m5ey_v1
+authors:
+  - name: Aleksandra Szmigiel
+  - name: Ana Mendes
+  - name: Erik Jaaniso
+  - name: Magnus Palmblad
+    orcid: 0000-0002-5865-8994
+  - name: Rob M. Ewing
+  - name: SANTOSH TIRUNAGARI
+  - name: Tess AV Afanasyeva
+  - name: Vedran Kasalica
+    orcid: 0000-0002-0097-1056
+  - name: Veit Schwämmle
+  - name: Zunaira Shafique
+---
+
+Mining mentions of software tools in scientific literature is important for resource discovery and analysis in bioinformatics. Despite advancements in deep-learning-based natural language processing techniques, accurately identifying software mentions remains challenging due to naming ambiguities, inconsistent citation practices, and homonyms. In this study, we developed methods to enhance the bio.tools registry through integration with Europe PMC. We systematically explored three distinct article-tool relationships: direct associations, citations of associated articles, and textual mentions without explicit citations. A hybrid approach combining rule-based heuristics and machine learning was evaluated at a F1-score of 74.4% in contextual software mention disambiguation tasks. We further demonstrated the potential for mining software co-mentions and co-citations from EuropePMC, constructing interactive networks in Cytoscape to visualize relationships between tools. Leveraging bio.tools metadata significantly improved disambiguation accuracy, including for tools with generic names. In the future, we will expand annotated datasets, handle software synonyms, and make bio.tools software mentions retrievable through the Europe PMC Annotations API to enrich bio.tools with usage data, making software more findable, including for recommendation systems.
+
