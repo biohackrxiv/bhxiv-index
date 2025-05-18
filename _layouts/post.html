@@ -33,7 +33,9 @@ layout: base
           {% else %}
             , {{ author.name }}
           {% endif %}
-          <a class="u-url" style="color:grey" href="https://orcid.org/{{ author.orcid }}"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+          {% if author.orcid %}
+            <a class="u-url" style="color:grey" href="https://orcid.org/{{ author.orcid }}"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+          {% endif %}
         {% endfor %}
         </span>
       {% endif %}
