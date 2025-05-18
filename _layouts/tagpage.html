@@ -1,6 +1,8 @@
 ---
 layout: base
 ---
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
 <!-- Source: https://github.com/qian256/qian256.github.io/blob/master/_includes/collecttags.html (MIT license) -->
 
 <div class="post">
@@ -23,6 +25,7 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
+        <div style="float: right; width: 200px" class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi="{{ post.doi }}"></div>
         {%- if site.show_excerpts -%}
           {{ post.excerpt | strip_html | normalize_whitespace }}
         {%- endif -%}
