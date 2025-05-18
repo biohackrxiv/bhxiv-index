@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "BioHackEU24 report: Integrating Bioconductor packages with the ELIXIR Research Software Ecosystem using EDAM"
+date:   2025-04-08
+tags: BH24EU
+doi: 10.37044/osf.io/dsgnw_v1
+authors:
+  - name: Claire Rioualen
+    orcid: 0000-0002-7684-8679
+  - name: Aurélien Barre
+  - name: Benjamin Dartigues
+  - name: Vincent J Carey
+  - name: Matus Kalas
+  - name: Sebastian Lobentanzer
+    orcid: 0000-0003-3399-6695
+  - name: Hervé MENAGER
+    orcid: 0000-0002-7552-1009
+  - name: Steffen Neumann
+  - name: Kozo Nishida
+  - name: Veit Schwämmle
+  - name: Anh Nguyet Vu
+    orcid: 0000-0003-1488-6730
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Maria A Doyle
+---
+
+This project seeks to enhance the ELIXIR Research Software Ecosystem (RSEc) by increasing the findability, accessibility, interoperability, and reusability (FAIR principles) of Bioconductor’s extensive collection of over 2,000 bioinformatics packages. By aligning Bioconductor metadata with the EDAM ontology and integrating detailed package descriptions into the _bio.tools_ registry, we aim to improve the discoverability and usability of bioinformatics analysis tools. Short-term goals include mapping Bioconductor’s biocViews controlled vocabulary to EDAM concepts, developing a set of manually annotated “gold standard” packages, and evaluating tools for automated EDAM concept suggestions. Long-term, we intend to expand EDAM coverage across Bioconductor, phase out biocViews, and implement automated synchronisation with _bio.tools_. This initiative fosters collaboration between Bioconductor and ELIXIR, establishing a foundation for sustainable software management in European bioinformatics.Key results from the ELIXIR BioHackathon 2024 week include substantial progress in mapping the biocViews vocabulary to EDAM concepts, initiating the curation of a reference set of packages with manual annotations, integrating Bioconductor metadata into the ELIXIR Research Software Ecosystem (RSEc) with automated updates, and prototyping a tool for automated EDAM concept suggestions. Together, these achievements establish a strong foundation for further integration and refinement.
+

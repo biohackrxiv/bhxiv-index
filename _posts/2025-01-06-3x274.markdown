@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Enhancing multi-omic analyses through a federated microbiome analysis service"
+date:   2025-01-06
+tags: BH24EU
+doi: 10.37044/osf.io/3x274
+authors:
+  - name: Alexander Rogers
+    orcid: 0000-0002-4283-6135
+  - name: Famke Bäuerle
+    orcid: 0000-0003-1387-0251
+  - name: Martin Beracochea
+    orcid: 0000-0003-3472-3736
+  - name: Alireza Heidari
+    orcid: 0000-0003-0315-4403
+  - name: Matt Burridge
+  - name: Benedikt Osterholz
+  - name: Alexander Sczyrba
+  - name: Mahfouz Shehu
+  - name: Tom Tubbesing
+  - name: Anil Wipat
+    orcid: 0000-0001-7310-4191
+---
+
+Multi-omics datasets are an increasingly prevalent and necessary resource for achieving scientificadvances in microbial ecosystem research. However, they present twin challenges to researchinfrastructures: firstly the utility of multi-omics datasets relies entirely on interoperability ofomics layers, i.e. on formalised data linking. Secondly, microbiome derived data typically leadto computationally expensive analyses, and so rely on the availability of high performancecomputing (HPC) or cloud infrastructures. These challenges can be better met by combining the resources of multiple groups, services and infrastructures. In this BioHackathon Europe 2024 project, we envisioned a "federated microbiome analysis service" and worked on three tracks of development towards it: mapping metagenomics metadata standards to Schema.org and Bioschemas terms, rendering Nextflow workflow executions as RO-Crates, and tooling for creating, viewing and interlinking human-readable RO-Crate previews.
+

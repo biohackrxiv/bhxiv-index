@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "BioHackEU24 report: Expanding FAIR database integration through elucidation and transformation of underlying graph schemas"
+date:   2025-05-17
+tags: BH24EU
+doi: 10.37044/osf.io/ptmg5_v1
+authors:
+  - name: Javier Millán Acosta
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+  - name: Dominik Martinat
+  - name: Harald Detering
+  - name: Jose Emilio Labra Gayo
+  - name: Yojana Gadiya
+    orcid: 0000-0002-7683-0452
+  - name: Tooba Abbassi-Daloii
+    orcid: 0000-0002-4904-3269
+---
+
+The BioDataFuse (BDF) project aims to enhance the interoperability of biomedical data through modular integration of data from diverse life sciences resources into context-specific knowledge graphs. This paper discusses the efforts made during BioHackathon Europe 2024 to improve the FAIR (Findable, Accessible, Interoperable, and Reusable) data integration process by clarifying and transforming graph schemas. We explored tools such as VoID-generator, RDF-config, and sheXer for data schema extraction and the integration of RDF Portal data into the BDF framework. By leveraging these tools, we automated the generation of SPARQL queries, created GraphQL endpoints, and enhanced BDF's ability to integrate new databases. Additionally, we explored the potential of large language models (LLMs) for automated reasoning and data interpretation within the BDF ecosystem. This work lays the foundation for building more efficient and standardized data models, contributing to the seamless integration of multiple biomedical databases.
+

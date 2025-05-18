@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine-actionability & Increasing FAIRness of digital agrosystem resources by extending Bioschemas"
+date:   2025-02-02
+tags: BH24EU
+doi: 10.37044/osf.io/x9d6b_v1
+authors:
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+  - name: Daniel Bauer
+  - name: Marco Brandizi
+  - name: Dominik Brilhaus
+  - name: Eli Chadwick
+  - name: Vera Clemens
+  - name: Michael Robin Crusoe
+    orcid: 0000-0002-2961-9670
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Jonas Grieb
+  - name: Xiaoming Hu
+  - name: Abigail Miller
+    orcid: 0000-0001-9228-2882
+  - name: Timo Mühlhaus
+  - name: Stuart Owen
+  - name: Maja Rey
+  - name: Gabriel Schneider
+    orcid: 0000-0001-6573-3115
+  - name: Julian Schneider
+  - name: Kevin Schneider
+  - name: Heinrich Lukas Weil
+  - name: Florian Wetzels
+---
+
+As part of the BioHackathon Europe 2024, we here report on the progress that both project 19 and project 24 have made during the event. For the purpose of this report we will present the abstract of both projects and then dive deeper on what work was done during the BioHackathon.
+
