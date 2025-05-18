@@ -9,12 +9,12 @@ ui = new net.bioclipse.managers.UIManager(workspaceRoot);
 bioclipse = new net.bioclipse.managers.BioclipseManager(workspaceRoot);
 
 if (args.length < 2) {
-  println "Syntax: groovy createPostFromDOI.groovy <DOI> <BH_CODE>"
+  println "Syntax: groovy createPostFromDOI.groovy <BH_CODE> <DOI>"
   System.exit(0)
 }
 
-doi = args[0]
-tag = args[1]
+doi = args[1].toLowerCase()
+tag = args[0]
 
 localpart = doi.split("/osf.io/")[1].split("_")[0]
 
