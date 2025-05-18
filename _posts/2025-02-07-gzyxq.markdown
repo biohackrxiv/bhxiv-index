@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "BioHackGermany24 report: User-friendly ISA-based metadata annotation of life science experiments with ISA Wizard"
+date:   2025-02-07
+tags: BH24DE
+doi: 10.37044/osf.io/gzyxq_v1
+authors:
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Patrick König
+    orcid: 0000-0002-8948-6793
+---
+
+As a contribution to BioHackathon Germany 2024, the following report details the work conducted during that event for project 8: User-friendly ISA-based metadata annotation of life science experiments with ISA Wizard.
+

@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Secure Processing Environments as a Service in the de.NBI Cloud"
+date:   2025-03-11
+tags: BH24DE
+doi: 10.37044/osf.io/pzmue_v1
+authors:
+  - name: Martin Braun
+  - name: Alexander Kanitz
+  - name: Jan Krüger
+  - name: Landfried Kraatz
+  - name: Jacobo Miranda
+  - name: Carsten Schelp
+  - name: Valentin Schneider-Lunitz
+  - name: Sanjay Kumar Srikakulam
+  - name: Xaver Stiensmeier
+  - name: Nils Hoffmann
+    orcid: 0000-0002-6540-6875
+  - name: Sven Twardziok
+    orcid: 0000-0002-0326-5704
+---
+
+Sensitive human data is crucial for biomedical research, enabling faster drug development and better understanding of diseases. The Biohackathon Germany project utilized ELIXIR Europe's services and external tools to create Secure Processing Environments, ensuring high protection of sensitive data while facilitating research across Germany and Europe.
+

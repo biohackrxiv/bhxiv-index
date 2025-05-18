@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Data validation and schema interoperability"
+date:   2020-04-07
+tags: Japan2019
+doi: 10.37044/osf.io/8qdse
+authors:
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+  - name: michel dumontier
+    orcid: 0000-0003-4727-9435
+  - name: Simon Jupp
+  - name: Jose Emilio Labra-Gayo
+    orcid: 0000-0001-8907-5348
+  - name: Thomas Liener
+    orcid: 0000-0003-3257-9937
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+  - name: Núria Queralt-Rosinach
+  - name: Chunlei Wu
+    orcid: 0000-0002-2629-6124
+---
+
+Validating RDF data becomes necessary in order to ensure data compliance against the conceptualization model it follows, e.g., schema or ontology behind the data, and improve data consistency and completeness. There are different approaches to validate RDF data, for instance, JSON schema, particularly for data in JSONLD format, as well as Shape Expression and Shapes Constraint Language, which can be used with other serialization as well, e.g., RDF/XML or Turtle. Currently, no validation approach is prevalent regarding others, selection commonly depends on data characteristics, background knowledge and personal preferences . In some cases, the approaches are interchangeable; however, that is not always the case, making it necessary to identify a subset among them that can be seamlessly translated from one to another. During the NBDC/DBCLS 2019 BioHackathon, we worked on a variety of topics related to RDF data validation, including (i) development of ShEx shapes for a number of datasets, (ii) development of a tool to semi-automatically create ShEx shapes, (iii) improvements to the RDFShape tool, and (iv) enabling validation schema conversion from one format to the other. Here we report on our BioHackathon achievements.
+
