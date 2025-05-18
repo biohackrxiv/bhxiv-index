@@ -39,7 +39,7 @@ layout: post
 title:  "${metadata.title}"
 date:   ${date}
 tags: ${tag}
-doi: ${doi} ${localpart}
+doi: ${doi}
 authors:
 """
 
