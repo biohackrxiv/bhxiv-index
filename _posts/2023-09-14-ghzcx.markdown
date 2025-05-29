@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "BioHackJP 2023 Report R3: Plant data integration for findability across multiple databases"
+date:   2023-09-14
+tags: BH23JP
+doi: 10.37044/osf.io/ghzcx
+authors:
+  - name: Cyril Pommier
+    orcid: 0000-0002-9040-8733
+  - name: Hiromi Kajiya-Kanegae
+    orcid: 0000-0002-5719-7559
+  - name: Andrea Ghelfi
+---
+
+Plant research generate vast amount of heterogeneous data available in dispersed repositories. Therefore, accessing, integrating, and analyzing these datasets is a challenge caused by their low findability as well as format and standards variability. Several solutions including data standards (MIAPPE, BrAPI) and portals (FAIDARE) are recommended by the ELIXIR plant community through the RDM Kit plant pages. The BioHackathon Japan 2023 was an ideal event to outreach those solutions toward the Japanese researchers and bioinformaticians in order to increase visibility of Japanese databases in the plant research data discovery portal FAIDARE and explore the use of the Breeding API for knowledge graph.
+

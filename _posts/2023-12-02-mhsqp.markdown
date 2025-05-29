@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "BioHackEU23 report: Extending interoperability of experimental data using modular queries across biomedical resources"
+date:   2023-12-02
+tags: BH23EU
+doi: 10.37044/osf.io/mhsqp
+authors:
+  - name: Yojana Gadiya
+    orcid: 0000-0002-7683-0452
+  - name: Ammar Ammar
+    orcid: 0000-0002-8399-8990
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Dominik Martinat
+  - name: Ana Claudia Sima
+  - name: Hasan Balci
+  - name: Tooba Abbassi-Daloii
+    orcid: 0000-0002-4904-3269
+---
+
+This report provides an overview of the significant accomplishments achieved during the ELIXIR Biohackathon 2023 under Project 17: "Extending interoperability of experimental data using modular queries across biomedical resources". The project diligently addressed four key aspects: the expansion of data resources, the creation of knowledge graphs, advancements in data visualization, and the development of a use-case-driven pipeline. The collective efforts during the Biohackathon aimed to enhance the integration and accessibility of experimental data across diverse biomedical resources by developing a tool named BioDataFuse.
+

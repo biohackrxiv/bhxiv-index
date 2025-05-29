@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Infrastructure for synthetic health data"
+date:   2023-07-22
+tags: BH22EU
+doi: 10.37044/osf.io/q4zgx
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Basel Alshaikhdeeb
+    orcid: 0000-0002-7518-2676
+  - name: Luca Bolzani
+  - name: Muhammad Shoaib
+  - name: Marcos Casado Barbero
+  - name: Sergi Aguiló-Castillo
+  - name: Davide Cirillo
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Ginger Tsueng
+  - name: Matúš Kalaš
+    orcid: 0000-0002-1509-4981
+  - name: Magnus Palmblad
+    orcid: 0000-0002-5865-8994
+  - name: Danielle Welter
+    orcid: 0000-0003-1058-2668
+  - name: Soumyabrata Ghosh
+  - name: Venkata Satagopam
+  - name: Rahuman S. Malik Sheriff
+---
+
+Machine learning (ML) methods are becoming ever more prevalent across all domains of lifesciences. However, a key component of effective ML is the availability of large datasets thatare diverse and representative. In the context of health systems, with significant heterogeneityof clinical phenotypes and diversity of healthcare systems, there exists a necessity to developand refine unbiased and fair ML models. Synthetic data are increasingly being used to protectthe patient’s right to privacy and overcome the paucity of annotated open-access medical data. Here, we present our proof of concept for the generation of synthetic health data and our proposed FAIR implementation of the generated synthetic datasets. The work was developed during and after the one-week-long BioHackathon Europe, by together 20 participants (10 new to the project), from different countries (NL, ES, LU, UK, GR, FL, DE, . . . ).
+

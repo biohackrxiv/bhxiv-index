@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Rendering co-author graphs using linked-open-data from Wikidata"
+date:   2023-11-11
+tags: BH23EU
+doi: 10.37044/osf.io/py5jq
+authors:
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
+---
+
+Wikidata is the linked-open-data graph of the Wikimedia foundation with its most known sibling Wikipedia (Vrandečić, 2012). What Wikipedia is to text, Wikidata is to data. Like in Wikipedia linked-data can be added for everyone, by everyone. This makes Wikidata a very rich source of data. A substantial part of the data on Wikidata is about scientific publications and the authors of these publications (Taraborelli et al., 2016). Scholia is a tool that uses this data to create a profile page for authors and publications (Nielsen et al., 2017). This report describes a workflow to create co-author graphs using the data from Scholia.
+

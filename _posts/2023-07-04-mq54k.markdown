@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "BioHackJP 2023 Report R4: integration of glyco data with chemo-, geno-, lipid-omics and pathway data"
+date:   2023-07-04
+tags: BH23JP
+doi: 10.37044/osf.io/mq54k
+authors:
+  - name: Kiyoko Flora Aoki-Kinoshita
+  - name: Evan Bolton
+    orcid: 0000-0002-5959-6190
+  - name: Issaku Yamada
+    orcid: 0000-0001-9504-189X
+  - name: Akihiro Fujita
+  - name: Masaaki Matsubara
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+---
+
+GlyTouCan is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources. GlyCosmos is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans. It currently contains information about glycogenes, glycoproteins, glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis. In the BH23, we were studied and developed as follows:1) Integrate the glycan data in GlyTouCan and PubChem: analyzing the glycan structures and the chemical representation of data in PubChem. 2) Integration of glycan data from GlyCosmos with UniProt. 3) Investigation of glycogene variants and phenotypes to integrate with GlyCosmos: investigating variants and phenotypes in the current life science database landscape. The glycogenes in GlyCosmos are managed using HGNC symbols and NCBI Gene IDs. So resources that could easily provide variants and phenotypes for a list of such genes would be the strongest candidates. Comprehensiveness and accuracy are also important factors. 4) Update of Glyco-tools: software used by the glycomics community. 5) Semantic inferencing to enhance the knowledge in GlyCosmos: organizing the ontologies used in GlyCosmos to enable inferencing and incorporation of inferencing rules to generate new knowledge from existing data.
+

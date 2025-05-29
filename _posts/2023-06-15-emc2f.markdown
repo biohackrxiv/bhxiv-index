@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "BioHackEU22 Report for Project 31: The What &amp;amp; How in data management: Improving connectivity between RDMkit and FAIR Cookbook"
+date:   2023-06-15
+tags: BH22EU
+doi: 10.37044/osf.io/emc2f
+authors:
+  - name: Danielle Welter
+    orcid: 0000-0003-1058-2668
+  - name: Rafael Andrade Buono
+  - name: Tooba Abbassi-Daloii
+    orcid: 0000-0002-4904-3269
+  - name: Pinar Alper
+    orcid: 0000-0002-2224-0780
+  - name: Munazah Andrabi
+  - name: Federico Bianchini
+  - name: Bert Droesbeke
+  - name: Nazeefa Fatima
+  - name: Marina Popleteeva
+  - name: Laura Portell-Silva
+  - name: Philippe Rocca-Serra
+    orcid: 0000-0001-9853-5668
+---
+
+This report describes the work completed during the ELIXIR Biohackathon 2022 for project 31: The What &amp;amp; How in data management: Improving connectivity between RDMkit and FAIR Cookbook. The project covered 3 subjects: the technical connectivity between the two primary resources, an editorial alignment and gap analysis of their content, and the creation of user journeys incorporating the wider ELIXIR Research Data Management (RDM) ecosystem.
+

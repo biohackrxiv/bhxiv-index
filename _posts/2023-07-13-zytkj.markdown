@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Machine learning of transcriptome data treated with DNA base editor"
+date:   2023-07-13
+tags: BH23JP
+doi: 10.37044/osf.io/zytkj
+authors:
+  - name: Kazuki Nakamae
+    orcid: 0000-0002-4469-664X
+  - name: Taro Kakuzaki
+  - name: Kentaro Yamamoto
+---
+
+Base Editor, a technique that utilizes Cas9 nickase fused with deaminase to introduce single base substitutions, has significantly facilitated the creation of valuable genome variants in medical and agricultural fields. However, a phenomenon known as RNA off-target effects is recognized with Base Editor, resulting in unintended substitutions in the transcriptome. It has been reported that such substitutions often occur in specific base motifs (ACW), but whether these motif mutations are dominant has not been investigated. In this study, we constructed a pipeline for analyzing RNA off-target effects, called the Pipeline for CRISPR-induced Transcriptome-wide Unintended RNA Editing (PiCTURE), and analyzed RNA-seq data previously reported. We found minor RNA off-target effects associated with the reported base motifs, and most were indistinguishable in motif analysis.Consequently, we trained a Large Language Model (LLM) specialized for DNA base sequences on RNA off-target sequences and developed a classifier for assessing the risk of RNA off-target effects based on the sequences. When the model's estimations were applied to the RNA off-target data for BE4-rAPOBEC1 and BE4-RrA3F, satisfactory determination results were obtained. This study is the first to demonstrate the efficacy of machine learning approaches in determining RNA off-target effects caused by Base Editor and presents a predictive model for the safer use of Base Editor.
+
