@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Network analysis of specimen co-collection"
+date:   2021-12-07
+tags: BH21EU
+doi: 10.37044/osf.io/4ahng
+authors:
+  - name: Sofie Meeus
+  - name: Tom August
+    orcid: 0000-0003-1116-3385
+  - name: Maarten Trekels
+    orcid: 0000-0001-8282-8765
+  - name: Lien Reyserhove
+  - name: Quentin John Groom
+    orcid: 0000-0002-0596-5376
+---
+
+We took data on the collectors of specimens from natural history collections. Co-collectors of specimens were extracted from the data and a network of co-collection was constructed. This network was used to analyze the age and gender balance of collectors and how this has changed with time. Men outnumber women in the network, but women participation increases with time, as are the all female pairs of collectors. Most collector pairs have less than 50 years age difference and it is suggested that co-collections above this age difference should be checked for errors. This project has proven the value of analyzing co-collection data, but also highlighted the many additional avenues for future research on this subject.
+

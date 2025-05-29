@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "The COVID-19 epidemiology and monitoring ontology"
+date:   2021-08-11
+tags: C19BH20
+doi: 10.37044/osf.io/n6tcz
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Paul Schofield
+    orcid: 0000-0002-5111-7263
+  - name: Robert Hoehndorf
+    orcid: 0000-0001-8149-5890
+  - name: Claus Weiland
+    orcid: 0000-0003-0351-6523
+  - name: Erik Anthony Schultes
+    orcid: 0000-0001-8888-635X
+  - name: César Henrique Bernabé
+  - name: Marco Roos
+    orcid: 0000-0002-8691-772X
+---
+
+The novel COVID-19 infectious disease emerged and spread, causing high mortality and morbidity rates worldwide. In the OBO Foundry, there are more than one hundred ontologies to share and analyse large-scale datasets for biological and biomedical sciences. However, this pandemic revealed that we lack tools for an efficient and timely exchange of this epidemiological data which is necessary to assess the impact of disease outbreaks, the efficacy of mitigating interventions and to provide a rapid response. In this study we present our findings and contributions for the bio-ontologies community.
+

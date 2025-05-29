@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Measuring outcomes and impact from the BioHackathon Europe"
+date:   2021-08-10
+tags: BH20EU
+doi: 10.37044/osf.io/3dxhg
+authors:
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Corinne Martin
+  - name: Georgi Lazarov
+  - name: Dana Cernoskova
+  - name: Terue Takatsuki
+  - name: Jennifer Harrow
+    orcid: 0000-0003-0338-3070
+  - name: Dietrich Rebholz-Schuhmann
+---
+
+One of the recurring questions when it comes to BioHackathons is how to measure their impact, especially when funded and/or supported by the public purse (e.g., research agencies, research infrastructures, grants). In order to do so, we first need to understand the outcomes from a BioHackathon, which can include software, code,  publications, new or strengthened collaborations, along with more intangible effects such as accelerated progress and professional and personal outcomes. In this manuscript, we report on three complementary approaches to assess outcomes of three BioHackathon Europe events: survey-based, publication-based and GitHub-based measures. We found that post-event surveys bring very useful insights into what participants feel they achieved during the hackathon, including progressing much faster on their hacking projects, broadening their professional network and improving their understanding of other technical fields and specialties. With regards to published outcomes, manual tracking of publications from specific servers is straightforward and useful to highlight the scientific legacy of the event, though there is much scope to automate this via text-mining. Finally, GitHub-based measures bring insights on some of the software and data best practices (e.g., license usage) but also on how the hacking activities evolve in time (e.g., activities observed in GitHub repositories prior, during and after the event). Altogether, these three approaches were found to provide insightful preliminary evidence of outcomes, thereby supporting the value of financing such large-scale events with public funds.
+

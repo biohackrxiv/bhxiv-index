@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Rapid metagenomic workflow using annotated 16S RNA dataset"
+date:   2021-09-30
+tags: BH21JP
+doi: 10.37044/osf.io/gbt8p
+authors:
+  - name: Naoya Oec
+    orcid: 0000-0002-7491-4994
+  - name: Hidemasa Bono
+    orcid: 0000-0003-4413-0651
+---
+
+Thanks to the dramatic progress in DNA sequencing technology, it is now possible to decipher sequences in a mixed state. Therefore, the subsequent data analysis has become important, and the demand for metagenomic analysis is very high. Existing metagenomic data analysis workflows for 16S amplicon sequences have been mainly focused on sequences from short reads sequencers, while researchers cannot apply those workflows for sequences from long read sequencers. A practical metagenome workflow for long read sequencers is therefore really needed. In a domestic version of the BioHackathon called BH21.8 held in Aomori, Japan (23-27 August 2021), we first discussed the reproducible workflow for metagenome analysis. We then designed a rapid metagenomic workflow using annotated 16S RNA dataset (Ref16S) and the practical use case for using the workflow developed. Finally, we discussed how to maintain Ref16S and requested Life Science Database Archive in JST NBDC to archive the dataset. After a stimulus discussion in BH21.8, we could clarify the current issues in the metagenomic data analysis. We also could successfully construct a rapid workflow for those data specially from long reads by using newly constructed Ref16S.
+
