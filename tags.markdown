@@ -31,7 +31,7 @@ permalink: /tags/
 <ul>
 {% for meeting in year.items %}
 <!-- {{ meeting }} -->
-<li><a href="{{ '/tag/' | append: meeting.name | relative_url }}">{{ meeting.title }}</a></li>
+<li><a href="{{ '/tag/' | append: meeting.tag | relative_url }}">{{ meeting.title }}</a></li>
 {% endfor %}
 </ul>
 {% endfor %}
