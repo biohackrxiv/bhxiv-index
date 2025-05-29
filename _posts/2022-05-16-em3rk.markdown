@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "An iNaturalist-Pl@ntNet-workflow to identify plant-pollinator interactions – a case study of Isodontia mexicana"
+date:   2022-05-16
+tags: AlienCSI
+doi: 10.37044/osf.io/em3rk
+authors:
+  - name: Nadja Pernat
+    orcid: 0000-0003-2244-1002
+  - name: Tom August
+    orcid: 0000-0003-1116-3385
+  - name: Quentin John Groom
+    orcid: 0000-0002-0596-5376
+  - name: Daniyar Memedemin
+  - name: Lien Reyserhove
+---
+
+Not only the primary observations of species occurrences are used for research, but also the additional, mostly unintentionally documented information in citizen science observations is beneficial for research, the so-called secondary data. In this study, we investigated the plant-pollinator interactions of the Mexican grass-carrying wasp Isodontia mexicana using a data exchange workflow from two globally operating citizen science platforms, iNaturalist and Pl@ntNet. Images from iNaturalist observations of the target species were used to query the Pl@ntNet application to identify possible plant species present in the pictures. At the same time, botanists manually identified the plants at family, genus and species level from the images. The goals were to calibrate Pl@ntNet's accuracy in relation to this workflow, to update the list of plant species that I. mexicana visits, and to investigate colour preferences and other interactions of the wasp recorded by citizen scientists. Although the list of plant species visited could be confirmed and expanded, identifying plants from images that predominantly show an insect proved similarly difficult for both experts and the Pl@ntNet app. The presented approach can nevertheless help to get an overview or first insight into species interactions and generate more specific research questions.
+

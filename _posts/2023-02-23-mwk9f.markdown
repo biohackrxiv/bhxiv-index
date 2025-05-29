@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Streamlining data brokering from Research Data Management platforms to ELIXIR Repositories"
+date:   2023-02-23
+tags: BH22EU
+doi: 10.37044/osf.io/mwk9f
+authors:
+  - name: Flora D'Anna
+  - name: Zahra Waheed
+    orcid: 0000-0002-7224-5280
+  - name: Anliat Mohamed
+  - name: Dipayan Gupta
+  - name: Pedram A Keyvani
+  - name: Rafael Andrade Buono
+  - name: Sara El-Gebali
+  - name: Sveinung Gundersen
+    orcid: 0000-0001-9888-7954
+  - name: Vahid Kiani
+---
+
+Mobilizing data from data producers to data deposition databases is an integral service that research data management (RDM) platforms could offer. However, brokering the heterogeneous mixture of scientific data requires systems that are compatible with the diverse (meta)data models of the different RDM platforms, and diverse submission routes of different domain/techniques-specific repositories.Existing tools for brokering of research (meta)data in life sciences often are technique or domain specific and aimed at only one specific deposition database at a time, which does not reflect the way scientific projects are often conducted. As a result, infrastructure providers or research laboratories have to invest resources in manual curation and mapping of (meta)data in order to help researchers deposit their outputs into specialized repositories.This BioHackathon 2022 project specifically focused on designing and implementing a prototype of a data brokering system from ISA-JSON to multiple ELIXIR Deposition Databases, starting with the European Nucleotide Archive (ENA). Specifically, we started from a ISA-JSON file exported from the DataHub, a metadata management platform (an instance of the FAIRDOM-SEEK software) which uses the well-established ISA (Investigation Study Assay) framework to describe multi-omics metadata and link to the location of data files.During this project we performed a high-level mapping of the ISA-JSON schema to the ENA XML files necessary for metadata submission. We also described a flexible, sustainable and domain/technique-agnostic brokering strategy from ISA-JSON to multiple ELIXIR deposition databases and developed a prototype of an EBI multi-repositories converter tool.
+

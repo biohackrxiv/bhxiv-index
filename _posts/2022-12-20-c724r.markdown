@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "BioHackEU22 Project 22: Plant data exchange and standard interoperability"
+date:   2022-12-20
+tags: BH22EU
+doi: 10.37044/osf.io/c724r
+authors:
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: laurent bouri
+    orcid: 0000-0002-2297-1559
+  - name: Marco Brandizi
+  - name: Donald Hobern
+    orcid: 0000-0001-6492-4016
+  - name: Erwan Le Floch
+  - name: Timo Mühlhaus
+  - name: Cyril Pommier
+    orcid: 0000-0002-9040-8733
+  - name: Stuart Owen
+  - name: Philippe Rocca-Serra
+    orcid: 0000-0001-9853-5668
+  - name: Thomas Rosnet
+    orcid: 0000-0003-0676-5461
+  - name: Stian Soiland-Reyes
+    orcid: 0000-0001-9842-9718
+---
+
+Status of discussions around the topic of data standard formats for plant sciences and their interoperability at the BioHackathon Europe 2022 in Paris.
+

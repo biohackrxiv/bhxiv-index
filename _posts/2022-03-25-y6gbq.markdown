@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Bioschemas data harvesting project report"
+date:   2022-03-25
+tags: BH21EU
+doi: 10.37044/osf.io/y6gbq
+authors:
+  - name: Alasdair J. G. Gray
+    orcid: 0000-0002-5711-4872
+  - name: Petros Papadopoulos
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
+  - name: Thomas Rosnet
+    orcid: 0000-0003-0676-5461
+  - name: Ivan Mičetić
+  - name: Sébastien Moretti
+---
+
+The promise of Bioschemas is that it makes consuming data from multiple resources more straightforward. However, this hypothesis has not been tested by conducting a large scale harvest of deployed markup and making this available for others to reuse. Therefore, the goal of this hackathon project is to harvest a collection of Bioschemas markup from a number of different sites listed on the Bioschemas live deploys page using the Bioschemas Markup Scraper and Extractor (BMUSE). The harvested data will be made available for others and loaded into a triplestore to allow for further exploration.
+

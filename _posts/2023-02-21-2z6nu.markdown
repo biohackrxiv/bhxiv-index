@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Executing workflows in the cloud with WESkit"
+date:   2023-02-21
+tags: BH21EU
+doi: 10.37044/osf.io/2z6nu
+authors:
+  - name: Philip Reiner Kensche
+  - name: Alexander Kanitz
+    orcid: 0000-0002-3468-0652
+  - name: Ivan Topolsky
+    orcid: 0000-0002-7561-0810
+  - name: Kim Philipp Jablonski
+  - name: Pietro Mandreoli
+  - name: Sven Twardziok
+    orcid: 0000-0002-0326-5704
+---
+
+With the exponential increase in genomic data, analyzing and processing large datasets has become a challenging task in healthcare. To address this issue, the Global Alliance for Genomics and Health (GA4GH) has proposed a set of community standards for enabling the adoption of FAIR principles for data, software, and infrastructure. These standards promote the concept of sending analysis and processing workflows to the data rather than transferring large datasets, thereby increasing efficiency and data security. In this paper, we present the outcomes of the ELIXIR Biohackathon 2021 project, where we worked on our software WESkit, which implements the GA4GH WES standard for running Snakemake and Nextflow workflows. During the hackathon, we implemented basic GA4GH TRS support, deployed a cloud platform, and added S3 support for downloading result files.
+

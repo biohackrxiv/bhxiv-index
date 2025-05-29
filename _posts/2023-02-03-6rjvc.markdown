@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "CiTO support for BioHackrXiv"
+date:   2023-02-03
+tags: BH21EU
+doi: 10.37044/osf.io/6rjvc
+authors:
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+---
+
+In this paper we present the work executed on BioHackrXiv during the international ELIXIR BioHackathon in Barcelona, Spain, 2021.
+

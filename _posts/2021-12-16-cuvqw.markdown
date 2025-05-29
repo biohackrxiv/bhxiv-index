@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "DS Wizard Meets DAISY: A Romance Solving Data Protection Requirements in Data Management Planning"
+date:   2021-12-16
+tags: BH21EU
+doi: 10.37044/osf.io/cuvqw
+authors:
+  - name: Marek Suchánek
+    orcid: 0000-0001-7525-9218
+  - name: Pinar Alper
+  - name: Jan Slifka
+  - name: Vilém Děd
+  - name: Nene DJenaba Barry
+    orcid: 0000-0003-3757-4211
+  - name: Paulette Lieby
+    orcid: 0000-0002-9289-9652
+  - name: Marko Vidak
+  - name: Nadja Zlender
+---
+
+This report summarises our activities and achievements in integrating the Data Stewardship Wizard (DSW) and Data Information System (DAISY) tools during the ELIXIR BioHackathon Europe 2021. As a data information system for GDPR compliance, DAISY is focused on a single goal – gathering all information required for GDPR accountability of biomedical research projects. On the other hand, DSW is very flexible and can be used beyond data management planning. We worked on the integration between both tools on two fronts. Firstly, we created a new Knowledge Model in DSW together with a document output template to be able to generate a data protection impact assessment (DPIA). Secondly, we introduced a new integration type between projects in DSW and DAISY that allows the querying of DAISY data upon document generation in DSW. Both of these independent activities brought successful results that were polished and published after the actual BioHackathon. Finally, we provide the related materials as an on-demand training course in the ELIXIR eLearning Platform.
+
