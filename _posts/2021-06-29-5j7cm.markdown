@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "SnpReportR: A Tool for Clinical Reporting of RNAseq Expression and Variants"
+date:   2021-06-29
+tags: BGDC
+doi: 10.37044/osf.io/5j7cm
+authors:
+  - name: Ahmad Al Khleifat
+    orcid: 0000-0002-7406-9831
+  - name: Jenny Leopoldina Smith
+    orcid: 0000-0003-0402-2779
+  - name: Brandon Blobner
+  - name: Sierra Miller
+    orcid: 0000-0002-3200-428X
+  - name: Kymberleigh Pagel
+  - name: Annie Nadkarni
+  - name: Melanie Gainey
+  - name: Patrick Campbell
+  - name: Olaitan Awe
+  - name: Manuel Belmadani
+  - name: Alan M. Cleary
+  - name: Nicholas Cooley
+  - name: Shamika Dhuri
+  - name: Virginie Grosboillot
+  - name: Brian W. Haas
+    orcid: 0000-0002-6860-448X
+  - name: Sam Hokin
+  - name: Ekaterina Orlova
+  - name: Meghana Pagadala
+  - name: Stephen Price
+    orcid: 0000-0001-9072-7518
+  - name: Adelaide Rhodes
+    orcid: 0000-0002-1714-1972
+  - name: Janice Kyla Nascimento Smith
+  - name: Chaitanya Srinivasan
+  - name: Barry Zorman
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+With the increasing availability of next-generation sequencing (NGS), patients and non-specialist health care professionals are obtaining their genomic information without sufficient bioinformatics skills to analyze and interpret the data. In January 2021, four teams of scientists,clinicians, and developers from around the world worked collaboratively in a virtual hackathon to create a framework for the automated analysis and interpretation of RNA sequencing data inthe clinic. Here, we present SnpReportR: A Tool for Clinical Reporting of RNAseq Expression and Variants aimed for use by clinicians and others without in-depth knowledge of genetics.
+

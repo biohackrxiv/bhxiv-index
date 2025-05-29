@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "SB4ER: an ELIXIR Service Bundle for Epidemic Response"
+date:   2021-03-25
+tags: BH20EU
+doi: 10.37044/osf.io/b34vm
+authors:
+  - name: CASTRENSE SAVOJARDO
+    orcid: 0000-0002-7359-0633
+  - name: Pier Luigi Martelli
+  - name: Giulia Babbi
+  - name: Marco Anteghini
+    orcid: 0000-0003-2794-3853
+  - name: Matteo Manfredi
+  - name: Giovanni Madeo
+  - name: Emidio Capriotti
+  - name: Jumamurat R. Bayjanov
+  - name: Margherita Mutarelli
+  - name: Rita Casadio
+---
+
+Epidemic spread of new pathogens is quite a frequent event that affects not only humans but also animals and plants, and specifically livestock and crops. In the last few years, many novel pathogenic viruses have threatened human life. Some were mutations of the traditional influenza viruses, and some were viruses that crossed the animal-human divide.In both cases, when a novel virus or bacterial strain for which there is no pre-existing immunity or a vaccine released, there is the possibility of an epidemic or even a pandemic event, as the one we are experiencing today with COVID-19.In this context, we defined an ELIXIR Service Bundle for Epidemic Response: a set of tools and workflows to facilitate and speed up the study of new pathogens, viruses or bacteria. The final goal of the bundle is to provide tools and resources to collect and analyse data on new pathogens (bacteria and viruses) and their relation to hosts (humans, animals, plants).
+

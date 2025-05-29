@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Linking PubDictionaries with UniBioDicts to support Community Curation"
+date:   2020-12-25
+tags: BH20EU
+doi: 10.37044/osf.io/gzfa8
+authors:
+  - name: John Zobolas
+    orcid: 0000-0002-3609-8674
+  - name: Jin-Dong Kim
+  - name: Martin Kuiper
+  - name: Steven Vercruysse
+---
+
+One of the many challenges that biocurators face, is the continuous evolution of ontologies and controlled vocabularies and their lack of coverage of biological concepts. To help biocurators annotate new information that cannot yet be covered with terms from authoritative resources, we produced an update of PubDictionaries: a resource of publicly editable, simple-structured dictionaries, accessible through a dedicated REST API. PubDictionaries was equipped with both an enhanced API and a new software client that connects it to the Unified Biological Dictionaries (UBDs) uniform data exchange format. This client enables efficient search and retrieval of ad hoc created terms, and easy integration with tools that further support the curator’s specific annotation tasks. A demo that combines the Visual Syntax Method (VSM) interface for general-purpose knowledge formalization, with this new PubDictionaries-powered UBD client, shows it is now easy to incorporate the user-created PubDictionaries terminologies into biocuration tools.
+

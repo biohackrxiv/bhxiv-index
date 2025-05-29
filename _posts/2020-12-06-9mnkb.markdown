@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Progress on Data Stewardship Wizard during BioHackathon Europe 2020"
+date:   2020-12-06
+tags: BH20EU
+doi: 10.37044/osf.io/9mnkb
+authors:
+  - name: Marek Suchánek
+    orcid: 0000-0001-7525-9218
+  - name: Rob W.W. Hooft
+  - name: Konogan Bourhy
+---
+
+We used the Virtual BioHackathon Europe 2020 to work on a number of projects for improvement of the data stewardship wizard: (a) We made first steps to analysis of what is needed to make all questions and answers machine actionable (b) We worked on supporting the Horizon 2020 Data Management Plan Template (c) Several new integrations were made, e.g. to ROR and Wikidata (d) we made a draft plan for supporting multiple languages and (e) we implemented many suggestions for improvement of the knowledge model that had been suggested to us over the past time. Quickly after the BioHackathon, the adapted knowledge model, new integrations and the H2020 template have been made available to all users of the wizard.
+
