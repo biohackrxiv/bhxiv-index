@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject"
+date:   2020-05-14
+tags: C19BH20
+doi: 10.37044/osf.io/9d3cz
+authors:
+  - name: Yasemin Utkueri
+  - name: Evrim Fer
+  - name: Elif Bozlak
+  - name: Meltem Kutnu
+  - name: Nazli Sila Kara
+  - name: Funda Yilmaz
+---
+
+Development of workflows for NGS data analysis have facilitated the study of sequences. Such workflows have their own advantages and challenges based on the algorithms they use. As a part of this study for Biohackathon 2020, we have compared the SARS-CoV-2 variant outputs of INSaFLU workflow with those analyzed by galaxyproject/SARS-CoV-2. Within 24 samples, 597 variants  were found to be shared between two workflows, with almost half of them found within the coding sequence of replicase polyprotein 1ab. Within the shared variants, number of non-synonymous variants were considerably higher and nearly half of the variants were multiallelic. Prospective studies could help us evaluate the accuracy of these variants.
+

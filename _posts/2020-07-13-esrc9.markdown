@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "TogoEx: the integration of gene expression data"
+date:   2020-07-13
+tags: BH19EU
+doi: 10.37044/osf.io/esrc9
+authors:
+  - name: Hidemasa Bono
+    orcid: 0000-0003-4413-0651
+  - name: Takeya Kasukawa
+---
+
+Report on the group 'TogoEx' in the BioHackathon Europe 2019.
+

@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Global analysis of human SARS-CoV-2 infection and host-virus interaction"
+date:   2020-05-14
+tags: C19BH20
+doi: 10.37044/osf.io/b4zkp
+authors:
+  - name: Mariana Ferrarini
+  - name: Vanessa Aguiar-Pulido
+    orcid: 0000-0001-5248-6944
+  - name: Eric T. Dawson
+  - name: Andrea Guarracino
+  - name: Andreas Gruber
+  - name: Lukas Heumos
+  - name: Alexander Kanitz
+    orcid: 0000-0002-3468-0652
+  - name: Avantika Lal
+  - name: Brett E. Pickett
+    orcid: 0000-0001-7930-8160
+  - name: Rita Rebollo
+  - name: Carlos Ruiz-Arenas
+    orcid: 0000-0002-6014-3498
+  - name: Olaitan Awe
+  - name: Suhana Bedi
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+  - name: Marielena Georgaki
+  - name: Chela James
+  - name: Itziar Martinez Gonzalez
+  - name: Birgit Meldal
+  - name: Scheila G. Mucha
+  - name: Noushin Nabavi
+  - name: Jakke Neiro
+  - name: Núria Queralt-Rosinach
+  - name: Philippe Rocca-Serra
+    orcid: 0000-0001-9853-5668
+  - name: Daniel Siqueira de Oliveira
+  - name: Maria Tsagiopoulou
+---
+
+As part of the virtual BioHackathon 2020, we formed a working group that focused on the analysis of gene expression in the context of COVID-19. More specifically, we performed transcriptome analyses on published datasets in order to better understand the interaction between the human host and the SARS-CoV-2 virus.The ideas proposed during this hackathon were divided into five projects. Projects 1 and 2 aimed to identify human genes that are important in the process of viral infection of human cells. Projects 3 and 4 aimed to take the candidate genes identified in projects 1 and 2, as well as by independent studies, and relate them to clinical information and to possible therapeutic interventions. Finally, Project 5 aimed to package and containerize software and workflows used and generated here in a reusable manner, ultimately providing scalable and reproducible workflows.
+

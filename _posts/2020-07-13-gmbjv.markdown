@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Disease and pathway maps for Rare Diseases"
+date:   2020-07-13
+tags: BH19EU
+doi: 10.37044/osf.io/gmbjv
+authors:
+  - name: Piotr Gawron
+  - name: David Hoksza
+  - name: Janet Pinero
+  - name: Maria Pena Chilet
+  - name: Marina Esteban
+  - name: Jose Luis Fernandez
+  - name: Vincenza Colonna
+  - name: Joaquin Dopazo
+  - name: Laura I. Furlong
+  - name: Marek Ostaszewski
+    orcid: 0000-0003-1473-370X
+---
+
+In this article we present a workflow for construction of prototype rare disease maps based on the phenotypic description of a rare disease. We use stable disease and phenotype identifiers to i) retrieve disease-associated genes and genetic variants, ii) identify relevant mechanistic components from pathways, disease maps and interaction repositories, and iii) assemble these components into single diagram, available for visualisation and pathway analysis. The workflow allows construction of prototype diagrams representing mechanisms related to a rare disease, useful for further refinement and data interpretation.
+
