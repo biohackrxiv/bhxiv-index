@@ -69,6 +69,11 @@ meetings:
   title: "BioHackathon Europe, Virtual, 2020"
   year: 2020
 
+- SWAT4HCLS24:
+  tag: SWAT4HCLS24
+  title: "SWAT4HCLS, Leiden, The Netherlands, 2024"
+  year: 2024
+
 - SWAT4HCLS25:
   tag: SWAT4HCLS25
   title: "SWAT4HCLS, Barcelona, Spain, 2025"
@@ -109,3 +114,22 @@ meetings:
   title: "VIB Hackathon June 2024, Ghent, Belgium, 2024"
   year: 2024
   
+- BCUBED24:
+  tag: BCUBED24
+  title: "B-Cubed Hackathon, Brussels, Belgium, 2024"
+  year: 2024
+  
+- SDDW24:
+  tag: SDDW24
+  title: "SpatialData Developer Workshop, Basel, Swiss, 2024"
+  year: 2024
+
+- BHLLM24:
+  tag: BHLLM24
+  title: "BioHackathon LLM, Versailles, France, 2024"
+  year: 2024
+
+ - OMENGFFWH24:
+  tag: OMENGFFWH24
+  title: "OME-NGFF Workflows Hackathon, Zürich, Swiss, 2024"
+  year: 2024

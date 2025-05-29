@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "1st SpatialData Developer Workshop"
+date:   2024-12-20
+tags: SDDW24
+doi: 10.37044/osf.io/8ck3e
+authors:
+  - name: Luca Marconato
+    orcid: 0000-0003-3198-1326
+  - name: Wouter-Michiel Vierdag
+    orcid: 0000-0003-1666-5421
+  - name: Kevin Yamauchi
+  - name: Clarence Mah
+  - name: Helena Crowell
+  - name: Quentin Blampey
+  - name: Benjamin Rombaut
+    orcid: 0000-0002-4022-715X
+  - name: Mark S Keller
+  - name: Lotte Pollaris
+  - name: Estella Yixing Dong
+  - name: Sonja Stockhaus
+  - name: Laurens Lehner
+  - name: Chiara Schiller
+  - name: Grzegorz Bokota
+  - name: Tong LI
+    orcid: 0000-0002-8240-4476
+  - name: Miguel Ibarra
+  - name: Artur Manukyan
+  - name: Dario Righelli
+    orcid: 0000-0003-1504-3583
+  - name: Louise Deconick
+  - name: Vincent J Carey
+---
+
+This pre-print is aimed at sharing the results of the "1st SpatialData workshop," an in-person event organized by the SpatialData team and funded by the Chan Zuckerberg Initiative (CZI) that brought together expertise from different fields, including methods developers of a variety of tools for single-cell and spatial omics. The purpose is to explore new directions to advance the field of spatial omics. By leveraging multiple programming languages, including Python, R, and JavaScript, the event focuses on four central hackathon tracks: R interoperability: This track aims to enhance the integration and compatibility of R and Python with the SpatialData Python framework by using the language-agnostic SpatialData Zarr file format (which follows, when possible, the NGFF specification). Visualization interoperability: This track is dedicated to improving the seamless integration of visualization tools across different systems and programming languages via a tool-agnostic view configuration. Scalability and benchmarking: Participants will identify, benchmark, and address computational bottlenecks within the SpatialData framework. Ergonomics and user-friendliness: This track focuses on enhancing the usability and accessibility of the SpatialData framework for both first-time users and third-party developers. These tracks aim to foster collaboration and innovation, driving advancements in the analysis and infrastructure of spatial omics and imaging data.
+

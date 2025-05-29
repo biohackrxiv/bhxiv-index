@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "An analysis of sex ratios using a biodiversity data cube"
+date:   2024-07-22
+tags: BCUBED24
+doi: 10.37044/osf.io/9kcfx
+authors:
+  - name: Quentin John Groom
+    orcid: 0000-0002-0596-5376
+  - name: Maarten Trekels
+    orcid: 0000-0001-8282-8765
+---
+
+This investigation uses biodiversity data cubes derived from the datasets mobilised by the Global Biodiversity Information Facility (GBIF), to conduct an analysis of sex ratios of ducks across Europe. Encompassing over 4 million occurrences extracted from nearly 5000 datasets, this study elucidates sex distribution patterns across various species, focussing on temporal and spatial dynamics. The aim of this study is to highlight the availability of open sex data and its potential usefulness in research and monitoring of sex ratios of wild organisms, particularly in sexual dimorphic species.
+

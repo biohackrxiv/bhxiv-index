@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Publishing FAIR datasets from Bioimaging repositories"
+date:   2024-12-09
+tags: SWAT4HCLS24
+doi: 10.37044/osf.io/7whtf
+authors:
+  - name: Stefan Dvoretskii
+    orcid: 0000-0001-7769-0167
+  - name: Philipp Schader
+  - name: Josh Moore
+    orcid: 0000-0003-4028-811X
+  - name: Marco Nolden
+    orcid: 0000-0001-9629-0564
+---
+
+We assessed the implementation of the FAIR principles in the currentbioimaging and clinical imaging data repositories. Additionally, to make the RDF export triples from the IDR discoverable, we also explored the Fair Data Point interface (Silva Santos et al.,2023), as a mechanism to facilitate the exposure of machine-actionable metadata and how itcould be added to the Imaging Data Resource (IDR) portal.
+

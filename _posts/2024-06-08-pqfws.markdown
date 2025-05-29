@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Phenological Diversity Trends with Remote Sensing  Datacubes"
+date:   2024-06-08
+tags: BCUBED24
+doi: 10.37044/osf.io/pqfws
+authors:
+  - name: Elliot Samuel Shayle
+    orcid: 0009-0008-2994-0887
+  - name: Matteo Marcantonio
+    orcid: 0000-0003-3896-2355
+  - name: Rocco Labadessa
+  - name: Chiara Richiardi
+  - name: Saverio Vicario
+---
+
+During the 2024 B-Cubed Hackathon, we extended the R package "rasterdiv" by incorporating Time-Weighted Dynamic Time Warping (TWDTW) to the package's pre-existing paRao() function for the calculation of parametric Rao's Quadratic Diversity (Rao's Q) index. This expands the user's ability to biodiversity trends when using time series of Earth Observations. Biodiversity indices like Shannon's H do not consider spatio-temporal dynamics, and others (e.g. Rao's Q) only incorporate geographic distance between observations, often leaving phenological variation overlooked.Through integrating TWDTW into the paRao() function, users can assess different facets of an ecosystem's biodiversity by incorporating phenological differences among its plant communities. This is also valuable to distinguish between natural habitats that follow a seasonal phenological trend and artificial land cover types, which may lack phenological changes. Previous studies have also found that the time weighting ability of TWDTW enables the discernment of different floral community types which could otherwise be misclassified as the same with traditional Dynamic Time Warping (DTW).To evaluate the efficacy of TWDTW within the paRao() function, we compared the ability of TWDTW Rao's Q index against other biodiversity indices at classifying the different plant communities in a disturbed grassland in Calabria, Italy. Our study used a Plant Phenological Index (PPI) time series from the Sentinel-2 satellite network. The results indicated that accounting for phenological cycles can filter out artefacts and better distinguish habitats with differing plant species diversity. This improves the ability to assess ecosystem changes through space and time, providing a more comprehensive understanding of biodiversity dynamics, and the ability to gauge the resilience of different vegetation patches.We conclude that the inclusion of plant phenology in biodiversity assessment is necessary, and that our modifications to paRao() will be valuable to facilitate the accurate detection and description of ecosystem trends in response to our changing environment.
+

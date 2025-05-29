@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Ontologies for single-cell experiments"
+date:   2024-08-29
+tags: BH23EU
+doi: 10.37044/osf.io/wr93q
+authors:
+  - name: Hannah Dörpholz
+    orcid: 0000-0002-0476-9699
+  - name: Sami Saarenpää
+    orcid: 0000-0003-4731-6857
+  - name: Naveed Ishaque
+  - name: Sara Carsanaro
+  - name: Maja Križnik
+---
+
+Research data management is becoming increasingly important in the scientific community. Acritical challenge in this field is making research data FAIR (findable, accessible, interoperableand reusable, (Wilkinson et al., 2016)). Metadata plays a vital role in this challenge as it allowsresearchers to accurately understand and recreate experiments. To tackle this challenge, variousapproaches are being taken towards this goal, including the development of domain-overarchingand domain-specific standards.In the different scientific communities, multiple general, as well as domain-specific minimuminformation standards have been developed, such as MIAPPE (Ćwiek-Kupczyńska, 2016), theminimum information about a plant phenotyping experiment, MIAME (H. Brazma A., 2001),the minimum information about a microarray experiment, and MINSEQE (B. Brazma A., 2012),the minimum information about a high-throughput sequencing experiment. These standards aredesigned to describe specific types of experiments. Recently, a minimum information standardfor single-cell experiments, minSCe (Minimum Information about a Single-Cell Experiment),has been introduced (Füllgrabe et al., 2020). However, it is not yet widely applied.Minimum information standards are an important part of the solution and should be built upon.In addition, the use of controlled vocabularies and ontology terms is also essential. Ontologyterms have a persistent identifier, an expressive name and a curated definition. Using theseterms enables different researchers to understand and recreate annotated experiments. In thisBioHackathon Europe project, we propose to expand biological, experimental and technicalmetadata schema as well as ontologies for single-cell experiments across domains with a focuson transcriptomics. This will facilitate the sharing and reuse of single-cell data and promotecollaboration among researchers in different domains. Our goal is to improve data managementpractices and enhance the reproducibility of single-cell research.
+

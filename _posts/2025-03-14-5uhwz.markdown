@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "2024 OME-NGFF workflows hackathon"
+date:   2025-03-14
+tags: OMENGFFWH24
+doi: 10.37044/osf.io/5uhwz_v2
+authors:
+  - name: Joel Lüthi
+    orcid: 0000-0003-3023-170X
+  - name: Marvin Albert
+  - name: Liviu Anita
+  - name: Kola Babalola
+  - name: Davis Bennett
+  - name: John A. Bogovic
+  - name: Lorenzo Cerrone
+  - name: Rémy Dornier
+  - name: Jan Eglinger
+  - name: Vera Galinova
+  - name: Reto Gerber
+    orcid: 0000-0001-5414-8906
+  - name: Oane Gros
+  - name: Stefan Hahmann
+  - name: Max Hess
+  - name: Ruth Hornbachner
+  - name: Dmytro Horyslavets
+  - name: Rachael Huxford
+  - name: Daniel Krentzel
+    orcid: 0000-0002-6234-7259
+  - name: Tong LI
+    orcid: 0000-0002-8240-4476
+  - name: Luca Marconato
+  - name: Matthew McCormick
+    orcid: 0000-0001-9475-3756
+  - name: Franziska Moos
+  - name: Filip Mroz
+  - name: Bugra Özdemir
+  - name: Benjamin Pavie
+  - name: Eric Perlman
+  - name: Maximilian Schulz
+  - name: Leonardo Schwarz
+  - name: Hannes M. Spitz
+  - name: David Stansby
+  - name: Fabio Steffen
+  - name: Szymon Stoma
+  - name: Flurin Sturzenegger
+  - name: Wouter-Michiel Vierdag
+    orcid: 0000-0003-1666-5421
+  - name: Jonas Windhager
+  - name: Kevin Yamauchi
+  - name: Igor Zubarev
+  - name: Josh Moore
+    orcid: 0000-0003-4028-811X
+  - name: Norman Rzepka
+  - name: Christian Tischer
+  - name: Vladimir Ulman
+  - name: Virginie Uhlmann
+---
+
+The 2024 OME-NGFF Workflows Hackathon, held at the BioVisionCenter at the University of Zurich, brought together an international group of researchers and developers to develop the ecosystem around the open, scalable, and FAIR bioimage file format OME-Zarr. Over five days, participants tackled key challenges in four main areas: (1) advancing the OME-Zarr specification, (2) enabling workflow interoperability by integrating OME-Zarr image processing tasks across multiple open-source frameworks, (3) expanding Java support for Zarr v3 and enhancing the compatibility of OME-Zarr with the popular bioimage analysis software Fiji, and (4) improving the Python resources supporting OME-Zarr. The event led to the release of OME-Zarr 0.5, which formalizes the adoption of Zarr v3 and introduces a sharding strategy to reduce file system overhead. This report provides an overview of the key discussions, outcomes, and future directions emerging from the hackathon, with the goal of fostering continued community engagement in developing OME-Zarr as a robust open bioimaging standard.
+
