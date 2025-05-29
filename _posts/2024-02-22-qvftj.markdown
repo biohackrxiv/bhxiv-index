@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Metadata handling for BioHackathon publications through BioHackrXiv"
+date:   2024-02-22
+tags: BH23EU
+doi: 10.37044/osf.io/qvftj
+authors:
+  - name: Mats Perk
+  - name: Arun Isaac
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+---
+
+This paper presents the work executed on BioHackrXiv during the international ELIXIR BioHackathon Europe in Paris, France, 2022. BioHackrXiv is a scholarly publication service for BioHackathons and codefests that target biology and the biomedical sciences in the spirit of pre-publishing platforms.
+

@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Building Towards a Machine-Actionable Software Management Plan: A BioHackathon Europe 2023 Report"
+date:   2024-03-19
+tags: BH23EU
+doi: 10.37044/osf.io/t94g8
+authors:
+  - name: Marek Suchánek
+    orcid: 0000-0001-7525-9218
+  - name: Vojtěch Knaisl
+  - name: Renato Alves
+    orcid: 0000-0002-7212-0234
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Fotis E. Psomopoulos
+    orcid: 0000-0002-0222-4273
+  - name: Eva Martin del Pico
+---
+
+This report provides an overview of our activities and accomplishments concerning machine-actionable Software Management Plans (SMPs) and the Software Management Wizard (SMW) during the ELIXIR BioHackathon Europe 2023. ELIXIR acknowledges the critical role of effective software management in facilitating sustainable and reproducible research outcomes. The Software Best Practices group is actively committed to establishing a robust framework for SMP creation. In this project, our primary focus is on streamlining the SMP creation process for research software within ELIXIR. To achieve this, we are working on developing essential integrators and identifying and reviewing the relevant metadata schema. This effort is closely aligned with various related initiatives such as OpenEBench, FAIR4RS, RDA, maSMPs, among others. The outcomes of the BioHackathon project are now available for immediate use and can be further refined in the future based on community feedback and advancements in research software best practices.
+

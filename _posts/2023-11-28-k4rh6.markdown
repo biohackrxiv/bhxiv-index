@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "The fourth annual Carnegie Mellon Libraries hackathon for biomedical data management, knowledge graphs, and deep learning"
+date:   2023-11-28
+tags: CMUDNA
+doi: 10.37044/osf.io/k4rh6
+authors:
+  - name: Jędrzej Kubica
+    orcid: 0000-0001-7037-3900
+  - name: Rachit Kumar
+    orcid: 0000-0002-7736-3307
+  - name: Glenda Tan
+  - name: Van Q. Truong
+  - name: David Enoma
+    orcid: 0000-0001-7300-8474
+  - name: Nicholas Cooley
+  - name: Minhyek Jeon
+  - name: Chiao-Feng Lin
+  - name: Minh Tran
+  - name: Amrita Roy Choudhury
+  - name: Xinrong Du
+  - name: Shashank Katiyar
+  - name: Andrew Lutsky
+  - name: Rajarshi Mondal
+  - name: Aniket Naik
+  - name: Soham Shirolkar
+  - name: Thomas Yu Chow Tam
+  - name: Qixin Amy Zhou
+  - name: Kristen L Scotti
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+In October 2023, a group of 44 scientists hailing from several U.S. states, Canada, Poland, and Switzerland came together for a hybrid in-person and virtual hackathon. The event was jointly hosted by Carnegie Mellon University Libraries and DNAnexus, a California-based cloud computing and bioinformatics company. This collaborative effort revolved around the theme of “Data Management and Graph Extraction for Large Transformer Models in the Biomedical Space.” In the spirit of fostering collaboration, participants organized themselves into five teams, which ultimately resulted in the successful completion of four hackathon projects. These projects encompassed a wide range of topics, from detecting features contributing to virus susceptibility to validating models using knowledge graphs. Repositories for the hackathon projects are available at https://github.com/collaborativebioinformatics. We hope that the insights and experiences shared by these teams, as detailed in the following manuscript, will prove valuable to the broader scientific community.
+

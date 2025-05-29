@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "BioHackEU23 report: Enabling continuous RDM using Annotated Research Contexts with RO-Crate profiles for ISA"
+date:   2024-01-03
+tags: BH23EU
+doi: 10.37044/osf.io/7y2jh
+authors:
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Timo Mühlhaus
+  - name: Cyril Pommier
+    orcid: 0000-0002-9040-8733
+  - name: Stuart Owen
+  - name: Dominik Brilhaus
+    orcid: 0000-0001-9021-3197
+  - name: Heinrich Lukas Weil
+  - name: Florian Wetzels
+  - name: Gavin Chait
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Gajendra Doniparthi
+  - name: Jonathan Bauer
+  - name: Sveinung Gundersen
+    orcid: 0000-0001-9888-7954
+  - name: Pável Vázquez
+---
+
+A prevailing paradigm in Research Data Management (RDM) is to publish research datasets in designated archives upon conclusion of a research process. However, it is beneficial to abandon the notion of final or static data artifacts and instead adopt a continuous approach towards working with research data, where data is constantly shared, versioned, and updated. This immutable yet evolving perspective allows for the application of existing technologies and processes from software engineering, such as continuous integration, release practices, and version management backed by decades of experience, and adaptable to RDM.To facilitate this, we propose the Annotated Research Context (ARC), a data and metadata layout convention based on the well-established ISA model for metadata annotation and implemented using Git repositories. ARCs are amenable towards frequent, lightweight data management operations, such as (meta)data validation and transformation. The Omnipy Python library is designed to help develop stepwise validated (meta)data transformations as scalable data flows that can be incrementally designed, updated, and rerun as requirements or data evolve.To demonstrate the concept of continuous RDM we will use Omnipy to define and orchestrate Git-backed CI/CD (Continuous Integration/Continuous Delivery) data flows to convert ISA metadata present in ARCs into validated RO-Crate representations adhering to the Bioschemas convention. A RO-Crate package combines the actual research data with its metadata description. Downstream, this allows semantic interpretation by Galaxy for e.g. workflow execution as well as machine-readable data access and data harvesting for search engines such as FAIDARE.
+

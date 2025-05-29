@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate"
+date:   2024-03-28
+tags: BH23EU
+doi: 10.37044/osf.io/7f94w
+authors:
+  - name: José María Fernández
+    orcid: 0000-0002-4806-5140
+  - name: Paula Iborra
+  - name: Sebastien Moretti
+    orcid: 0000-0003-3947-488X
+  - name: Arun Isaac
+  - name: Paul De Geest
+  - name: Stian Soiland-Reyes
+    orcid: 0000-0001-9842-9718
+---
+
+FAIR Computational Workflows argues that workflows should be FAIR scholarly community research objects in their own right as a kind of FAIR Research Software. In this project we go one step further, and argue that workflow executions should also be published with sufficient traces and structured metadata. Workflow Run RO-Crate is a set of profiles of RO-Crate that capture workflow provenance in a lightweight FAIR data package based on existing standards, in order to support traceability, reproducibility and interoperable description of diverse computational analysis. This use of RO-Crate allows the contextualization of a computational workflow and its execution, e.g. relating to people, organisations, projects, funding, data sources and wider research questions and studies.We have implemented the profile in multiple workflow systems, including Galaxy, COMPSs, StreamFlow, WfExS, Sapporo and Autosubmit. The command line tool runcrate can convert from the precursor CWLProv and display or validate crates according to the profiles. The crates are compatible with ELIXIR's WorkflowHub and support increasing levels of details, including documenting ad-hoc scripts without a workflow engine.WfExS is a workflow orchestrator designed for reproducible and secure workflow executions in isolated environments (like HPC). Every input, workflow and container being used in an execution must have either a public or permanent identifier, or at least a resolvable URI, so the execution scenario can be materialised. The execution scenario before and/or after the execution can be saved to RO-Crate.Here we bring together FAIR Computational Execution practitioners to mature and generalise this approach using Workflow Run Crate.
+

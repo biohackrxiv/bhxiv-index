@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "How to increase the findability, visibility, and impact of Galaxy tools for your scientific community"
+date:   2024-04-02
+tags: BH23EU
+doi: 10.37044/osf.io/qjbxc
+authors:
+  - name: Paul Zierep
+    orcid: 0000-0003-2982-388X
+  - name: Bérénice Batut
+    orcid: 0000-0001-9852-1987
+  - name: Matúš Kalaš
+    orcid: 0000-0002-1509-4981
+  - name: Tunc Kayikcioglu
+  - name: Engy Nasr
+  - name: Nicola Soranzo
+  - name: Wai Cheng Thang
+  - name: Joseph Wang
+  - name: Ove Johan Ragnar Gustafsson
+---
+
+The scale and diversity of available software options in the Galaxy ecosystem can make domain or community specific discovery of software challenging. Here, we present a semi-automated and reusable pipeline for creating tailored interactive tables that list the identity and metadata (e.g. bio.tools, EDAM) available for Galaxy tools in a specific community (e.g. microGalaxy, imaging). In addition, we also describe an annotation framework to improve the quality of the table contents, and training material to support the reuse of both the pipeline and table by additional communities. The sum of these contributions is expected to make it easier for Galaxy users to discover and understand the software within their research area, improve the annotation of these software resources, and allow other domains to enable equivalent discovery processes for their community.This work is the outcome of a BioHackathon Europe 2023 project.
+

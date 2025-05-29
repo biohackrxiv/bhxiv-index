@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "BioHackJP 2023 Report R1: Mapping human genome variations to their mouse counterparts for identifying disease model mouse strains"
+date:   2024-01-20
+tags: BH23JP
+doi: 10.37044/osf.io/8kuzr
+authors:
+  - name: Nobutaka Mitsuhashi
+    orcid: 0000-0003-3300-7308
+  - name: Hirokazu Chiba
+    orcid: 0000-0003-4062-8903
+  - name: Yuki Moriya
+  - name: Toyoyuki Takada
+    orcid: 0000-0001-6796-2085
+---
+
+In disease model mouse strains used for human disease studies, information on genomic variations is essential for elucidating the relationship between haplotypes and disease susceptibility. To select a disease model mouse appropriately, it is crucial to identify mouse variants with the same effect as disease-causing variants in humans. In BioHackathon Japan J2023, we focused on nucleotide variants involved in amino acid substitutions. We developed an API that matches mouse variants from the MoG+ database to human variants within gene regions defined by HGNC identifiers or symbols. After the Hackathon, we will map non-coding variants in addition to coding variants. The outcomes of our variant mapping will be presented as links connecting the comprehensive human variation database, TogoVar, and the model mouse genome database, MoG.
+

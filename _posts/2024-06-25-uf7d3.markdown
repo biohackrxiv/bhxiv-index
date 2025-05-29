@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "VIB Hackathon on spatial omics tools and methods"
+date:   2024-06-25
+tags: VIB24
+doi: 10.37044/osf.io/uf7d3
+authors:
+  - name: Benjamin Rombaut
+    orcid: 0000-0002-4022-715X
+  - name: Lotte Pollaris
+  - name: Chananchida Sang-aram
+  - name: Michiel Ver Cruysse
+  - name: Robrecht Cannoodt
+  - name: Frank Vernaillen
+  - name: Arne Defauw
+  - name: Julien Mortier
+  - name: Mayar Ali
+  - name: Kresimir Bestak
+  - name: Quentin Blampey
+  - name: Michele Bortolomeazzi
+  - name: Paula V M Cauhy
+  - name: Miraj Cetin
+  - name: Daniel Dimitrov
+  - name: Francesca Drummer
+  - name: Lorenzo Giordani
+  - name: Aroj Hada
+  - name: Luuk Harbers
+  - name: Migual A. Ibarra-Arellano
+  - name: Paul Kiessling
+    orcid: 0000-0002-9794-9532
+  - name: Laurens Lehner
+  - name: Susmita Mandal
+  - name: Benedetta Manzato
+  - name: Luca Marconato
+  - name: Claudio Novella-Rausell
+  - name: Anastasiia Okhtienko
+  - name: Giovanni Palla
+  - name: Daryna Pikulska
+  - name: Carlos Ariel Pulido-Vicuna
+  - name: Guillaume Sacchetti
+  - name: Alexander Sudy
+  - name: Lotte Van de Vreken
+  - name: Wouter-Michiel Vierdag
+  - name: Vladislav Vlasov
+  - name: Sai Nirmayi Yasa
+  - name: Estella Yixing Dong
+  - name: Ruth Seurinck
+  - name: Yvan Saeys
+---
+
+During a three-day hackathon, work was performed on various topics within the field of spatial omics data analysis. The topics were organized in five workgroups and included benchmarking, pipelines, spatial transcriptomics, spatial proteomics, spatial multi-omics and cell-cell communication. Most tools and methods were considered in the context of the Python ecosystem for spatial (SpatialData) and single-cell (scverse) data analysis.
+

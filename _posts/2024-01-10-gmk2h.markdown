@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas"
+date:   2024-01-10
+tags: BH23EU
+doi: 10.37044/osf.io/gmk2h
+authors:
+  - name: Stian Soiland-Reyes
+    orcid: 0000-0001-9842-9718
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Rohitha Ravinder
+  - name: Claus Weiland
+    orcid: 0000-0003-0351-6523
+  - name: Jonas Grieb
+  - name: Alexander Rogers
+    orcid: 0000-0002-4283-6135
+  - name: Christophe Blanchi
+  - name: Herbert Van de Sompel
+    orcid: 0000-0002-0715-6126
+---
+
+As part of the BioHackathon Europe 2023, we here report from the progress of the hackathon project #15: "Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas". We added Signposting to three existing resources, and made a Chrome browser extension to show Signposting headers. We added RO-Crate to two existing resources, and explored making a hybrid FDO using both a Handle PID Record and Signposting/RO-Crate approach.
+

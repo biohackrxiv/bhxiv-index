@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Bioschemas Resource Index for Chem and Plants"
+date:   2024-01-31
+tags: BH23EU
+doi: 10.37044/osf.io/yxunp
+authors:
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+  - name: Alessio Del Conte
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Yojana Gadiya
+    orcid: 0000-0002-7683-0452
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Ivan Mičetić
+  - name: Sebastien Moretti
+    orcid: 0000-0003-3947-488X
+  - name: Steffen Neumann
+  - name: Noura Rayya
+  - name: Ginger Tsueng
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Ulrike Wittig
+    orcid: 0000-0002-9077-5664
+---
+
+As part of the BioHackathon Europe 2023, we here report on the progress of the hacking team preparing a resource index and knowledge graph based on the JSON-LD Bioschemas markup from several resources in the life- and natural sciences, predominantly from the fields of plant- and (bio)chemistry research. This preliminary analysis will allow us to better understand how Bioschemas markup is currently used in these two communities, so we can take actions to improve guidelines and validation on the Bioschemas markup and the data providers side. The lessons learnt will be useful for other communities as well. The ultimate goal is facilitating and improving interoperability across resources.
+

@@ -1,12 +1,17 @@
 meetings:
+- CMUDNA:
+  tag: CMUDNA
+  title: "CMU DNAnexus BioHackathon, Pittsburg, USA, 2023"
+  year: 2023
+
 - Japan2018:
   tag: Japan2018
-  title: "BioHackathon: NBDC/DBCLS BioHackathon, Matsue, Japan, 2018"
+  title: "NBDC/DBCLS BioHackathon, Matsue, Japan, 2018"
   year: 2018
 
 - Japan2019:
   tag: Japan2019
-  title: "BioHackathon 2019, Fukuoka, Japan"
+  title: "NBDC/DBCLS BioHackathon 2019, Fukuoka, Japan"
   year: 2019
 
 - BH24EU:
@@ -16,12 +21,12 @@ meetings:
 
 - BH22DE:
   tag: BH22DE
-  title: "3rd BioHackathon Germany, Lutherstadt Wittenberg, Germany, 2022"
+  title: "BioHackathon Germany, Lutherstadt Wittenberg, Germany, 2022"
   year: 2022
 
 - BH24DE:
   tag: BH24DE
-  title: "3rd BioHackathon Germany, Kassel, Germany, 2024"
+  title: "BioHackathon Germany, Kassel, Germany, 2024"
   year: 2024
 
 - BH23JP:
@@ -51,12 +56,12 @@ meetings:
 
 - C19BH20:
   tag: C19BH20
-  title: "Virtual Covid-19 BioHackathon"
+  title: "Virtual BioHackathon Covid-2020"
   year: 2019
 
 - BH22JP:
   tag: BH22JP
-  title: "NBDC-DBCLS BioHackathon 2022, Kochi, Japan"
+  title: "NBDC/DBCLS BioHackathon 2022, Kochi, Japan"
   year: 2022
 
 - BH20EU:
@@ -66,17 +71,17 @@ meetings:
 
 - SWAT4HCLS25:
   tag: SWAT4HCLS25
-  title: "SWAT4HCLS 2025, Barcelona, Spain, 2025"
+  title: "SWAT4HCLS, Barcelona, Spain, 2025"
   year: 2025
 
 - AlienCSI:
   tag: AlienCSI
-  title: "BioHackathon: Alien CSI, Constanta, Romania, 2021"
+  title: "Alien CSI, Constanta, Romania, 2021"
   year: 2021
 
 - BGDC:
   tag: BGDC
-  title: "BioHackathon: Bringing Genomic Data to the Clinic, virtual, 2021"
+  title: "Bringing Genomic Data to the Clinic, virtual, 2021"
   year: 2021
 
 - BH21EU:
@@ -91,10 +96,16 @@ meetings:
 
 - BH24JP:
   tag: BH24JP
-  title: "DBCLS BioHackathon 2024"
+  title: "DBCLS BioHackathon 2024, Fukushima, Japan, 2024"
   year: 2024
 
 - NBSHW21:
   tag: NBSHW21
   title: "No Budget Science Hack Week, virtual, 2021"
   year: 2021
+
+- VIB24:
+  tag: VIB24
+  title: "VIB Hackathon June 2024, Ghent, Belgium, 2024"
+  year: 2024
+  

@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Benchmarks for Bioinformatics Workflow Bake Offs"
+date:   2024-01-03
+tags: BH23EU
+doi: 10.37044/osf.io/rq2da
+authors:
+  - name: Vedran Kasalica
+    orcid: 0000-0002-0097-1056
+  - name: Felipe Morato
+  - name: Anna-Lena Lamprecht
+    orcid: 0000-0003-1953-5606
+  - name: Magnus Palmblad
+    orcid: 0000-0002-5865-8994
+---
+
+This BioHackathon Project focused on establishing a "Great Bake Off of Bioinformatics Workflows" by developing workflow-level benchmarks for evaluating tools in computational tasks. Initially tested in proteomics, the project expanded to genomics and metabolomics. Collaborating with ELIXIR Implementation Studies, the team created rudimentary benchmarks, aiming for formalization before production use. The project consolidated efforts to produce a minimum set of workflow-specific benchmarks, aligning tools and workflow definitions. Short-term goals include drafting benchmarks with examples, while long-term plans involve implementing them in the Workflomics project and Proteomics Community ELIXIR Implementation Studies for community sharing.
+
