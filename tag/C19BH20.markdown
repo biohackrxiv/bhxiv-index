@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "BioHackathon: Virtual Covid-19 BioHackathon"
+title: "NBDC/DBCLS BioHackathon, Fukuoka, Japan, 2019"
 tag: C19BH20
 ---
 

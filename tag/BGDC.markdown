@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "BioHackathon: Bringing Genomic Data to the Clinic, virtual, 2021"
+title: "Bringing Genomic Data to the Clinic, virtual, 2021"
 tag: BGDC
 ---
 

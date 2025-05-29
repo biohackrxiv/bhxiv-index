@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "BioHackathon: BioHackathon Europe, Virtual, 2020"
+title: "BioHackathon Europe 2020 Online"
 tag: BH20EU
 ---

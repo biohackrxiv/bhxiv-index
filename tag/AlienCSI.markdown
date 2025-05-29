@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "BioHackathon: Alien CSI, Constanta, Romania, 2021"
+title: "Alien CSI, Constanta, Romania, 2021"
 tag: AlienCSI
 ---
 

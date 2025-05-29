@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "BioHackathon 2019, Fukuoka, Japan"
+title: "NBDC/DBCLS BioHackathon, Fukuoka, Japan, 2019"
 tag: Japan2019
 ---
