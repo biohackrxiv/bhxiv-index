@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "BioHackathon 2019, Fukuoka, Japan, 2018"
+title: "BioHackathon 2019, Fukuoka, Japan"
 tag: Japan2019
 ---

@@ -1,0 +1,80 @@
+meetings:
+- Japan2018:
+  title: "BioHackathon: NBDC/DBCLS BioHackathon, Matsue, Japan, 2018"
+  year: 2018
+
+- Japan2019:
+  title: "BioHackathon 2019, Fukuoka, Japan"
+  year: 2019
+
+- BH24EU:
+  title: "BioHackathon Europe, Barcelona, Spain, 2024"
+  year: 2024
+
+- BH22DE:
+  title: "3rd BioHackathon Germany, Lutherstadt Wittenberg, Germany, 2022"
+  year: 2022
+
+- BH24DE:
+  title: "3rd BioHackathon Germany, Kassel, Germany, 2024"
+  year: 2024
+
+- BH23JP:
+  title: "DBCLS BioHackathon 2023, Kagawa, Japan"
+  year: 2023
+
+- BH19EU:
+  title: "BioHackathon Europe, Paris, France, 2019"
+  year: 2019
+
+- BH22EU:
+  title: "BioHackathon Europe, Paris, France, 2022"
+  year: 2022
+
+- BH21JP:
+  title: "DBCLS BioHackathon 2021, Aomori, Japan"
+  year: 2021
+
+- INTOXICOM:
+  title: "ELIXIR Toxicology Community: INTOXICOM"
+  year: 2024
+
+- C19BH20:
+  title: "Virtual Covid-19 BioHackathon"
+  year: 2019
+
+- BH22JP:
+  title: "NBDC-DBCLS BioHackathon 2022, Kochi, Japan"
+  year: 2022
+
+- BH20EU:
+  title: "BioHackathon Europe, Virtual, 2020"
+  year: 2020
+
+- SWAT4HCLS25:
+  title: "SWAT4HCLS 2025, Barcelona, Spain, 2025"
+  year: 2025
+
+- AlienCSI:
+  title: "BioHackathon: Alien CSI, Constanta, Romania, 2021"
+  year: 2021
+
+- BGDC:
+  title: "BioHackathon: Bringing Genomic Data to the Clinic, virtual, 2021"
+  year: 2021
+
+- BH21EU:
+  title: "BioHackathon Europe, Barcelona, Spain, 2021"
+  year: 2021
+
+- BH23EU:
+  title: "BioHackathon Europe, Barcelona, Spain, 2023"
+  year: 2023
+
+- BH24JP:
+  title: "DBCLS BioHackathon 2024"
+  year: 2024
+
+- NBSHW21:
+  title: "No Budget Science Hack Week, virtual, 2021"
+  year: 2021
