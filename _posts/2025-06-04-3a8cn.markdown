@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Addressing Background Genomic and Environmental Effects on Health through Accelerated Computing and Machine Learning: Results from the 2025 Hackathon at Carnegie Mellon University"
+date:   2025-06-04
+tags: CMUDNA25
+doi: 10.37044/osf.io/3a8cn_v1
+authors:
+  - name: Siddharth Sabata
+  - name: Jędrzej Kubica
+  - name: Rishika Gupta
+  - name: Lars Warren Ericson
+  - name: Halimat Chisom Atanda
+  - name: Gobikrishnan Subramaniam
+  - name: Abraham G. Moller
+  - name: Rachael Oluwakamiye Abolade
+  - name: Arth Banka
+  - name: Samuel Blechman
+  - name: Rorry Brenner
+  - name: Maria Chikina
+  - name: Li Chuin Chong
+  - name: Nicholas Cooley
+  - name: Daniel Chang
+  - name: Phil Greer
+  - name: Anshika Gupta
+  - name: Avish A. Jha
+  - name: Emrah Kacar
+  - name: Nanami Kubota
+  - name: William Lu
+  - name: Louison Luo
+  - name: Tien Ly
+  - name: Rajarshi Mondal
+  - name: Ciara O’Donoghue
+  - name: Aung Myat Phyo
+  - name: Peng Qiu
+  - name: Glenn Ross-Dolan
+  - name: Ali Saadat
+  - name: Shivank Sadasivan
+  - name: Rebecca Satterwhite
+  - name: Soham Shirolkar
+  - name: Yuning Zheng
+  - name: Huajin Wang
+    orcid: 0000-0003-0121-4257
+  - name: Melanie Gainey
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+In March 2025, 34 scientists from the United States, Ireland, the United Kingdom, Switzerland,France, Germany, Spain, India, and Australia gathered in Pittsburgh, Pennsylvania and virtuallyfor a collaborative biohackathon, hosted by DNAnexus and Carnegie Mellon University Libraries.The goal of the hackathon was to explore machine learning approaches for multimodalproblems in computational biology using public datasets. Teams worked on the followinginnovative projects: applying machine learning techniques for clustering and similarity analysisof haplotypes; adapting the StructLMM framework to study Gene-Gene (GxG) interactions;creating a nextflow workflow for generating an imputation reference panel using large-scalecohort data; optimizing discovery of causal relationships in large electronic health record (EHR)datasets using the open source causal analysis software Tetrad; examining the evolution of agraph neural network in a Lenski-esque experiment; and developing tools and workflows forgenerating pathway intersection diagrams and graph-based analyses for multiomics data. Allprojects were dedicated to study the background genomic and environmental effects underlyingcomplex genotype-phenotype relationships. Their objective was to set foundations for furtherstudies on predicting complex phenotypic traits using integrative multi-omic and environmentalanalyses.
+

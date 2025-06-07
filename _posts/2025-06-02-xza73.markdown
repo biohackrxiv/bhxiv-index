@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Leveraging RDF and CURIE metadata resolution with identifiers.org"
+date:   2025-06-02
+tags: BH24EU
+doi: 10.37044/osf.io/xza73_v1
+authors:
+  - name: Renato Juacaba Neto
+    orcid: 0000-0002-0626-984X
+  - name: Nick Juty
+  - name: Vijay Subramoniam
+  - name: Rose Neis
+  - name: Shuya Ikeda
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Henning Hermjakob
+---
+
+Identifiers.org provides two core services for CURIEs in life sciences. One is a registry of CURIE prefixes and URL locations that contain entries for the main life sciences datasets. The other is a resolver that allows for consistent data access using registry information to redirect to current URLs for CURIE identifiers. For this work, we aimed to expand these services to facilitate the integration of CURIE-related metadata into different contexts. The first part of this exports the registry in RDF with a SPARQL server to allow queries on the dataset. Through these, RDF-based systems can associate with registry metadata on different data collections. Allowing, for example, services that have identifiers.org URLs to collect metadata on the collection that it references. The second part expands on the existing metadata resolver to be able to collect CURIE-related metadata from different metadata providers.While the previous resolver could only collect LDJSON notations from pages, it can now be expanded to collect from any metadata provider.For this work, we implement two proof of concept retrievers, one for EBI Search, a text search engine that allows for metadata acquisition, and one for TogoID, an ID mapping service for life sciences.Finally, we gather some future tasks for identifiers.org services.
+
