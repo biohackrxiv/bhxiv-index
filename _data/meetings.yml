@@ -4,6 +4,11 @@ meetings:
   title: "CMU DNAnexus BioHackathon, Pittsburg, USA, 2023"
   year: 2023
 
+- CMUDNA25:
+  tag: CMUDNA
+  title: "CMU DNAnexus BioHackathon, Pittsburg, USA, 2025"
+  year: 2025
+
 - Japan2018:
   tag: Japan2018
   title: "NBDC/DBCLS BioHackathon, Matsue, Japan, 2018"
