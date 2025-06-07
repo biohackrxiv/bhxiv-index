@@ -4,6 +4,7 @@ title:  "Secure Processing Environments as a Service in the de.NBI Cloud"
 date:   2025-03-11
 tags: BH24DE
 doi: 10.37044/osf.io/pzmue_v1
+europepmc: PPR988771
 authors:
   - name: Martin Braun
   - name: Alexander Kanitz

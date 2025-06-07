@@ -4,6 +4,7 @@ title:  "BioHackEU24 report: Expanding FAIR database integration through elucida
 date:   2025-05-17
 tags: BH24EU
 doi: 10.37044/osf.io/ptmg5_v1
+europepmc: PPR1022222
 authors:
   - name: Javier Millán Acosta
   - name: Shuichi Kawashima

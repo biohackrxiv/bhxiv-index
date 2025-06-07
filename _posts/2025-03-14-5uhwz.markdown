@@ -4,6 +4,7 @@ title:  "2024 OME-NGFF workflows hackathon"
 date:   2025-03-14
 tags: OMENGFFWH24
 doi: 10.37044/osf.io/5uhwz_v2
+europepmc: PPR989591
 authors:
   - name: Joel Lüthi
     orcid: 0000-0003-3023-170X

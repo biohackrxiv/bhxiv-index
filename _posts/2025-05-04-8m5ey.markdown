@@ -4,6 +4,7 @@ title:  "Enhancing bio.tools by Semantic Literature Mining"
 date:   2025-05-04
 tags: BH24EU
 doi: 10.37044/osf.io/8m5ey_v1
+europepmc: PPR1013744
 authors:
   - name: Aleksandra Szmigiel
   - name: Ana Mendes

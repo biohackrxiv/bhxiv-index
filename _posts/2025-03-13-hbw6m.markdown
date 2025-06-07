@@ -4,6 +4,7 @@ title:  "Development of FAIR image analysis workflows and training in Galaxy"
 date:   2025-03-13
 tags: BH24EU
 doi: 10.37044/osf.io/hbw6m_v1
+europepmc: PPR988770
 authors:
   - name: Leonid Kostrykin
   - name: Boris Depoortere

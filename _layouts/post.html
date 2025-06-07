@@ -45,6 +45,12 @@ layout: base
         </span>
       {% endif %}
 
+      {% if page.europepmc %}
+        <br /><br /><span class="post-meta">
+        <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
+        </span>
+      {% endif %}
+
       {% if page.tags.size > 0 %}
         <br /><br /><span class="post-meta">
         {% for tag in page.tags %}
@@ -77,6 +83,7 @@ layout: base
         {% endfor %}
         </span>
       {% endif %}
+
     </p>   
 
   </header>

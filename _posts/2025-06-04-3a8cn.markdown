@@ -4,6 +4,7 @@ title:  "Addressing Background Genomic and Environmental Effects on Health throu
 date:   2025-06-04
 tags: CMUDNA25
 doi: 10.37044/osf.io/3a8cn_v1
+europepmc: PPR1030665
 authors:
   - name: Siddharth Sabata
   - name: Jędrzej Kubica

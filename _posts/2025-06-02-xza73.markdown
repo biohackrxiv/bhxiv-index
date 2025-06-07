@@ -4,6 +4,7 @@ title:  "Leveraging RDF and CURIE metadata resolution with identifiers.org"
 date:   2025-06-02
 tags: BH24EU
 doi: 10.37044/osf.io/xza73_v1
+europepmc: PPR1030229
 authors:
   - name: Renato Juacaba Neto
     orcid: 0000-0002-0626-984X

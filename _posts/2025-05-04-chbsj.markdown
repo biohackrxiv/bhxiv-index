@@ -4,6 +4,7 @@ title:  "Reusable RDM Planning Environments for Trainings and Workshops: A BioHa
 date:   2025-05-04
 tags: BH24EU
 doi: 10.37044/osf.io/chbsj_v1
+europepmc: PPR1013414
 ---
 
 This report provides an overview of our activities and accomplishments related to the creation of reusable RDM
