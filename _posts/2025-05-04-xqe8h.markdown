@@ -4,6 +4,8 @@ title:  "BioHackSWAT4HCLS25 report: Towards AI-Ready Datasets for the Life Scien
 date:   2025-05-04
 tags: SWAT4HCLS25
 doi: 10.37044/osf.io/xqe8h_v1
+europepmc: PPR1013743
+wikidata: Q134351095
 ---
 
 At the SWAT4HCLS 2025 Hackathon, we continued our work on dataset interoperability and AI-readiness, extending our

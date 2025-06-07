@@ -5,6 +5,7 @@ date:   2025-04-08
 tags: BH24EU
 doi: 10.37044/osf.io/dsgnw_v1
 europepmc: PPR1001014
+wikidata: Q133835656
 authors:
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679

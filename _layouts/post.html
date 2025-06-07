@@ -45,9 +45,14 @@ layout: base
         </span>
       {% endif %}
 
-      {% if page.europepmc %}
+      {% if page.europepmc or page.wikidata %}
         <br /><br /><span class="post-meta">
-        <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
+        {% if page.europepmc %} 
+          <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
+        {% endif %}
+        {% if page.wikidata %} 
+          <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.wikidata | prepend:'https://scholia.toolforge.org/work/' }}">Scholia</a>&nbsp;
+        {% endif %}
         </span>
       {% endif %}
 
