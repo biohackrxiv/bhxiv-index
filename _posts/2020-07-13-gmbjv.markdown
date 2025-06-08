@@ -4,6 +4,7 @@ title:  "Disease and pathway maps for Rare Diseases"
 date:   2020-07-13
 tags: BH19EU
 doi: 10.37044/osf.io/gmbjv
+wikidata: Q133894150
 authors:
   - name: Piotr Gawron
   - name: David Hoksza

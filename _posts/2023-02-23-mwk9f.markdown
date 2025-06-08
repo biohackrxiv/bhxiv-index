@@ -4,6 +4,7 @@ title:  "Streamlining data brokering from Research Data Management platforms to 
 date:   2023-02-23
 tags: BH22EU
 doi: 10.37044/osf.io/mwk9f
+wikidata: Q117715424
 authors:
   - name: Flora D'Anna
   - name: Zahra Waheed

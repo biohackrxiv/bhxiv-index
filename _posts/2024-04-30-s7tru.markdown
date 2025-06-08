@@ -4,6 +4,7 @@ title:  "How to improve the annotation of Galaxy resources? Outcomes of an onlin
 date:   2024-04-30
 tags: BH23EU
 doi: 10.37044/osf.io/s7tru
+wikidata: Q125749715
 authors:
   - name: Bérénice Batut
     orcid: 0000-0001-9852-1987

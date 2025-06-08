@@ -4,6 +4,7 @@ title:  "An ETL pipeline to construct the Intrinsically Disordered Proteins Know
 date:   2022-11-26
 tags: BH22EU
 doi: 10.37044/osf.io/7f95d
+wikidata: Q115449286
 authors:
   - name: Ammar Ammar
     orcid: 0000-0002-8399-8990

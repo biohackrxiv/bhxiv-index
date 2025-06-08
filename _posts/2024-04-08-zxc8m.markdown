@@ -4,6 +4,7 @@ title:  "Synergising ELIXIR resources for training in systems biology"
 date:   2024-04-08
 tags: BH23EU
 doi: 10.37044/osf.io/zxc8m
+wikidata: Q125470384
 authors:
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679

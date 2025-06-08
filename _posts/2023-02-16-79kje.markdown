@@ -4,6 +4,7 @@ title:  "An evaluation of EDAM coverage in the Tools Ecosystem and prototype int
 date:   2023-02-16
 tags: BH22EU
 doi: 10.37044/osf.io/79kje
+wikidata: Q117355989
 authors:
   - name: Lucie Lamothe
   - name: Jennifer Rugaard Bregndahl Jensen

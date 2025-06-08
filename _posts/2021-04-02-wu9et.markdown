@@ -4,6 +4,7 @@ title:  "Knowledge graphs and wikidata subsetting"
 date:   2021-04-02
 tags: BH20EU
 doi: 10.37044/osf.io/wu9et
+wikidata: Q106697289
 authors:
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348

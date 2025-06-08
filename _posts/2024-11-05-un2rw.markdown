@@ -4,6 +4,7 @@ title:  "INTOXICOM Workshop Report: FAIRification of Toxicological Research Outp
 date:   2024-11-05
 tags: INTOXICOM
 doi: 10.37044/osf.io/un2rw
+wikidata: Q131007824
 authors:
   - name: Marvin Martens
   - name: Iseult Lynch

@@ -4,6 +4,7 @@ title:  "BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Da
 date:   2023-07-30
 tags: BH22EU
 doi: 10.37044/osf.io/24jst
+wikidata: Q123235524
 authors:
   - name: Ignacio Eguinoa
   - name: Marek Suchánek

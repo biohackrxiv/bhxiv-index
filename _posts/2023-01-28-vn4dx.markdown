@@ -4,6 +4,7 @@ title:  "BioHackEU22 Report for Project 16: Make your own or favourite software 
 date:   2023-01-28
 tags: BH22EU
 doi: 10.37044/osf.io/vn4dx
+wikidata: Q123236250
 authors:
   - name: Sebastien Moretti
     orcid: 0000-0003-3947-488X

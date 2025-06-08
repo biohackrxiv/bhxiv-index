@@ -4,6 +4,7 @@ title:  "Characterization of Potential Drug Treatments for COVID-19 using Twitte
 date:   2020-06-03
 tags: C19BH20
 doi: 10.37044/osf.io/cu2s9
+wikidata: Q134738007
 authors:
   - name: Ramya Tekumalla
     orcid: 0000-0002-1606-4856

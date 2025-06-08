@@ -4,6 +4,7 @@ title:  "Expanding data on cultivation media and microbial traits"
 date:   2024-09-05
 tags: BH24JP
 doi: 10.37044/osf.io/qxpn8
+wikidata: Q130243365
 authors:
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129

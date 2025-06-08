@@ -4,6 +4,7 @@ title:  "BioHackEU22 Report for Project 31: The What &amp;amp; How in data manag
 date:   2023-06-15
 tags: BH22EU
 doi: 10.37044/osf.io/emc2f
+wikidata: Q124467337
 authors:
   - name: Danielle Welter
     orcid: 0000-0003-1058-2668

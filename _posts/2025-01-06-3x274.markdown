@@ -4,6 +4,7 @@ title:  "Enhancing multi-omic analyses through a federated microbiome analysis s
 date:   2025-01-06
 tags: BH24EU
 doi: 10.37044/osf.io/3x274
+wikidata: Q131798238
 authors:
   - name: Alexander Rogers
     orcid: 0000-0002-4283-6135

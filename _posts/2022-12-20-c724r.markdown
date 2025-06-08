@@ -4,6 +4,7 @@ title:  "BioHackEU22 Project 22: Plant data exchange and standard interoperabili
 date:   2022-12-20
 tags: BH22EU
 doi: 10.37044/osf.io/c724r
+wikidata: Q115787802
 authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938

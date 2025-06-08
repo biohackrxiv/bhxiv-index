@@ -4,6 +4,7 @@ title:  "Bioschemas Resource Index for Chem and Plants"
 date:   2024-01-31
 tags: BH23EU
 doi: 10.37044/osf.io/yxunp
+wikidata: Q124400147
 authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938

@@ -4,6 +4,7 @@ title:  "Global analysis of human SARS-CoV-2 infection and host-virus interactio
 date:   2020-05-14
 tags: C19BH20
 doi: 10.37044/osf.io/b4zkp
+wikidata: Q123271870
 authors:
   - name: Mariana Ferrarini
   - name: Vanessa Aguiar-Pulido

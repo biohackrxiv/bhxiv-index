@@ -4,6 +4,7 @@ title:  "BioHackEU23 report: Extending interoperability of experimental data usi
 date:   2023-12-02
 tags: BH23EU
 doi: 10.37044/osf.io/mhsqp
+wikidata: Q123631001
 authors:
   - name: Yojana Gadiya
     orcid: 0000-0002-7683-0452

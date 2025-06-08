@@ -4,6 +4,7 @@ title:  "BioHackEU24 report: ORCID and ROR identifiers in BioHackrXiv reports"
 date:   2025-03-06
 tags: BH24EU
 doi: 10.37044/osf.io/p9u42_v1
+wikidata: Q133262111
 authors:
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286

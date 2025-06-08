@@ -4,6 +4,7 @@ title:  "BioHackJP 2023 Report R4: integration of glyco data with chemo-, geno-,
 date:   2023-07-04
 tags: BH23JP
 doi: 10.37044/osf.io/mq54k
+wikidata: Q120669334
 authors:
   - name: Kiyoko Flora Aoki-Kinoshita
   - name: Evan Bolton

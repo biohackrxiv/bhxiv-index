@@ -4,6 +4,7 @@ title:  "BioHackJP 2023 Report R3: Expand the pathway analysis environment to no
 date:   2023-07-12
 tags: BH23JP
 doi: 10.37044/osf.io/4uskb
+wikidata: Q120669123
 authors:
   - name: Alexander Pico
   - name: Hiromasa Ono

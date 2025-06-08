@@ -4,6 +4,7 @@ title:  "DBCLS BioHackathon 2024 report: Everything about workflow and container
 date:   2024-08-31
 tags: BH24JP
 doi: 10.37044/osf.io/6qrau
+wikidata: Q130243386
 authors:
   - name: Tomoya Tanjo
     orcid: 0000-0002-4421-9659

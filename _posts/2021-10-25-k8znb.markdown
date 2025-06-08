@@ -4,6 +4,7 @@ title:  "ELIXIR Software Management Plan for Life Sciences"
 date:   2021-10-25
 tags: BH20EU
 doi: 10.37044/osf.io/k8znb
+wikidata: Q115452248
 authors:
   - name: Renato Alves
     orcid: 0000-0002-7212-0234

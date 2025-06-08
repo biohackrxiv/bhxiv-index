@@ -4,6 +4,7 @@ title:  "Rendering co-author graphs using linked-open-data from Wikidata"
 date:   2023-11-11
 tags: BH23EU
 doi: 10.37044/osf.io/py5jq
+wikidata: Q123601043
 authors:
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286

@@ -4,6 +4,7 @@ title:  "Data validation and schema interoperability"
 date:   2020-04-07
 tags: Japan2019
 doi: 10.37044/osf.io/8qdse
+wikidata: Q133894194
 authors:
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510

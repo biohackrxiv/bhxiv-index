@@ -4,6 +4,7 @@ title:  "Metadata handling for BioHackathon publications through BioHackrXiv"
 date:   2024-02-22
 tags: BH23EU
 doi: 10.37044/osf.io/qvftj
+wikidata: Q124638512
 authors:
   - name: Mats Perk
   - name: Arun Isaac

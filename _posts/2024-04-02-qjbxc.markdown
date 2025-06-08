@@ -4,6 +4,7 @@ title:  "How to increase the findability, visibility, and impact of Galaxy tools
 date:   2024-04-02
 tags: BH23EU
 doi: 10.37044/osf.io/qjbxc
+wikidata: Q125470373
 authors:
   - name: Paul Zierep
     orcid: 0000-0003-2982-388X

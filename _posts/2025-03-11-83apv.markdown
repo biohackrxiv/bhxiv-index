@@ -4,6 +4,7 @@ title:  "Simplifying and Standardizing the Creation of Data Use Agreements for L
 date:   2025-03-11
 tags: BH24DE
 doi: 10.37044/osf.io/83apv_v1
+wikidata: Q133262251
 authors:
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818

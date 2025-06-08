@@ -4,6 +4,7 @@ title:  "TogoEx: the integration of gene expression data"
 date:   2020-07-13
 tags: BH19EU
 doi: 10.37044/osf.io/esrc9
+wikidata: Q123154733
 authors:
   - name: Hidemasa Bono
     orcid: 0000-0003-4413-0651

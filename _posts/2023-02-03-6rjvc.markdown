@@ -4,6 +4,7 @@ title:  "CiTO support for BioHackrXiv"
 date:   2023-02-03
 tags: BH21EU
 doi: 10.37044/osf.io/6rjvc
+wikidata: Q116745331
 authors:
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286

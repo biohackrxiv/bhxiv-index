@@ -4,6 +4,7 @@ title:  "BioHackEU23 report: Enabling continuous RDM using Annotated Research Co
 date:   2024-01-03
 tags: BH23EU
 doi: 10.37044/osf.io/7y2jh
+wikidata: Q124366794
 authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781

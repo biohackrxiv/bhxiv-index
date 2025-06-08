@@ -4,6 +4,7 @@ title:  "Enhancement and Reusage of Biomedical Knowledge Graph Subsets"
 date:   2022-11-17
 tags: BH22EU
 doi: 10.37044/osf.io/n7qku
+wikidata: Q124486231
 authors:
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348

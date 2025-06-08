@@ -4,6 +4,7 @@ title:  "Metadata for BioHackrXiv Markdown publications"
 date:   2022-11-30
 tags: BH20EU
 doi: 10.37044/osf.io/ueqkj
+wikidata: Q116676982
 authors:
   - name: Pjotr Prins
     orcid: 0000-0002-8021-9162

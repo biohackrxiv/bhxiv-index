@@ -4,6 +4,7 @@ title:  "BioHackEU23 report: Enabling FAIR Digital Objects with RO-Crate, Signpo
 date:   2024-01-10
 tags: BH23EU
 doi: 10.37044/osf.io/gmk2h
+wikidata: Q124366691
 authors:
   - name: Stian Soiland-Reyes
     orcid: 0000-0001-9842-9718

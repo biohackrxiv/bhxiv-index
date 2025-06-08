@@ -4,6 +4,7 @@ title:  "BioHackEU24 report: Bioschemas for Mortals"
 date:   2025-02-03
 tags: BH24EU
 doi: 10.37044/osf.io/dch6w_v2
+wikidata: Q131938290
 authors:
   - name: Phil Reed
     orcid: 0000-0002-4479-715X

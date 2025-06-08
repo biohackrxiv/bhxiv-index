@@ -4,6 +4,7 @@ title:  "BioHack24 report: Using discovered RDF schemes: a compilation of potent
 date:   2024-12-11
 tags: BH24JP
 doi: 10.37044/osf.io/b4j7y
+wikidata: Q131538114
 authors:
   - name: Daniel Fernández Álvarez
     orcid: 0000-0002-8666-7660

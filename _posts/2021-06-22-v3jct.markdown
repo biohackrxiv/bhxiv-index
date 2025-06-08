@@ -4,6 +4,7 @@ title:  "Exploiting Bioschemas Markup to Populate IDPcentral"
 date:   2021-06-22
 tags: BH20EU
 doi: 10.37044/osf.io/v3jct
+wikidata: Q115449349
 authors:
   - name: Alasdair J. G. Gray
     orcid: 0000-0002-5711-4872

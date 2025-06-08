@@ -4,6 +4,7 @@ title:  "Connecting molecular sequences to their voucher specimens"
 date:   2021-03-03
 tags: BH20EU
 doi: 10.37044/osf.io/93qf4
+wikidata: Q115452281
 authors:
   - name: Quentin John Groom
     orcid: 0000-0002-0596-5376

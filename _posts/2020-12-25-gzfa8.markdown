@@ -4,6 +4,7 @@ title:  "Linking PubDictionaries with UniBioDicts to support Community Curation"
 date:   2020-12-25
 tags: BH20EU
 doi: 10.37044/osf.io/gzfa8
+wikidata: Q106638258
 authors:
   - name: John Zobolas
     orcid: 0000-0002-3609-8674

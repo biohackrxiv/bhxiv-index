@@ -4,6 +4,7 @@ title:  "Network analysis of specimen co-collection"
 date:   2021-12-07
 tags: BH21EU
 doi: 10.37044/osf.io/4ahng
+wikidata: Q123282159
 authors:
   - name: Sofie Meeus
   - name: Tom August

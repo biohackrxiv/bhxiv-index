@@ -4,6 +4,7 @@ title:  "Enhancing the image analysis community in Galaxy"
 date:   2024-04-08
 tags: BH23EU
 doi: 10.37044/osf.io/w8dsz
+wikidata: Q125470379
 authors:
   - name: Leonid Kostrykin
   - name: Tatiana Woller

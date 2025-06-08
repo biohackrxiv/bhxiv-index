@@ -5,6 +5,7 @@ date:   2025-03-13
 tags: BH24EU
 doi: 10.37044/osf.io/hbw6m_v1
 europepmc: PPR988770
+wikidata: Q133280308
 authors:
   - name: Leonid Kostrykin
   - name: Boris Depoortere

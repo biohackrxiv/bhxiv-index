@@ -4,6 +4,7 @@ title:  "Improving Metadata Collection and Aggregation in Plant Phenotyping Expe
 date:   2023-04-06
 tags: BH22DE
 doi: 10.37044/osf.io/ekhdw
+wikidata: Q117715025
 authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938

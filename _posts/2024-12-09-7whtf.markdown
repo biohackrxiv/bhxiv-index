@@ -4,6 +4,7 @@ title:  "Publishing FAIR datasets from Bioimaging repositories"
 date:   2024-12-09
 tags: SWAT4HCLS24
 doi: 10.37044/osf.io/7whtf
+wikidata: Q131417192
 authors:
   - name: Stefan Dvoretskii
     orcid: 0000-0001-7769-0167

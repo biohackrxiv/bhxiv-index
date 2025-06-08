@@ -4,6 +4,7 @@ title:  "BioHack24 report: Toward improving mechanisms for extracting RDF shapes
 date:   2024-12-11
 tags: BH24JP
 doi: 10.37044/osf.io/fd6we
+wikidata: Q131538082
 authors:
   - name: Daniel Fernández Álvarez
     orcid: 0000-0002-8666-7660

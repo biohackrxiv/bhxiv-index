@@ -4,6 +4,7 @@ title:  "Building Towards a Machine-Actionable Software Management Plan: A BioHa
 date:   2024-03-19
 tags: BH23EU
 doi: 10.37044/osf.io/t94g8
+wikidata: Q125473097
 authors:
   - name: Marek Suchánek
     orcid: 0000-0001-7525-9218

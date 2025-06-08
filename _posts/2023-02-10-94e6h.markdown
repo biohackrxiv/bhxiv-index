@@ -4,6 +4,7 @@ title:  "Empowering the community with notebooks for bespoke microbiome analyses
 date:   2023-02-10
 tags: BH22EU
 doi: 10.37044/osf.io/94e6h
+wikidata: Q116757212
 authors:
   - name: Alexander Rogers
     orcid: 0000-0002-4283-6135

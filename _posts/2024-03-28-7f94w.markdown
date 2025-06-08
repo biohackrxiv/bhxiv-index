@@ -4,6 +4,7 @@ title:  "BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate"
 date:   2024-03-28
 tags: BH23EU
 doi: 10.37044/osf.io/7f94w
+wikidata: Q130637865
 authors:
   - name: José María Fernández
     orcid: 0000-0002-4806-5140

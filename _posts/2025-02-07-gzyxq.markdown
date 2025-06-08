@@ -4,6 +4,7 @@ title:  "BioHackGermany24 report: User-friendly ISA-based metadata annotation of
 date:   2025-02-07
 tags: BH24DE
 doi: 10.37044/osf.io/gzyxq_v1
+wikidata: Q132173125
 authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781

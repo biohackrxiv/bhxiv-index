@@ -4,6 +4,7 @@ title:  "BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine
 date:   2025-02-02
 tags: BH24EU
 doi: 10.37044/osf.io/x9d6b_v1
+wikidata: Q132125060
 authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781

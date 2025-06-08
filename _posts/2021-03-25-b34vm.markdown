@@ -4,6 +4,7 @@ title:  "SB4ER: an ELIXIR Service Bundle for Epidemic Response"
 date:   2021-03-25
 tags: BH20EU
 doi: 10.37044/osf.io/b34vm
+wikidata: Q133894370
 authors:
   - name: CASTRENSE SAVOJARDO
     orcid: 0000-0002-7359-0633

@@ -4,6 +4,7 @@ title:  "Bioschemas data harvesting project report"
 date:   2022-03-25
 tags: BH21EU
 doi: 10.37044/osf.io/y6gbq
+wikidata: Q124400502
 authors:
   - name: Alasdair J. G. Gray
     orcid: 0000-0002-5711-4872
