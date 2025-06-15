@@ -2,7 +2,7 @@ arkdown: kramdown
 title: BioHackrXiv Preprints
 description: Preprints for BioHackathons
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://egonw.github.io/bh-demo/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://index.biohackrxiv.org/" # the base hostname & protocol for your site, e.g. http://example.com
 social:
   - title: GitHub
     platform: github
