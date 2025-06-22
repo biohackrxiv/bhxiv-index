@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Software Quality Indicators: extraction, categorisation andrecommendations from canonical sources"
+date:   2025-06-11
+tags: BH24EU
+doi: 10.37044/osf.io/etp3g_v1
+---
+
+Research software plays a central role in modern science, and its quality is increasinglyrecognized as essential for reproducibility, sustainability, and trust. Numerous initiatives haveproposed indicators to guide quality assessment, yet these indicators are dispersed acrossdomains and vary in scope, terminology, and practical use. This work presents a curatedcatalogue of software quality indicators tailored to the needs of research software. Developedduring BioHackathon Europe 2024 and refined in collaboration with the ELIXIR Tools Platformand EVERSE project, the catalogue consolidates and structures indicators from a range ofauthoritative sources.
+
+Over 300 indicators were gathered and systematically reviewed for relevance, clarity, andimplementation feasibility. Each was classified into thematic categories—such as Documen-tation, Security, Usability, and Sustainability—and annotated with target applicability, easeof evaluation, and recommended actions. Redundant, overly abstract, or narrowly scopedindicators were excluded or flagged, while additional tags highlighted cross-cutting concernssuch as licensing, testing, and community practices.
+
+The resulting open dataset, available as a structured spreadsheet, includes detailed metadataand decision criteria to support reuse, adaptation, and extension. The catalogue offers afoundation for context-specific assessment frameworks. Intended users include research softwaredevelopers and maintainers, evaluators, and developers of quality-focused tools and guidelines.
