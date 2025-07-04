@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "AI for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw"
+date:   2025-07-03
+tags: BIOAI25
+doi: 10.37044/osf.io/vbw4t_v1
+authors:
+  - name: Michał Denkiewicz
+  - name: Rahaf M. Ahmad
+  - name: Rishika Gupta
+  - name: Sachin Gadakh
+  - name: Jędrzej Kubica
+    orcid: 0000-0001-7037-3900
+  - name: Alishba Nadeem
+  - name: Alicja Małgorzata Olszewska
+    orcid: 0000-0002-3995-8166
+  - name: Federico Rossi
+  - name: John Adedeji
+  - name: Abolhassan Bahari
+  - name: Krzysztof H. Banecki
+  - name: Nilabja Bhattacharjee
+  - name: Joanna Borkowska
+  - name: Jacob R. Bumgarner
+  - name: Kirtan Dave
+  - name: German Demidov
+  - name: Konrad Józef Dębski
+  - name: Ritwik Ganguly
+  - name: Radosław Gersz
+  - name: Paulina Kaczyńska
+  - name: Pu Kao
+  - name: Fahad Ali Khan
+  - name: Mikolaj Kocikowski
+  - name: Maciej Kowalski
+  - name: Halina Krzystek
+  - name: Sabrina Kwak
+  - name: David Liu
+  - name: Pranjul Mishra
+  - name: Diya Patidar
+  - name: Sreeram Chandra Murthy Peela
+  - name: Aung Myat Phyo
+  - name: Weronika Plichta
+  - name: Ammara Saleem
+  - name: Palash Sethi
+  - name: Mukul Sherekar
+  - name: Jatin Shrinet
+  - name: Anna Simonyan
+  - name: Asha Ajithakumari Sobhanakumar
+  - name: Aleksandra Sobieska
+  - name: Marek Sokołowski
+  - name: Gobikrishnan Subramaniam
+  - name: Rafał Kazimierz Wóycicki
+  - name: Dariusz Plewczynski
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively
+explore artificial intelligence (AI) approaches for solving complex challenges in computational biology. Nine interdisciplinary and
+multi-institutional teams addressed the following problems: disease-gene prioritization, microbiome analysis, drug-protein interactions,
+alternative splicing prediction, chromatin architecture study and toxicological profiling. Using cutting-edge tools such as graph neural
+networks (GNNs), large language models (LLMs), and multi-omics integration frameworks, participants developed scalable and reproducible
+analytical pipelines. The results include: a disease gene prioritization framework using GNNs, a microbiome dynamics analysis for poultry
+health prediction and the construction of chromatin structure-aware regulatory networks. All projects follow the open science principles
+and display translational potential. This hackathon underscores the transformative role of AI in biomedicine and the value of
+collaborative, time-bounded innovation for accelerating discovery in life sciences. All projects are publicly available on
+GitHub: https://github.com/SFGLab
+

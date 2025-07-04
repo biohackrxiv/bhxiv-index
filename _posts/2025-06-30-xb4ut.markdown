@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Enhancing Digital Infrastructures and Data Handling Practices for Single Specimen Barcoding - the 2024 BGE Barcoding Hackathon"
+date:   2025-06-30
+tags: BGEBH24
+doi: 10.37044/osf.io/xb4ut_v1
+authors:
+  - name: Rutger Aldo Vos
+    orcid: 0000-0001-9254-7318
+  - name: Kessy Abarenkov
+  - name: Jireh Agda
+  - name: Josh Agda
+  - name: Ruud Altenburg
+  - name: Sarah J. Bourlat
+  - name: Tom Brown
+    orcid: 0000-0001-8293-4816
+  - name: Eli Chadwick
+  - name: Pierre-Etienne Cholley
+  - name: Fabian Deister
+  - name: Dick Groenenberg
+  - name: Sharif islam
+    orcid: 0000-0001-8050-0299
+  - name: Nick Juty
+  - name: Vishnukumar Balavenkataraman Kadhirvelu
+  - name: Maria Kamouyiaros
+  - name: Douglas Lowe
+    orcid: 0000-0002-1248-3594
+  - name: Hana Merchant
+  - name: Joana Pauperio
+  - name: Benjamin Wills Price
+    orcid: 0000-0001-5497-4087
+  - name: Sujeevan Ratnasingham
+  - name: Stian Soiland-Reyes
+    orcid: 0000-0001-9842-9718
+  - name: Giorgia Staffoni
+  - name: Catherine Wei
+  - name: Oliver White
+  - name: dimitris Koureas
+    orcid: 0000-0002-4842-6487
+---
+
+The 2024 BGE Barcoding Hackathon, hosted by the Biodiversity Genomics Europe (BGE) project in Leiden, Netherlands, focused on
+advancing digital infrastructures and data handling practices for single specimen barcoding. This event brought together 24
+participants from various consortium member institutes to enhance workflows in DNA barcoding, which complements genome sequencing
+efforts within BGE. The hackathon was structured around four thematic pillars: Data Generation and Processing, BOLD Release
+Candidate, Wider Data Integration, and Reference Data Curation. Participants worked on optimizing barcode generation pipelines,
+developing a new version of the Barcode of Life Data Systems (BOLD) data publishing platform, harmonizing data standards for
+better integration with databases like ENA and UNITE, and automating curation processes for DNA barcoding records. The outcomes
+include improved workflows, enhanced data interoperability, and refined curation standards, which collectively support BGE's
+goals of achieving a step change in molecular biodiversity monitoring and research.
