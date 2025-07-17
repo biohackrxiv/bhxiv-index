@@ -1,9 +1,37 @@
 ---
 layout: post
-title:  "Software Quality Indicators: extraction, categorisation andrecommendations from canonical sources"
+title:  "Software Quality Indicators: extraction, categorisation and recommendations from canonical sources"
 date:   2025-06-11
 tags: BH24EU
 doi: 10.37044/osf.io/etp3g_v1
+authors:
+  - name: Eva Martin del Pico
+    orcid: 0000-0001-8324-2897
+  - name: Fotis E. Psomopoulos
+    orcid: 0000-0002-0222-4273
+  - name: Laura Portell-Silva
+  - name: Renato Alves
+    orcid: 0000-0002-7212-0234
+  - name: Sebastien Moretti
+    orcid: 0000-0003-3947-488X
+  - name: Shoaib Sufi
+  - name: Adel Kamel Eddine Bouhraoua
+  - name: David Steinberg
+    orcid: 0000-0001-6683-2270
+  - name: Gavin Farrell
+    orcid: 0000-0001-5166-8551
+  - name: Maria Tsontaki
+  - name: Rafael Andrade Buono
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Daniel Garijo
+  - name: José María Fernández
+    orcid: 0000-0002-4806-5140
+  - name: Mariia Steeghs-Turchina
+    orcid: 0000-0002-0852-4752
+  - name: Mihail Anton
+  - name: Magnus Palmblad
+    orcid: 0000-0002-5865-8994
 ---
 
 Research software plays a central role in modern science, and its quality is increasinglyrecognized as essential for reproducibility, sustainability, and trust. Numerous initiatives haveproposed indicators to guide quality assessment, yet these indicators are dispersed acrossdomains and vary in scope, terminology, and practical use. This work presents a curatedcatalogue of software quality indicators tailored to the needs of research software. Developedduring BioHackathon Europe 2024 and refined in collaboration with the ELIXIR Tools Platformand EVERSE project, the catalogue consolidates and structures indicators from a range ofauthoritative sources.
