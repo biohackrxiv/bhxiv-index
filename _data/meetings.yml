@@ -1,4 +1,10 @@
 meetings:
+- BH25JP:
+  tag: BH25JP
+  title: "DBCLS BioHackathon, Mie, Japan, 2025"
+  year: 2025
+  url: https://2025.biohackathon.org/
+
 - CMUDNA:
   tag: CMUDNA
   title: "CMU DNAnexus BioHackathon, Pittsburg, USA, 2023"
@@ -118,12 +124,12 @@ meetings:
   tag: VIB24
   title: "VIB Hackathon June 2024, Ghent, Belgium, 2024"
   year: 2024
-  
+
 - BCUBED24:
   tag: BCUBED24
   title: "B-Cubed Hackathon, Brussels, Belgium, 2024"
   year: 2024
-  
+
 - SDDW24:
   tag: SDDW24
   title: "SpatialData Developer Workshop, Basel, Swiss, 2024"
