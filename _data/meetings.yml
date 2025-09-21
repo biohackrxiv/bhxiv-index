@@ -1,4 +1,14 @@
 meetings:
+- BH25DE:
+  tag: BH25DE
+  title: "4th BioHackathon Germany, Walsrode, Germany, 2025"
+  year: 2025
+
+- BH25EU:
+  tag: BH25EU
+  title: "BioHackathon Europe, Berlin, Germany, 2025"
+  year: 2025
+
 - BH25JP:
   tag: BH25JP
   title: "DBCLS BioHackathon, Mie, Japan, 2025"
