@@ -11,9 +11,8 @@ layout:
   "language": "en",
   "authors": [
     {
-      "name": "Egon Willighagen",
-      "url": "https://orcid.org/0000-0001-7542-0286",
-      "_orcid": "0000-0001-7542-0286"
+      "name": "BioHackrXiv",
+      "url": "https://biohackrxiv.org/"
     }
   ],
   "items": [{% for post in site.posts limit:10 %}
