@@ -22,6 +22,7 @@ authors:
     orcid: 0000-0002-5862-6132
   - name: Anne Fouilloux
     orcid: 0000-0002-1784-2920
+europepmc: PPR834477
 ---
 
 Project 6 during the 2023 BioHackathon Europe in Barcelona focused on "Enhancing the image analysis community in Galaxy." Despite Galaxy's strong presence in genomics and proteomics, its image analysis tools and workflows are currently scattered. This project aimed to gather efforts in image analysis across fields to build a robust interdisciplinary community.

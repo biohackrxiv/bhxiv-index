@@ -19,6 +19,7 @@ authors:
   - name: Christophe Blanchi
   - name: Herbert Van de Sompel
     orcid: 0000-0002-0715-6126
+europepmc: PPR785687
 ---
 
 As part of the BioHackathon Europe 2023, we here report from the progress of the hackathon project #15: "Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas". We added Signposting to three existing resources, and made a Chrome browser extension to show Signposting headers. We added RO-Crate to two existing resources, and explored making a hybrid FDO using both a Handle PID Record and Signposting/RO-Crate approach.

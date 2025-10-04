@@ -46,6 +46,7 @@ authors:
   - name: Estella Yixing Dong
   - name: Ruth Seurinck
   - name: Yvan Saeys
+europepmc: PPR873047
 ---
 
 During a three-day hackathon, work was performed on various topics within the field of spatial omics data analysis. The topics were organized in five workgroups and included benchmarking, pipelines, spatial transcriptomics, spatial proteomics, spatial multi-omics and cell-cell communication. Most tools and methods were considered in the context of the Python ecosystem for spatial (SpatialData) and single-cell (scverse) data analysis.

@@ -12,6 +12,7 @@ authors:
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Nick Juty
+europepmc: PPR803422
 ---
 
 Nowadays scientists massively produce diverse datasets in many communities. They need to combine them to answer scientific or novel questions. To do so, these diverse computational resources need first to be found by search engines. Bioschemas provides a simple and lightweight mechanism to annotate online resources in a standardized way and expose key metadata. To improve the accessibility and value of Bioschemas to existing and emerging communities, we aim to develop an automated system  to assess the adoption of Bioschemas, work with identified groups that have specific needs addressable by Bioschemas, address usability  issues in the Bioschemas profile and type development process, and extend the reach of Bioschemas by making it available in a domain-agnostic manner.

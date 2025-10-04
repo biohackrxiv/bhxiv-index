@@ -23,6 +23,7 @@ authors:
   - name: Gos Micklem
   - name: Chunlei Wu
     orcid: 0000-0002-2629-6124
+europepmc: PPR952820
 ---
 
 RDF shapes are formal expressions of schema structures in RDF data. Their primary purposeis twofold: describing and validating RDF data. However, as machine-readable representationsof the expected structures in a given data source, RDF shapes can be applied to varioustasks that require automatic comprehension of data schemas. In this paper, we present ourwork conducted during the DBCLS BioHackathon 2024 in Fukushima, Japan, to harness thepotential of RDF shapes. The identified and partially implemented use cases include thegeneration and validation of SPARQL queries, data and schema visualization, mappings toother formal syntaxes, and applications in data modeling scenarios.

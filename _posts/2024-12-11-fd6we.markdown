@@ -14,6 +14,7 @@ authors:
     orcid: 0000-0001-8907-5348
   - name: Andra Waagmeester
     orcid: 0000-0001-9773-4008
+europepmc: PPR952822
 ---
 
 RDF shapes have proven to be effective mechanisms for describing and validating RDF content.Typically, shapes are written by domain experts. However, writing and maintaining theseshapes can be challenging when dealing with large and complex schemas. To address this issue,automatic shape extractors have been proposed. These tools are designed to analyze existingRDF content and generate shapes that conform with the underlying schemas. Nevertheless,extracting shapes from large datasets presents significant scalability challenges.In this document, we describe our work during the 2024 BioHackathon held in Fukushima,Japan, to tackle this problem. Our approach is based on slicing the input data, performingparallelized shape extraction processes, and merging the resulting partial outputs. By refiningour software and methods, we successfully extracted shapes from a subset of UniProt, containingan estimated 15.9 billion triples.

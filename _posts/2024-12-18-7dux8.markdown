@@ -12,6 +12,7 @@ authors:
     orcid: 0000-0002-2497-8236
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
+europepmc: PPR955983
 ---
 
 What is the value of a dataset? This is a key question for many data management decisions. It is a difficult question to answer, as "it depends", on the needs, the consumer, other data, and many other factors. This work aims at sketching an approach to evaluate data, that is based on trade-offs decisions between different aspects to data, respect to different usage scenarios. This work hs been developed as a "collaborative paper" (on the value of data, a collaborative experiment). The version here reported is what resulted from the discussions at the BioHackathon in Fukushima, 2024.

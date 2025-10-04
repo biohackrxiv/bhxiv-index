@@ -18,6 +18,7 @@ authors:
   - name: Wai Cheng Thang
   - name: Joseph Wang
   - name: Ove Johan Ragnar Gustafsson
+europepmc: PPR842513
 ---
 
 The scale and diversity of available software options in the Galaxy ecosystem can make domain or community specific discovery of software challenging. Here, we present a semi-automated and reusable pipeline for creating tailored interactive tables that list the identity and metadata (e.g. bio.tools, EDAM) available for Galaxy tools in a specific community (e.g. microGalaxy, imaging). In addition, we also describe an annotation framework to improve the quality of the table contents, and training material to support the reuse of both the pipeline and table by additional communities. The sum of these contributions is expected to make it easier for Galaxy users to discover and understand the software within their research area, improve the annotation of these software resources, and allow other domains to enable equivalent discovery processes for their community.This work is the outcome of a BioHackathon Europe 2023 project.

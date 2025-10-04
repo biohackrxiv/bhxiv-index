@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0003-4028-811X
   - name: Marco Nolden
     orcid: 0000-0001-9629-0564
+europepmc: PPR952375
 ---
 
 We assessed the implementation of the FAIR principles in the currentbioimaging and clinical imaging data repositories. Additionally, to make the RDF export triples from the IDR discoverable, we also explored the Fair Data Point interface (Silva Santos et al.,2023), as a mechanism to facilitate the exposure of machine-actionable metadata and how itcould be added to the Imaging Data Resource (IDR) portal.

@@ -10,6 +10,7 @@ authors:
     orcid: 0000-0002-3583-7340
   - name: Liisa Lado-Villar
   - name: Gos Micklem
+europepmc: PPR843117
 ---
 
 InterMine is an open source data warehouse system that can be used to create biological databases that can be accessed via web query tools. There are many public InterMine instances that are currently deployed worldwide and they share a core data model pertaining to common biological entities. Besides the core data model, each instance of InterMine typically has an extended data model to cover data specific to that particular deployment. The data is organised according to the graph-based data model but exists in a relational store (Postgres). The goal of this project was to explore the possibility of translating InterMine data from relational form to a graph form using Resource Description Framework (RDF) as the exchange format. This could provide a route to exposing data from InterMine instances as RDF triples and thus making it possible to query the data using the SPARQL Protocol and RDF Querying Language (SPARQL).

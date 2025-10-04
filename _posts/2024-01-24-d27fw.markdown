@@ -19,6 +19,7 @@ authors:
     orcid: 0000-0003-3257-9937
   - name: Robert Hoehndorf
     orcid: 0000-0001-8149-5890
+europepmc: PPR792457
 ---
 
 Ontologies play a crucial role in data management and especially in life science, they have been indispensable for decades as the complexity of life science data requires rigor. Biomedical ontologies often undergo change and improvement, as e.g. disease and phenotype ontologies develop constantly along with our scientific understanding. In order to bridge the gap between ontologies and annotated datasets and thus to semantically enable applications and datasets to retrieve insights and improve interoperability, ontology mapping plays a key role.To implement a sophisticated search supported by semantics, interoperability to address cross-disciplinary needs is crucial. In this paper we focus on different aspects of interoperability of ontologies, especially in the phenotype and disease domain and how they could be improved. During the BioHackJP 2023, a variety of approaches were discussed and evaluated. In this paper, we report overviews of the result of each investigation including, 1: Linguistic and Social Interoperability, 2: Technical and Structural Interoperability, 3: Ontology Alignments and Mappings, 4: Use of Large Language Models (LLMs), 5: Model Mice Exploration, and discuss future works to address these challenges.

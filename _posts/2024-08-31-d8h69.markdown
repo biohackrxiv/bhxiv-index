@@ -17,6 +17,7 @@ authors:
     orcid: 0009-0004-9646-8878
   - name: Núria Queralt-Rosinach
     orcid: 0000-0003-0169-8159
+europepmc: PPR904220
 ---
 
 The need of standardizing the language used within a community has been recognized as one of the major components to enable a better integration of data as well as their further analysis. The plant breeding community makes use of a very specialized language, which has been evolving according to the new technologies and needs of their final users (e.g. farmers). That community is disparate all over the world. Therefore, a translation of the most common used terms has always been a key asset to accomplish their objectives as well as the ones of their collaborators. Here, we present PBO (Plant Breeding Ontology), an ontology for the plant breeding community which captures more than 2200 entries where 80 represent the core terms. PBO has translations in 8 different languages: English (main language), Spanish, French, Dutch, German, Japanese, Catalan and Thai, as well as their definitions, synonyms, derived terms and samples of their usage. PBO has been built partially manually and semiautomatically.

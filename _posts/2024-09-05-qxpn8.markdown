@@ -15,6 +15,7 @@ authors:
   - name: Satoshi Onoda
   - name: Risa Otsuka
   - name: Natsuko Ichikawa
+europepmc: PPR906697
 ---
 
 The standardization and integration of cultivation media data are essential for advancing microbial research and enabling AI-based predictions of optimal growth conditions. This study addresses the challenges of data fragmentation by aligning terminologies and mapping ingredients between two prominent databases: MediaDive (DSMZ) and TogoMedium (DBCLS). We successfully linked 870 ingredients, expanded the Growth Media Ontology (GMO), and prepared data for media similarity calculations, thereby enhancing the interoperability of these resources. Additionally, we developed the first version of a BacDive RDF knowledge graph, incorporating mapping rules for 24 key entities and materializing the data in turtle format to facilitate integration into broader knowledge networks. We also propose a novel process for the standardized registration of media recipes by depositors, ensuring that these recipes can be cited and shared consistently. Together, these efforts contribute to the creation of a more cohesive and accessible microbial data ecosystem, supporting future research and innovation.
