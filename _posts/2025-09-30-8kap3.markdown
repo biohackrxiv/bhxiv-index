@@ -15,8 +15,8 @@ wikidata: Q136434638
 Knowledge graphs in the life sciences are increasingly published using the Resource Description Framework (RDF) and
 queried via SPARQL endpoints. While these technologies enable powerful data integration, the identifiers returned in
 SPARQL results often do not resolve to meaningful resources, leaving users with non-actionable links. To address this
-issue, we developed a lightweight Persistent Uniform Resource Locator (PURL) resolver during the BioHackathon Japan
-2025. The resolver is implemented in PHP, chosen for its ubiquity on standard web servers and its compatibility with
+issue, we developed a lightweight Persistent Uniform Resource Locator (PURL) resolver during the BioHackathon Japan 2025.
+The resolver is implemented in PHP, chosen for its ubiquity on standard web servers and its compatibility with
 the EasyRDF library for RDF handling. It is easy to configure, requires minimal maintenance, and supports both database
 redirects and ontology term rendering with content negotiation for RDF serializations. The system is available as
 open-source software (https://github.com/JKoblitz/purl-resolver) and deployed at https://purl.dsmz.de, where it now
