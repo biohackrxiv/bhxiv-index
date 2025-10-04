@@ -19,6 +19,7 @@ authors:
     orcid: 0000-0001-7542-0286
   - name: Ammar Ammar
     orcid: 0000-0002-8399-8990
+europepmc: PPR572936
 ---
 
 Knowledge Graphs (KGs) such as Wikidata act as a hub of information from multiple domains and disciplines, and is crowdsourced by multiple stakeholders. The vast amount of available information makes it difficult for researchers to manage the entire KG, which is also continually being edited. It is necessary to develop tools that extract subsets for domains of interest. These subsets will help researchers to reduce costs and time, making data of interest more accessible. In the last two BioHackathons (BH20, BH21), we have created prototypes to extract subsets easily applicable to Wikidata, as well as to define a map of the different approaches used to tackle this problem. Building on those outcomes, we aim to enhance subsetting in both definitions using Entity schemas based on Shape Expressions (ShEx) and extraction algorithms, with a special focus on the biomedical domain. Our first aim is to develop complex subsetting patterns based on qualifiers and references for enhancing credibility of datasets. Our second aim is to establish a faster subsetting extraction platform applying new algorithms based on Apache Spark and new tools like a document-oriented DBMS platform.

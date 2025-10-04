@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0003-4481-9109
   - name: Hidemasa Bono
     orcid: 0000-0003-4413-0651
+europepmc: PPR551382
 ---
 
 Genome editing is a widely used tool to create precise changes in a genome. However, no specialized database for genome editing is available. Therefore, we have been developing genome editing meta-database (GEM) which aims to collect the exhaustive dataset of metadata related to genome editing. Currently, GEM consists primarily of a subset of genome editing- related metadata from PubMed articles. Metadata is extracted from research articles that have the contents with experiments using either of 7 types of genome editing tools: CRISPR-Cas9, Transcription activator-like effector nuclease (TALEN), Zinc finger nuclease (ZFN), CRISPR- Cas12, CRISPR-Cas3, Base editor, and Prime editor. Those tools are often used for knock-out or knock-in of genes to elucidate the biological functions of them. In domestic version of BioHackathon in 2022 (BH22.9), we have discussed the datasets and the usage of GEM, and also updated the scripts for GEM in github based on the discussion.

@@ -14,6 +14,7 @@ authors:
   - name: Pietro Mandreoli
   - name: Sven Twardziok
     orcid: 0000-0002-0326-5704
+europepmc: PPR619542
 ---
 
 With the exponential increase in genomic data, analyzing and processing large datasets has become a challenging task in healthcare. To address this issue, the Global Alliance for Genomics and Health (GA4GH) has proposed a set of community standards for enabling the adoption of FAIR principles for data, software, and infrastructure. These standards promote the concept of sending analysis and processing workflows to the data rather than transferring large datasets, thereby increasing efficiency and data security. In this paper, we present the outcomes of the ELIXIR Biohackathon 2021 project, where we worked on our software WESkit, which implements the GA4GH WES standard for running Snakemake and Nextflow workflows. During the hackathon, we implemented basic GA4GH TRS support, deployed a cloud platform, and added S3 support for downloading result files.

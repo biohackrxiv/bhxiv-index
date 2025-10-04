@@ -11,6 +11,7 @@ authors:
     orcid: 0000-0001-9773-4008
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348
+europepmc: PPR693769
 ---
 
 LinkML is a data modeling language that can be used to describe the structure and semantics of data from a specific domain. But as with any modeling language, there is a need for tools that support validation of data. The LinkML provides a set of validation tools but there is a growing need to adapt the tools for a broader audience. The work highlighted in this report describes the efforts of redesigning the validation framework in LinkML to better support a wider range of validation scenarios and use cases.

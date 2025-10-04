@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0002-3253-7449
   - name: Nishad Thalhath
     orcid: 0000-0001-9845-9714
+europepmc: PPR685068
 ---
 
 With the escalating complexity and volume of bioinformatics data, there is an escalating demand for efficient and multifaceted triplestore technologies. Contemporary programming languages, such as Rust, provide solutions to the constraints identified in traditional languages, placing emphasis on safety, performance, and enhanced developer experience. A paradigm of this modern approach is Oxigraph, a Rust-based graph database demonstrating proficient graph data management, predominantly targeting single-node use case applications. Despite its genesis as a hobby project, Oxigraph yields competitive performance in administering straightforward Online Transaction Processing (OLTP) workloads, exhibiting a considerable potential for future refinement. This study is focused on a comprehensive appraisal of the Oxigraph server's efficacy in distinct use cases, transcending beyond the typical SPARQL performance. The evaluation thoroughly examines various operational aspects, including data loading, backup procedures, deployment strategies, maintenance protocols, and overall server usability. The authors used a subset of PDB/RDF and complete chem_comp/RDF archives; totals around 0.5 B triples have been used to conduct this evaluation.

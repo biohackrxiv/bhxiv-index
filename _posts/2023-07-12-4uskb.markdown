@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0002-7491-4994
   - name: Hidemasa Bono
     orcid: 0000-0003-4413-0651
+europepmc: PPR690659
 ---
 
 Despite decades of pathway database efforts and freely available pathway modeling tools, most researchers publish their biological pathway knowledge as static image figures made with general illustration tools. Prior to the BioHackathon, we had identified 103,009 pathway figures in the literature and performed optical character recognition (OCR) (Pathway Figure OCR (Hanspers et al., 2020). As an initial exploration, we extracted chemical names, disease terms, and human gene names. We knew, however, that many of the pathways represented biological processes and entities specific for plant, microbial and numerous non-model organisms.To expand the pathway analysis environment to non-model organisms whose genomic and functional annotations are not organized in a central public database, we sought to expand the number of organism species included in the Pathway Figure OCR (PFOCR) database. Also, with continuing goal of expanding the use of WikiPathways (Pico et al., 2008) and the practice of modeling pathway information as proper data models, we trained new users of PathVisio (Kutmon et al., 2015) and guided them through the process of publishing at WikiPathways.

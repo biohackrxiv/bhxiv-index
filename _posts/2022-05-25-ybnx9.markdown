@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0002-1217-3852
   - name: Pedro Batista Tan
     orcid: 0000-0001-9790-9568
+europepmc: PPR497941
 ---
 
 The ARRIVE (Animal Research: Reporting of In Vivo Experiments) guidelines are reportingguidelines designed to improve transparency and facilitate critical assessment ofexperiments involving animal research. Although it represents essential reportinginformation for animal experiments, compliance with ARRIVE items is not commonlydemanded by journals and is often lacking in animal studies. In this small pilot project, weevaluated compliance with ARRIVE 2.0 essential 10 items in 64 papers from 2018 and 2020,either citing or not the ARRIVE manuscripts. Papers that cited the ARRIVE guidelines hadslightly higher reporting scores, but we did not detect an effect of the time period nor aninteraction effect between ARRIVE versions 1.0 and 2.0. This work was conducted during theNo-Budget Science Hack Week 2021 event, an extended hackathon to discuss and developprojects in metascience. In future work, this pilot can be expanded to better estimate theeffects of the ARRIVE guidelines on reporting practices.

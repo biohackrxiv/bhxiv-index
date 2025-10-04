@@ -22,6 +22,7 @@ authors:
   - name: Fotis E. Psomopoulos
     orcid: 0000-0002-0222-4273
   - name: Allegra Via
+europepmc: PPR410736
 ---
 
 Data Management Plans are now considered a key element of Open Science. They describe the data management life cycle for the data to be collected, processed and/or generated within the lifetime of a particular project or activity. A Software Manag ement Plan (SMP) plays the same role but for software. Beyond its management perspective, the main advantage of an SMP is that it both provides clear context to the software that is being developed and raises awareness. Although there are a few SMPs already available, most of them require significant technical knowledge to be effectively used. ELIXIR has developed a low-barrier SMP, specifically tailored for life science researchers, aligned to the FAIR Research Software principles. Starting from the Four Recommendations for Open Source Software, the ELIXIR SMP was iteratively refined by surveying the practices of the community and incorporating the received feedback. Currently available as a survey, future plans of the ELIXIR SMP include a human- and machine-readable version, that can be automatically queried and connected to relevant tools and metrics within the ELIXIR Tools ecosystem and beyond.

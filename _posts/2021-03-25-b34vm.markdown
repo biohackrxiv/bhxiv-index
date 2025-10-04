@@ -18,6 +18,7 @@ authors:
   - name: Jumamurat R. Bayjanov
   - name: Margherita Mutarelli
   - name: Rita Casadio
+europepmc: PPR303125
 ---
 
 Epidemic spread of new pathogens is quite a frequent event that affects not only humans but also animals and plants, and specifically livestock and crops. In the last few years, many novel pathogenic viruses have threatened human life. Some were mutations of the traditional influenza viruses, and some were viruses that crossed the animal-human divide.In both cases, when a novel virus or bacterial strain for which there is no pre-existing immunity or a vaccine released, there is the possibility of an epidemic or even a pandemic event, as the one we are experiencing today with COVID-19.In this context, we defined an ELIXIR Service Bundle for Epidemic Response: a set of tools and workflows to facilitate and speed up the study of new pathogens, viruses or bacteria. The final goal of the bundle is to provide tools and resources to collect and analyse data on new pathogens (bacteria and viruses) and their relation to hosts (humans, animals, plants).

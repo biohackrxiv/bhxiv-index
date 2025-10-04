@@ -38,6 +38,7 @@ authors:
     orcid: 0009-0002-1208-8858
   - name: Nishad Thalhath
     orcid: 0000-0001-9845-9714
+europepmc: PPR686554
 ---
 
 The paper contains a report of the activities that have been done during the Biohackathon 2023 in Shodoshima, Japan in a project about RDF data integration using Shape Expressions. The paper describes several approaches that have been discussed to create RDF data subsets and some preliminary results applying some of those technologies. It also describes the work that has been done comparing RDF data modeling approaches like ShEx, LinkML and YAML files from rdfconfig.

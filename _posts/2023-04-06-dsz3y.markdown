@@ -10,6 +10,7 @@ authors:
     orcid: 0000-0003-1984-8522
   - name: Dimitrios Bampalikis
     orcid: 0000-0002-2078-3079
+europepmc: PPR642147
 ---
 
 The European Genome-phenome Archive (EGA) (Freeberg et al., 2022) (also known as CentralEGA - cEGA) is a service for permanent archiving and sharing personally identifiable geneticand phenotypic data resulting from biomedical research projects. The Federated EGA (EGAConsortium, n.d.), consisting of the Central and Federated EGA nodes, will be a distributednetwork of repositories for sharing human -omics data and phenotypes. Each node of thefederation is responsible for its own infrastructure and the connection to the Central EGA.Currently, the adoption and deployment of a new federated node is challenging due to thecomplexity of the project and the diversity of technological solutions used, in order to ensurethe secure archiving of the data and the transfer of the information between the nodes.The goal of this project was to develop an onboarding suite consisting of simple scripts,supplemented by documentation, that would help newcomers to the EGA federation in orderunderstand in depth the main concepts, while enabling them to get involved in the developmentof the technology as quickly as possible.At the same time we aimed to identify existing technologies and standards across FEGA nodesthat can be used as a reference to upcoming nodes.

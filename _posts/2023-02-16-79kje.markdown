@@ -22,6 +22,7 @@ authors:
     orcid: 0000-0002-1509-4981
   - name: Hervé MENAGER
     orcid: 0000-0002-7552-1009
+europepmc: PPR618029
 ---
 
 Here we report the results of a project started at the BioHackathon Europe 2022. Its goals were to cross-compare and analyze the metadata centralized in the Tools Ecosystem, and linked to the EDAM ontology, as well as to explore methods for connecting tools used in registered Galaxy workflows (i.e. WorkflowHub entries) to the annotations available in bio.tools.

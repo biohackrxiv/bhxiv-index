@@ -17,6 +17,7 @@ authors:
   - name: Simone Leo
   - name: Stian Soiland-Reyes
     orcid: 0000-0001-9842-9718
+europepmc: PPR699684
 ---
 
 This report describes the integration of RO-Crates into Data Stewardship Wizard and Galaxy during the BioHackathon Europe 2023, aiming to improve data management and sharing in scientific research. By utilizing RO-Crates, researchers can easily create machine-readable metadata for their datasets, ensuring long-term discoverability, accessibility, and reusability. The seamless integration of RO-Crates in these platforms enhances collaboration between researchers and institutions, facilitating data sharing and reuse across projects and domains. Future efforts may focus on enhancing RO-Crate's interoperability with other standards and platforms, as well as promoting wider adoption through outreach and education initiatives to meet the evolving needs of researchers and institutions in data stewardship.

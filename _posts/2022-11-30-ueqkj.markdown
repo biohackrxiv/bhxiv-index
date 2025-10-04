@@ -14,6 +14,7 @@ authors:
     orcid: 0000-0003-3986-0510
   - name: Toshiaki Katayama
     orcid: 0000-0003-2391-0384
+europepmc: PPR578088
 ---
 
 biohackrxiv.org is a scholarly publication service forBioHackathons and Codefests where papers are generated from Markdowntemplates where the header is a YAML/JSON record that includes thetitle, authors, affiliations and tags. Many projects in BioHackathons are about using FAIR data. Because the current setup is lacking in the findable (F) andaccessible (A) of FAIR, for the ELIXIR BioHackathon 2020, we decidedto add an additional service that provides a SPARQL endpoint forqueries and some simple HTML output that can be embedded in aBioHackathon website.

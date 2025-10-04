@@ -26,6 +26,7 @@ authors:
     orcid: 0000-0003-0676-5461
   - name: Stian Soiland-Reyes
     orcid: 0000-0001-9842-9718
+europepmc: PPR587343
 ---
 
 Status of discussions around the topic of data standard formats for plant sciences and their interoperability at the BioHackathon Europe 2022 in Paris.

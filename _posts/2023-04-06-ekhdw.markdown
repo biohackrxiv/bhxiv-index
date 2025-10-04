@@ -26,6 +26,7 @@ authors:
     orcid: 0000-0002-3879-7057
   - name: Elisa Senger
   - name: Heinrich Lukas Weil
+europepmc: PPR642148
 ---
 
 As part of the BioHackathon Germany 2022, we hereby report on the success of the two projects “MIAPPE Wizard: Enabling easy creation of MIAPPE-compliant ISA metadata for Plant Phenotyping Experiments” and “DataPLANT - Facilitating Research Data Management to combat the reproducibility crisis”. Shortly before the actual hackathon, it became apparent to the participants that close coordination between the projects would be very beneficial. Both projects aimed to improve the process of collecting and aggregating metadata on plant experiments, but with different approaches.

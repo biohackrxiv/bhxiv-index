@@ -11,6 +11,7 @@ authors:
     orcid: 0000-0003-4062-8903
   - name: Hiromasa Ono
     orcid: 0000-0001-8675-963X
+europepmc: PPR631210
 ---
 
 Orthology finding tools are valuable for analyzing biological data from multiple species and predicting the functions of uncharacterized genes. Although several tools are available for this purpose, the characteristics of their results for plant genes are not well compared. In this hackathon, we examined three tools (OMA, OrthoDB, and Ensembl Plants) by extracting ortholog pairs between Arabidopsis and soybean and analyzing each result, focusing on five plant genes with varying degrees of conservation. We observed that changes in the taxonomic ranges of OMA and OrthoDB affected ortholog detection, and the range of ortholog detection across the three tools was inconsistent, suggesting the importance of comparing multiple tools to obtain more accurate information on orthologs.

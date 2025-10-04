@@ -13,6 +13,7 @@ authors:
   - name: Virginie Grosboillot
   - name: Martin Beracochea
     orcid: 0000-0003-3472-3736
+europepmc: PPR615442
 ---
 
 MGnify is EMBL-EBI's metagenomics resource. MGnify's recently launched Notebook Server provides an online Jupyter Lab environment for users to explore programmatic access to MGnify's datasets using Python or R. Here, we report several developments to the Notebook Server completed during the BioHackathon Europe 2022. The developments range from establishing an instance of the notebooks on the Galaxy platform, to adding new notebooks and Jupyter UI extensions enabling more users to perform downstream analysis tasks on MGnify's extensive metagenomics datasets.
