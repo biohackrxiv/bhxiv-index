@@ -39,21 +39,15 @@ layout:
       {% if has_references %}"_references": [{% for ref in references_tags %}{% assign check = ref | split:':' %}{% if check.size > 1 %}{ "url": "{{ "https://doi.org/" | append: check[1] }}", "doi": "{{ check[1] }}"{% if check[0] != "cites" %}, "cito": [ "{{ check[0] }}" ]{% endif %} }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}],{% endif %}
       {% if post.grants %}"_funding": [{% for grant in post.grants %}{"award": { "title" : "{{ grant.title }}", {% if grant.acronym %}"acronym" : "{{ grant.acronym }}", {% endif %}"uri" : "{% if grant.id %}{{ grant.id }}{% else %}{{ grant.uri }}{% endif %}" }, "funder": { "name": "{{ grant.funder.name }}", "ror": "{{ grant.funder.ror }}" } }{% unless forloop.last %},{% endunless %}{% endfor %}],{% endif %}
       {% assign authorCount = post.authors | size %}
-      {% if authorCount == 0 %}
-        "authors": [ { "name": "Egon Willighagen", "url": "https://orcid.org/0000-0001-7542-0286" } ]
-      {% elsif authorCount == 1 %}
-        "authors": [ { "name": "Egon Willighagen", "url": "https://orcid.org/0000-0001-7542-0286" } ]
-      {% else %}
-        "authors": [
-        {% for author in post.authors %}
-          {% if forloop.last %}
-            { "name": "{{ author.name }}", "url": "https://orcid.org/{{ author.orcid }}" }
-          {% else %}
-            { "name": "{{ author.name }}", "url": "https://orcid.org/{{ author.orcid }}" },
-          {% endif %}
-        {% endfor %}
-        ]
-      {% endif %}
+      "authors": [
+      {% for author in post.authors %}
+        {% if forloop.last %}
+          { "name": "{{ author.name }}", "url": "https://orcid.org/{{ author.orcid }}" }
+        {% else %}
+          { "name": "{{ author.name }}", "url": "https://orcid.org/{{ author.orcid }}" },
+        {% endif %}
+      {% endfor %}
+      ]
     }{% unless forloop.last %},{% endunless %}{% endfor %}
   ]
 }
