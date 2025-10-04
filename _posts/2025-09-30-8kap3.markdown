@@ -10,6 +10,7 @@ authors:
   - name: Shuichi Kawashima
     orcid: 0000-0001-7883-3756
 wikidata: Q136434638
+europepmc: PPR1093476
 ---
 
 Knowledge graphs in the life sciences are increasingly published using the Resource Description Framework (RDF) and

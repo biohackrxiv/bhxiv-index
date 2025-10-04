@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0001-9845-9714
   - name: Kozo Nishida
     orcid: 0000-0001-8501-7319
+europepmc: PPR1093478
 ---
 
 The SRAmetaDBB project, presented at BioHackathon Japan 2023, introduced an experimental JavaScript pipeline

@@ -17,6 +17,7 @@ authors:
   - name: Laura I. Furlong
   - name: Marek Ostaszewski
     orcid: 0000-0003-1473-370X
+europepmc: PPR281943
 ---
 
 In this article we present a workflow for construction of prototype rare disease maps based on the phenotypic description of a rare disease. We use stable disease and phenotype identifiers to i) retrieve disease-associated genes and genetic variants, ii) identify relevant mechanistic components from pathways, disease maps and interaction repositories, and iii) assemble these components into single diagram, available for visualisation and pathway analysis. The workflow allows construction of prototype diagrams representing mechanisms related to a rare disease, useful for further refinement and data interpretation.

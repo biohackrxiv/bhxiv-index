@@ -19,6 +19,7 @@ authors:
   - name: Toshiaki Katayama
     orcid: 0000-0003-2391-0384
   - name: Henning Hermjakob
+europepmc: PPR1030229
 ---
 
 Identifiers.org provides two core services for CURIEs in life sciences. One is a registry of CURIE prefixes and URL locations that contain entries for the main life sciences datasets. The other is a resolver that allows for consistent data access using registry information to redirect to current URLs for CURIE identifiers. For this work, we aimed to expand these services to facilitate the integration of CURIE-related metadata into different contexts. The first part of this exports the registry in RDF with a SPARQL server to allow queries on the dataset. Through these, RDF-based systems can associate with registry metadata on different data collections. Allowing, for example, services that have identifiers.org URLs to collect metadata on the collection that it references. The second part expands on the existing metadata resolver to be able to collect CURIE-related metadata from different metadata providers.While the previous resolver could only collect LDJSON notations from pages, it can now be expanded to collect from any metadata provider.For this work, we implement two proof of concept retrievers, one for EBI Search, a text search engine that allows for metadata acquisition, and one for TogoID, an ID mapping service for life sciences.Finally, we gather some future tasks for identifiers.org services.

@@ -10,6 +10,7 @@ authors:
     orcid: 0000-0002-2177-8781
   - name: Patrick König
     orcid: 0000-0002-8948-6793
+europepmc: PPR976152
 ---
 
 As a contribution to BioHackathon Germany 2024, the following report details the work conducted during that event for project 8: User-friendly ISA-based metadata annotation of life science experiments with ISA Wizard.

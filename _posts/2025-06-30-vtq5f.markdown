@@ -12,6 +12,7 @@ authors:
   - name: Stanisław Giziński
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
+europepmc: PPR1044434
 ---
 
 Advances in precision medicine are reshaping cancer treatment by tailoring therapies to a patient’s specific genetic profile. Despite this,

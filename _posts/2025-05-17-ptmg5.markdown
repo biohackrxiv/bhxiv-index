@@ -20,6 +20,7 @@ authors:
     orcid: 0000-0002-7683-0452
   - name: Tooba Abbassi-Daloii
     orcid: 0000-0002-4904-3269
+europepmc: PPR1022222
 ---
 
 The BioDataFuse (BDF) project aims to enhance the interoperability of biomedical data through modular integration of data from diverse life sciences resources into context-specific knowledge graphs. This paper discusses the efforts made during BioHackathon Europe 2024 to improve the FAIR (Findable, Accessible, Interoperable, and Reusable) data integration process by clarifying and transforming graph schemas. We explored tools such as VoID-generator, RDF-config, and sheXer for data schema extraction and the integration of RDF Portal data into the BDF framework. By leveraging these tools, we automated the generation of SPARQL queries, created GraphQL endpoints, and enhanced BDF's ability to integrate new databases. Additionally, we explored the potential of large language models (LLMs) for automated reasoning and data interpretation within the BDF ecosystem. This work lays the foundation for building more efficient and standardized data models, contributing to the seamless integration of multiple biomedical databases.

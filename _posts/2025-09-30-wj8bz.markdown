@@ -7,6 +7,7 @@ doi: 10.37044/osf.io/wj8bz_v1
 authors:
   - name: Achille Zappa
     orcid: 0000-0003-4040-9620
+europepmc: PPR1093477
 ---
 
 The Minimum Information Required for A Glycomics Experiment (MIRAGE) guidelines have

@@ -32,6 +32,7 @@ authors:
   - name: Kevin Schneider
   - name: Heinrich Lukas Weil
   - name: Florian Wetzels
+europepmc: PPR973314
 ---
 
 As part of the BioHackathon Europe 2024, we here report on the progress that both project 19 and project 24 have made during the event. For the purpose of this report we will present the abstract of both projects and then dive deeper on what work was done during the BioHackathon.

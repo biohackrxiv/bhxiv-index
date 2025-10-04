@@ -52,6 +52,7 @@ authors:
   - name: Dariusz Plewczynski
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
+europepmc: PPR1046013
 ---
 
 The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively

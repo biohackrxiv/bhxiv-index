@@ -44,6 +44,7 @@ authors:
   - name: Melanie Gainey
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
+europepmc: PPR1030665
 ---
 
 In March 2025, 34 scientists from the United States, Ireland, the United Kingdom, Switzerland,France, Germany, Spain, India, and Australia gathered in Pittsburgh, Pennsylvania and virtuallyfor a collaborative biohackathon, hosted by DNAnexus and Carnegie Mellon University Libraries.The goal of the hackathon was to explore machine learning approaches for multimodalproblems in computational biology using public datasets. Teams worked on the followinginnovative projects: applying machine learning techniques for clustering and similarity analysisof haplotypes; adapting the StructLMM framework to study Gene-Gene (GxG) interactions;creating a nextflow workflow for generating an imputation reference panel using large-scalecohort data; optimizing discovery of causal relationships in large electronic health record (EHR)datasets using the open source causal analysis software Tetrad; examining the evolution of agraph neural network in a Lenski-esque experiment; and developing tools and workflows forgenerating pathway intersection diagrams and graph-based analyses for multiomics data. Allprojects were dedicated to study the background genomic and environmental effects underlyingcomplex genotype-phenotype relationships. Their objective was to set foundations for furtherstudies on predicting complex phenotypic traits using integrative multi-omic and environmentalanalyses.

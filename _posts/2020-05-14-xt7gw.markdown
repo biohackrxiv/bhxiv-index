@@ -20,6 +20,7 @@ authors:
   - name: Phillip Davis
   - name: Fotis E. Psomopoulos
     orcid: 0000-0002-0222-4273
+europepmc: PPR281945
 ---
 
 The pandemicity &amp;amp; the ability of the SARS-COV-2 to reinfect a cured subject, among other damaging characteristics of it, took everybody by surprise. A global collaborative scientific effort was direly required to bring learned people from different niches of medicine &amp;amp; data science together. Such a platform was provided by COVID19 Virtual BioHackathon, organized from the 5th to the 11th of April, 2020, to ponder on the related pressing issues varying in their diversity from text mining to genomics. Under the "Machine learning" track, we determined optimal k-mer length for feature extraction, constructed continuous distributed representations for protein sequences to create phylogenetic trees in an alignment-free manner, and clustered predicted MHC class I and II binding affinity to aid in vaccine design. All the related work in available in a Github repository under an MIT license for future research.
