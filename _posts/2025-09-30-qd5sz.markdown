@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2025 report: Creation and Publication Analytical Workflow of Creators' Interests"
+date:   2025-09-30
+tags: BH25JP
+doi: 10.37044/osf.io/qd5sz_v1
+authors:
+  - name: Ryo Mameda
+    orcid: 0009-0007-5830-6482
+  - name: Hyeokjin Kwon
+    orcid: 0000-0003-1088-0446
+  - name: Pitiporn Noisagul
+    orcid: 0000-0001-5351-9998
+  - name: Sora Yonezawa
+    orcid: 0009-0004-1874-3117
+---
+
+At the DBCLS BioHackathon 2025, we converted metatranscriptomic analytical shell scripts into Common Workflow Language (CWL) containerized
+with Docker. Sub-workflows were created for metagenomic assembly, read mapping, and gene annotation, and validated with test datasets. The
+workflows, released on GitHub and WorkflowHub, improve reproducibility and address issues of reusability and software environment dependency.
+We also evaluated CWL best practices from the perspective of life scientists, classifying them by difficulty, importance, and applicability
+to promote FAIR principles and software quality. In parallel, we established a benchmarking framework for pangenome-based structural variant
+(SV) calling using data from the Dai population. Graph-based references from the Human and Chinese Pangenome Consortia were compared with
+linear references using minimap2 and vg giraffe. Results showed improved alignment accuracy and variant detection with pangenomes,
+demonstrating their value for reducing mapping bias and enhancing SV discovery.
+

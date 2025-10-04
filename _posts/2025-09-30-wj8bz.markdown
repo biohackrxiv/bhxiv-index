@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Translating and Formalizing the MIRAGE Guidelines to a Prototype MIRAGE Ontology and DCAT3 Extension Vocabulary for Glycomics Data Management"
+date:   2025-09-30
+tags: BH25JP
+doi: 10.37044/osf.io/wj8bz_v1
+authors:
+  - name: Achille Zappa
+    orcid: 0000-0003-4040-9620
+---
+
+The Minimum Information Required for A Glycomics Experiment (MIRAGE) guidelines have
+established comprehensive reporting standards for glycomics research, yet their implementation
+in semantic web technologies remains limited. We present the first comprehensive semantic
+formalization of MIRAGE guidelines through an integrated RDF ontology framework comprising
+the MIRAGE Ontology and MIRAGE-DCAT3 vocabulary. The MIRAGE Ontology
+models glycan structures, biological specimens, analytical instruments, and experimental
+processes with formal OWL semantics and SHACL validation constraints. The complementary
+MIRAGE-DCAT3 vocabulary extends W3C DCAT3 with glycomics-specific metadata properties
+for dataset cataloging and discovery. Our implementation addresses critical challenges in
+glycomics data interoperability through comprehensive mappings to established ontologies
+including GlycoRDF, PSI-MS, and DCTERMS. This semantic framework enables automated
+quality assessment, federated data querying, and enhanced reproducibility in glycomics research,
+supporting broader adoption of FAIR principles in the glycobiology community. The
+framework demonstrates comprehensive coverage of MIRAGE reporting requirements across
+multiple analytical platforms including mass spectrometry, liquid chromatography, capillary
+electrophoresis, NMR spectroscopy, and lectin microarray analysis.

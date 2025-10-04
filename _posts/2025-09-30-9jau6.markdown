@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "A Standards-Compliant, Multi-Modal Platform for Offline Access to SRA Metadata"
+date:   2025-09-30
+tags: BH25JP
+doi: 10.37044/osf.io/9jau6_v1
+authors:
+  - name: Nishad Thalhath
+    orcid: 0000-0001-9845-9714
+  - name: Kozo Nishida
+    orcid: 0000-0001-8501-7319
+---
+
+The SRAmetaDBB project, presented at BioHackathon Japan 2023, introduced an experimental JavaScript pipeline
+for creating SQLite databases from NCBI SRA (Sequence Read Archive) metadata dumps, with a vision for offline
+analysis and integration with Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) systems.
+While promising, the prototype faced significant challenges in performance, memory management, and production
+readiness when scaling to the full SRA dataset of over 45 million records. This paper presents SRAKE (SRA
+Knowledge Engine), a complete reimplementation in Go that not only addresses these limitations but extends
+the original vision with semantic search capabilities, quality control mechanisms, and multiple access
+interfaces. SRAKE achieves a 20-fold improvement in ingestion speed, maintains constant memory usage through
+zero-copy streaming, and provides standards-compliant interfaces following clig.dev guidelines. The platform
+introduces biomedical-specific semantic search using SapBERT embeddings via ONNX Runtime, implements
+comprehensive quality control thresholds for search results, and offers multiple access modalities including
+a CLI, REST API, MCP server for AI integration, and a simple web interface. Our development implementation
+demonstrates that SRAKE successfully transforms the experimental SRAmetaDBB concept into a production-ready
+platform, and seamless integration with modern AI workflows while maintaining the core vision of providing
+offline-capable, LLM-ready access to SRA metadata.
+
