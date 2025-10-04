@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0001-5351-9998
   - name: Sora Yonezawa
     orcid: 0009-0004-1874-3117
+wikidata: Q136434653
 ---
 
 At the DBCLS BioHackathon 2025, we converted metatranscriptomic analytical shell scripts into Common Workflow Language (CWL) containerized
