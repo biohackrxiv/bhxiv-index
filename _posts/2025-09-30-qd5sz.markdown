@@ -2,7 +2,7 @@
 layout: post
 title:  "DBCLS BioHackathon 2025 report: Creation and Publication Analytical Workflow of Creators' Interests"
 date:   2025-09-30
-tags: BH25JP justdoi:10.1038/s41597-025-05652-y justdoi:10.1145/3676288.367630 justdoi:10.1038/s41586-025-09290-7
+tags: BH25JP justdoi:10.1038/s41597-025-05652-y justdoi:10.1145/3676288.3676300 justdoi:10.1038/s41586-025-09290-7
   justdoi:10.1038/s41586-023-06173-7
 doi: 10.37044/osf.io/qd5sz_v1
 authors:
