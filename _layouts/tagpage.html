@@ -10,6 +10,8 @@ layout: base
   {% if page.location %}"location": "{{ page.location }}",{% endif %}
   {% if page.website %}"url": "{{ page.website }}",{% endif %}
   {% if page.image %}"image": "{{ page.image }}",{% endif %}
+  {% if page.startDate %}"startDate": "{{ page.startDate }}",{% endif %}
+  {% if page.endDate %}"endDate": "{{ page.endDate }}",{% endif %}
   "name": "{{ page.title }}",
   "keywords": "biohackathon, hackathon, {{ page.tag }}"
 }
@@ -22,6 +24,19 @@ layout: base
 <p class="post-meta">
   <a href="{{ '/feed/by_tag/' | append: page.tag | append: '.xml' | relative_url }} "><i style="color: #FFA500" class="fa-solid fa-square-rss"></i></a>&nbsp;
   <i class="fa-solid fa-tag"></i> {{ page.tag }}&nbsp;
+</p>
+<p class="post-meta">
+{%- if page.startDate -%}
+  <i class="fa-regular fa-calendar-days"></i>
+  <span>
+    {{ page.startDate | date: date_format }}
+    {% if page.endDate %}- {{ page.endDate | date: date_format }}{% endif %}
+  </span>
+  <br />
+{%- endif -%}
+{%- if page.website -%}
+  <span class="post-meta"><i class="fa-solid fa-globe"></i> <a style="color: #828282" href="{{ page.website }}">{{ page.website }}</a></span><br />
+{%- endif -%}
 </p>
 {% if page.image %}<img style="float: right;" src="{{ page.image }}" width="150px" />{% endif %}
 <p>{{ content }}</p>
