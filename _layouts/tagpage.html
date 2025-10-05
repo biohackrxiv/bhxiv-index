@@ -3,6 +3,17 @@ layout: base
 ---
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  {% if page.location %}"location": "{{ page.location }}",{% endif %}
+  {% if page.website %}"url": "{{ page.website }}",{% endif %}
+  {% if page.image %}"image": "{{ page.image }}",{% endif %}
+  "name": "{{ page.title }}"
+}
+</script>
+
 <!-- Source: https://github.com/qian256/qian256.github.io/blob/master/_includes/collecttags.html (MIT license) -->
 
 <div class="post">
@@ -11,6 +22,7 @@ layout: base
   <a href="{{ '/feed/by_tag/' | append: page.tag | append: '.xml' | relative_url }} "><i style="color: #FFA500" class="fa-solid fa-square-rss"></i></a>&nbsp;
   <i class="fa-solid fa-tag"></i> {{ page.tag }}&nbsp;
 </p>
+{% if page.image %}<img style="float: right;" src="{{ page.image }}" width="150px" />{% endif %}
 <p>{{ content }}</p>
 <h2>Preprints</h2>
 <ul class="post-list">

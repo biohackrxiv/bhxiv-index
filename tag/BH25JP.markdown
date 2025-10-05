@@ -2,6 +2,9 @@
 layout: tagpage
 title: "DBCLS BioHackathon 2025, Mie, Japan, 2025"
 tag: BH25JP
+website: https://2025.biohackathon.org/
+location: Mie, Japan
+image: https://2025.biohackathon.org/images/bh25-logo.png
 ---
 
 > The BioHackathon in Japan, organized by the Database Center for Life Science (DBCLS), continues to prioritize the integrated use
