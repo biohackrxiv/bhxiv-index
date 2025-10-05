@@ -6,11 +6,12 @@ layout: base
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Event",
+  "@type": "Hackathon",
   {% if page.location %}"location": "{{ page.location }}",{% endif %}
   {% if page.website %}"url": "{{ page.website }}",{% endif %}
   {% if page.image %}"image": "{{ page.image }}",{% endif %}
-  "name": "{{ page.title }}"
+  "name": "{{ page.title }}",
+  "keywords": "biohackathon, hackathon, {{ page.tag }}"
 }
 </script>
 
