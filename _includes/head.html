@@ -2,7 +2,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="fediverse:creator" content="@egonw@social.edu.nl" />
   {%- seo -%}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
@@ -11,10 +10,7 @@
   <!-- the next is for Zotero -->
   {% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
 
-  <link type="application/feed+json" rel="alternate" href="https://chem-bla-ics.linkedchemistry.info/feed.json" title="chem-bla-ics">
-
-  <link href="https://mastodon.social/@egonw" rel="me" />
-  <link href="https://social.edu.nl/@egonw" rel="me" />
+  <link type="application/feed+json" rel="alternate" href="https://index.biohackrxiv.org/feed.json" title="BioHackrXiv Index">
 
   {% if site.tags != "" %}
     {% include_cached collecttags.html %}
