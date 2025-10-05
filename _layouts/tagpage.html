@@ -12,6 +12,7 @@ layout: base
   {% if page.image %}"image": "{{ page.image }}",{% endif %}
   {% if page.startDate %}"startDate": "{{ page.startDate }}",{% endif %}
   {% if page.endDate %}"endDate": "{{ page.endDate }}",{% endif %}
+  {% if page.wikidata %}"sameAs": "http://www.wikidata.org/entity/{{ page.wikidata }}",{% endif %}
   "name": "{{ page.title }}",
   "keywords": "biohackathon, hackathon, {{ page.tag }}"
 }
@@ -37,6 +38,10 @@ layout: base
 {%- if page.website -%}
   <span class="post-meta"><i class="fa-solid fa-globe"></i> <a style="color: #828282" href="{{ page.website }}">{{ page.website }}</a></span><br />
 {%- endif -%}
+{%- if page.wikidata -%}
+  <span class="post-meta"><i class="fa-solid fa-cloud"></i> <a style="color: #828282" href="https://scholia.toolforge.org/event/{{ page.wikidata }}">Scholia</a></span><br />
+{%- endif -%}
+
 </p>
 {% if page.image %}<img style="float: right;" src="{{ page.image }}" width="150px" />{% endif %}
 <p>{{ content }}</p>
