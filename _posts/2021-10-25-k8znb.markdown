@@ -2,7 +2,8 @@
 layout: post
 title:  "ELIXIR Software Management Plan for Life Sciences"
 date:   2021-10-25
-tags: BH20EU
+tags: BH20EU justdoi:10.15497/RDA00065 justdoi:10.5281/zenodo.1460504 justdoi:10.1093/bioinformatics/btt113
+  justdoi:10.12688/f1000research.11407.1 justdoi:10.3233/DS-190026 justdoi:10.1038/sdata.2016.18
 doi: 10.37044/osf.io/k8znb
 wikidata: Q115452248
 authors:
