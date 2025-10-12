@@ -21,6 +21,7 @@ authors:
     orcid: 0000-0001-6683-2270
   - name: Chatarin Wangsanuwat
     orcid: 0000-0001-8228-2387
+wikidata: Q136482088
 ---
 
 Understanding the practical application of artificial intelligence (AI) in research is increasingly
