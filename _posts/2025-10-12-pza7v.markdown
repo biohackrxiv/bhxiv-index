@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "AI in Practice: Insights from a Community Survey of Biohackathon Participants"
+date:   2025-10-12
+tags: BH25JP
+doi: 10.37044/osf.io/pza7v_v1
+authors:
+  - name: Lucas Feriau
+  - name: Nattawet Sriwichai
+    orcid: 0000-0002-5844-4689
+  - name: Pumipat Tongyoo
+    orcid: 0000-0002-3274-5475
+  - name: Susumu Goto
+  - name: Yukiko Noda
+  - name: Hikaru Gyoji
+  - name: Julie Koblitz
+    orcid: 0000-0002-7260-2129
+  - name: Pipiporn Noisagul
+    orcid: 0000-0001-5351-9998
+  - name: David Steinberg
+    orcid: 0000-0001-6683-2270
+  - name: Chatarin Wangsanuwat
+    orcid: 0000-0001-8228-2387
+---
+
+Understanding the practical application of artificial intelligence (AI) in research is increasingly
+important as it becomes embedded in life sciences and bioinformatics. This paper reports on
+a multilingual survey, developed through community discussions at the 2025 BioHackathon
+in Japan and distributed through its networks, to capture current practices, successes, and
+challenges in AI adoption. The survey, oﬀered in English, Japanese, and Thai, received 105
+responses spanning diverse demographics, regions, and professional backgrounds. Findings
+reveal that most participants are frequent AI users, with tools like ChatGPT, Gemini, and
+Claude widely adopted, with ChatGPT as number one response. AI is primarily used to assist
+or draft tasks in coding, research, and writing, while full task automation remains uncommon,
+reflecting a preference for AI as a collaborative aid rather than a replacement. Successes
+were noted in eﬃciency, coding support, and proposal writing, whereas challenges centered
+on accuracy and reliability. Institutional support emerged as a key factor: respondents in
+Japan, Thailand, and the private sector reported stronger support and higher satisfaction than
+English-speaking or academic counterparts. By documenting real-world practices and concerns,
+this survey provides a valuable community-driven resource to guide responsible AI development
+and foster international collaboration in bioinformatics.
+
