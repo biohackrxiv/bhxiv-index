@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Persistence, metadata collection and re-architecture of BioHackrXiv"
+date:   2025-04-03
+tags: BH23EU
+doi: 10.37044/osf.io/c8jw6_v1
+authors:
+  - name: Arun Isaac
+    orcid: 0000-0002-6810-8195
+  - name: Yuhao Wang
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Toshiaki Katayama
+  - name: Pjotr Prins
+europepmc: PPR1000347
+wikidata: Q136482159
+---
+
+In this paper, we present the work executed on re-architecting BioHackrXiv during the international ELIXIR BioHackathon Europe 2023 in Barcelona, Spain.
+BioHackrXiv is a scholarly publication service for biohackathons and codefests that target biology and the biomedical sciences in the spirit of
+pre-publishing platforms.
