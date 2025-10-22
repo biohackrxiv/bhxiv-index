@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "on2vec: Ontology Embeddings with Graph Neural Networks and Sentence Transformers"
+date:   2025-10-21
+tags: BH25JP
+doi: 10.37044/osf.io/4f763_v1
+authors:
+  - name: David Steinberg
+    orcid: 0000-0001-6683-2270
+  - name: Maxat Kulmanov
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Hirokazu Chiba
+    orcid: 0000-0003-4062-8903
+  - name: Dorothy Ellis
+---
+
+Ontologies provide structured vocabularies and relationships essential for organizing biological knowledge, yet their
+symbolic nature limits integration with modern machine learning methods. Leveraging recent advances in graph neural
+networks (GNNs) and transformer-based language models, we present on2vec, a toolkit developed during the DBCLS BioHackathon 2025
+for generating vector embeddings from OWL ontologies. on2vec integrates structural information from ontology hierarchies with
+semantic features from textual annotations using HuggingFace Sentence Transformers, producing domain-aware embeddings suitable
+for downstream biomedical applications and ontology-based reasoning tasks.
+
