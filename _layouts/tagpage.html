@@ -49,8 +49,14 @@ layout: base
 <ul class="post-list">
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 {% for post in site.tags[page.tag] %}
+      <span class="post-meta">
+        <i class="fa-regular fa-calendar-days"></i> {{ post.date | date: date_format }}
+        {%- if post.doi -%}
+          <br /><span class="post-meta"><i class="fa-solid fa-file"></i> <a style="color: #828282" href="https://doi.org/{{ post.doi }}">https://doi.org/{{ post.doi }}</a></span>
+        {%- endif -%}
+      </span>
+        <div style="float: right; width: 200px" class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi="{{ post.doi }}"></div>
       <li>
-        <span class="post-meta"><i class="fa-regular fa-calendar-days"></i> {{ post.date | date: date_format }}</span>
         <div>
         {% if post.image %}<a href="{{ post.url | relative_url }}" ><img style="float: right;" src="{{ post.image }}" width="300px" />{% endif %}
         <h3>
@@ -58,8 +64,10 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        <div style="float: right; width: 200px" class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi="{{ post.doi }}"></div>
         {%- if site.show_excerpts -%}
+          {% if post.doi %}
+            <div style="float: right; width: 200px"><span class="__dimensions_badge_embed__" data-doi="{{ post.doi }}" data-legend="always" data-style="small_circle"></span></div>
+          {% endif %}
           {{ post.excerpt | strip_html | normalize_whitespace }}
         {%- endif -%}
         <span class="post-meta"> <i class="fa-regular fa-clock" aria-hidden="true"></i> {% include read-time.html %}</span>
