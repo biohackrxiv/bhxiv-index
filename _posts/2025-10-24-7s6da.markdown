@@ -2,7 +2,7 @@
 layout: post
 title:  "DBCLS BioHackathon 2025 report on the WikiBlitz"
 date:   2025-10-24
-tags: BH25JP
+tags: BH25JP justdoi:10.1093/biosci/biaf104 cito:usesMethodIn:10.37044/osf.io/5ue2s_v1
 doi: 10.37044/osf.io/7s6da_v1
 authors:
   - name: Andra Waagmeester
