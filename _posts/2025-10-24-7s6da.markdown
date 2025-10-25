@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2025 report on the WikiBlitz"
+date:   2025-10-24
+tags: BH25JP
+doi: 10.37044/osf.io/7s6da_v1
+authors:
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+  - name: Robert Hoehndorf
+    orcid: 0000-0001-8149-5890
+  - name: David Steinberg
+    orcid: 0000-0001-6683-2270
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Julie Koblitz
+  - name: Takeru Nakazato
+    orcid: 0000-0002-0706-2867
+  - name: Shuya Ikeda
+---
+
+As part of the DBCLS BioHackathon 2025, we organized a WikiBlitz to improve biodiversity knowledge by integrating iNaturalist, GBIF, Wikidata, and Wikipedia.
+Participants identified local flora and fauna, filling gaps in multilingual Wikipedia articles. This report summarizes the methodology, results, and insights,
+illustrating the usefulness of combining citizen science with digital platforms to enrich ecological data and promote biodiversity awareness.
+
