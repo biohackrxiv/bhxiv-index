@@ -13,6 +13,7 @@ authors:
   - name: Hirokazu Chiba
     orcid: 0000-0003-4062-8903
   - name: Dorothy Ellis
+europepmc: PPR1106117
 ---
 
 Ontologies provide structured vocabularies and relationships essential for organizing biological knowledge, yet their
