@@ -19,6 +19,7 @@ authors:
   - name: Takeru Nakazato
     orcid: 0000-0002-0706-2867
   - name: Shuya Ikeda
+wikidata: Q136644078
 ---
 
 As part of the DBCLS BioHackathon 2025, we organized a WikiBlitz to improve biodiversity knowledge by integrating iNaturalist, GBIF, Wikidata, and Wikipedia.
