@@ -1,7 +1,7 @@
 ---
 layout: tagpage
 title: "BioHackathon Europe, Berlin, Germany, 2025"
-tag: BH25EU
+tag: BioHackEU25
 ---
 
 > BioHackathon Europe is an annual event that brings together bioinformaticians and computational biologists from around the
