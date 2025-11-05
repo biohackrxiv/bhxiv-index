@@ -1,6 +1,9 @@
 ---
 layout: tagpage
-title: "BioHackathon Europe, Barcelona, Spain, 2024"
+title: "BioHackathon Europe 2024"
+location: "Barcelona, Spain, 2024"
+website: "https://biohackathon-europe.org/"
+contact_url: "https://biohackathon-europe.org/about/biohackrxiv/"
 tag: BH24EU
 ---
 

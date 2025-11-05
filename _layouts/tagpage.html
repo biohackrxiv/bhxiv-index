@@ -13,7 +13,7 @@ layout: base
   {% if page.startDate %}"startDate": "{{ page.startDate }}",{% endif %}
   {% if page.endDate %}"endDate": "{{ page.endDate }}",{% endif %}
   {% if page.wikidata %}"sameAs": "http://www.wikidata.org/entity/{{ page.wikidata }}",{% endif %}
-  "name": "{{ page.title }}",
+  {% if page.location %}"name": "{{ page.title }}, {{ page.location}}",{% else %}"name": "{{ page.title }}",{% endif %}
   "keywords": "biohackathon, hackathon, {{ page.tag }}"
 }
 </script>
@@ -21,7 +21,7 @@ layout: base
 <!-- Source: https://github.com/qian256/qian256.github.io/blob/master/_includes/collecttags.html (MIT license) -->
 
 <div class="post">
-<h1 class="tag-title">{{ page.title }}</h1>
+<h1 class="tag-title">{% if page.location %}{{ page.title }}, {{ page.location}}{% else %}{{ page.title }}{% endif %}</h1>
 <p class="post-meta">
   <a href="{{ '/feed/by_tag/' | append: page.tag | append: '.xml' | relative_url }} "><i style="color: #FFA500" class="fa-solid fa-square-rss"></i></a>&nbsp;
   <i class="fa-solid fa-tag"></i> {{ page.tag }}&nbsp;
@@ -38,6 +38,9 @@ layout: base
 {%- if page.website -%}
   <span class="post-meta"><i class="fa-solid fa-globe"></i> <a style="color: #828282" href="{{ page.website }}">{{ page.website }}</a></span><br />
 {%- endif -%}
+{%- if page.contact_url -%}
+  <span class="post-meta"><i class="fa-solid fa-envelope"></i> <a style="color: #828282" href="{{ page.contact_url }}">{{ page.contact_url }}</a></span><br />
+{%- endif -%}
 {%- if page.wikidata -%}
   <span class="post-meta"><i class="fa-solid fa-cloud"></i> <a style="color: #828282" href="https://scholia.toolforge.org/event/{{ page.wikidata }}">Scholia</a></span><br />
 {%- endif -%}
@@ -45,6 +48,14 @@ layout: base
 </p>
 {% if page.image %}<img style="float: right;" src="{{ page.image }}" width="150px" />{% endif %}
 <p>{{ content }}</p>
+
+<h3>YAML instructions</h3>
+<pre>
+{% if page.title %}biohackathon_name: "{{ page.title }}"{% endif %}
+{% if page.website %}biohackathon_url: "{{ page.website }}"{% endif %}
+{% if page.location %}biohackathon_location: "{{ page.location }}"{% endif %}
+</pre>
+
 <h2>Preprints</h2>
 <ul class="post-list">
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

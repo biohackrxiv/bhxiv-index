@@ -1,7 +1,7 @@
 ---
 layout: tagpage
-title: "DBCLS BioHackathon 2025, Mie, Japan, 2025"
 tag: BH25JP
+title: "DBCLS BioHackathon 2025"
 website: https://2025.biohackathon.org/
 location: Mie, Japan
 image: https://2025.biohackathon.org/images/bh25-logo.png

@@ -1,6 +1,9 @@
 ---
 layout: tagpage
-title: "BioHackathon Europe, Berlin, Germany, 2025"
+title: "BioHackathon Europe"
+location: "Berlin, Germany, 2025"
+website: "https://biohackathon-europe.org/"
+contact_url: "https://biohackathon-europe.org/about/biohackrxiv/"
 tag: BioHackEU25
 ---
 
