@@ -1,9 +1,9 @@
 ---
 layout: tagpage
 tag: SWAT4HCLS26
-title: "17th International SWAT4HCLS Conference"
+title: "SWAT4HCLS Biohackathon 2026"
 location: "Amsterdan, The Netherlands"
-website: https://www.swat4ls.org/workshops/amsterdam-2026/
+website: https://www.swat4ls.org/swat4hcls-biohackathon-2026/
 image: https://www.swat4ls.org/wp-content/uploads/2025/08/swat4ls-header-1-amsterdam26-2X-1102x275.png
 ---
 
