@@ -14,6 +14,11 @@ meetings:
   title: "BioHackathon Europe, Berlin, Germany, 2025"
   year: 2025
 
+- AWS ODP + NVIDIA KG Hackathon
+  tag: KGhack
+  title: "AWS Open Data Life Sciences Hackathon (Knowledge Graphs), Arlington VA, USA, 2025"
+  year: 2025
+
 - BH25JP:
   tag: BH25JP
   title: "DBCLS BioHackathon, Mie, Japan, 2025"
@@ -22,7 +27,7 @@ meetings:
 
 - CMUDNA:
   tag: CMUDNA
-  title: "CMU DNAnexus BioHackathon, Pittsburg, USA, 2023"
+  title: "CMU DNAnexus BioHackathon, Pittsburgh, USA, 2023"
   year: 2023
 
 - CMUDNA25:
