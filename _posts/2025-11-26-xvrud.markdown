@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "BioHackEU25 report: Scop3PTM Next - Interactive visualization of PTM data across sequence, structure and interactions"
+date:   2025-11-26
+tags: BioHackEU25
+doi: 10.37044/osf.io/xvrud_v1
+authors:
+  - name: Adrián Díaz
+    orcid: 0000-0003-0165-1318
+  - name: Natalia Tichshenko
+  - name: Mahfouz Shehu
+  - name: Elyse Cheng
+  - name: Yusuf Shehu
+    orcid: 0009-0009-3732-7051
+  - name: Pathmanaban Ramasamy
+---
+
+Scop3PTM Next was developed during BioHackathon Europe 2025 to address the need for integrated visualization of protein-centric data across sequence (and modification),
+interaction and structural contexts. The project delivers an open-source library of modular JavaScript components, built with Vue.js and documented with Storybook,
+enabling reusable and interoperable visualizations. The framework provides 1D sequence tracks, contact-map networks and interactive 3D structural renders, using
+MolSpecView for rendering 3D structures linked to Nightingale 1D tracks. Together, these components offer a unified interface for exploring PTM features across
+multiple representational layers. This work establishes the basis for a community-oriented visualization library to support proteomics analysis.
+
