@@ -1,4 +1,9 @@
 meetings:
+- KGhack25:
+  tag: KGhack25
+  title: "AWS Open Data Life Sciences Hackathon, Arlington VA, USA, 2025"
+  year: 2025
+
 - SWAT4HCLS26:
   tag: SWAT4HCLS26
   title: "SWAT4HCLS Biohackathon 2026"
