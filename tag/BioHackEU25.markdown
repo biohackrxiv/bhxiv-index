@@ -5,6 +5,8 @@ location: "Berlin, Germany, 2025"
 website: "https://biohackathon-europe.org/"
 contact_url: "https://biohackathon-europe.org/about/biohackrxiv/"
 tag: BioHackEU25
+startDate: 2025-11-03
+endDate: 2025-11-07
 ---
 
 > BioHackathon Europe is an annual event that brings together bioinformaticians and computational biologists from around the
