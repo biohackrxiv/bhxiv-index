@@ -4,6 +4,7 @@ title:  "A Blueprint for Open Science: How Transatlantic Teams Built and Deploye
 date:   2025-11-26
 tags: KGhack25
 doi: 10.37044/osf.io/g4rk2_v1
+europepmc: PPR1126462
 authors:
   - name: Mina P. Peyton
     orcid: 0000-0002-0250-1429
