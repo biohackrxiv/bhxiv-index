@@ -4,6 +4,7 @@ title:  "Mining the potential of knowledge graphs for metadata on training"
 date:   2025-11-29
 tags: BioHackEU25
 doi: 10.37044/osf.io/gv2ac_v1
+europepmc: PPR1127977
 authors:
   - name: Dimitris Panouris
     orcid: 0009-0005-2282-2982

@@ -5,6 +5,7 @@ date:   2025-11-26
 tags: BioHackEU25
 doi: 10.37044/osf.io/xvrud_v1
 europepmc: PPR1126463
+wikidata: Q137164507
 authors:
   - name: Adrián Díaz
     orcid: 0000-0003-0165-1318
