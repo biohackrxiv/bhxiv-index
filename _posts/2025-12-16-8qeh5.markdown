@@ -10,14 +10,21 @@ authors:
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
   - name: Akira R. Kinjo
+    orcid: 0000-0002-4006-8208
   - name: Andra Waagmeester
-  - name: Javier Acosta
+    orcid: 0000-0001-9773-4008
+  - name: Javier Millán Acosta
+    orcid: 0000-0002-4166-7093
   - name: Shuichi Kawashima
     orcid: 0000-0001-7883-3756
   - name: Yoko Okabeppu
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
   - name: Samuel Bustamante Larriet
+  - name: Daniel Fernández-Álvarez
+    orcid: 0000-0002-8666-7660
+wikidata: Q137438800
+europepmc: PPR1134876
 ---
 
 In this paper, we present the work we have done during the Japan Biohackathon 2025 about implementing MCP servers
