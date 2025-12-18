@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Decoding Complex Genotype-Phenotype Interactions by Discretizing the Genome"
+date:   2025-12-17
+tags: BioHackEU25
+doi: 10.37044/osf.io/xhkc3_v1
+authors:
+  - name: Jędrzej Kubica
+    orcid: 0000-0001-7037-3900
+  - name: Hetvi Jethwani
+    orcid: 0000-0003-1654-4988
+  - name: Krzysztof H. Banecki
+    orcid: 0000-0001-9573-0804
+  - name: Mauricio Moldes
+    orcid: 0000-0001-5455-7769
+  - name: Dariusz Plewczynski
+    orcid: 0000-0002-3840-7610
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+Background: Despite the ease and affordability of genome sequencing in biomedical research, the genetic causes of many diseases
+or their subtypes remain unknown due to diverse biological mechanisms that complicate genotype-phenotype relationships. Most
+previous studies have focused on single variants or sets of variants presumed to be directly causal for the disease. However,
+incomplete penetrance, in which some individuals carry disease-associated variants yet exhibit no phenotype, suggests that
+these variants, the genomic background and other secondary factors combine to shape the susceptibility to the disease.
+
+Results: Here, we introduce a new methodology for genotype-phenotype mapping based on genomic hashes, unique representations
+of local genomic background. Each hash corresponds to a haplotype-resolved set of variants within one recombination-defined
+genomic region (haploblock). We provide a practical guide for using genomic hashes to train machine learning models that link
+genomic background and specific variant sets to phenotypic outcomes. We implemented this framework as a ready-to-use
+bioinformatics pipeline capable of fast, scalable, hash-based genome comparison. The pipeline is available on GitHub:
+https://github.com/collaborativebioinformatics/Haploblock_Clusters_ElixirBH25How it benefits the community: Genomic
+hashes offer a computationally efficient framework for large-scale genotype-phenotype mapping. By discretizing the
+genome into haploblocks, this approach will facilitate the search for causes of complex phenotypes across the entire
+genome and the prediction of precision prevention points and treatments.
+
