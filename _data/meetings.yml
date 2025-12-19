@@ -25,6 +25,12 @@ meetings:
   year: 2025
   url: https://2025.biohackathon.org/
 
+- ARCSMP2025:
+  tag: ARCSMP2025
+  title: "2nd Hands-On Symposium on ARC Communication and Interoperability, Diemerstein, Germany, 2025"
+  year: 2025
+  url: "https://nfdi4plants.github.io/events/2025-06-23_kaiserslautern_arc-hackathon/"
+  
 - CMUDNA:
   tag: CMUDNA
   title: "CMU DNAnexus BioHackathon, Pittsburgh, USA, 2023"
