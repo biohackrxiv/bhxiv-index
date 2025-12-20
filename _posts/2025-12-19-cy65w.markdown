@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Increasing FAIRness in agrosystem sciences and plant phenomics"
+date:   2025-12-19
+tags: BH23DE
+doi: 10.37044/osf.io/cy65w_v1
+authors:
+  - name: Gabriel Schneider
+    orcid: 0000-0001-6573-3115
+  - name: Patrick König
+    orcid: 0000-0002-8948-6793
+  - name: Cyril Pommier
+    orcid: 0000-0002-9040-8733
+  - name: Carissa Robyn BLEKER
+  - name: Pedro Miguel Barros
+  - name: Filippo Bergeretti
+    orcid: 0000-0002-6863-5577
+  - name: Ana Usié
+    orcid: 0000-0002-3364-9434
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Marco Brandizi
+  - name: Dominik Brilhaus
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Jonas Grieb
+  - name: Daniel Martini
+  - name: Cristina Martins Rodrigues
+  - name: Dennis Psaroudakis
+    orcid: 0000-0002-7521-798X
+  - name: Nils Reinosch
+  - name: Jascha Jung
+  - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
+wikidata: Q137476500
+---
+
+As part of the de.NBI BioHackathon 2023, we here report about our progress on increasingFAIR-compliance in agrosystem sciences and plant phenomics. Through the collaborative effortsof the agrosystem and plant sciences communities, research data are available through variousdata repositories and infrastructures. To foster these developments and increase the value forthe communities, enabling FAIR-compliance for scientific datasets is one top priority strategicaim. Due to the heterogeneity of the sub-domains and their requirements, we addressedthree challenges with direct relation to specific FAIR principles: Increasing findability of digitalagrosystem resources by extending Schema.org, Enabling easy creation of MIAPPE-compliantISA metadata for Plant Phenotyping Experiments, and Increasing Plant Data Accessibility andCollaboration with FAIDARE.
+
