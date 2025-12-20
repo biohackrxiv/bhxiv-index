@@ -35,6 +35,7 @@ authors:
   - name: Heinrich Lukas Weil
     orcid: 0000-0003-1945-6342
 wikidata: Q137476500
+europepmc: PPR1136244
 ---
 
 As part of the de.NBI BioHackathon 2023, we here report about our progress on increasingFAIR-compliance in agrosystem sciences and plant phenomics. Through the collaborative effortsof the agrosystem and plant sciences communities, research data are available through variousdata repositories and infrastructures. To foster these developments and increase the value forthe communities, enabling FAIR-compliance for scientific datasets is one top priority strategicaim. Due to the heterogeneity of the sub-domains and their requirements, we addressedthree challenges with direct relation to specific FAIR principles: Increasing findability of digitalagrosystem resources by extending Schema.org, Enabling easy creation of MIAPPE-compliantISA metadata for Plant Phenotyping Experiments, and Increasing Plant Data Accessibility andCollaboration with FAIDARE.
