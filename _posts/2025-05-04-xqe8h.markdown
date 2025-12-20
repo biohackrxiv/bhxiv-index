@@ -6,6 +6,17 @@ tags: SWAT4HCLS25
 doi: 10.37044/osf.io/xqe8h_v1
 europepmc: PPR1013743
 wikidata: Q134351095
+authors:
+  - name: David Steinberg
+  - name: Birgit Meldal
+  - name: James Wilsenach
+  - name: StefanDvoretskii
+  - name: Agoritsa T. Kalampaliki
+  - name: Vincent Emonet
+  - name: JervenBolleman
+  - name: Sophie Eisele
+  - name: Johannes Kalmbach
+  - name: SatwantKaur
 ---
 
 At the SWAT4HCLS 2025 Hackathon, we continued our work on dataset interoperability and AI-readiness, extending our
