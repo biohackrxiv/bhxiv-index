@@ -55,6 +55,11 @@ meetings:
   title: "BioHackathon Germany, Lutherstadt Wittenberg, Germany, 2022"
   year: 2022
 
+- BH23DE:
+  tag: BH23DE
+  title: "BioHackathon Germany, Bielefeld, Germany, 2023"
+  year: 2023
+
 - BH24DE:
   tag: BH24DE
   title: "BioHackathon Germany, Kassel, Germany, 2024"
