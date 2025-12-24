@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Enhancement of the Interoperability of Trait Data on Genetic Resources between Japan and France"
+date:   2025-12-23
+tags: BH23JP
+doi: 10.37044/osf.io/hw2fj_v1
+authors:
+  - name: Akane Takezaki
+    orcid: 0009-0008-3547-0391
+  - nane: Hiromi Kajiya-Kanegae
+    orcid: 0000-0002-5719-7559
+  - name: Celia Michotey
+    orcid: 0000-0003-1877-1703
+  - name: Raphael Flores
+    orcid: 0000-0002-0278-5441
+  - name: Cyril Pommier
+    orcid: 0000-0002-9040-8733
+---
+
+Japan’s National Agriculture and Food Research Organization initiated a collaborative research project with France’s National Research Institute
+for Agriculture, Food and Environment to evaluate wheat genetic resources and to identify materials with desirable traits using standardized
+criteria. This paper presents the current status of trait data standardization between the two organizations and outlines a direction for
+standardization. Trait data for genetic resources in Japan and France are managed using independently developed standards. The lack of mapping
+standards hinders data integration and interoperability. To support experts in the mapping process, we developed a tool that translates trait
+terms. A generative AI-based translation tool appears to be applicable for collecting relevant information to support mapping between trait
+terms, as well as translating newly submitted Japanese trait terms into English.
+
