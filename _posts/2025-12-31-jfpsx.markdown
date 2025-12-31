@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "BioHackEU25 Report Project 16: MiCoReCa (Microbiome Community Resource Catalogue) - Towards Centralized Curation And Integration Of Microbiome Bioinformatics Resources"
+date:   2025-12-31
+tags: BioHackEU25
+doi: 10.37044/osf.io/jfpsx_v1
+authors:
+  - name: Vivek Ashokan
+    orcid: 0009-0006-1470-3999
+  - name: Clara Emery
+    orcid: 0009-0003-9572-6671
+  - name: Agnès Barnabé
+    orcid: 0000-0002-8420-7556
+  - name: Valentin Loux
+    orcid: 0000-0002-8268-915X
+  - name: Christina Pavloudi
+    orcid: 0000-0001-5106-6067
+  - name: Paul Zierep
+    orcid: 0000-0000-0000-0000
+  - name: Nikolaos Strepis
+    orcid: 0000-0000-0000-0000
+  - name: Bérénice Batut
+    orcid: 0000-0001-9852-1987
+---
+
+The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains fragmented across disparate,
+often outdated cataloging efforts, hindering resource discovery and utilization. To address this critical gap, the ELIXIR Microbiome Community proposes the development of MiCoReCa
+(Microbiome Community Resource Catalogue), a comprehensive, dynamic, open-access catalogue of microbiome-related bioinformatics resources (tools, workflows, training, standards,
+and databases). Leveraging our community's expertise, this initiative will utilize standardized ontologies like EDAM and cross-reference established platforms like bio.tools and
+WorkflowHub to create a centralized, findable inventory. A key feature is the community-driven process for identifying and curating missing ontological terms and metadata,
+ensuring MiCoReCa's accuracy and relevance in collaboration with partner platforms. Furthermore, the catalogue will integrate links to training materials from TeSS to support
+appropriate tool usage, and connect with OpenEBench for benchmarking capabilities. This project will not only provide a vital resource for the microbiome field, enhancing
+research efficiency and reproducibility, but will also establish a sustainable, adaptable infrastructure potentially applicable to other ELIXIR Communities. This effort
+represents a significant contribution by the ELIXIR Microbiome Community to streamline microbiome bioinformatics.
+
