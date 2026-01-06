@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "QPX: Pathway analysis environment"
+date:   2026-01-06
+tags: BH25JP
+doi: 10.37044/osf.io/m37f2_v1
+authors:
+  - name: Hidemasa Bono
+    orcid: 0000-0003-4413-0651
+  - name: Naoya Oec
+    orcid: 0000-0002-7491-4994
+  - name: Airu Hayashi
+  - name: Chiharu Fujita
+  - name: Kotaro Uchida
+  - name: Ryo Mameda
+    orcid: 0009-0007-5830-6482
+  - name: Sora Yonezawa
+    orcid: 0009-0004-1874-3117
+  - name: Kazuki Nakamae
+    orcid: 0000-0002-4469-664X
+  - name: Ryo Nozu
+    orcid: 0000-0002-1099-3152
+---
+
+Building on our work at DBCLS BioHackathon 2023 (BH23), where we introduced QPX and promoted pathway modeling with WikiPathways (Pico et al., 2008)
+using PathVisio (Kutmon et al., 2015), we now focused on creating new pathway diagrams for diverse species and registering them in WikiPathways with
+functional annotations. In parallel, we deployed WikiPathways node data into Elasticsearch to enable fast and flexible search and integration of
+pathway information.
+
