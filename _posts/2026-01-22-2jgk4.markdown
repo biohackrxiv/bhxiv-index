@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "METRICS - Monitoring of Key Performance Indicators for ELIXIR Services"
+date:   2026-01-22
+tags: BioHackEU25
+doi: 10.37044/osf.io/2jgk4_v1
+authors:
+  - name: Nils-Christian Lübke
+    orcid: 0009-0009-4801-9978
+  - name: Helena Schnitzer
+    orcid: 0000-0002-6382-9452
+  - name: Julia Koblitz
+    orcid: 0000-0002-7260-2129
+  - name: Saskia Lawson-Tovey
+    orcid: 0000-0002-8611-162X
+  - name: Nicola Soranzo
+    orcid: 0000-0003-3627-5340
+  - name: Karel Berka
+    orcid: 0000-0001-9472-2589
+  - name: Séverine Duvaud
+    orcid: 0000-0001-7892-9678
+  - name: Kristyna Kvizdova
+    orcid: 0009-0000-9827-1359
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Anna Golobardes Vilarasau
+  - name: Gavin Farrell
+    orcid: 0000-0001-5166-8551
+  - name: Adel Bouhraoua
+    orcid: 0000-0001-9531-6339
+  - name: Espen Åberg
+    orcid: 0000-0002-2280-7978
+  - name: David Lloyd
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Vedran Kasalica
+    orcid: 0000-0002-0097-1056
+  - name: Walter Baccinelli
+    orcid: 0000-0001-8888-4792
+  - name: Mijke Jetten
+    orcid: 0000-0001-9114-2896 
+  - name: Laura Chabot
+  - name: Grégory Gimenez
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+---
+
+Key Performance Indicators (KPIs) are increasingly requested by a diverse range of stakeholders across the research
+ecosystem. Funders want to measure the impact of projects and related services they fund, or research organisations
+want to track the service use for informed decision making. Service providers themselves are also interested in
+monitoring their services to gather feedback and improve service quality. KPIs are a simple, but powerful tool for
+these purposes.As part of the BioHackathon Europe 2025, we report on the activities of the METRICS project, which
+addresses the need for consistent and transparent evaluation of services across ELIXIR and related initiatives
+using KPIs. The project brings together experts from multiple ELIXIR Nodes and scientific domains to identify,
+harmonise, and semantically model KPIs that reflect service quality, usage, sustainability, and impact. By exploring
+existing evaluation frameworks, and processes, the team aims to design a flexible yet coherent foundation for KPI
+monitoring of ELIXIR services. This report summarises the project’s motivation, current landscape analysis, and
+initial steps toward developing an ontology-driven framework for KPI representation, fostering interoperability
+and supporting evidence-based management of life science infrastructures.
