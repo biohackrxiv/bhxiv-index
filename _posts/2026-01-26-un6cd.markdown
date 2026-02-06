@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "BH25DE report: On the path to machine-actionable training materials"
+date:   2026-01-26
+tags: BH25DE
+doi: 10.37044/osf.io/un6cd_v1
+authors:
+  - name: Phil Reed
+    orcid: 0000-0002-4479-715X
+  - name: Nick Juty
+    orcid: 0000-0002-2036-8350
+  - name: Petra Steiner
+    orcid: 0000-0001-8997-2620
+  - name: Leyla Jael Castro
+    orcid: 0000-0003-3986-0510
+  - name: Charles Tapley Hoyt
+    orcid: 0000-0003-4423-4370
+  - name: Oliver Knodel
+    orcid: 0000-0001-8174-7795
+  - name: Martin Voigt
+    orcid: 0000-0001-5556-838X
+  - name: Roman Baum
+    orcid: 0000-0001-5246-9351
+  - name: Dilfuza Djamalova
+    orcid: 0009-0004-7782-2894
+  - name: Jacobo Miranda
+    orcid: 0009-0005-0673-021X
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
+---
+
+The fragmentation of training materials across research infrastructures often results in unsustainable resource
+duplication and significant barriers to upskilling. This work aims to enable developers to build systems that
+effectively discover relevant materials by promoting a federated, FAIR-compliant strategy for open training. The
+project operated across three interrelated streams: metadata interoperability, material analysis, and the
+definition and representation of learning paths in a machine readable manner.We demonstrated content federation
+via the mTeSS-X platform, enabling cross-instance exchange and preparing for future integration with the EOSC
+federation. To enhance interoperability, we indexed relevant ontologies and curated semantic crosswalks between
+established metadata models, specifically MoDALIA and Schema.org/Bioschemas. These mappings were implemented
+within the open-source OERbservatory Python package, providing a facility for exchanging data between platforms
+such as DALIA and TeSS. For material analysis, we utilised Large Language Models (LLMs) and explored vectorisation
+techniques to calculate similarity, allowing for the identification of related materials and the potential for
+future deduplication of records across registries.To address the lack of machine-actionable trajectories across
+related or sequential materials, we proposed new Bioschemas profiles specifically for learning paths. By extending
+Schema.org types, including Course and Syllabus, we developed a schema that supports modular and linear orderings
+of training materials. This model was validated using SPARQL queries on knowledge graphs derived from real-world
+examples like the Galaxy Training Network. Such advancements provide a foundation for automated path generation
+and improved discoverability within training catalogues, and serves as a use case and strategy with broader
+applicability beyond those materials.
+
