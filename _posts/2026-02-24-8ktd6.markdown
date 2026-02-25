@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Bidirectional bridge: GitHub  ⇄  bio.tools"
+date:   2026-02-24
+tags: BH25EU
+doi: 10.37044/osf.io/8ktd6_v1
+authors:
+  - name: Mariia Steeghs-Turchina
+    orcid: 0000-0002-0852-4752
+  - name: Anna Niehues
+    orcid: 0000-0002-9839-5439
+  - name: Ana Mendes
+    orcid: 0009-0008-5170-0927
+  - name: Erik Jaaniso
+    orcid: 0009-0003-4246-6546
+  - name: Ove Johan Ragnar Gustafsson
+    orcid: 0000-0002-2977-5032
+  - name: Walter Baccinelli
+    orcid: 0000-0001-8888-4792
+  - name: Vedran Kasalica
+    orcid: 0000-0002-0097-1056
+  - name: Sam Cox
+    orcid: 0000-0002-9841-9816
+  - name: Ivan Topolsky
+    orcid: 0000-0002-7561-0810
+  - name: Magnus Palmblad
+    orcid: 0000-0002-5865-8994
+  - name: Veit Schwämmle
+    orcid: 0000-0002-9708-6722
+---
+
+Research software metadata can be found across many code repositories and software registries. Here, we describe the tooling for a
+bidirectional bridge between the software development platform GitHub and the ELIXIR bio.tools registry of life sciences software
+tools and data resources. The developed bridge maps and improves metadata records across these two platforms, thereby benefiting
+both and helping make research software more FAIR: findable, accessible, interoperable, and reusable. Specifically, the bridge
+enables production of high-quality, rich bio.tools entries from the content already available in GitHub repositories, and uses
+bio.tools records to suggest improvements to GitHub repositories through pull requests or issues. This includes adding missing
+information and standardized descriptions for increased compliance with Software Management Plans. The bidirectional bridge makes
+extensive use of existing APIs (GitHub, bio.tools, Europe PMC) and large language models (LLMs) to enrich metadata on both
+platforms. By automating metadata extraction, improvement suggestion, and integration, the bridge reduces the manual overhead
+required to FAIRify research software, lowering barriers for researchers to contribute or maintain well-annotated, reusable software.
+
