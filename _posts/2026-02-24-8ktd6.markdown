@@ -2,7 +2,7 @@
 layout: post
 title:  "Bidirectional bridge: GitHub  ⇄  bio.tools"
 date:   2026-02-24
-tags: BH25EU
+tags: BioHackEU25
 doi: 10.37044/osf.io/8ktd6_v1
 authors:
   - name: Mariia Steeghs-Turchina
