@@ -44,6 +44,7 @@ authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
 europepmc: PPR1146607
+wikidata: Q138335642
 ---
 
 Key Performance Indicators (KPIs) are increasingly requested by a diverse range of stakeholders across the research
