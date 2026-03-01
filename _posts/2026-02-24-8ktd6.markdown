@@ -27,6 +27,7 @@ authors:
     orcid: 0000-0002-5865-8994
   - name: Veit Schwämmle
     orcid: 0000-0002-9708-6722
+europepmc: PPR1158421
 ---
 
 Research software metadata can be found across many code repositories and software registries. Here, we describe the tooling for a

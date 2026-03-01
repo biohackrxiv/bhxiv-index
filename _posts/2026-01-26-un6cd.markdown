@@ -27,6 +27,7 @@ authors:
     orcid: 0009-0005-0673-021X
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
+europepmc: PPR1147340
 ---
 
 The fragmentation of training materials across research infrastructures often results in unsustainable resource

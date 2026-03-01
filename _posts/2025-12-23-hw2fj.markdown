@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0002-0278-5441
   - name: Cyril Pommier
     orcid: 0000-0002-9040-8733
+europepmc: PPR1137173
 ---
 
 Japan’s National Agriculture and Food Research Organization initiated a collaborative research project with France’s National Research Institute

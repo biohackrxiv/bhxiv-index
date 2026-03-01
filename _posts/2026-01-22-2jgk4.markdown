@@ -38,11 +38,12 @@ authors:
   - name: Walter Baccinelli
     orcid: 0000-0001-8888-4792
   - name: Mijke Jetten
-    orcid: 0000-0001-9114-2896 
+    orcid: 0000-0001-9114-2896
   - name: Laura Chabot
   - name: Grégory Gimenez
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
+europepmc: PPR1146607
 ---
 
 Key Performance Indicators (KPIs) are increasingly requested by a diverse range of stakeholders across the research

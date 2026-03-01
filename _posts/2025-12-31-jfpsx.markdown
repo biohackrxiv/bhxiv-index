@@ -21,6 +21,7 @@ authors:
     orcid: 0000-0000-0000-0000
   - name: Bérénice Batut
     orcid: 0000-0001-9852-1987
+europepmc: PPR1139208
 ---
 
 The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains fragmented across disparate,
