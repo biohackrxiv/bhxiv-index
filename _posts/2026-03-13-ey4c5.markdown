@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Tools to develop constraint-based models in R: adapting existing toolboxes"
+date:   2026-03-13
+tags: BioHackEU25
+doi: 10.37044/osf.io/ey4c5_v1
+authors:
+  - name: Jesubukade Ajakaye
+    orcid: 0000-0002-8966-4422
+  - name: Mihail Anton
+    orcid: 0000-0002-7753-9042
+  - name: Iván Domenzain
+    orcid: 0000-0002-5322-2040
+  - name: Tanisha Malpani
+    orcid: 0009-0007-8065-8492
+  - name: Sebastien Moretti
+    orcid: 0000-0003-3947-488X
+  - name: Rahuman S. Malik Sheriff
+    orcid: 0000-0003-0705-9809
+  - name: Maria Suarez-Diez
+    orcid: 0000-0001-5845-146X
+  - name: Silvio Waschina
+    orcid: 0000-0002-6290-3593
+---
+
+As part of the BioHackathon Europe 2025, we here report on the progress of the hacking team preparing tools to develop constraint-based
+models in R for the Systems Biology community. This preliminary development relies on the adaptation of existing toolboxes. In this project,
+we proposed the (re)development of an R based framework for developing and simulating constraint-based models. We proposed to expand
+the Sybil library for model simulation with the functionalities for model reconstruction and analysis available in the widely used RAVEN
+toolbox in Matlab. The outcome will facilitate constraint based modelling to experimental scientists, thereby contributing to bridge the
+gap between data users and data generators. It will also be more FAIR by being usable with non-proprietary software, and align with
+software best practices as collected by the ELIXIR Tools Platform. We will work towards increased reproducibility by also considering
+implementation of FROG analysis in R. Moreover, as a tool developed by the ELIXIR Systems Biology Community for the wider community,
+the long-term maintenance burden is spread across a wider membership.Two weeks before the BioHackathon, we discovered a new tool in R
+allowing the simulation of models, called cobrar (https://github.com/Waschina/cobrar). Which calls for an assessment of its current
+state and definition of new development areas.
+

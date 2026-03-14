@@ -1,4 +1,4 @@
-@Grab(group='io.github.egonw.bacting', module='managers-ui', version='1.0.9-SNAPSHOT')
+@Grab(group='io.github.egonw.bacting', module='managers-ui', version='1.0.9')
 
 import groovy.json.JsonSlurper
 import java.text.SimpleDateFormat;
