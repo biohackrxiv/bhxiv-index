@@ -1,4 +1,9 @@
 meetings:
+- SnakemakeHackathon2026:
+  tag: SnakemakeHackathon2026
+  title: "Snakemake Hackathon March 2026, Munchen, Germany"
+  year: 2026
+
 - KGhack25:
   tag: KGhack25
   title: "AWS Open Data Life Sciences Hackathon, Arlington VA, USA, 2025"
