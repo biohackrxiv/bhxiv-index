@@ -8,6 +8,13 @@ social:
     platform: github
     user_url: https://github.com/biohackrxiv
 
+header_pages:
+  - meetings.markdown
+  - for-submitters.markdown
+  - for-organizers.markdown
+  - archive.markdown
+  - about.markdown
+
 # Build settings
 theme: minima
 paginate: 7
