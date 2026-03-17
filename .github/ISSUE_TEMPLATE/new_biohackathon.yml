@@ -1,0 +1,70 @@
+name: BioHackathon Event Registration
+description: Register a new BioHackathon event for the BioHackrXiv preprint server.
+title: "[Event Registration]: "
+labels: ["event_proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for registering your event with BioHackrXiv!
+
+        Once approved, your event will appear on the [Meetings page](https://index.biohackrxiv.org/meetings/)
+        and participants will be able to submit preprints referencing your event.
+
+        See [For Event Organizers](https://index.biohackrxiv.org/for-organizers/) for more details.
+  - type: input
+    id: event_name
+    attributes:
+      label: Event name
+      description: Full name of the event.
+      placeholder: "e.g. BioHackathon Europe 2026"
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Event website
+      description: URL of the main event webpage.
+      placeholder: "e.g. https://biohackathon-europe.org/"
+    validations:
+      required: true
+  - type: input
+    id: start_date
+    attributes:
+      label: Start date
+      description: Start date in YYYY-MM-DD format.
+      placeholder: "e.g. 2026-11-02"
+    validations:
+      required: true
+  - type: input
+    id: end_date
+    attributes:
+      label: End date
+      description: End date in YYYY-MM-DD format.
+      placeholder: "e.g. 2026-11-06"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: City and country
+      description: Where is the event held?
+      placeholder: "e.g. Barcelona, Spain"
+    validations:
+      required: true
+  - type: input
+    id: hashcode
+    attributes:
+      label: Event tag / hashcode
+      description: Short code for the event. If not provided, we will assign one.
+      placeholder: "e.g. BH26EU, CMUDNA25"
+    validations:
+      required: false
+  - type: input
+    id: image
+    attributes:
+      label: Event logo or banner URL
+      description: Optional URL to an event logo or banner image.
+      placeholder: "e.g. https://example.com/logo.png"
+    validations:
+      required: false
