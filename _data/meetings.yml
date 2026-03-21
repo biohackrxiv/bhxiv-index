@@ -1,4 +1,9 @@
 meetings:
+- CMU26:
+  tag: CMU26
+  title: "Collaborative Hackathon: 2026 Hackathon, Pittsburgh, USA, 2026"
+  year: 2026
+
 - SnakemakeHackathon2026:
   tag: SnakemakeHackathon2026
   title: "Snakemake Hackathon March 2026, Munchen, Germany"

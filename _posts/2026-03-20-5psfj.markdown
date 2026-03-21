@@ -1,0 +1,111 @@
+---
+layout: post
+title:  "Towards Federated Learning Across Biobanks: Prototype Software from the 2026 Carnegie Mellon University–NVIDIA Hackathon"
+date:   2026-03-20
+tags: CMU26
+doi: 10.37044/osf.io/5psfj_v1
+authors:
+  - name: James Mu
+    orcid: 0009-0008-1598-9292
+  - name: Aditya Kumar Karna
+    orcid: 0009-0000-0365-5748
+  - name: Telaprolu Kumar Koushik
+    orcid: 0009-0006-5026-5201
+  - name: Jeff Winchell
+  - name: Tyler Jay Yang
+  - name: Caiwei Maggie Zhang
+  - name: Jasmine Baker
+  - name: Espen Hagen
+  - name: Enamul Hoq
+  - name: Kyulin Kim
+  - name: Konstantinos Koukoutegos
+  - name: Peter Lawson
+  - name: Chantera Lazard
+    orcid: 0009-0006-1367-3812
+  - name: Qianqian Liang
+  - name: Robert Loughnan
+  - name: Diya Patidar
+  - name: Chunduru Sri Abhijit
+  - name: Vibha Acharya
+    orcid: 0000-0001-6598-0052
+  - name: Rahaf M. Ahmad
+  - name: Anna Boeva
+  - name: Jingyao Chen
+  - name: Ioannis Christofilogiannis
+    orcid: 0009-0008-5906-0776
+  - name: Mariona Jaramillo Civill
+  - name: Heena Dalal
+  - name: Alina Devkota
+  - name: Amrit Gaire
+  - name: Dhruv Gor
+  - name: Aryan Sharan Guda
+  - name: Prashnna Gyawali
+  - name: Seungjin Han
+  - name: Jiahao He
+  - name: Yuan-Ting Hsieh
+  - name: Mengying Hu
+  - name: Peiran Jiang
+  - name: Pu Kao
+  - name: Adam Kehl
+  - name: Arnav Kharbanda
+    orcid: 0009-0007-9195-9960
+  - name: Yajushi Khurana
+  - name: KUSHAL KOIRALA
+    orcid: 0009-0009-7935-4533
+  - name: Sumeet Kothare
+  - name: Jędrzej Kubica
+  - name: Seohyun Lee
+  - name: Zilinghan Li
+  - name: Yosen Lin
+  - name: William Lu
+  - name: Jialan Ma
+  - name: Samarpan Mohanty
+    orcid: 0009-0001-1309-7425
+  - name: Abraham G. Moller
+  - name: Derek Mu
+  - name: Shreyan Balaji Nalwad
+  - name: Shreya Nandakumar
+  - name: Hieu Ngo
+  - name: Bhanvi Paliwal
+  - name: Isha Parikh
+  - name: Zillur Rahman
+  - name: Arunannamalai Sujatha Bharath Raj
+  - name: Nikita Rajesh
+  - name: Shivank Sadasivan
+  - name: Ushta Samal
+  - name: Srikant Sarangi
+  - name: Andrew Scouten
+    orcid: 0009-0004-6418-7158
+  - name: Aastha Shah
+  - name: Sanjnaa Sridhar
+  - name: Suratha Sriram
+  - name: Mrunali Abhijit Thokadiwala
+  - name: Jacob Thrasher
+  - name: Jeffrey Wang
+  - name: Yiman Wu
+  - name: Zhenghao Xiao
+  - name: Qiyu Yang
+  - name: Zhaoyi You
+  - name: Jiayi Zhao
+    orcid: 0009-0008-2597-6196
+  - name: Jiayan Zhou
+    orcid: 0000-0001-5974-087X
+  - name: Zheqian Zhu
+  - name: Pravesh Parekh
+  - name: Huajin Wang
+    orcid: 0000-0003-0121-4257
+  - name: Melanie Gainey
+  - name: Sean Davis
+  - name: Beryl Rabindran
+  - name: Holger R. Roth
+  - name: Ben Busby
+    orcid: 0000-0001-5267-4988
+---
+
+The Carnegie Mellon University-NVIDIA Federated Learning Hackathon for Biomedical Applications (January 7-9, 2026) convened researchers
+from academia, government, and industry to implement federated frameworks for disease subtyping, genetic association studies, and
+multimodal clinical prediction using NVIDIA FLARE. This preprint presents ten projects spanninggenome-wide association analyses,
+histopathology harmonization, pangenome construction, ancestry deconvolution, rare disease stratification, cancer subtyping, polygenic
+risk score aggregation, and multimodal fusion. These proofs of principle collectively demonstrate both the versatility of federated
+learning for biomedical applications and the technical considerations required for successful deployment.
+
