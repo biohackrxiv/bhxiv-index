@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Evolving FAIR Image Analysis in Galaxy for Cross-domain and AI-ready Applications"
+date:   2026-03-31
+tags: BioHackEU25
+doi: 10.37044/osf.io/tsxby_v1
+authors:
+  - name: Diana Chiang
+    orcid: 0000-0002-5857-1477
+  - name: Pavankumar Videm
+    orcid: 0000-0002-5192-126X
+  - name: David Lopez Tabernero
+    orcid: 0000-0002-9541-3961
+  - name: Maarten W. Paul
+    orcid: 0000-0002-7990-6010
+  - name: Alireza Heidari
+    orcid: 0000-0003-0315-4403
+  - name: Martin Etzrodt
+    orcid: 0000-0003-1928-3904
+  - name: Beatriz Serrano-Solano
+    orcid: 0000-0002-5862-6132
+  - name: Leonid Kostrykin
+    orcid: 0000-0003-1323-3762
+---
+
+The increasing adoption of image-based technologies across life sciences, environmental research, and related domains has increased the demand for
+interoperable, reproducible, and FAIR-compliant image analysis infrastructures. At ELIXIR BioHackathon Europe 2025, Project 9, “Evolving FAIR Image
+Analysis in Galaxy for Cross-domain and AI-ready Applications”, addressed these challenges by enhancing the Galaxy platform for bioimage analysis
+with a focus on semantic interoperability, content-based reproducibility validation, and user-centered onboarding tutorials.To advance semantic
+interoperability, we developed a curated vocabulary based on the EDAM Bioimaging ontology, which was applied to annotate tutorials on the Galaxy
+Training Network, improving discoverability and aligning with evolving community standards. For reproducibility and AI-readiness, we integrated
+the International Standard Content Code (ISCC) via the ISCC-SUM tool suite, enabling format-independent content-based validation, dataset
+deduplication, and assessment of data similarity for robust model training. Finally, usability improvements included a comprehensive onboarding
+tutorial for newcomers, enhanced integration with OMERO and BioImage Archive, and generally improved tool interoperability, including support for
+GeoJSON-based spatial annotations. Collectively, these developments establish a scalable, cross-domain image analysis framework within Galaxy,
+promoting FAIR-aligned practices while enabling reproducible and AI-ready workflows.
