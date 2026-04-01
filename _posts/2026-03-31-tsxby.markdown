@@ -21,6 +21,7 @@ authors:
     orcid: 0000-0002-5862-6132
   - name: Leonid Kostrykin
     orcid: 0000-0003-1323-3762
+wikidata: Q138849430
 ---
 
 The increasing adoption of image-based technologies across life sciences, environmental research, and related domains has increased the demand for
