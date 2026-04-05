@@ -35,7 +35,7 @@ if (dois.length > 0) {
     content = cite.format('bibliography', {
       format: 'html', template : 'apa',
       append: function (entry) {
-        return ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + entry.DOI + '">Scholia</a>'
+        return ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://qlever.scholia.wiki/doi/' + entry.DOI + '">Scholia</a>'
       }
     })
     document.getElementById('bibliography').innerHTML = content

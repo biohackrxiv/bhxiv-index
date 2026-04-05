@@ -54,7 +54,7 @@ layout: base
           <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
         {% endif %}
         {% if page.wikidata %} 
-          <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.wikidata | prepend:'https://scholia.toolforge.org/work/' }}">Scholia</a>&nbsp;
+          <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.wikidata | prepend:'https://qlever.scholia.wiki/work/' }}">Scholia</a>&nbsp;
         {% endif %}
         </span>
       {% endif %}
@@ -159,7 +159,7 @@ if (dois.length > 0) {
         if (intentionMap.has(entry.DOI)) {
           intentionStr = " <b>[cito:" + intentionMap.get(entry.DOI) + "]</b>"
         }
-        return intentionStr + ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + entry.DOI + '">Scholia</a>'
+        return intentionStr + ' <a href="https://doi.org/' + entry.DOI + '">CrossRef</a> <a href="https://qlever.scholia.wiki/doi/' + entry.DOI + '">Scholia</a>'
       }
     })
     document.getElementById('bibliography').innerHTML = content
