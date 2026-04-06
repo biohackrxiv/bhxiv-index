@@ -17,6 +17,7 @@ BioHackrXiv preprints are written in Markdown and converted to PDF. Follow the s
 1. Go to the [publication-template](https://github.com/biohackrxiv/publication-template) on GitHub
 2. Click **"Use this template"** → **"Create a new repository"**
 3. Name your repository (e.g., `biohackeu25-paper-projectname`)
+4. change the CC0 license to CC-BY 4.0 International (for example)
 
 ### Step 2: Write your paper
 
