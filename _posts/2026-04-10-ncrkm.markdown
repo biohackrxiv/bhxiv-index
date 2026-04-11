@@ -17,6 +17,8 @@ authors:
     orcid: 0000-0002-2455-5938
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
+europepmc: PPR1176543
+wikidata: Q139149571
 ---
 
 The current landscape of animal phenomics is characterised by a substantial lack of standardisation, hindering data reuse, reproducibility, and interoperability across
