@@ -11,6 +11,7 @@ authors:
     orcid: 0000-0001-5351-9998
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348
+wikidata: Q139267500
 ---
 
 There is currently no standardized representation of genomic variants in RDF. To address this issue, during the DBCLS BioHackathon 2024 we modelled
