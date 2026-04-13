@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "GA4GH VRS for the Semantic Web"
+date:   2026-04-13
+tags: BH24JP
+doi: 10.37044/osf.io/qy4td_v1
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Pitiporn Noisagul
+    orcid: 0000-0001-5351-9998
+  - name: Jose Emilio Labra-Gayo
+    orcid: 0000-0001-8907-5348
+---
+
+There is currently no standardized representation of genomic variants in RDF. To address this issue, during the DBCLS BioHackathon 2024 we modelled
+an RDF Schema for the GA4GH VRS to enable interoperability of this standard within the bioinformatics semantic web community.
+
