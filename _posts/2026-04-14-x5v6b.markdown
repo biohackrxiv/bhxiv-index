@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Improving package annotation in metabolomics and proteomics via robust, ontology-driven LLM integration"
+date:   2026-04-14
+tags: BioHackEU25
+doi: 10.37044/osf.io/x5v6b_v1
+authors:
+  - name: Sebastian Lobentanzer
+    orcid: 0000-0003-3399-6695
+  - name: Helge Hecht
+    orcid: 0000-0001-6744-996X
+  - name: Vincent J Carey
+    orcid: 0000-0003-4046-0063
+  - name: Maria A Doyle
+    orcid: 0000-0003-4847-8436
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
+  - name: Hervé MENAGER
+    orcid: 0000-0002-7552-1009
+  - name: Júlia Mir
+    orcid: 0000-0001-6104-9260
+  - name: Claire Rioualen
+    orcid: 0000-0002-7684-8679
+---
+
+Identifying the most appropriate bioinformatics tool for a task remains challenging across multiple domains. Annotating tools with EDAM ontology
+terms (e.g. topics, operations, input / output data and formats) can help, but manual annotation is labour-intensive, error-prone, and difficult
+to scale, particularly given the high rate of first-time package developers in academic environments. At BioHackathon Europe 2025, our team
+explored how Large Language Models (LLMs) can assist this process through the Model Context Protocol (MCP), an emerging open standard that
+specifies how LLMs call external functions, using metabolomics as a domain use case. We developed an MCP-based workflow that grounds tool
+descriptions in the EDAM ontology (Ison et al., 2013), improving reproducibility and semantic precision. Two core modules, entry-point
+specification and semantic text segmentation, were completed during the hackathon, while additional mapping, validation, and reporting
+functions were outlined for follow-up development. Benchmarking integrated with the BioChatter framework (Lobentanzer et al., 2025) demonstrated
+that MCP-assisted models outperform unconstrained baselines on initial tests using metabolomics packages from bio.tools (Ison et al., 2019).
+Ongoing work will expand benchmarking datasets, refine term-mapping logic, and extend the workflow to proteomics, supporting scalable,
+ontology-driven annotation across the ELIXIR ecosystem.
+
