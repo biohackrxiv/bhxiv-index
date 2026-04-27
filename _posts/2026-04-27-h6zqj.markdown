@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Snakemake Hackathon 2026"
+date:   2026-04-27
+tags: SnakemakeHackathon2026
+doi: 10.37044/osf.io/h6zqj_v1
+authors:
+  - name: Manar Abdalazem
+  - name: Felix Bartusch
+  - name: Ed Bennett
+  - name: Oliver But
+  - name: Ben Carrillo
+  - name: Christopher Condon
+  - name: Lea Evers
+  - name: Matthew Feickert
+  - name: Jonas Freimuth
+  - name: Till Harrmann
+  - name: Lukas Heinrich
+  - name: Yana Holoborodko
+  - name: Aoran Hu
+  - name: Michael Jahn
+  - name: Johannes Köster
+  - name: David Koppstein
+  - name: Luis Kress
+  - name: Clemens Lange
+  - name: David Lähnemann
+  - name: Alessandro Leone
+  - name: Alexander Mattausch
+  - name: Cameron MyClymont
+  - name: Christian Meesters
+    orcid: 0000-0003-2408-7588
+  - name: Cade Mirchandani
+  - name: Thomas Mulvaney
+  - name: Mohit Navandar
+  - name: Matthias Peter
+  - name: Gaspard Reulet
+  - name: Filipe G. Vieira
+  - name: Luke Vomber
+  - name: Wytamma Wirth
+---
+
+Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across
+all research domains. Snakemake has emerged as one of the most widely adopted systems for declarative pipeline orchestration, combining a
+concise Python-based DSL with native support for containers, cloud back-ends, and fine-grained provenance tracking, and it underpins
+thousands of published studies. Nonetheless, the platform’s continued evolution faces several open challenges: improving core performance
+on heterogeneous high-performance-computing (HPC) resources, extending the plugin architecture for domain-specific extensions, and lowering
+the entry barrier for novice users while preserving full reproducibility.Here we report on the Snakemake Hackathon 2026, convened in Munich,
+Germany (9–13 March 2026) with more than 40 participants representing academia, industry, and national-level research infrastructure.
