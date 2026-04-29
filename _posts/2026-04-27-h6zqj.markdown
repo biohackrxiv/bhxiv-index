@@ -37,6 +37,7 @@ authors:
   - name: Filipe G. Vieira
   - name: Luke Vomber
   - name: Wytamma Wirth
+europepmc: PPR1182894
 ---
 
 Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across

@@ -21,6 +21,7 @@ authors:
     orcid: 0000-0001-6104-9260
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679
+europepmc: PPR1177443
 ---
 
 Identifying the most appropriate bioinformatics tool for a task remains challenging across multiple domains. Annotating tools with EDAM ontology
