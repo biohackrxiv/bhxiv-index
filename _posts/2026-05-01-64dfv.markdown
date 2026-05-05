@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "INTOXICOM Workshop Report: Advancing FAIR toxicology research output across Europe: ELIXIR &amp;amp; FAIRsharing studies"
+date:   2026-05-01
+tags: INTOXICOM
+doi: 10.37044/osf.io/64dfv_v1
+authors:
+  - name: Christian Bonatto Minella
+    orcid: 0000-0001-7696-7662
+  - name: Meike Bünger
+    orcid: 0009-0002-7664-0058
+  - name: Robin Durník
+    orcid: 0000-0002-4301-6761
+  - name: Thomas Exner
+    orcid: 0000-0002-1849-5246
+  - name: Alessio Gamba
+    orcid: 0000-0002-9031-7508
+  - name: Jente Houweling
+    orcid: 0009-0005-3680-0645
+  - name: Vassilios Ioannidis
+    orcid: 0000-0002-4209-2578
+  - name: Danyel Jennen
+    orcid: 0000-0002-8618-2487
+  - name: Luis Antonio Rico Guerrero
+    orcid: 0000-0001-9845-3048
+  - name: Iseult Lynch
+    orcid: 0000-0003-4250-4584
+  - name: Uko Maran
+    orcid: 0000-0003-2506-0934
+  - name: Kryštof Komanec
+    orcid: 0000-0003-3856-1682
+  - name: Rob Stierum
+    orcid: 0000-0002-4409-1974
+  - name: Marvin Martens
+    orcid: 0000-0003-2230-0840
+  - name: Sara Morsy
+    orcid: 0000-0002-2477-1139
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+wikidata: Q139669483
+---
+
+As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized. The first INTOXICOM workshop
+was held in May 2024. Here, we here report on the 2nd workshop, titled “Enhancing Research Output: FAIR documentation and Tool Management for toxicology
+studies” which was held from 27 to 28 November 2024 at the Main Building of the University of Basel in Switzerland
+
