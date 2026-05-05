@@ -34,11 +34,12 @@ authors:
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
 europepmc: PPR935824
+wikidata: Q131007824
 ---
 
 This report documents the first workshop of the ELIXIR Toxicology Community (Martenset al., 2023), held in Utrecht on May 28-29, 2024 (FAIRification of
-Toxicological ResearchOutput: Leveraging ELIXIR Resources, 2024), as part of the INTOXICOM ImplementationStudy workshop series (Integrating the Toxicology
-Community into ELIXIR, 2024). The main topic of the meeting was the FAIRification of toxicological research outputs and exploring thepotential role of
-ELIXIR resources in this process. A team of ten people from the ELIXIRToxicology Community, including Marvin Martens, Penny Nymark, Iseult Lynch, Meike
+Toxicological Research Output: Leveraging ELIXIR Resources, 2024), as part of the INTOXICOM Implementation Study workshop series (Integrating the Toxicology
+Community into ELIXIR, 2024). The main topic of the meeting was the FAIRification of toxicological research outputs and exploring the potential role of
+ELIXIR resources in this process. A team of ten people from the ELIXIR Toxicology Community, including Marvin Martens, Penny Nymark, Iseult Lynch, Meike
 Bünger, Rob Stierum, Thomas Exner, Egon Willighagen, Ammar Ammar, Dominik Martinát, and Karel Berka, coordinated the event.
 
