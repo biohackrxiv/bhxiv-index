@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "INTOXICOM Workshop Report: Advancing FAIR toxicology research output across Europe: ELIXIR &amp;amp; FAIRsharing studies"
+title:  "INTOXICOM Workshop Report: Advancing FAIR toxicology research output across Europe: ELIXIR & FAIRsharing studies"
 date:   2026-05-01
 tags: INTOXICOM
 doi: 10.37044/osf.io/64dfv_v1
