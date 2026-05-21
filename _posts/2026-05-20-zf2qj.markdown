@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "INTOXICOM Workshop Report: Systems Biology Models for Toxicology"
+date:   2026-05-20
+tags: INTOXICOM
+doi: 10.37044/osf.io/zf2qj_v1
+authors:
+  - name: Chris Evelo
+  - name: Rob Stierum
+  - name: Meike Bünger
+  - name: Marvin Martens
+  - name: Ellen Hessel
+  - name: Iseult Lynch
+    orcid: 0000-0003-4250-4584
+  - name: Holly Mortensen
+  - name: Maria Klapa
+  - name: Danyel Jennen
+  - name: Anne Kienhuis
+  - name: Jente Houweling
+  - name: Dominik Martinát
+  - name: Rahuman Sheriff
+  - name: Karine Audouze
+    orcid: 0000-0001-7525-4089
+---
+
+This report summarizes the ELIXIR Toxicology Community workshop on Systems Biology Models for Toxicology, held on 11–12 September
+2025 in Athens, Greece. The workshop tookplace under the INTOXICOM Implementation Study workshop series (Integrating the
+toxicology community into ELIXIR 2024) and aimed to strengthen connections between systems biologyand toxicology by bridging
+ELIXIR resources with systems toxicology modelling approaches usedfor chemical risk assessment. The workshop explored the
+role of qualitative and quantitative exposure–health outcome models, including (quantitative) Adverse Outcome Pathways
+((q)-AOPs), AOP networks, and mechanistic toxicology models. Participants examined two usecases focused on neurotoxicity
+and endocrine disruption, discussing how ELIXIR tools, platforms,core data resources, and modelling environments can support
+them. The workshop concluded with a discussion on a roadmap for integrating ELIXIR systems biology infrastructures and tools
+into applied systems toxicology. This report documents the presentations, discussions, and practical results that contribute
+to Deliverables of INTOXICOM WP5.
+
