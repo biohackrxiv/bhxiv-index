@@ -6,19 +6,31 @@ tags: INTOXICOM
 doi: 10.37044/osf.io/zf2qj_v1
 authors:
   - name: Chris Evelo
+    orcid: 0000-0002-5301-3142
   - name: Rob Stierum
+    orcid: 0000-0002-4409-1974
   - name: Meike Bünger
+    orcid: 0009-0002-7664-0058
   - name: Marvin Martens
+    orcid: 0000-0003-2230-0840
   - name: Ellen Hessel
+    orcid: 0000-0003-3960-7523
   - name: Iseult Lynch
     orcid: 0000-0003-4250-4584
   - name: Holly Mortensen
+    orcid: 0000-0002-3180-5229
   - name: Maria Klapa
+    orcid: 0000-0002-2047-3185
   - name: Danyel Jennen
+    orcid: 0000-0002-8618-2487
   - name: Anne Kienhuis
+    orcid: 0000-0002-6465-4498
   - name: Jente Houweling
+    orcid: 0009-0005-3680-0645
   - name: Dominik Martinát
+    orcid: 0000-0001-6611-7883
   - name: Rahuman Sheriff
+    orcid: 0000-0003-0705-9809
   - name: Karine Audouze
     orcid: 0000-0001-7525-4089
 ---
