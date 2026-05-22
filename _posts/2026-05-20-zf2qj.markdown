@@ -33,6 +33,7 @@ authors:
     orcid: 0000-0003-0705-9809
   - name: Karine Audouze
     orcid: 0000-0001-7525-4089
+europepmc: PPR1235373
 ---
 
 This report summarizes the ELIXIR Toxicology Community workshop on Systems Biology Models for Toxicology, held on 11–12 September
