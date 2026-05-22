@@ -36,7 +36,7 @@ authors:
 ---
 
 This report summarizes the ELIXIR Toxicology Community workshop on Systems Biology Models for Toxicology, held on 11–12 September
-2025 in Athens, Greece. The workshop tookplace under the INTOXICOM Implementation Study workshop series (Integrating the
+2025 in Athens, Greece. The workshop took place under the INTOXICOM Implementation Study workshop series (Integrating the
 toxicology community into ELIXIR 2024) and aimed to strengthen connections between systems biologyand toxicology by bridging
 ELIXIR resources with systems toxicology modelling approaches usedfor chemical risk assessment. The workshop explored the
 role of qualitative and quantitative exposure–health outcome models, including (quantitative) Adverse Outcome Pathways
