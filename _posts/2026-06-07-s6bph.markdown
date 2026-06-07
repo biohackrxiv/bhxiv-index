@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "2nd SpatialData Hackathon: Frameworks, Formats and Interoperability"
+date:   2026-06-07
+tags: SpatialData2
+doi: 10.37044/osf.io/s6bph_v1
+authors:
+  - name: Artur Manukyan
+    orcid: 0000-0002-0441-9517
+  - name: Luca Marconato
+    orcid: 0000-0003-3198-1326
+  - name: Chris Barnes
+  - name: Marvin Albert
+    orcid: 0000-0003-2536-2545
+  - name: Selman Özleyen
+    orcid: 0009-0009-2596-7588
+  - name: Francesca Drummer
+  - name: Wouter-Michiel Vierdag
+    orcid: 0000-0003-1666-5421
+  - name: Luke Zappia
+  - name: Hugo Gruson
+    orcid: 0000-0002-4094-1476
+  - name: Marco Varrone
+  - name: Max Hess
+  - name: Eric Moerth
+    orcid: 0000-0003-1625-0146
+  - name: Oliver Stegle
+  - name: Altuna Akalin
+  - name: Yimin Zheng
+  - name: HU TaoBo
+    orcid: 0000-0001-5124-7167
+  - name: Silvia Maria Macri
+  - name: Ahmet Sarıgün
+    orcid: 0009-0003-2715-5344
+  - name: Alexander Blume
+  - name: Aaron Kollotzek
+  - name: Helena Crowell
+    orcid: 0000-0002-4801-1767
+  - name: Lorenzo Cerrone
+  - name: Sonja Stockhaus
+  - name: Samir Moustafa
+---
+
+This preprint outlines the results of the "2nd SpatialData Hackathon" organised by the scverse and Bioconductor teams. The event gathered experts to
+advance spatial omics through four hackathon tracks: (i) R interoperability, (ii) accessibility and performance of visualization tools, (iii) design
+modernization for the SpatialData framework, and (iv) file formats and transformations (NGFF).Key achievements include extending the SpatialData,
+Zarr and bioimaging frameworks to R/Bioconductor ecosystem, improving visualization with 2.5D/3D rendering and a chunked multiscale point representation,
+introducing cloud-based IO and prototypes for lazy file linking and bidirectional element-table relationships, and developing a language-agnostic
+conformance test suite for OME-NGFF coordinate transformations. The hackathon fostered collaboration, creating infrastructure prototypes and identifying
+interoperability challenges. Documented on GitHub, these efforts brought together 24 participants from the US and Europe, promoting a FAIR ecosystem of
+spatial omics and imaging tools.
+
