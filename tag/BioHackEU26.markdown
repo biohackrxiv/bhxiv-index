@@ -3,6 +3,7 @@ layout: tagpage
 title: "BioHackathon Europe 2027"
 location: "Barcelona, Spain, 2026"
 website: "https://biohackathon-europe.org/"
+image: https://biohackathon-europe.org/assets/logos/bheu-logo.png
 contact_url: "https://biohackathon-europe.org/about/biohackrxiv/"
 tag: BioHackEU26
 startDate: 2026-11-09
