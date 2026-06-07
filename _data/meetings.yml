@@ -1,4 +1,19 @@
 meetings:
+- EuroBioc2026:
+  tag: EuroBioc2026
+  title: "EuroBioc 2026 Hackathon"
+  year: 2026
+
+- BioHackEU26:
+  tag: BioHackEU26
+  title: "BioHackathon Europe, Barcelona, Spain, 2026"
+  year: 2026
+
+- SpatialData2:
+  tag: SpatialData2
+  title: "2nd SpatialData Hackathon: Padua, Italy, 2026"
+  year: 2026
+
 - CMU26:
   tag: CMU26
   title: "Collaborative Hackathon: 2026 Hackathon, Pittsburgh, USA, 2026"
