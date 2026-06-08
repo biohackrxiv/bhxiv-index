@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "BioHackathon Europe 2027"
+title: "BioHackathon Europe 2026"
 location: "Barcelona, Spain, 2026"
 website: "https://biohackathon-europe.org/"
 image: https://biohackathon-europe.org/assets/logos/bheu-logo.png
