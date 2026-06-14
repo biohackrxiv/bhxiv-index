@@ -1,7 +1,17 @@
 meetings:
+- VeniceHackathon2026:
+  tag: VeniceHackathon2026
+  title: "Bioconductor Spatial Data and Image Analysis Hackathon, Venice, Italy, 2026"
+  year: 2026
+
+- GOBLINHack26:
+  tag: GOBLINHack26
+  title: "COST Action GOBLIN Hackathon, Oviedo, Spain, 2026"
+  year: 2026
+
 - EuroBioc2026:
   tag: EuroBioc2026
-  title: "EuroBioc 2026 Hackathon"
+  title: "EuroBioc 2026 Hackathon, Turku, Finland, 2026"
   year: 2026
 
 - BioHackEU26:
@@ -31,7 +41,7 @@ meetings:
 
 - SWAT4HCLS26:
   tag: SWAT4HCLS26
-  title: "SWAT4HCLS Biohackathon 2026"
+  title: "SWAT4HCLS Biohackathon 2026, Amsterdam, The Netherlands, 2026"
   year: 2026
 
 - BH25DE:
