@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Bioconductor Spatial Data and Image Analysis Hackathon"
+date:   2026-06-14
+tags: VeniceHackathon2026
+doi: 10.37044/osf.io/9ej32_v1
+authors:
+  - name: Helena Crowell
+    orcid: 0000-0002-4801-1767
+  - name: Luca Marconato
+  - name: Ilaria Billato
+  - name: Matteo Calgaro
+  - name: Robert Castelo
+  - name: Riccardo Ceccaroni
+  - name: Carissa Chen
+  - name: Patrick Danaher
+  - name: Sean Davis
+    orcid: 0000-0002-8991-6458
+  - name: Martin Emons
+  - name: Gabriel Grajeda
+  - name: Hugo Gruson
+    orcid: 0000-0002-4094-1476
+  - name: Samuel Gunz
+  - name: Juan Henao
+  - name: Rafael Irizarry
+  - name: Sviatoslav Kharuk
+  - name: Daria Lazic
+  - name: Artur Manukyan
+    orcid: 0000-0002-0441-9517
+  - name: Pere Moles-Seró
+  - name: Elizabeth Purdom
+  - name: Dario Righelli
+  - name: Gabriele Sales
+  - name: Mike L. Smith
+  - name: Charlotte Soneson
+  - name: Michael B. Stadler
+  - name: Wolfgang Huber
+  - name: Davide Risso
+---
+
+We report the outcomes of the Bioconductor Spatial Data and Image Analysis Hackathon, held in Venice, Italy in April 2026.
+Twenty-seven researchers and software developers organized into four teams to advance R/Bioconductor capabilities for
+spatial omics and image analysis. Outputs include scalable raster–polygon workflows for whole-slide pathology, an R package
+for running spatial foundation models via reticulate/basilisk, a spatially stratified differential expression framework, and
+substantial enhancements to the R `SpatialData` infrastructure for interoperability with the Python `spatialdata` ecosystem.
+All software is openly available and under active development.
