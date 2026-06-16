@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Eurobioc2026 BiocContainer Report"
+date:   2026-06-15
+tags: EuroBioc2026
+doi: 10.37044/osf.io/acxky_v1
+authors:
+  - name: Dania Machlab
+    orcid: 0000-0002-2578-6930
+  - name: Ata Badr Barzegar
+  - name: João F. Carrilho
+    orcid: 0009-0002-2265-8922
+  - name: MichaelB. Stadler
+    orcid: 0000-0002-2269-4934
+  - name: Laurent Gatto
+    orcid: 0000-0002-1520-2268
+---
+
+Containers enhance reproducibility and provide an easy and convenient way to share the setups used to run an analysis. As part of the EuroBioc 2026 Hackathon, this working group got
+together with the aim of offering user-friendly and straightforward ways to create containers given the desired R packages, data and scripts, and importantly, coupled to the used
+Bioconductor release. This resulted in an R package called SimpleBiocContainer which offers a minimal set of functions to do this.
