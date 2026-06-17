@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Rendering SSSOM ontology mappings as RDF named graphs and RDF 1.2 triple terms"
+date:   2026-06-16
+tags: GOBLINHack26
+doi: 10.37044/osf.io/auhzg_v1
+authors:
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+  - name: Ruben Taelman
+    orcid: 0000-0001-5118-256X
+  - name: Thomas Pellissier Tanon
+    orcid: 0000-0002-0620-6486
+---
+
+SSSOM shares ontology mappings as a TSV+YAML file usually consumed as a dataframe. At the GOBLIN hackathon we explored rendering
+it as RDF with the individual mapping as first-class object, via two complementary serializations: named graphs (TriG, modelling
+sssom:MappingSet) and RDF 1.2 triple terms (Turtle 1.2, modelling sssom:Mapping). We compare the design trade-offs and show they
+compose rather than compete. As proof of concept we rendered all EBI OLS extracts (271 sets, ~6.2M mappings) into both forms and
+built an in-browser Oxigraph + Comunica demo. Wikidata extraction is ongoing. An early proposal to start discussion.
+
