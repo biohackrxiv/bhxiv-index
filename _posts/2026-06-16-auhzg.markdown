@@ -13,6 +13,8 @@ authors:
     orcid: 0000-0001-5118-256X
   - name: Thomas Pellissier Tanon
     orcid: 0000-0002-0620-6486
+europepmc: PPR1253144
+wikidata: Q140288058
 ---
 
 SSSOM shares ontology mappings as a TSV+YAML file usually consumed as a dataframe. At the GOBLIN hackathon we explored rendering

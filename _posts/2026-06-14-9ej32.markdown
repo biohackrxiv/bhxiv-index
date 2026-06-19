@@ -36,6 +36,7 @@ authors:
   - name: Michael B. Stadler
   - name: Wolfgang Huber
   - name: Davide Risso
+europepmc: PPR1251368
 ---
 
 We report the outcomes of the Bioconductor Spatial Data and Image Analysis Hackathon, held in Venice, Italy in April 2026.

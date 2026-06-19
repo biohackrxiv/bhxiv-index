@@ -14,6 +14,7 @@ authors:
     orcid: 0000-0002-2269-4934
   - name: Laurent Gatto
     orcid: 0000-0002-1520-2268
+europepmc: PPR1252198
 ---
 
 Containers enhance reproducibility and provide an easy and convenient way to share the setups used to run an analysis. As part of the EuroBioc 2026 Hackathon, this working group got

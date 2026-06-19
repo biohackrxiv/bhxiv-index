@@ -39,6 +39,7 @@ authors:
   - name: Lorenzo Cerrone
   - name: Sonja Stockhaus
   - name: Samir Moustafa
+europepmc: PPR1247452
 ---
 
 This preprint outlines the results of the "2nd SpatialData Hackathon" organised by the scverse and Bioconductor teams. The event gathered experts to
