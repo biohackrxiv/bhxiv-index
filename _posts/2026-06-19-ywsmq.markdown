@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "BiocExecute: Make package functions or workflows executable from the command line"
+date:   2026-06-19
+tags: EuroBioc2026
+doi: 10.37044/osf.io/ywsmq_v1
+authors:
+  - name: Guillaume Deflandre
+    orcid: 0009-0008-1257-2416
+  - name: Léopold Guyot
+    orcid: 0009-0005-2217-3855
+  - name: Rasmus Hindström
+    orcid: 0009-0004-5731-178X
+  - name: Claire Rioualen
+    orcid: 0000-0002-7684-8679
+---
+
+Bioconductor (Huber et al., 2015) is a collection of more than 2,400 open-source software packages, together accounting for about a million downloads per year
+(Bioconductor, 2026). The packages are thoroughly maintained and documented, and their quality is enforced through BiocCheck. Their reach, however, largely
+stops at the R console. The R and Bioconductor paradigm of interactivity through a responsive, informative REPL has served academic users well for a long time.
+But computational biology has grown more interdisciplinary, and increasingly runs on high-performance and high-throughput compute, large-scale experimentation,
+and the cloud. In these settings analyses are assembled from command-line tools and run under workflow managers, where an interactive R session does not fit.
+For Bioconductor and the work built on it to stay relevant, its tooling must be portableand scriptable as well as interactive. Some of this ground is already
+covered: R2G2 integrates R with Galaxy, and Rapp (r-lib,2024) lets an R script run as if it were a command-line program. What is missing is a path from a
+Bioconductor package to such tools that follows the project’s own packaging conventions. BiocExecute fills that gap. It is a package that wraps Rapp so that
+the functions and workflows inside any Bioconductor package can be called from the command line, with these command-line entry points declared and bundled as
+part of the package itself. Both users and developers gain from this. Users can run Bioconductor tools outside of Rscripts, combine them as modules with other
+command-line tools, and reuse them in workflows under any workflow manager; developers reach a wider range of users. More broadly, making Bioconductor packages
+executable improves their FAIRness (Barker et al., 2022; Wilkinson et al.,2016) and gives Bioconductor software visibility among a larger community of
+bioinformaticians. Longer term, the goal is to lay the groundwork for programmatic generation of command-line tooling from within Bioconductor packages,
+so that this tooling can be slotted into modern workflow management systems or interactive platforms such as Galaxy (Goecks et al., 2010).
+
