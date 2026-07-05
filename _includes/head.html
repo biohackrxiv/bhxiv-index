@@ -14,6 +14,49 @@
   <!-- the next is for Zotero -->
   {% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
 
+  <!-- the next is for Google Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@id": "#periodical", "@type": "Periodical",
+        "name": "BioHackrXiv", "url": "https://biohackrxiv.org/"
+      },
+      {
+        "@id": "#article",
+        "@type": "ScholarlyArticle",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "sameAs": [
+          {% if page.europepmc %}"{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }},"{% endif %}
+          {% if page.wikidata %}"{{ page.wikidata| prepend:'http://wikidata.org/entity/' }},"{% endif %}
+          "https://doi.org/{{ page.doi }}"
+        ],
+        {% assign authorCount = page.authors | size %}
+        {% if authorCount == 0 %}
+        {% else %}
+          "author": [
+          {% for author in page.authors %}
+            { "@type": "Person",
+              {% if author.orcid %}"sameAs": "https://orcid.org/{{ author.orcid }}",{% endif %}
+              "name": "{{ author.name }}"
+            }
+            {% if forloop.last %}
+            {% else %}
+              ,
+            {% endif %}
+          {% endfor %}
+          ],
+        {% endif %}
+        "description": "{{ page.excerpt | strip_html | normalize_whitespace }}",
+        "isPartOf": [ { "@id": "#periodical" } ],
+        "name": "{{ page.title }}",
+        "license": [ { "@type": "CreativeWork", "name": "CC-BY 4.0 International", url: "https://creativecommons.org/licenses/by/4.0/legalcode"}]
+      }
+    ]
+  }
+  </script>
+
   <link type="application/feed+json" rel="alternate" href="https://index.biohackrxiv.org/feed.json" title="BioHackrXiv Index">
 
   {% if site.tags != "" %}
