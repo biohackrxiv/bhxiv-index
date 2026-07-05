@@ -13,6 +13,7 @@ authors:
     orcid: 0009-0004-5731-178X
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679
+europepmc: PPR1256031
 ---
 
 Bioconductor (Huber et al., 2015) is a collection of more than 2,400 open-source software packages, together accounting for about a million downloads per year
