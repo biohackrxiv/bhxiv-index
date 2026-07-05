@@ -28,8 +28,8 @@
         "@type": "ScholarlyArticle",
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         "sameAs": [
-          {% if page.europepmc %}"{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }},"{% endif %}
-          {% if page.wikidata %}"{{ page.wikidata| prepend:'http://wikidata.org/entity/' }},"{% endif %}
+          {% if page.europepmc %}"{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}",{% endif %}
+          {% if page.wikidata %}"{{ page.wikidata| prepend:'http://wikidata.org/entity/' }}",{% endif %}
           "https://doi.org/{{ page.doi }}"
         ],
         {% assign authorCount = page.authors | size %}
