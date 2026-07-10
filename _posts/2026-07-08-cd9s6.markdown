@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Maintaining and refining the Tidyomics ecosystem: enhancing core packages and interoperability for EuroBioc2026"
+date:   2026-07-08
+tags: EuroBioc2026
+doi: 10.37044/osf.io/cd9s6_v1
+authors:
+  - name: Carissa Chen
+    orcid: 0000-0002-9225-7086
+  - name: Marco Geigges
+    orcid: 0000-0001-9071-5162
+  - name: Jasper Spitzer
+    orcid: 0000-0001-9696-2092
+  - name: Stevie Pederson
+    orcid: 0000-0001-8197-3303
+  - name: Juan Henao
+    orcid: 0000-0003-0783-1432
+---
+
+The Tidyomics ecosystem facilitates the manipulation of computational omics data structures by bringing the intuitive and
+consistent syntax of the tidy paradigm to R. During the EuroBioc2026 Tidyomics Hackathon, five bioinformatics researchers
+collaborated to strengthen this ecosystem across four areas. First, we introduce tidyAnnData, a new package that expands
+interoperability between the tidyverse and AnnData objects. Second, we updated and harmonized the accessibility of
+information across the core packages that form the current Tidyomics backbone. Third, we improved the stability of core
+packages by resolving critical bugs through targeted pull requests and implementing functional enhancements to the DFplyr
+and tidybulk packages. Fourth, we enhanced the documentation by producing a comprehensive and stable vignette for
+tidySingleCellExperiment covering typical single-cell analysis workflows. Together, these contributions lower the barrier
+to entry for new users, promote reproducibility, and support the continued transition from disparate scripts toward robust,
+unified omics workflows driven by community development.
+
