@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Measure before you rewrite: ablation-driven redesign of LLM-facing RDF schema documentation in TogoMCP"
+date:   2026-07-26
+tags: BH25JP
+doi: 10.37044/osf.io/6v5ra_v1
+authors:
+  - name: Akira R Kinjo
+    orcid: 0000-0002-4006-8208
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+---
+
+MIE files are per-database YAML documents that TogoMCP supplies to a large language model at  query time so it can compose SPARQL against the
+DBCLS RDF Portal. Ours had grown to eleven  sections, semi-automatically generated for each of 36 databases and reviewed by hand. Each  section
+had been introduced in response to a systematic query failure observed in use — sound  practice, but it left open whether any section still
+earned its tokens once the other ten were  present. We measured that, in eighteen ablation conditions across four families:  is a section
+necessary, is a functional group necessary, is the whole document worth anything,  and is any one group sufficient alone. No single section
+and no single group is necessary.  Removing the entire document costs 0.9 points out of 20, and the query-construction group alone  recovers
+99% of that — the whole is worth roughly 2.7 times the sum of its parts, the signature  of heavy redundancy. We rebuilt the format around
+that evidence, making the verified executable  example the atomic unit: 36 files, 303 examples, each 29–65% smaller than the file it replaces.
+A pre-registered equivalence run over 100 benchmark questions finds v3 statistically  indistinguishable from v2 in answer quality (+0.29/20,
+95% CI [-0.09, +0.68]) while using 15%  fewer input tokens, costing 15% less and running 6% faster, with the factoid-question score up  a
+full point. We also report eight measurement traps that faked or destroyed signal, and one  budgeting error worth more than the results:
+we spent the most on the least informative  experiment, and say what we would do instead.
+
