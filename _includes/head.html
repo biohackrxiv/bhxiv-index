@@ -15,6 +15,7 @@
   {% if page.doi %}<meta name="citation_doi" content="{{ page.doi }}">{% endif %}
 
   <!-- the next is for Google Rich Results -->
+  {% if page.doi %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -58,6 +59,7 @@
     ]
   }
   </script>
+  {% endif %}
 
   <link type="application/feed+json" rel="alternate" href="https://index.biohackrxiv.org/feed.json" title="BioHackrXiv Index">
 
