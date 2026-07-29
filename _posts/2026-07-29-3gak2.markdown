@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Schema-Driven Generation of Synthetic HL7 FHIR RDF Data from Shape Expressions (ShEx)"
+date:   2026-07-29
+tags: GOBLINHack26
+doi: 10.37044/osf.io/3gak2_v1
+authors:
+  - name: Diego Martín Fernández
+    orcid: 0009-0003-6640-9474
+  - name: Álvaro García Fernández
+    orcid: 0009-0008-9390-6210
+  - name: Samuel Bustamante Larriet
+    orcid: 0009-0005-8631-2682
+  - name: Eric Prud'hommeaux
+    orcid: 0000-0003-1775-9921
+  - name: Jose Emilio Labra-Gayo
+    orcid: 0000-0001-8907-5348
+---
+
+We describe how synthetic HL7 FHIR data in RDF was produced directly from Shape Expressions (ShEx), using the authoritative FHIR R4 ShEx schema as the
+sole source of domain structure. Rather than encoding clinical knowledge in a domain-specific simulator, we drive generation from the published shapes:
+a schema-driven generator (rudof generate) consumes them, and a small configuration file controls scale, cardinalities, and value generation. This note
+reports the method - schema selection, a minimal schema preparation step, the generator configuration, and the invocation - so that the process is
+reproducible.
+
