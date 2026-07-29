@@ -7,6 +7,9 @@ social:
   - title: GitHub
     platform: github
     user_url: https://github.com/biohackrxiv
+  - title: Mastodon
+    platform: mastodon
+    user_url: https://fediscience.org/@biohackrxiv
 
 header_pages:
   - meetings.markdown
