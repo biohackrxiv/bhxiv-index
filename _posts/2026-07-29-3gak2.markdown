@@ -3,7 +3,7 @@ layout: post
 title:  "Schema-Driven Generation of Synthetic HL7 FHIR RDF Data from Shape Expressions (ShEx)"
 date:   2026-07-29
 tags: GOBLINHack26
-doi: 10.37044/osf.io/3gak2_v1
+doi: 10.37044/osf.io/3gak2_v2
 authors:
   - name: Diego Martín Fernández
     orcid: 0009-0003-6640-9474
@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0003-1775-9921
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348
+wikidata: Q140915208
 ---
 
 We describe how synthetic HL7 FHIR data in RDF was produced directly from Shape Expressions (ShEx), using the authoritative FHIR R4 ShEx schema as the
