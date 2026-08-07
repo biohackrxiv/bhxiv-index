@@ -16,6 +16,7 @@ authors:
   - name: Jose Emilio Labra-Gayo
     orcid: 0000-0001-8907-5348
 wikidata: Q140915208
+europepmc: PPR1292945
 ---
 
 We describe how synthetic HL7 FHIR data in RDF was produced directly from Shape Expressions (ShEx), using the authoritative FHIR R4 ShEx schema as the

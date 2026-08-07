@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0001-8197-3303
   - name: Juan Henao
     orcid: 0000-0003-0783-1432
+europepmc: PPR1275302
 ---
 
 The Tidyomics ecosystem facilitates the manipulation of computational omics data structures by bringing the intuitive and

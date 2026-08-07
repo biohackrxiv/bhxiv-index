@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0002-4006-8208
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
+europepmc: PPR1285777
 ---
 
 MIE files are per-database YAML documents that TogoMCP supplies to a large language model at  query time so it can compose SPARQL against the
