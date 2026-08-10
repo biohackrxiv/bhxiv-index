@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Variant annotation in RDF for clinical trials matching"
+date:   2026-08-09
+tags: BH25JP
+doi: 10.37044/osf.io/2hbqf_v1
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Jose Emilio Labra-Gayo
+    orcid: 0000-0001-8907-5348
+  - name: Claude Nanjo
+    orcid: 0009-0002-1208-8858
+---
+
+Precision oncology depends on semantic, interoperable representations of genomic variants (GV) - particularly structural variants (SVs) - to match patients
+with clinical trials. In this exploratory project, we investigated the use of RDF and the GA4GH VRS Schema to standardize variant annotations and integrate
+them with clinical trial data. Our work, developed in collaboration with the Pangenome Graphs and Platform for Precision Medicine groups, prototypes an
+RDF-based data harmonization that paves the way for improved semantic interoperability in precision medicine, especially for cancer research and AI-driven
+discovery.
+

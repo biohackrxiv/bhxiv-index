@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Variant representation in RDF"
+date:   2026-08-09
+tags: SWAT4HCLS25
+doi: 10.37044/osf.io/jazsb_v1
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Alexander Jonathan Kellmann
+    orcid: 0000-0001-6108-5552
+  - name: Alexandrina Bodrug-Schepers
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
+  - name: Elias Crum
+  - name: Pierre Larmande
+  - name: Andra Waagmeester
+    orcid: 0000-0001-9773-4008
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+---
+
+During the International SWAT4HCLS conference held on 24-27th February 2025 in Barcelona (Spain), we detected an emerging number of novel RDF models to
+represent variant information in genomic datasets potentially hindering data reuse. We tackled the question how semantic representations can enhance the
+interoperability of variant data for clinical applications. Here we report our initial results on genomic variant schema alignment.
+
