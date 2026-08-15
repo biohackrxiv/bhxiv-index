@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "INTOXICOM Workshop Report:  Making toxicology toolsmore accessible and interoperable"
+date:   2026-08-14
+tags: INTOXICOM
+doi: 10.37044/2026-08-14-u3fnh.markdown
+authors:
+ - name: Meike Bünger
+    orcid: 0009-0002-7664-0058
+  - name: Ola Spjuth
+    orcid: 0000-0002-8083-2864
+  - name: Nikita Churikov
+    orcid: 0009-0001-5548-0561
+  - name: Jonne Rietdijk
+    orcid: 0000-0003-3799-6684
+  - name: Jente Houweling
+    orcid: 0009-0005-3680-0645
+  - name: Wolmar Nyberg Åkerström
+    orcid: 0000-0002-3890-6620
+  - name: Ogunleye Adeolu
+    orcid: 0000-0001-6763-4807
+  - name: Penny Nymark
+    orcid: 0000-0002-3435-7775
+  - name: Petru Niga
+    orcid: 0000-0003-0195-3850
+  - name: Cleo Tebby
+    orcid: 0000-0003-3470-157X
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+---
+
+As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized (Martens et al., 2024). Here,
+we here report on the 3rd workshop, titled “Making toxicology tools more accessible and interoperable” which was held from 26 to 27 March 2025 at
+the SciLifeLab at Uppsala University in Sweden. The workshop welcomed 29 participants from Sweden, The Netherlands, Cyprus, Switzerland, Italy,
+Greece, France, and Norway. This 3rd INTOXICOM workshop covered various aspects of making computational tools available and how they are used.
+Several projects, such as NanoSolveIT (Afantitis et al., 2020), ONTOX (Vinken et al., 2021), and VHP4Safety (Kienhuis et al., 2024), already make
+computational toxicology services available, but the field of integrating computional toxicology dates back much longer, such as Bioclipse developed
+at Uppsala University (Willighagen et al., 2011), making it a perfect location to have held this workshop.
