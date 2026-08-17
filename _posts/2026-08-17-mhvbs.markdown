@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "BioHackSWAT4HCLS25 report: Towards an interactive mapping experience for data owners"
+date:   2026-08-17
+tags: SWAT4HCLS25
+doi: 10.37044/osf.io/mhvbs_v1
+authors:
+  - name: Karolis Cremers
+    orcid: 0000-0002-1756-3905
+  - name: Daphne Wijnbergen
+    orcid: 0000-0002-7449-6657
+  - name: Julia Koblitz
+    orcid: 0000-0002-7260-2129
+  - name: Javier Millan Acosta
+    orcid: 0000-0002-4166-7093
+  - name: Rick Overkleeft
+    orcid: 0009-0004-3529-1159
+  - name: David Schimmel
+    orcid: 0000-0002-1719-8928
+  - name: Katja Hoffmann
+    orcid: 0000-0003-4765-0767
+  - name: Brieuc Quemeneur
+    orcid: 0009-0006-7574-2254
+  - name: Ensar Emir Erol
+    orcid: 0000-0002-5739-8860
+---
+
+At the Barcelona SWAT4HCLS 2025 Hackathon, a hacking group familiarized with and worked on improvements for RDFCraft. A tool for a data
+onboarding tool that helps with mapping tabular or JSON formatted data to a reference schema ontology.
+
