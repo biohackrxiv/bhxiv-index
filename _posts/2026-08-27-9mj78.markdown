@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Enhancing e!DAL-PGP: A Modern Data Submission Platform for Plant Science Research Data"
+date:   2026-08-27
+tags: BH25DE
+doi: 10.37044/osf.io/9mj78_v1
+authors:
+  - name: Manuel Feser
+    orcid: 0000-0001-6546-1818
+  - name: Jonathan Bauer
+    orcid: 0000-0002-5624-2055
+  - name: Sebastian Beier
+    orcid: 0000-0002-2177-8781
+  - name: Dominik Brilhaus
+    orcid: 0000-0001-9021-3197
+  - name: Dennis Psaroudakis
+    orcid: 0000-0002-7521-798X
+  - name: Kevin Schneider
+    orcid: 0000-0002-2198-5262
+  - name: Helena Schnitzer
+    orcid: 0000-0002-6382-9452
+  - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
+  - name: Daniel Arend
+    orcid: 0000-0002-2455-5938
+---
+
+As part of the BioHackathon Germany 2025, we report here about the progress of Project 8 -Enhancing e!DAL-PGP: A Modern Data Submission Platform
+for Plant Science Research Dataduring the event.The increasing volume of data generated in plant research underscores the necessity for efficient
+data management and sharing solutions. The de.NBI Service e!DAL-PGP (Arend et al., 2016, p. Arend2020) serves as a critical research data repository,
+facilitating the storage, management, and dissemination of plant research data. However, the current implementation faces significant
+challenges concerning the submission process and the provision of a submission tool for different operating systems, which complicate user
+interactions and hinder data contribution. A primary issue with the existing e!DAL-PGP service is the cumbersome nature of maintaining and
+deploying a submission tool across various OS environments. This requirement necessitates extensive effort to build, test, and provide the application
+for each platform. Consequently, this fragmentation can lead to delays and inconsistencies in the submission process, ultimately hindering
+researchers from effectively submitting their valuable data to the repository. To address these challenges, this project proposes the development
+of a unified and user-friendly web submission tool that streamlines the data submission process to eliminate the complexities associated with
+OS-specific requirements and to ensure that all users can submit their data seamlessly. This simplifies the submission process and enhances
+usability by focussing onimproving the design and functionality. A well-structured and user-centric form is essential for facilitating accurate
+and complete data submissions. The current interface lacks features that enhance user experience, such as lookup services, contextual help,
+and clear instructions. By incorporating these elements, we aim to create a more efficient and engaging submission experience, encouraging
+researchers to contribute their valuable data without unnecessary complexity. This initiative aligns closely with the goals of de.NBI, which
+emphasizes the provision of high-quality bioinformatics services and the facilitation of FAIR Research Data Management (RDM). Enhancing the
+e!DAL-PGP service will streamline the data submission process andpromote a culture of collaboration and data sharing within the plant research
+community.
+
