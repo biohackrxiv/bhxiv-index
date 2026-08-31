@@ -1,4 +1,9 @@
 meetings:
+- BHG25:
+  tag: BHG25
+  title: "BioHackathon Germany 2025, Walsrode, Germany, 2025"
+  year: 2026
+
 - VeniceHackathon2026:
   tag: VeniceHackathon2026
   title: "Bioconductor Spatial Data and Image Analysis Hackathon, Venice, Italy, 2026"
