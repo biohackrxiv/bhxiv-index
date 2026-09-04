@@ -1,4 +1,16 @@
 meetings:
+- MHA26:
+  tag: MHA26
+  title: "MedHackathon Asia 2026, Singapore, 2026"
+  year: 2026
+  url: https://medhackathon.github.io/2026/
+
+- BH26JP:
+  tag: BH26JP
+  title: "DBCLS BioHackathon, Matsuyama, Japan, 2026"
+  year: 2026
+  url: https://2026.biohackathon.org/
+
 - BHG26:
   tag: BHG26
   title: "BioHackathon Germany 2026, Göttingen, Germany, 2026"
