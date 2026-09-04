@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "AI-Assisted Variant Review Across Asia: Country-Level Expert Panels, Regional Collaboration, and Global Knowledge Sharing"
+date:   2026-09-04
+tags: MHA26
+doi: 10.37044/osf.io/2026-09-04-e5g6s_v1
+authors:
+  - name: Toyofumi Fujiwara
+    orcid: 0000-0002-0170-9172
+  - name: George Devasia
+  - name: Rutharra Ghayadthri Manisekaran
+    orcid: 0009-0008-6310-9974
+  - name: Vasanthan Jayakumar
+    orcid: 0000-0002-6067-4184
+  - name: Yosuke Kawai
+    orcid: 0000-0003-0666-1224
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Yuko Kitano
+  - name: Francis A. Tablizo
+    orcid: 0009-0007-1392-3671
+  - name: Shoichiro Takahashi
+  - name: Piyakrit Wongboonchai
+---
+
+Genome and exome sequencing have transformed rare disease diagnosis, yet converting large variant sets into evidence-backed interpretations remains labor-intensive
+and fragmented. Across Asia, population genomic resources and specialist expertise are expanding, but prioritization, expert review, and reuse of reviewed knowledge
+are often separated across institutions and countries. We argue that the most useful near-term role of artificial intelligence (AI) is not autonomous variant
+classification, but reducing the friction between distributed evidence and distributed expert judgment. Building on collaborative platform development by participants
+from institutions in Japan, Singapore, the Philippines, and Thailand, we propose a common workflow connecting variant prioritization and evidence organization,
+structured expert review, and reviewed-knowledge sharing. AI can support multilingual phenotype structuring, population-aware candidate prioritization, literature
+and evidence retrieval, and reuse of previous expert-reviewed records, while final evidence assessment remains expert-governed. Country-operated platforms can
+preserve local governance and population context while exchanging standardized evidence and interpretations across Asia and contributing appropriate records to
+global knowledge resources. Initial implementations for variant prioritization and an expert review workspace provide a practical foundation for this model. This
+Perspective outlines where AI can add value, where human judgment must remain decisive, and how a regionally connected expert-panel network could be built.
