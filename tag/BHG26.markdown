@@ -9,6 +9,15 @@ startDate: 2026-12-07
 endDate: 2026-12-11
 ---
 
+> The BioHackathon Germany is an annual event that brings together life scientists,
+> bioinformaticians and data managers / data stewards from Germany and around the 
+> world. Organised by de.NBI & ELIXIR-DE, it offers an intense week of hacking with 
+> over 150 participants (on-site and online) working on diverse and exciting projects. 
+> The aim is to produce results that address challenges in bioinformatics and life 
+> science research. Scientists from companies are also encouraged to participate and 
+> submit project proposals connecting their work to open science activities and 
+> initiatives.
+
 ## Previous BioHackathon Europe preprints
 
 * [4th BioHackathon Germany, Walsrode, Germany](https://index.biohackrxiv.org/tag/BH25DE)
