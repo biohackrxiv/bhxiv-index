@@ -3,7 +3,7 @@ layout: post
 title:  "AI-Assisted Variant Review Across Asia: Country-Level Expert Panels, Regional Collaboration, and Global Knowledge Sharing"
 date:   2026-09-04
 tags: MHA26
-doi: 10.37044/osf.io/2026-09-04-e5g6s_v1
+doi: 10.37044/osf.io/e5g6s_v1
 authors:
   - name: Toyofumi Fujiwara
     orcid: 0000-0002-0170-9172
