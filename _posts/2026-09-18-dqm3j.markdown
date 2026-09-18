@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Building InterMine databases from RDF Portal"
+date:   2026-09-18
+tags: BH26JP
+doi: 10.37044/osf.io/dqm3j_v1
+authors:
+  - name: Russell Y. Neches
+    orcid: 0000-0002-2055-8381
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Gos Micklem
+    orcid: 0000-0002-6883-6168
+---
+
+InterMine databases such as HumanMine integrate many biological data sources, but each source needs its own loader, and keeping
+those loaders current is costly. The public HumanMine has not had a data release since February 2022. RDF Portal, operated by the
+Database Division for Life Science, now serves many of the same sources as reviewed RDF, and describes each dataset with an
+rdf-config model. At the DBCLS BioHackathon 2026 we developed rdfc2im, a tool that maps rdf-config models onto the InterMine data
+model, keeps the mapping as reviewable data with the evidence for every row, uses RDF Config to generate SPARQL queries to acquire
+data from RDF Portal, and writes the data into a form that InterMine's standard loader integrates without new code. We used it to
+build a working demonstration HumanMine from nine sources and a panel of 113 food- and drug-metabolism genes, with NCBI Gene, the
+Gene Ontology and Reactome loaded in full. The mine supports search, template queries and list analysis. Real loads found problems
+that static checks did not, most of them related to the way objects from different sources are identified and merged, and to the
+limits of public SPARQL endpoints. This report describes our proof of concept. We list what remains to be done before rdfc2im
+can rebuild a full HumanMine from each RDF Portal release.
+

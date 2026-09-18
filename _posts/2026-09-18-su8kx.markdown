@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: Variant representation in RDF for precision medicine"
+date:   2026-09-18
+tags: BH26JP
+doi: 10.37044/osf.io/su8kx_v1
+authors:
+  - name: Núria Queralt-Rosinach
+    orcid: 0000-0003-0169-8159
+  - name: Daniel Puthawala
+    orcid: 0000-0002-1823-7124
+---
+
+For the life science semantic web community, the provision of genomic variants ready for tools and applications
+is essential to deliver on the promise of precision medicine. As part of the DBCLS BioHackathon 2026, we here
+report our efforts on how best to provide variant data in RDF for downstream patient-clinical trial matching
+applications.
+

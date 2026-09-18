@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "OSIRIS-MCP: Towards secure conversational access to research information in OSIRIS"
+date:   2026-09-18
+tags: BH26JP
+doi: 10.37044/osf.io/36g4c_v3
+authors:
+  - name: Julia Koblitz
+    orcid: 0000-0002-7260-2129
+  - name: Akira R Kinjo
+    orcid: 0000-0002-4006-8208
+---
+
+Research information systems contain structured information about researchers, organisational units, projects, publications,
+and other research activities. However, answering ad hoc questions for reporting, management, or public communication often
+still requires manual searches, exports, and synthesis. We developed a prototype Model Context Protocol (MCP) connector for
+OSIRIS, an open-source research information system, during the DBCLS BioHackathon 2026. The connector gives language-model
+clients read-only access to a deliberately restricted set of typed search and retrieval tools. It combines a compact,
+evidence-centred data representation with instance-specific metadata discovery, bounded pagination, dedicated API-client
+permissions, safe error handling, and either OAuth or static API-key authentication. The work also introduced a general
+API-client registry in OSIRIS, allowing integrations to receive independently revocable credentials and explicitly assigned
+permissions. A containerised deployment was validated against a local OSIRIS instance containing synthetic data and tested
+interactively with MCP clients. The prototype demonstrates that conversational access to institutional research information
+can be implemented without exposing complete database records or making the language model responsible for access control.
+Evaluation with real institutional data and deployment guidance remain  necessary before production use.
+
