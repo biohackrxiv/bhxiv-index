@@ -10,6 +10,7 @@ authors:
   - name: Akira R Kinjo
     orcid: 0000-0002-4006-8208
 europepmc: PPR1322361
+wikidata: Q141500200
 ---
 
 Research information systems contain structured information about researchers, organisational units, projects, publications,
