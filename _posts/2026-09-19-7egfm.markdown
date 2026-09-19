@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: QPX: Pathway analysis environment for non-model organisms"
+date:   2026-09-19
+tags: BH26JP
+doi: 10.37044/osf.io/7egfm_v1
+authors:
+  - name: Hidemasa Bono
+    orcid: 0000-0003-4413-0651
+  - name: Naoya Oec
+    orcid: 0000-0002-7491-4994
+  - name: Haruka Tanimoto
+    orcid: 0009-0000-9313-6318
+  - name: Tomohiro Taguchi
+    orcid: 0009-0006-4779-4188
+  - name: Amane Kurata
+    orcid: 0009-0001-2531-5506
+  - name: Ryo Nozu
+    orcid: 0000-0002-1099-3152
+---
+
+We report progress on Quest for Pathways with eXpression (QPX), a pathway analysis environment for non-model organisms, developed
+during the DBCLS BioHackathon 2026 (BH26). Building on prior BH23/BH25 work, we demonstrated PathLift, a tool that lifts WikiPathways
+GPML pathways to other species via ortholog mapping, using an Arabidopsis-to-rice mitochondrial complex I example. We also created
+annotated pathway maps in QPX integrating transcriptome/proteome data for hypoxic stress response, and transcriptome/metabolome data
+for the non-model organism Symplocarpus renifolius, which lacks an established gene ID system. This clarified data-formatting
+requirements for linking QPX maps to expression tables and surfaced a string-identifier handling issue in QPX's backend, reported
+upstream. Future work includes reproducible ChEBI ID assignment, automated pathway digitization, and compound-centered functional
+networks from PubChem/PubTator3 data.
+
