@@ -23,6 +23,7 @@ authors:
     orcid: 0000-0003-1945-6342
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
+europepmc: PPR1306823
 ---
 
 As part of the BioHackathon Germany 2025, we report here about the progress of Project 8 -Enhancing e!DAL-PGP: A Modern Data Submission Platform

@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0003-0169-8159
   - name: Daniel Puthawala
     orcid: 0000-0002-1823-7124
+europepmc: PPR1322359
 ---
 
 For the life science semantic web community, the provision of genomic variants ready for tools and applications

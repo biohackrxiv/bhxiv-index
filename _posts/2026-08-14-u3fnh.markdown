@@ -27,6 +27,7 @@ authors:
     orcid: 0000-0003-3470-157X
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
+europepmc: PPR1301280
 ---
 
 As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized (Martens et al., 2024). Here,

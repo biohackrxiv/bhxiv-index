@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0003-2391-0384
   - name: Gos Micklem
     orcid: 0000-0002-6883-6168
+europepmc: PPR1322360
 ---
 
 InterMine databases such as HumanMine integrate many biological data sources, but each source needs its own loader, and keeping

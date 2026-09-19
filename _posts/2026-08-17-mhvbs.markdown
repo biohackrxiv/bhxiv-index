@@ -23,6 +23,7 @@ authors:
     orcid: 0009-0006-7574-2254
   - name: Ensar Emir Erol
     orcid: 0000-0002-5739-8860
+europepmc: PPR1299437
 ---
 
 At the Barcelona SWAT4HCLS 2025 Hackathon, a hacking group familiarized with and worked on improvements for RDFCraft. A tool for a data

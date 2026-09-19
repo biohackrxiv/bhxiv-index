@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0002-7260-2129
   - name: Akira R Kinjo
     orcid: 0000-0002-4006-8208
+europepmc: PPR1322361
 ---
 
 Research information systems contain structured information about researchers, organisational units, projects, publications,
