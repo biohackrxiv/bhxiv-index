@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Logica, an intelligent platform for semantic interoperability"
+date:   2026-09-20
+tags: BH26JP
+doi: 10.37044/osf.io/92bc5_v2
+authors:
+  - name: Claude Nanjo
+    orcid: 0009-0002-1208-8858
+  - name: Toyofumi Fujiwara
+  - name: Chang Sun
+  - name: Michel Dumontier
+  - name: Núria Queralt Rosinach
+---
+
+Clinical AI depends on both the relevance of the information it receives and the meaning of that information. Logica is an
+interoperability platform that separates clinical meaning from physical data representation and separates language-model
+interpretation and reasoning from deterministic retrieval. A first language model interprets a clinical question through
+the COOL semantic graph. Explicit information requirements are compiled into Clinical Quality Language (CQL) over COOL, a
+logical representation of a query, bound to a physical backend (e.g., as a FHIR query or SQL query), and executed in code.
+Returned records are normalized into COOL evidence with source provenance before a second language model reasons over them.
+Deterministic calculations and citation-identifier validation make the resulting answer inspectable. We describe this
+architecture through a reported creatinine demonstration for a synthetic patient (Demo Patient A), in which a record
+containing 204 FHIR resources yielded 69 evidence items. The demonstration illustrates the pipeline and its retained
+artifacts as well as how the system works; however, further evaluation is needed to determine whether it actually improves
+the saliency of relevant clinical information or clinical reasoning accuracy compared with other approaches. The research
+hypothesis is that a sufficiently constrained semantic model improves context relevance, reasoning accuracy, and
+verifiability. Separating logical expressions from backend bindings also provides a basis for sharing clinical logic
+across institutions.
+

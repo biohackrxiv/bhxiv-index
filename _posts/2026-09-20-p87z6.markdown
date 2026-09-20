@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: Open, Reproducible Extraction of Data-Entity References from the Biomedical Literature – with Entry-Level Resolution via Identifiers.org / TogoID"
+date:   2026-09-20
+tags: BH26JP
+doi: 10.37044/osf.io/p87z6_v1
+authors:
+  - name: Vijay Subramoniam
+    orcid: 0009-0000-1394-2513
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+  - name: Takatomo Fujisawa
+    orcid: 0000-0001-8978-3344
+  - name: Evan Bolton
+    orcid: 0000-0002-5959-6190
+---
+
+Funders and data producers need to know not just which databases are cited in the literature, but whether a cited accession actually exists
+and how it was used. Making that reuse visible is itself an incentive for the wider research community to deposit data, by giving concrete,
+attributable evidence that public deposits are genuinely reused and contribute to science. We report on a pipeline, built during the DBCLS
+BioHackathon 2026, that extracts database identifiers from PMC full text, verifies each one against source-of-truth APIs (TogoID/RDF Portal,
+NCBI E-utilities, EBI Search), and classifies confirmed accessions into one of five credit/provenance classes. On a working slice of 10,896
+PMC documents, the pipeline confirms 19,786 (paper, accession) links across 1,352 papers and 18,159 distinct accessions, though a single
+namespace (insdc) accounts for roughly 70% of that volume. An independent comparison against Europe PMC's own accession annotations over
+the same slice shows 74.6% agreement at the individual-citation level, with a bimodal split at the per-document level: 64% of documents
+that either system found anything in agree at 90-100%, while 16% agree at only 0-10%, a pattern that needs manual citation and analysis.
+The pipeline, its Europe PMC comparison, and a static, backend-free dashboard reporting the results are complete and reproducible for this
+slice. A reference-role (generated/used/mentioned) classifier and a 221-item human gold standard evaluating it were also completed,
+reaching 0.80 macro-F1 with a near-zero generated-vs-used confusion; extending coverage and running against the full corpus are left as
+future work.
+

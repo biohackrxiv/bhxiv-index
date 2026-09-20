@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: Extending TogoMCP beyond RDF Portal while making its schema guides check their own answers"
+date:   2026-09-20
+tags: BH26JP
+doi: 10.37044/osf.io/t25ng_v1
+authors:
+  - name: Akira R Kinjo
+    orcid: 0000-0002-4006-8208
+  - name: Kozo Nishida
+    orcid: 0000-0001-8501-7319
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Yuki Moriya
+    orcid: 0000-0001-8195-5893
+  - name: Takatomo Fujisawa
+    orcid: 0000-0001-8978-3344
+  - name: Yasuhiro Tanizawa
+    orcid: 0000-0002-6294-3309
+  - name: Priscilla Joanne
+  - name: Yoko Okabeppu
+  - name: Shuya Ikeda
+    orcid: 0000-0002-1357-5159
+  - name: Toyofumi Fujiwara
+    orcid: 0000-0002-0170-9172
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+---
+
+TogoMCP is a Model Context Protocol (MCP) server that lets large language model (LLM) agents query life-science knowledge graphs in SPARQL,
+guided by per-database schema documents called MIE(Metadata Interoperability Exchange) files. During the DBCLS BioHackathon 2026 (BH26),
+the TogoMCP group set out to extend the server, refine the MIE files, add databases, learn what makes a good SPARQL example, and turn use
+cases into reusable agent skills. In the first six days of the event we published eleven releases (v2.12.2 to v2.20.0) and grew the catalogue
+from 37 to 45 databases: Fanta.bio, WikiPathways, IDSM, PubCase Finder, LIPID MAPS, SwissLipids and MarpolBase, plus BH26Microbes, an
+experimental dataset of KEGG Orthology assignments for 57.6 million prokaryotic proteins built for the BioHackathon. Five of them are
+served from endpoints outside RDF Portal,and a sixth from a QLever engine inside it rather than Virtuoso, and they broke assumptions
+the rest of the corpus had taught, such as named-graph pinning, federation with `SERVICE`, literal typing, and even that a result set is
+complete. For the first time, MIE files were written by people other than the server's maintainer, one of them by the maintainer of the
+database it describes, and a second group member built TogoCX, a companion MCP server that returns database edges with instructions on how
+their claims may be stated. We made every worked example in the MIE corpus (now 420) assert its recorded result against the live endpoint
+in continuous integration.The first full comparison found drift that execution-only checks had missed, most seriously a NANDO release that
+made an example join silently miss about 88% of mapped diseases. Onboarding the new databases uncovered a series of quantified
+"silent wrong answers", queries that return plausible results rather than errors, including a category count inflated 3.1-fold by an
+upstream data defect and a gene enumeration that returns 10,000 of 18,080 rows without an error or awarning. We also added two PubCaseFinder
+tools for phenotype-driven rare-disease diagnosis support, began serving analysis workflows (agent skills) from the server, fixed failure
+modes found in production call logs, made TogoID errors suggest working conversion routes, and prepared a LOTUS natural-products graph
+for hosting on RDF Portal. We argue that for LLM-facing schema documentation, "the example still runs" is not evidence that it is still
+correct.
