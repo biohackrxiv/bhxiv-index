@@ -17,6 +17,7 @@ authors:
     orcid: 0009-0001-2531-5506
   - name: Ryo Nozu
     orcid: 0000-0002-1099-3152
+europepmc: PPR1322764
 ---
 
 We report progress on Quest for Pathways with eXpression (QPX), a pathway analysis environment for non-model organisms, developed
