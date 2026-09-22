@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "BioHackrXiv: Creating a federated publishing platform"
+date:   2026-09-22
+tags: BH25JP
+doi: 10.37044/osf.io/jh3m7_v1
+authors:
+  - name: Arun Isaac
+    orcid: 0000-0002-6810-8195
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+  - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+---
+
+The first BioHackrXiv preprint was published in 2020, using a platform based on the idea of using Markdown (Prins et al., 2022), and BioHackrXiv can be
+considered a preprint success with over 119 publications (per September 2025) with over 30 publication added per year. Machine-readable metadata is
+added to the Markdown that is added includes the title, keywords, the author names, their affiliations, and details about the Biohackathon event the
+preprint is related to.
+
