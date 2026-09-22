@@ -16,18 +16,30 @@ if (args.length < 2) {
 Map<String, String> readMeetingTags() {
   def tags = [:]
   def currentTag = null
+  def currentTitle = null
+  def flush = {
+    if (currentTag && currentTitle) tags[currentTag] = currentTitle
+  }
   new File("../_data/meetings.yml").eachLine { line ->
+    if (line =~ /^-\s*\S+:/) {
+      // start of a new meeting entry: flush the previous one, regardless
+      // of whether its tag/title lines appeared in this order or not
+      flush()
+      currentTag = null
+      currentTitle = null
+      return
+    }
     def tagMatcher = line =~ /^\s*tag:\s*(\S+)/
     if (tagMatcher) {
       currentTag = tagMatcher[0][1]
       return
     }
     def titleMatcher = line =~ /^\s*title:\s*"?([^"]*?)"?\s*$/
-    if (titleMatcher && currentTag) {
-      tags[currentTag] = titleMatcher[0][1]
-      currentTag = null
+    if (titleMatcher) {
+      currentTitle = titleMatcher[0][1]
     }
   }
+  flush()
   return tags
 }
 
