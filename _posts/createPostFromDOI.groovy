@@ -13,8 +13,33 @@ if (args.length < 2) {
   System.exit(0)
 }
 
+Map<String, String> readMeetingTags() {
+  def tags = [:]
+  def currentTag = null
+  new File("../_data/meetings.yml").eachLine { line ->
+    def tagMatcher = line =~ /^\s*tag:\s*(\S+)/
+    if (tagMatcher) {
+      currentTag = tagMatcher[0][1]
+      return
+    }
+    def titleMatcher = line =~ /^\s*title:\s*"?([^"]*?)"?\s*$/
+    if (titleMatcher && currentTag) {
+      tags[currentTag] = titleMatcher[0][1]
+      currentTag = null
+    }
+  }
+  return tags
+}
+
 doi = args[1].toLowerCase()
 tag = args[0]
+
+meetingTags = readMeetingTags()
+if (!meetingTags.containsKey(tag)) {
+  println "Unknown meeting tag: ${tag} (not found in _data/meetings.yml)"
+  System.exit(-1)
+}
+println "Meeting: ${meetingTags[tag]}"
 
 localpart = doi.split("/osf.io/")[1].split("_")[0]
 
