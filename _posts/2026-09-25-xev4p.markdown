@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: RDF publication of Marchantia polymorpha gene annotations, and agent-assisted preparation of DDBJ submissions"
+date:   2026-09-25
+tags: BH26JP
+doi: 10.37044/osf.io/xev4p_v1
+authors:
+  - name: Yasuhiro Tanizawa
+    orcid: 0000-0002-6294-3309
+  - name: Takatomo Fujisawa
+    orcid: 0000-0001-8978-3344
+---
+
+This report describes work carried out during the DBCLS BioHackathon 2026 (BH26) in Matsuyama, Japan, on three loosely related but complementary threads,
+all concerned with moving genome annotation data across the boundary between the systems that produce it and the systems that consume it. First, gene
+annotations of the liverwort *Marchantiapolymorpha*, maintained in MarpolBase, were converted to RDF: an RDF structure was designed, a converter from
+GFF3 was written, and the resulting graph was loaded into Virtuoso and deployed to a production endpoint. Second, a prototype agent for preparing
+submissions to the DNA Data Bank of Japan (DDBJ), provisionally called *DFAST-Agent*, was assembled from a Model Context Protocol (MCP) server and a
+set of skills; submission files were successfully produced through an interactive terminal session, including operations on files held in Kura, DDBJ's
+authenticated object storage. Third, *Markit*, a tool for registering phylogenetic marker sequences, gained a webinterface that was deployed to a
+staging environment, alongside fixes to its command-line counterpart. Taken together, these threads probe the same question from two sides: how to
+make annotation data machine-actionable once it has been published, and how to lower the cost of publishing it in the first place.
+
