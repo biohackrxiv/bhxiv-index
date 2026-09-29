@@ -1,4 +1,10 @@
 meetings:
+- CytoData26:
+  tag: CytoData26
+  title: "CytoData–SBI2 Hackathon 2026"
+  year: 2026
+  url: https://sbi2.org/2026-sbi2-conference-boston/
+
 - SnakemakeHackathon2027:
   tag: SnakemakeHackathon2027
   title: "Snakemake Hackathon 2027, Switzerland, 2027"
