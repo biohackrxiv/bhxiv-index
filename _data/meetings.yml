@@ -1,4 +1,9 @@
 meetings:
+- SnakemakeHackathon2027:
+  tag: SnakemakeHackathon2027
+  title: "Snakemake Hackathon 2027, Switzerland, 2027"
+  year: 2027
+
 - MHA26:
   tag: MHA26
   title: "MedHackathon Asia 2026, Singapore, 2026"
