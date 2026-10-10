@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: An interactive, harmonised BioSample metadata resource for biological sample discovery"
+date:   2026-10-10
+tags: BH26JP
+doi: 10.37044/osf.io/hm9fn_v1
+authors:
+  - name: Shuya Ikeda
+    orcid: 0000-0002-1357-5159
+  - name: Núria Fàbrega
+    orcid: 0009-0003-8699-1908
+  - name: Hirotaka Suetake
+    orcid: 0000-0003-2765-0049
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+---
+
+The BioSample database contains tens of millions of records describing biological samples, but their metadata are submitted largely as
+key-value pairs with inconsistent field names, terminology and free-text descriptions, limiting search and reuse. Before the
+DBCLS BioHackathon 2026, we used a pipeline based on locally hosted large language models (LLMs) to extract nine types of biological
+information (cell line, cell type, tissue, disease, drug, knockout gene, knockdown gene, overexpressed gene and ChIP antigen) from
+4.2 million human and mouse BioSample records and map them to ontology terms, producing a harmonised collection of 8.2 million extracted
+values. During the BioHackathon, we extended this work in three directions. First, we developed an alpha version of a web application
+for searching this collection by ontology terms and visualising the experimental conditions of selected samples. Second, we developed
+a provenance-tracing procedure, combining deterministic matching with LLM-based checks, that linked 99% of extracted values to
+supporting text in the original records. The resulting provenance links showed that although 32 submitted field names accounted for
+90% of the evidence, the remaining 10% was spread across more than 6,000 other field names. Third, we developed a procedure in which
+an LLM assesses mapping correctness and classifies the causes of errors, offering a scalable alternative to building new manually
+curated gold standards. Our preliminary results show the potential of locally hosted LLMs to harmonise existing BioSample metadata
+at scale. Future work will validate the LLM-based evaluations with human experts and extend the approach to additional species.
+
