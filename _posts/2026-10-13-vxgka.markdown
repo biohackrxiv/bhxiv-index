@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "BioHackrXiv: Hacking for better PDFs"
+date:   2026-10-13
+tags: UL
+doi: 10.37044/osf.io/vxgka_v1
+authors:
+  - name: Egon Willighagen
+    orcid: 0000-0001-7542-0286
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+  - name: Tazro Ohta
+    orcid: 0000-0003-3777-5945
+---
+
+BioHackrXiv continues to host project reports from biohackathon events (Prins et al., 2022).
+It has published more than 150 preprints and are indexed by Europe PMC and notable preprints
+are indexed by Wikidata too. It has supported multiple biohackathons, including the DBCLS
+BioHackathon and BioHackathon Europe series (Garcia et al., 2020). A full overview of
+supported meetings is available from the index.biohackrxiv.org website. The original Markdown
+setup with metadata in YAML headers (Perk et al., 2024) has been extended since 2020 with
+support for citation intent annotations with the Citation Typing Ontology (Willighagen et al.,
+2023), making ORCID identifiers for authors and ROR identifiers for research organizations
+visible in the PDFs (Willighagen &amp;amp; Ohta, 2025), and support for the Contributor Role Taxonomy
+(CRediT) annotation of author roles (McNutt et al., 2018). These things have been developed
+with the help of the same communities BioHackrXiv supports.
+
