@@ -11,6 +11,7 @@ authors:
   - name: Chang Sun
   - name: Michel Dumontier
   - name: Núria Queralt Rosinach
+europepmc: PPR1322363
 ---
 
 Clinical AI depends on both the relevance of the information it receives and the meaning of that information. Logica is an

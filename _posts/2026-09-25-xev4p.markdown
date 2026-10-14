@@ -9,6 +9,7 @@ authors:
     orcid: 0000-0002-6294-3309
   - name: Takatomo Fujisawa
     orcid: 0000-0001-8978-3344
+europepmc: PPR1327968
 ---
 
 This report describes work carried out during the DBCLS BioHackathon 2026 (BH26) in Matsuyama, Japan, on three loosely related but complementary threads,

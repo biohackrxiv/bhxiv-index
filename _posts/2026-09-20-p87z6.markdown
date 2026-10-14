@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0001-8978-3344
   - name: Evan Bolton
     orcid: 0000-0002-5959-6190
+europepmc: PPR1323240
 ---
 
 Funders and data producers need to know not just which databases are cited in the literature, but whether a cited accession actually exists

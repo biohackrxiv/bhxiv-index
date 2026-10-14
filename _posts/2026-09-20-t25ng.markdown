@@ -26,6 +26,7 @@ authors:
   - name: Yasunori Yamamoto
     orcid: 0000-0002-6943-6887
 wikidata: Q141507845
+europepmc: PPR1326048
 ---
 
 TogoMCP is a Model Context Protocol (MCP) server that lets large language model (LLM) agents query life-science knowledge graphs in SPARQL,
