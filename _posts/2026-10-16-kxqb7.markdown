@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "ZebraSeek integrates complementary facial and clinical evidence for rare disease prioritization"
+date:   2026-10-16
+tags: BH26JP
+doi: 10.37044/osf.io/kxqb7_v1
+authors:
+  - name: Naoya Yoshikuwa
+  - name: Hirokazu Chiba
+    orcid: 0000-0003-4062-8903
+  - name: Teppei Okazaki
+  - name: Jaemoon Shin
+    orcid: 0000-0001-5859-601X
+  - name: Eisuke Dohi
+    orcid: 0000-0002-5365-4900
+  - name: Hiroyuki Mishima
+    orcid: 0000-0001-5050-2509
+  - name: Atsuko Yamaguchi
+  - name: Tzung-Chien Hsieh
+    orcid: 0000-0003-3828-4419
+  - name: Orion Buske
+    orcid: 0000-0002-9064-092X
+  - name: Susumu Goto
+  - name: Toyofumi Fujiwara
+    orcid: 0000-0002-0170-9172
+---
+
+Rare diseases can remain undiagnosed for years because individual disorders are uncommon and clinically heterogeneous, while
+relevant clues are distributed across structured phenotypes, facial appearance, prior cases and disease knowledge. Computational
+tools can use Human Phenotype Ontology (HPO)-encoded findings, genomic data and increasingly diverse medical images, but these
+modalities are processed by models with different outputs and score scales. ZebraSeek converts clinical and facial inputs into
+ranked disease candidates with specialist tools, then uses a large language model (LLM) to integrateand externally check those
+candidates while retaining their sources. Facial-image analysis provides a complementary machine-readable phenotype that can
+capture patterns notfully represented by manually encoded HPO terms. In 74 literature-derived cases spanning 19 diseases,
+ZebraSeek placed the recorded diagnosis first in 50 (67.6%) and within five in 59 (79.7%); it recovered 11 diagnoses outside
+PubCaseFinder’s top five, while five diagnoses present in PubCaseFinder’s top five were absent from ZebraSeek’s final top five.
+During DBCLS BioHackathon 2026, we expanded analysis to 368 patients, 462 images and 54 disorders to examine how candidate
+depth affects coverage and downstream candidate count, and to assess the feasibility of case-specific candidate selection.
+
