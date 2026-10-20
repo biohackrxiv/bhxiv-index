@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0003-3777-5945
 openalex: W7221630303
 europepmc: PPR1341831
+wikidata: Q141735192
 ---
 
 BioHackrXiv continues to host project reports from biohackathon events (Prins et al., 2022).

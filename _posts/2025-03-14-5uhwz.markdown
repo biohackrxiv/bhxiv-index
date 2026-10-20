@@ -55,6 +55,7 @@ authors:
   - name: Christian Tischer
   - name: Vladimir Ulman
   - name: Virginie Uhlmann
+wikidata: Q136768514
 ---
 
 The 2024 OME-NGFF Workflows Hackathon, held at the BioVisionCenter at the University of Zurich, brought together an international group of researchers and developers to develop the ecosystem around the open, scalable, and FAIR bioimage file format OME-Zarr. Over five days, participants tackled key challenges in four main areas: (1) advancing the OME-Zarr specification, (2) enabling workflow interoperability by integrating OME-Zarr image processing tasks across multiple open-source frameworks, (3) expanding Java support for Zarr v3 and enhancing the compatibility of OME-Zarr with the popular bioimage analysis software Fiji, and (4) improving the Python resources supporting OME-Zarr. The event led to the release of OME-Zarr 0.5, which formalizes the adoption of Zarr v3 and introduces a sharding strategy to reduce file system overhead. This report provides an overview of the key discussions, outcomes, and future directions emerging from the hackathon, with the goal of fostering continued community engagement in developing OME-Zarr as a robust open bioimaging standard.
