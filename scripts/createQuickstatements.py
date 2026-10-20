@@ -135,13 +135,13 @@ def create_statements(posts, existing, today):
                     qid, prop, value, ', '.join(sorted(current))))
                 continue
             rows.append({'qid': qid, prop: quote(value),
-                         'S854': quote(post['url']), 'S813': retrieved,
-                         'S248': STATED_IN})
+                         'S854': quote(post['url']), 's813': retrieved,
+                         's248': STATED_IN})
         # other values of "published in" (a meeting, for example) are fine
         if STATED_IN not in existing.get((qid, PUBLISHED_IN), set()):
             rows.append({'qid': qid, PUBLISHED_IN: STATED_IN,
-                         'S854': quote(post['url']), 'S813': retrieved,
-                         'S248': STATED_IN})
+                         'S854': quote(post['url']), 's813': retrieved,
+                         's248': STATED_IN})
     return rows, mismatches
 
 
@@ -156,7 +156,7 @@ def main():
         qids, [p for p, _ in PROPERTIES.values()] + [PUBLISHED_IN])
     rows, mismatches = create_statements(posts, existing, datetime.date.today())
     columns = ['qid'] + [p for p, _ in PROPERTIES.values()] + [PUBLISHED_IN] + [
-        'S854', 'S813', 'S248']
+        'S854', 's813', 's248']
     with open(args.output, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, columns, restval='', lineterminator='\n')
         writer.writeheader()
