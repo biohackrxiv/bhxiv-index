@@ -51,3 +51,24 @@ make updateEuropePMC ARGS=--update-changed
 ```
 
 The script uses only the Python 3 standard library and needs no key.
+
+### Wikidata IDs
+
+`scripts/wikidata.py` adds the `wikidata:` line (the item ID, for example `wikidata: Q137242577`)
+to the front matter of the posts in `_posts/`.
+
+It asks the [Wikidata SPARQL endpoint](https://query.wikidata.org/) for all items with a DOI
+(P356) that starts with the BioHackrXiv prefix `10.37044/`, builds a table of DOI and QID, and
+matches the table with the `doi:` of each post (case-insensitive, as Wikidata keeps DOIs in upper
+case). If several items have the same DOI, the lowest QID is used. As for Europe PMC, a post without
+a `wikidata:` line gets one, and a post with a different QID is only reported on the standard output,
+unless `--update-changed` is given.
+
+```shell
+make updateWikidata
+make updateWikidata ARGS=--update-changed
+```
+
+The script uses only the Python 3 standard library and needs no key. The query service limits
+requests (it may answer with HTTP 429 when it is called more than about once a minute), so wait a
+minute before running the script again.

@@ -4,4 +4,7 @@ updateOpenAlex:
 updateEuropePMC:
 	python3 scripts/europepmc.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC
+updateWikidata:
+	python3 scripts/wikidata.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata
