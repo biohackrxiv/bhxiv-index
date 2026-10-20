@@ -30,6 +30,7 @@ authors:
     orcid: 0000-0003-1945-6342
 wikidata: Q137438732
 europepmc: PPR1134875
+git: https://github.com/sebeier/bhe25_project28
 ---
 
 Robust validation of both research data and its accompanying metadata is essential for ensuring adherence to FAIR principles.

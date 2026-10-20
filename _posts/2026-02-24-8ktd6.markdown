@@ -29,6 +29,7 @@ authors:
     orcid: 0000-0002-9708-6722
 europepmc: PPR1158421
 openalex: W7131218866
+git: https://github.com/bio-tools/biohackathon2025-paper
 ---
 
 Research software metadata can be found across many code repositories and software registries. Here, we describe the tooling for a

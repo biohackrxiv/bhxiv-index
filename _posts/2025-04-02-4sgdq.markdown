@@ -27,6 +27,7 @@ authors:
   - name: Claus Weiland
   - name: Daphne Wijnbergen
 openalex: W4409084738
+git: https://github.com/zbmed-semtec/bheu24-cm4mlds
 ---
 
 To advance the use of machine learning to address humanity’s grand challenges such as the understanding of disease conditions and biodiversity loss in the anthropocene, it is important to promote FAIR AI-ready datasets, since data scientists and bioinformaticians spend 80% of their time in data finding and preparation. Metadata descriptors for datasets are pivotal for the creation of machine learning models as they facilitate the definition of strategies for data discovery, feature selection, data cleaning, and data pre-processing. ML-ready datasets, whether by design or after pre-processing, can be enriched with metadata so they become FAIRer, i.e., autonomously discoverable and processable by machines (machine-actionable). Croissant ML is an extension of schema.org to better describe ML-ready datasets, released early 2024 and already adopted by some ML-model platforms such as Hugging Face (see Croissant ML viewer documentation) and OpenML. However, as it commonly happens with metadata, there are some limitations to the amount of metadata that can be automatically extracted. How much Croissant metadata can be programmatically extracted from ML-ready datasets? And how could this automation be improved? In this project, we explored answers to these two questions.

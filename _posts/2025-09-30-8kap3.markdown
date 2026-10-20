@@ -13,6 +13,7 @@ authors:
 wikidata: Q136434638
 europepmc: PPR1093476
 openalex: W4414620858
+git: https://github.com/JKoblitz/bh25-purl-resolver
 ---
 
 Knowledge graphs in the life sciences are increasingly published using the Resource Description Framework (RDF) and

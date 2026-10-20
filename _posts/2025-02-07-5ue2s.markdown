@@ -19,6 +19,7 @@ authors:
 europepmc: PPR975700
 openalex: W4407207651
 wikidata: Q136612021
+git: https://github.com/biohackathon-japan/bh24-wikiblitz
 ---
 
 During BioHackathon 24 in Fukushima, we organized a WikiBlitz, a collaborative effort to integrate biodiversity observations from iNaturalist into the Wikimedia ecosystem. A WikiBlitz is inspired by the concept of a BioBlitz, where participants document as many species as possible within a limited time frame, while also contributing structured data to Wikidata, Wikimedia Commons, and Wikipedia. In this report, we describe the methodology and outcomes of this event, including the collection of 109 biodiversity observations and their subsequent verification and integration into Wikimedia platforms. We highlight the challenges and best practices for running a WikiBlitz, particularly around licensing and data quality, and demonstrate how tools such as iNaturalist2Commons and Wikidata queries can enhance the reuse of citizen science data. Finally, we provide a step-by-step tutorial to support future WikiBlitz events, ensuring broader participation and sustainable knowledge-sharing across platforms.

@@ -16,6 +16,7 @@ authors:
   - name: Juan Henao
     orcid: 0000-0003-0783-1432
 europepmc: PPR1275302
+git: https://github.com/tidyomics/tidyomicsHackathonTurku2026
 ---
 
 The Tidyomics ecosystem facilitates the manipulation of computational omics data structures by bringing the intuitive and

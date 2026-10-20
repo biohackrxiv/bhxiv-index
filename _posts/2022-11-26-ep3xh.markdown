@@ -25,6 +25,7 @@ authors:
     orcid: 0000-0003-1058-2668
 europepmc: PPR576214
 openalex: W4309973185
+git: https://github.com/elixir-europe/biohackathon-projects-2021/tree/main/projects/36/bhxiv
 ---
 
 The COVID-19 crisis demonstrates a critical requirement for rapid and efficient sharing of data to facilitate the global response to this and future pandemics. Our project aims are to enhance interoperability between health and research data by mapping Phenopackets and OMOP schemas, and representing COVID-19 metadata using the FAIR principles to enable discovery, integration and analysis of genotypic and phenotypic data. Here, we present our outcomes after one week of BioHacking together 17 participants (10 new to the project), from different countries (CH, US and in EU), and continents.

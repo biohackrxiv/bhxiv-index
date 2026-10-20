@@ -21,6 +21,7 @@ authors:
   - name: Ryo Nozu
     orcid: 0000-0002-1099-3152
 europepmc: PPR1140178
+git: https://github.com/bonohu/BH25
 ---
 
 Building on our work at DBCLS BioHackathon 2023 (BH23), where we introduced QPX and promoted pathway modeling with WikiPathways (Pico et al., 2008)

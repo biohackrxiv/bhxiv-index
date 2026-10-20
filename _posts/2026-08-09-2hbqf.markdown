@@ -15,6 +15,7 @@ authors:
     orcid: 0009-0002-1208-8858
 europepmc: PPR1294512
 openalex: W7202031147
+git: https://github.com/NuriaQueralt/BH25-variant-annotation-rdf
 ---
 
 Precision oncology depends on semantic, interoperable representations of genomic variants (GV) - particularly structural variants (SVs) - to match patients

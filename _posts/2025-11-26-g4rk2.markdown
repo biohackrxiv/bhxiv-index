@@ -78,6 +78,7 @@ authors:
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 openalex: W4416696036
+git: https://github.com/mppeyton/NVIDIA_AWS_ODP_Hackathon_Manuscript
 ---
 
 Knowledge graphs (KGs) and large language models (LLMs) are increasingly applied in biomedical research; however, LLMs' tendency to hallucinate

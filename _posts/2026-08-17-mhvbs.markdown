@@ -25,6 +25,7 @@ authors:
     orcid: 0000-0002-5739-8860
 europepmc: PPR1299437
 openalex: W7203642714
+git: https://github.com/KarolisCremers/swatbh25-interactive-experience-for-data-owners
 ---
 
 At the Barcelona SWAT4HCLS 2025 Hackathon, a hacking group familiarized with and worked on improvements for RDFCraft. A tool for a data

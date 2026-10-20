@@ -25,6 +25,7 @@ authors:
     orcid: 0000-0002-0170-9172
 openalex: W7222907300
 europepmc: PPR1343807
+git: https://github.com/708san/biohackathon-2026-zebraseek-paper
 ---
 
 Rare diseases can remain undiagnosed for years because individual disorders are uncommon and clinically heterogeneous, while

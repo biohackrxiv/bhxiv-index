@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0002-7684-8679
 europepmc: PPR1256031
 openalex: W7165121153
+git: https://github.com/rioualen/EuroBioC26_hackathon_report
 ---
 
 Bioconductor (Huber et al., 2015) is a collection of more than 2,400 open-source software packages, together accounting for about a million downloads per year

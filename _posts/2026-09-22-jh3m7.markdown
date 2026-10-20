@@ -16,6 +16,7 @@ authors:
   - name: Pjotr Prins
     orcid: 0000-0002-8021-9162
 europepmc: PPR1324850
+git: https://github.com/biohackrxiv/bhxiv-metadata/tree/main/doc/japan_biohackathon2025
 ---
 
 The first BioHackrXiv preprint was published in 2020, using a platform based on the idea of using Markdown (Prins et al., 2022), and BioHackrXiv can be

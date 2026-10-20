@@ -19,6 +19,7 @@ authors:
   - name: Jerven Bolleman
     orcid: 0000-0002-7449-1266
 europepmc: PPR1294513
+git: https://github.com/NuriaQueralt/SWAT4HCLS-BH25-variant-representation-in-rdf
 ---
 
 During the International SWAT4HCLS conference held on 24-27th February 2025 in Barcelona (Spain), we detected an emerging number of novel RDF models to

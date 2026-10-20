@@ -17,6 +17,7 @@ authors:
   - name: Sophie Eisele
   - name: Johannes Kalmbach
   - name: SatwantKaur
+git: https://github.com/stefanches7/ai-ready-datasets
 ---
 
 At the SWAT4HCLS 2025 Hackathon, we continued our work on dataset interoperability and AI-readiness, extending our

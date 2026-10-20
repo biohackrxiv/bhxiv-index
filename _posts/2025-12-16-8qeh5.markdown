@@ -26,6 +26,7 @@ authors:
 wikidata: Q137438800
 europepmc: PPR1134876
 openalex: W7115564966
+git: https://github.com/biohackathon-japan/BH25-MCP-server-shapes
 ---
 
 In this paper, we present the work we have done during the Japan Biohackathon 2025 about implementing MCP servers

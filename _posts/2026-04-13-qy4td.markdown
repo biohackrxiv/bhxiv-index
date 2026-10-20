@@ -13,6 +13,7 @@ authors:
     orcid: 0000-0001-8907-5348
 wikidata: Q139267500
 europepmc: PPR1177008
+git: https://github.com/NuriaQueralt/BH24-ga4gh-vrs-rdf-schema
 ---
 
 There is currently no standardized representation of genomic variants in RDF. To address this issue, during the DBCLS BioHackathon 2024 we modelled

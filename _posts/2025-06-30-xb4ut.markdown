@@ -38,6 +38,7 @@ authors:
   - name: dimitris Koureas
     orcid: 0000-0002-4842-6487
 europepmc: PPR1044435
+git: https://github.com/bge-barcoding/BGE-Barcoding-Hackathon-Report
 ---
 
 The 2024 BGE Barcoding Hackathon, hosted by the Biodiversity Genomics Europe (BGE) project in Leiden, Netherlands, focused on

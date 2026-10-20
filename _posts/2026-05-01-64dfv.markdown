@@ -39,6 +39,7 @@ authors:
     orcid: 0000-0001-7542-0286
 wikidata: Q139669483
 europepmc: PPR1185449
+git: https://github.com/TGX-UM/INTOXICOM_Workshop_2
 ---
 
 As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized. The first INTOXICOM workshop

@@ -41,6 +41,7 @@ authors:
   - name: Samir Moustafa
 europepmc: PPR1247452
 openalex: W7163805504
+git: https://github.com/scverse/2026_04_hackathon_padua/tree/main/BioHackArxiv
 ---
 
 This preprint outlines the results of the "2nd SpatialData Hackathon" organised by the scverse and Bioconductor teams. The event gathered experts to

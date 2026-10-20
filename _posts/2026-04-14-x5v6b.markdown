@@ -23,6 +23,7 @@ authors:
     orcid: 0000-0002-7684-8679
 europepmc: PPR1177443
 openalex: W7154225272
+git: https://github.com/mblue9/BioHackEU25_preprint
 ---
 
 Identifying the most appropriate bioinformatics tool for a task remains challenging across multiple domains. Annotating tools with EDAM ontology

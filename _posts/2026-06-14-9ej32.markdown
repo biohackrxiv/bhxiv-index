@@ -38,6 +38,7 @@ authors:
   - name: Davide Risso
 europepmc: PPR1251368
 openalex: W7164753454
+git: https://github.com/BiocCodingCollaborations/VeniceHackathon2026
 ---
 
 We report the outcomes of the Bioconductor Spatial Data and Image Analysis Hackathon, held in Venice, Italy in April 2026.

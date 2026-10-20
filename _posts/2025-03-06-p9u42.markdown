@@ -12,6 +12,7 @@ authors:
     orcid: 0000-0003-3777-5945
 europepmc: PPR988775
 openalex: W4408312856
+git: https://github.com/biohackrxiv/bhxiv-metadata/tree/main/doc/elixir_biohackathon2024
 ---
 
 The first BioHackrXiv preprint was published in 2020, using a platform based on the idea of using Markdown,

@@ -28,6 +28,7 @@ authors:
 wikidata: Q141507845
 europepmc: PPR1326048
 openalex: W7213773590
+git: https://github.com/arkinjo/BH26-TogoMCP
 ---
 
 TogoMCP is a Model Context Protocol (MCP) server that lets large language model (LLM) agents query life-science knowledge graphs in SPARQL,

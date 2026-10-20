@@ -15,6 +15,7 @@ authors:
   - name: Dorothy Ellis
 europepmc: PPR1106117
 openalex: W4415386487
+git: https://github.com/biohackathon-japan/BH25-on2vec
 ---
 
 Ontologies provide structured vocabularies and relationships essential for organizing biological knowledge, yet their
