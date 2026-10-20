@@ -7,4 +7,7 @@ updateEuropePMC:
 updateWikidata:
 	python3 scripts/wikidata.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata
+createQuickstatements:
+	python3 scripts/createQuickstatements.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements

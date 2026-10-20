@@ -72,3 +72,31 @@ make updateWikidata ARGS=--update-changed
 The script uses only the Python 3 standard library and needs no key. The query service limits
 requests (it may answer with HTTP 429 when it is called more than about once a minute), so wait a
 minute before running the script again.
+
+### QuickStatements for Wikidata
+
+`scripts/createQuickstatements.py` creates [QuickStatements](https://quickstatements.toolforge.org/)
+(version 2, CSV) that add the identifiers from the posts to Wikidata, for the posts that have a
+`wikidata:` line:
+
+* `openalex:` as OpenAlex ID ([P10283](https://www.wikidata.org/wiki/Property:P10283)), and
+* `europepmc:`, without the `PPR` prefix, as Europe PMC preprint ID
+  ([P13529](https://www.wikidata.org/wiki/Property:P13529)).
+
+It asks the Wikidata SPARQL endpoint for the statements the items already have, and only creates a
+statement where the item has none for that property. Each new statement has a reference with
+"reference URL" (S854) the page of the work on index.biohackrxiv.org, "retrieved" (S813) the date of
+today, and "stated in" (S248) BioHackrXiv ([Q115450084](https://www.wikidata.org/wiki/Q115450084)).
+Where an item already has a different value, nothing is created, and the difference is reported on the
+standard output. Case is ignored in the comparison, so `w3133411698` in Wikidata counts as
+`W3133411698`.
+
+```shell
+make createQuickstatements
+make createQuickstatements ARGS="--output other.csv"
+```
+
+The CSV (default `quickstatements.csv`) has one row for each statement; load it with "Import
+commands" in QuickStatements, choosing the CSV format. Run `make updateOpenAlex`,
+`make updateEuropePMC` and `make updateWikidata` first, so the posts are up to date. The SPARQL
+endpoint limits requests (see above).
