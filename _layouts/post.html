@@ -48,7 +48,7 @@ layout: base
         </span>
       {% endif %}
 
-      {% if page.europepmc or page.wikidata or page.openalex %}
+      {% if page.europepmc or page.wikidata or page.openalex or page.git %}
         <br /><br /><span class="post-meta">
         {% if page.europepmc %} 
           <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
@@ -58,6 +58,9 @@ layout: base
         {% endif %}
         {% if page.openalex %}
           <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.openalex | prepend:'https://openalex.org/works/' }}">OpenAlex</a>&nbsp;
+        {% endif %}
+        {% if page.git %}
+          <nobr><i class="fa-solid fa-square-git"></i>&nbsp;<a style="color: #828282" href="{{ page.git }}">Source</a>&nbsp;
         {% endif %}
         </span>
       {% endif %}
