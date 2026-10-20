@@ -27,3 +27,27 @@ shared daily budget; set the optional `OPENALEX_KEY` environment variable to use
 ```shell
 OPENALEX_KEY=... make updateOpenAlex
 ```
+
+### Europe PMC identifiers
+
+`scripts/europepmc.py` adds or corrects the `europepmc:` line (for example `europepmc: PPR1343807`)
+in the front matter of the posts in `_posts/`.
+
+It asks the [Europe PMC search API](https://europepmc.org/RestfulWebService) for all records with the
+publisher `BioHackrXiv` (`PUBLISHER:"BioHackrXiv"`), builds a table of DOI and Europe PMC ID, and
+matches the table with the `doi:` of each post (case-insensitive). A post without a `europepmc:` line
+gets one. A post with a different ID is not changed by default: it is reported on the standard
+output, so the difference can be checked first. Posts that already match, or whose DOI is not in
+Europe PMC, are left unchanged.
+
+```shell
+make updateEuropePMC
+```
+
+After checking the reported posts, add `--update-changed` to also overwrite the differing IDs:
+
+```shell
+make updateEuropePMC ARGS=--update-changed
+```
+
+The script uses only the Python 3 standard library and needs no key.
