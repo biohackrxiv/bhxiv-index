@@ -129,3 +129,42 @@ status when a download failed. Use `--cache` to store the PDFs in another folder
 
 The script uses only the Python 3 standard library and needs no key. The first run downloads all
 preprints and takes a few minutes.
+
+### PDF metadata and Git repositories
+
+`scripts/extractPdfMetadata.py` reads the front page of each cached PDF (see the PDF cache above) and
+writes the metadata it finds to `cache/metadata/<identifier>.json`. Like the PDFs, this cache is not
+part of the git repository. For now it holds the links of the "BioHackathon series:" section in the
+left column of the front page: the first link is the event, the second link is usually the project
+or its GitHub repository.
+
+Those links are annotations in the PDF, so a text conversion does not contain them. The script
+therefore runs `pdftohtml -xml` (from [Poppler](https://poppler.freedesktop.org/); install the
+`poppler-utils` package) on the first page. That gives every text fragment with its position and its
+link, so the script can pick the links in the left column between "BioHackathon series:" and the
+"Submitted:" or "License:" heading, and ignore the license and BioHackrXiv.org links. (Pandoc cannot
+read PDF, and converting to HTML or Markdown first would lose the column positions that separate the
+sidebar from the paper text.) Each JSON file has the `links` (text and URL) and the `repository`: the
+second link, or `null` when the PDF has no second link.
+
+```shell
+make cachePdfs
+make extractPdfMetadata
+```
+
+`scripts/git.py` then adds the `git:` line (for example
+`git: https://github.com/708san/biohackathon-2026-zebraseek-paper`) to the front matter of the
+posts in `_posts/`. It matches the OSF identifier from the `doi:` of a post with the JSON files. As
+for Europe PMC and Wikidata, a post without a `git:` line gets one, and a post with a different
+URL is only reported on the standard output, unless `--update-changed` is given.
+
+```shell
+make updateGit
+make updateGit ARGS=--update-changed
+```
+
+A second link is only used when it is a GitHub or GitLab URL (`https://github.com/<owner>/<repo>`
+or `https://gitlab.com/<group>/<project>`, with optional subfolder). A trailing `/` or `.git` is removed, and `http://` and `www.` are changed to
+`https://`. Posts whose second link is something else (Discord, an unfilled template
+placeholder, or only an organization) are listed as skipped, and posts whose PDF has no second link
+are left unchanged. The script uses only the Python 3 standard library.

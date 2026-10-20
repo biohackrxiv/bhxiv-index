@@ -13,4 +13,10 @@ createQuickstatements:
 cachePdfs:
 	python3 scripts/cachePdfs.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs
+extractPdfMetadata:
+	python3 scripts/extractPdfMetadata.py $(ARGS)
+
+updateGit:
+	python3 scripts/git.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit
