@@ -48,7 +48,7 @@ layout: base
         </span>
       {% endif %}
 
-      {% if page.europepmc or page.wikidata %}
+      {% if page.europepmc or page.wikidata or page.openalex %}
         <br /><br /><span class="post-meta">
         {% if page.europepmc %} 
           <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}">Europe PMC</a>&nbsp;
