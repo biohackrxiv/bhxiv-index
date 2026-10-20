@@ -83,8 +83,11 @@ minute before running the script again.
 * `europepmc:`, without the `PPR` prefix, as Europe PMC preprint ID
   ([P13529](https://www.wikidata.org/wiki/Property:P13529)).
 
-It asks the Wikidata SPARQL endpoint for the statements the items already have, and only creates a
-statement where the item has none for that property. Each new statement has a reference with
+* "published in" ([P1433](https://www.wikidata.org/wiki/Property:P1433)) BioHackrXiv, for items that
+  do not have that value yet (other P1433 values, such as a meeting, are left alone).
+
+It asks the live Wikidata API (`wbgetentities`) for the statements the items already have, and only
+creates a statement where the item has none for that property. Each new statement has a reference with
 "reference URL" (S854) the page of the work on index.biohackrxiv.org, "retrieved" (S813) the date of
 today, and "stated in" (S248) BioHackrXiv ([Q115450084](https://www.wikidata.org/wiki/Q115450084)).
 Where an item already has a different value, nothing is created, and the difference is reported on the
@@ -98,5 +101,6 @@ make createQuickstatements ARGS="--output other.csv"
 
 The CSV (default `quickstatements.csv`) has one row for each statement; load it with "Import
 commands" in QuickStatements, choosing the CSV format. Run `make updateOpenAlex`,
-`make updateEuropePMC` and `make updateWikidata` first, so the posts are up to date. The SPARQL
-endpoint limits requests (see above).
+`make updateEuropePMC` and `make updateWikidata` first, so the posts are up to date. The live API is
+used, not the SPARQL endpoint, because that one can be behind on recent edits, which would make a
+statement that was just added look missing.

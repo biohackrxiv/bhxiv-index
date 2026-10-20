@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Create QuickStatements (version 2, CSV) to add missing identifiers to Wikidata.
+"""Create QuickStatements (version 2, CSV) to add missing statements to Wikidata.
 
 For each post with a `wikidata:` line, the OpenAlex ID (P10283, from the
 `openalex:` line) and the Europe PMC preprint ID (P13529, the `europepmc:`
 line without the "PPR" prefix) are added when the Wikidata item has no such
 statement yet. Each new statement gets a reference: reference URL (S854) is
 the page of the work on index.biohackrxiv.org, retrieved (S813) is today, and
-stated in (S248) is BioHackrXiv (Q115450084). A statement that is already
+stated in (S248) is BioHackrXiv (Q115450084). Items without "published in"
+(P1433) BioHackrXiv (Q115450084) get that statement too. A statement that is already
 there with a different value (ignoring case) is not touched, but reported on the standard
 output.
 
@@ -40,11 +41,14 @@ import re
 import urllib.parse
 import urllib.request
 
-SPARQL_URL = 'https://query.wikidata.org/sparql'
+API_URL = 'https://www.wikidata.org/w/api.php'
+BATCH_SIZE = 50  # items per wbgetentities call
 SITE_URL = 'https://index.biohackrxiv.org'
 STATED_IN = 'Q115450084'
 # post front matter key -> (Wikidata property, prefix to remove from the value)
 PROPERTIES = {'openalex': ('P10283', ''), 'europepmc': ('P13529', 'PPR')}
+# published in (P1433): BioHackrXiv, added when the item does not have it
+PUBLISHED_IN = 'P1433'
 POSTS = os.path.join(os.path.dirname(__file__), '..', '_posts', '*.markdown')
 USER_AGENT = 'bhxiv-index/0.1'
 
@@ -70,23 +74,31 @@ def read_post(path):
 
 def fetch_existing(qids, properties):
     """Return {(qid, property): set of values} of the statements that Wikidata
-    already has for the items."""
-    values = ' '.join('wd:' + qid for qid in sorted(qids))
-    query = 'SELECT ?item ?p ?value WHERE { VALUES ?item { %s } ' \
-            'VALUES ?p { %s } ?item ?claim ?value . ' \
-            '?p wikibase:directClaim ?claim }' % (
-                values, ' '.join('wd:' + p for p in properties))
-    request = urllib.request.Request(
-        SPARQL_URL, data=urllib.parse.urlencode({'query': query}).encode(),
-        headers={'User-Agent': USER_AGENT,
-                 'Accept': 'application/sparql-results+json'})
-    with urllib.request.urlopen(request, timeout=120) as response:
-        bindings = json.load(response)['results']['bindings']
+    already has for the items.
+
+    The live Wikidata API is used, not the SPARQL endpoint, which can be
+    behind on recent edits (and would then show a statement as missing)."""
     existing = {}
-    for row in bindings:
-        key = (row['item']['value'].rsplit('/', 1)[-1],
-               row['p']['value'].rsplit('/', 1)[-1])
-        existing.setdefault(key, set()).add(row['value']['value'])
+    qids = sorted(qids)
+    for start in range(0, len(qids), BATCH_SIZE):
+        params = urllib.parse.urlencode({
+            'action': 'wbgetentities', 'format': 'json', 'props': 'claims',
+            'ids': '|'.join(qids[start:start + BATCH_SIZE])})
+        request = urllib.request.Request(
+            API_URL + '?' + params, headers={'User-Agent': USER_AGENT})
+        with urllib.request.urlopen(request, timeout=60) as response:
+            entities = json.load(response)['entities']
+        for qid, entity in entities.items():
+            for prop in properties:
+                values = existing.setdefault((qid, prop), set())
+                for claim in entity.get('claims', {}).get(prop, []):
+                    if claim['rank'] == 'deprecated':
+                        continue
+                    snak = claim['mainsnak']
+                    if snak['snaktype'] != 'value':
+                        continue
+                    value = snak['datavalue']['value']
+                    values.add(value['id'] if isinstance(value, dict) else value)
     return existing
 
 
@@ -125,6 +137,11 @@ def create_statements(posts, existing, today):
             rows.append({'qid': qid, prop: quote(value),
                          'S854': quote(post['url']), 'S813': retrieved,
                          'S248': STATED_IN})
+        # other values of "published in" (a meeting, for example) are fine
+        if STATED_IN not in existing.get((qid, PUBLISHED_IN), set()):
+            rows.append({'qid': qid, PUBLISHED_IN: STATED_IN,
+                         'S854': quote(post['url']), 'S813': retrieved,
+                         'S248': STATED_IN})
     return rows, mismatches
 
 
@@ -135,9 +152,11 @@ def main():
     args = parser.parse_args()
     posts = [read_post(path) for path in sorted(glob.glob(POSTS))]
     qids = {post['wikidata'] for post in posts if post.get('wikidata')}
-    existing = fetch_existing(qids, [p for p, _ in PROPERTIES.values()])
+    existing = fetch_existing(
+        qids, [p for p, _ in PROPERTIES.values()] + [PUBLISHED_IN])
     rows, mismatches = create_statements(posts, existing, datetime.date.today())
-    columns = ['qid'] + [p for p, _ in PROPERTIES.values()] + ['S854', 'S813', 'S248']
+    columns = ['qid'] + [p for p, _ in PROPERTIES.values()] + [PUBLISHED_IN] + [
+        'S854', 'S813', 'S248']
     with open(args.output, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, columns, restval='', lineterminator='\n')
         writer.writeheader()
