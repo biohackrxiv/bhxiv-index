@@ -10,4 +10,7 @@ updateWikidata:
 createQuickstatements:
 	python3 scripts/createQuickstatements.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements
+cachePdfs:
+	python3 scripts/cachePdfs.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs

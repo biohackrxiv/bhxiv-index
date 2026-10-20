@@ -104,3 +104,28 @@ commands" in QuickStatements, choosing the CSV format. Run `make updateOpenAlex`
 `make updateEuropePMC` and `make updateWikidata` first, so the posts are up to date. The live API is
 used, not the SPARQL endpoint, because that one can be behind on recent edits, which would make a
 statement that was just added look missing.
+
+### PDF cache
+
+`scripts/cachePdfs.py` downloads the PDF of each preprint into a local cache, `cache/pdfs/`, for
+example for text mining or checking the content of the preprints. The cache is listed in
+`.gitignore` and is not part of the git repository.
+
+The OSF identifier is taken from the `doi:` of each post (for example `c8jw6_v1` from
+`10.37044/osf.io/c8jw6_v1`). The script asks the [OSF API](https://developer.osf.io/) for the primary
+file of that preprint, which is the PDF offered on the preprint page, and saves it as
+`cache/pdfs/<identifier>.pdf`. A download that is not a PDF is not stored, and is reported as failed.
+
+```shell
+make cachePdfs
+make cachePdfs ARGS="--delay 2"
+```
+
+PDFs that are already in the cache are skipped, so the command can be run again to fetch only the
+new preprints, or to retry the failed ones; delete a file from the cache to download it again. The
+script pauses one second between preprints (`--delay` changes that) and retries when the server
+answers with HTTP 429 or a server error. It prints a summary at the end and exits with a non-zero
+status when a download failed. Use `--cache` to store the PDFs in another folder.
+
+The script uses only the Python 3 standard library and needs no key. The first run downloads all
+preprints and takes a few minutes.
