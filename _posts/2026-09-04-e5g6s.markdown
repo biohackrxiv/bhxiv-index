@@ -22,6 +22,7 @@ authors:
   - name: Shoichiro Takahashi
   - name: Piyakrit Wongboonchai
 europepmc: PPR1312527
+openalex: W7208754323
 ---
 
 Genome and exome sequencing have transformed rare disease diagnosis, yet converting large variant sets into evidence-backed interpretations remains labor-intensive

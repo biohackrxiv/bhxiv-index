@@ -13,6 +13,7 @@ authors:
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 europepmc: PPR1044434
+openalex: W4411836188
 ---
 
 Advances in precision medicine are reshaping cancer treatment by tailoring therapies to a patient’s specific genetic profile. Despite this,

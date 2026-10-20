@@ -22,6 +22,7 @@ authors:
   - name: Silvio Waschina
     orcid: 0000-0002-6290-3593
 europepmc: PPR1165903
+openalex: W7135242067
 ---
 
 As part of the BioHackathon Europe 2025, we here report on the progress of the hacking team preparing tools to develop constraint-based

@@ -20,6 +20,7 @@ authors:
     orcid: 0000-0002-0048-3300
   - name: Geert van Geest
     orcid: 0000-0002-1561-078X
+openalex: W4416811125
 ---
 
 Training metadata in the life‑science community is increasingly standardized through Bioschemas, yet remains fragmented and under‑utilized. In

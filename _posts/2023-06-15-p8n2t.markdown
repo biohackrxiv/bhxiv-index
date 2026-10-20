@@ -12,6 +12,7 @@ authors:
   - name: Rijuta Lamba
   - name: Lisanna Paladin
 europepmc: PPR676437
+openalex: W4380607935
 ---
 
 Optimal formats to inform and engage young students in novel biology-related fields are short courses. Training schools, e.g. those lasting for five days,

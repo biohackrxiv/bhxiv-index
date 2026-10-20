@@ -12,6 +12,7 @@ authors:
     orcid: 0000-0001-7883-3756
 wikidata: Q136434638
 europepmc: PPR1093476
+openalex: W4414620858
 ---
 
 Knowledge graphs in the life sciences are increasingly published using the Resource Description Framework (RDF) and

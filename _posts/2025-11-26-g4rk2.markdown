@@ -77,6 +77,7 @@ authors:
   - name: Beryl Rabindran
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
+openalex: W4416696036
 ---
 
 Knowledge graphs (KGs) and large language models (LLMs) are increasingly applied in biomedical research; however, LLMs' tendency to hallucinate

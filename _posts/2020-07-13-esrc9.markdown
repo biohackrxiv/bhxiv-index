@@ -10,6 +10,7 @@ authors:
     orcid: 0000-0003-4413-0651
   - name: Takeya Kasukawa
 europepmc: PPR281942
+openalex: W3133411698
 ---
 
 Report on the group 'TogoEx' in the BioHackathon Europe 2019.

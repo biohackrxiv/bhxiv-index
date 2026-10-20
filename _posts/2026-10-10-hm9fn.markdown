@@ -14,6 +14,7 @@ authors:
   - name: Tazro Ohta
     orcid: 0000-0003-3777-5945
 europepmc: PPR1338353
+openalex: W7221330615
 ---
 
 The BioSample database contains tens of millions of records describing biological samples, but their metadata are submitted largely as

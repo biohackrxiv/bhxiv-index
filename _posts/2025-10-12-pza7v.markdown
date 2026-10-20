@@ -23,6 +23,7 @@ authors:
     orcid: 0000-0001-8228-2387
 wikidata: Q136482088
 europepmc: PPR1100304
+openalex: W4415081807
 ---
 
 Understanding the practical application of artificial intelligence (AI) in research is increasingly

@@ -14,6 +14,7 @@ authors:
   - name: Claude Nanjo
     orcid: 0009-0002-1208-8858
 europepmc: PPR1294512
+openalex: W7202031147
 ---
 
 Precision oncology depends on semantic, interoperable representations of genomic variants (GV) - particularly structural variants (SVs) - to match patients

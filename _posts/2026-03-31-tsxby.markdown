@@ -23,6 +23,7 @@ authors:
     orcid: 0000-0003-1323-3762
 wikidata: Q138849430
 europepmc: PPR1172368
+openalex: W7144298364
 ---
 
 The increasing adoption of image-based technologies across life sciences, environmental research, and related domains has increased the demand for

@@ -35,6 +35,7 @@ authors:
     orcid: 0000-0001-7542-0286
 europepmc: PPR935824
 wikidata: Q131007824
+openalex: W4404079407
 ---
 
 This report documents the first workshop of the ELIXIR Toxicology Community (Martenset al., 2023), held in Utrecht on May 28-29, 2024 (FAIRification of

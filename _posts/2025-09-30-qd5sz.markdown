@@ -16,6 +16,7 @@ authors:
     orcid: 0009-0004-1874-3117
 wikidata: Q136434653
 europepmc: PPR1093479
+openalex: W4414620899
 ---
 
 At the DBCLS BioHackathon 2025, we converted metatranscriptomic analytical shell scripts into Common Workflow Language (CWL) containerized

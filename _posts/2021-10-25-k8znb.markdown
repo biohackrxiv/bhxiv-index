@@ -24,6 +24,7 @@ authors:
     orcid: 0000-0002-0222-4273
   - name: Allegra Via
 europepmc: PPR410736
+openalex: W4252503516
 ---
 
 Data Management Plans are now considered a key element of Open Science. They describe the data management life cycle for the data to be collected, processed and/or generated

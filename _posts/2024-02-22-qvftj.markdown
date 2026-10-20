@@ -19,6 +19,7 @@ authors:
   - name: Pjotr Prins
     orcid: 0000-0002-8021-9162
 europepmc: PPR809814
+openalex: W4392055989
 ---
 
 This paper presents the work executed on BioHackrXiv during the international ELIXIR BioHackathon Europe in Paris, France, 2022. BioHackrXiv is a scholarly publication service for BioHackathons and codefests that target biology and the biomedical sciences in the spirit of pre-publishing platforms.
