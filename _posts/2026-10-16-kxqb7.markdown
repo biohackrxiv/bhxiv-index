@@ -23,6 +23,7 @@ authors:
   - name: Susumu Goto
   - name: Toyofumi Fujiwara
     orcid: 0000-0002-0170-9172
+openalex: W7222907300
 ---
 
 Rare diseases can remain undiagnosed for years because individual disorders are uncommon and clinically heterogeneous, while

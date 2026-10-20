@@ -56,6 +56,9 @@ layout: base
         {% if page.wikidata %} 
           <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.wikidata | prepend:'https://qlever.scholia.wiki/work/' }}">Scholia</a>&nbsp;
         {% endif %}
+        {% if page.openalex %}
+          <nobr><i class="fa-solid fa-cloud"></i>&nbsp;<a style="color: #828282" href="{{ page.openalex | prepend:'https://openalex.org/works/' }}">OpenAlex</a>&nbsp;
+        {% endif %}
         </span>
       {% endif %}
 
