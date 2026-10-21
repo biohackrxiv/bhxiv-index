@@ -14,6 +14,7 @@ authors:
 openalex: W7221630303
 europepmc: PPR1341831
 wikidata: Q141735192
+git: https://github.com/biohackrxiv/bhxiv-metadata/tree/main/doc/intermediate2026
 ---
 
 BioHackrXiv continues to host project reports from biohackathon events (Prins et al., 2022).
