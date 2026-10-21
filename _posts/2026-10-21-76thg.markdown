@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "DBCLS BioHackathon 2026 report: Mass spectrometry data analysis workflow and visualization towards trans-omics research"
+date:   2026-10-21
+tags: BH26JP
+doi: 10.37044/osf.io/76thg_v1
+authors:
+  - name: Akiyasu C. Yoshizawa
+    orcid: 0000-0002-0870-5502
+  - name: Yuki Moriya
+    orcid: 0000-0001-8195-5893
+  - name: Kozo Nishida
+    orcid: 0000-0001-8501-7319
+  - name: Yushi Takahashi
+    orcid: 0000-0002-9194-6293
+  - name: Satoshi Tanaka
+    orcid: 0000-0001-5266-0914
+  - name: Shin Kawano
+    orcid: 0000-0002-7969-2972
+  - name: Susumu Goto
+    orcid: 0000-0003-2989-8486
+---
+
+Public repositories for mass spectrometry (MS) data contain rapidly growing collections of proteomic, metaproteomic, and metabolomic data,
+but differences in analytical procedures, metadata, data formats, and visualization environments limit their reuse and integration. During
+BioHackathon 2026, we developed complementary components of an infrastructure for standardized reanalysis for proteomics and trans-omics
+applications. First, we redesigned the jPOST proteomics reanalysis workflow to improve scalability, reduce manual intervention, and
+facilitate consistent transfer of data and metadata among the repository, reanalysis system, and jPOSTdb. The workflow uses detailed
+Journal of Proteome Data and Methods (JPDM) metadata and integrates results from three search engines using UniScore. Second, we
+developed metaproteome visualizations that connect spectral evidence with metabolic pathways and microbial phyla, enabling functional
+comparison among samples and experimental groups. Third, we enhanced Mass++4, a cross-platform spectrum and chromatogram viewer, by
+improving its connectivity with public repositories and expanding functions relevant to the inspection of proteomic and metabolomic data.
+Finally, we investigated the interoperability of MB-POST with the MetabolomicsHub common data model and mzTab-M. This analysis identified
+requirements for controlled-vocabulary mapping, explicit representation of experimental factors and sample groups, and standardization of
+quantitative-result formats. Together, these developments connect raw-data preservation, standardized metadata, reproducible reanalysis,
+biological visualization, and cross-repository interoperability. Although further implementation and large-scale validation are required,
+they provide a practical foundation for integrating proteomic, metaproteomic, and metabolomic data in future trans-omics studies.
+
