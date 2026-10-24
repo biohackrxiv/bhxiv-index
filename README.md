@@ -209,3 +209,41 @@ make findMarkdown ARGS="24jst"
 ```
 
 Like the other scripts, it uses only the Python 3 standard library.
+
+### Figures of the preprints
+
+`scripts/findFigures.py` reads the `paper.md` found by `findMarkdown.py`, at the recorded commit, and
+adds a list `figures` to the `markdown` object in `cache/metadata/<identifier>.json`, in the order
+of the paper. It finds the Markdown images (`![caption](path){#fig:label}`), also when the caption
+spans lines or contains brackets, and ignores images in code blocks and comments.
+
+```json
+"figures": [{
+  "source": "./figures/overview.png",
+  "path": "paper/figures/overview.png",
+  "url": "https://github.com/<owner>/<repo>/blob/<commit>/paper/figures/overview.png",
+  "caption": "Overview of the workflow",
+  "label": "fig:overview"
+}]
+```
+
+* `source` is the path as written in `paper.md`; `path` is the path of the image in the repository
+  (resolved from the folder of `paper.md`, or from the root of the repository for a leading `/`)
+  and `url` its address at the commit. If the image is not in the repository, `path` is `null`, and
+  either `remote` is `true` (the source is a web address, which is then the `url`) or `missing` is
+  `true` (the file does not exist at this commit).
+* `caption` is the text between the brackets, as Markdown, with white space collapsed. If that is
+  empty or generic (`Figure 1`, `image`, the file name), the paragraph right after the image that
+  starts with `Figure N:` is used instead, and `caption_source` is `text`.
+* `label` is the Pandoc identifier or the LaTeX `\label{...}` in the caption, if there is one.
+
+LaTeX `figure` environments (often used for tables) and HTML `<img>` tags are not recognized. A
+preprint without images gets an empty list. As for `markdown`, preprints that already have `figures`
+are skipped unless `--force` is given, and a repository that cannot be fetched is retried by the next
+run. Running `make findMarkdown` again keeps the figures when the file and commit are the same.
+
+```shell
+make findFigures
+make findFigures ARGS="--force"
+make findFigures ARGS="24jst"
+```

@@ -217,6 +217,10 @@ def process(path, titles, force):
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
         detail = (getattr(error, 'stderr', '') or str(error)).strip().splitlines()
         return 'failed', '%s: cannot search %s: %s' % (name, url, detail[-1] if detail else error)
+    previous = metadata.get('markdown')
+    if markdown and previous and 'figures' in previous and \
+            (previous.get('path'), previous.get('commit')) == (markdown['path'], markdown['commit']):
+        markdown['figures'] = previous['figures']  # added by findFigures.py
     metadata['markdown'] = markdown
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)

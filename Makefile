@@ -22,4 +22,7 @@ updateGit:
 findMarkdown:
 	python3 scripts/findMarkdown.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown
+findFigures:
+	python3 scripts/findFigures.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures
