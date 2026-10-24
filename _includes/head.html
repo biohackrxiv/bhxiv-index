@@ -27,7 +27,7 @@
       {
         "@id": "#article",
         "@type": "ScholarlyArticle",
-        "headline": "{{ page.title }}",
+        "headline": {{ page.title | jsonify }},
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         {%- if page.modified_date -%}"dateModified": "{{ page.modified_date | date_to_xmlschema }}",{%- endif -%}
         "sameAs": [
@@ -42,7 +42,7 @@
           {% for author in page.authors %}
             { "@type": "Person",
               {% if author.orcid %}"sameAs": "https://orcid.org/{{ author.orcid }}",{% endif %}
-              "name": "{{ author.name }}"
+              "name": {{ author.name | default: "" | jsonify }}
             }
             {% if forloop.last %}
             {% else %}
@@ -51,9 +51,9 @@
           {% endfor %}
           ],
         {% endif %}
-        "description": "{{ page.excerpt | strip_html | normalize_whitespace }}",
+        "description": {{ page.excerpt | strip_html | normalize_whitespace | jsonify }},
         "isPartOf": [ { "@id": "#periodical" } ],
-        "name": "{{ page.title }}",
+        "name": {{ page.title | jsonify }},
         "license": [ { "@type": "CreativeWork", "name": "CC-BY 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/legalcode" } ]
       }
     ]
