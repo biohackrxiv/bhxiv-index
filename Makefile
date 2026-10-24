@@ -25,4 +25,7 @@ findMarkdown:
 findFigures:
 	python3 scripts/findFigures.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures
+checkPdfFigures:
+	python3 scripts/checkPdfFigures.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures

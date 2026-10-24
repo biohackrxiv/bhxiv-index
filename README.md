@@ -247,3 +247,45 @@ make findFigures
 make findFigures ARGS="--force"
 make findFigures ARGS="24jst"
 ```
+
+### Checking the figures against the PDF
+
+The Markdown in the git repository is not necessarily the version that was submitted to BioHackrXiv,
+and the PDF is leading. `scripts/checkPdfFigures.py` compares the cached PDF (see the PDF cache above)
+with the `markdown.figures` of `cache/metadata/<identifier>.json` (see above), using Poppler's
+`pdftotext` and `pdfimages`:
+
+* Each figure gets `in_pdf`: `true` when its caption is in the text of the PDF, `false` when not, and
+  `null` when the caption is too short or generic to tell (`Figure 1`). Captions are compared without
+  Markdown, case, punctuation, hyphenation and line breaks, and only up to the first citation or
+  formula, because the PDF shows those differently.
+* The title of the post must be on the first page of the PDF (`title_in_pdf`).
+* `images` is the number of different raster images in the PDF, without the BioHackrXiv logo of every
+  page. Figures drawn as vector graphics are not counted, so fewer images than figures is normal; more
+  images than figures means that the Markdown misses some.
+
+The summary is added to the `markdown` object, with a `status` that is `match` (all captions that can
+be checked are found, and the title is on the first page), `partial` (at least half of the captions)
+or `mismatch`:
+
+```json
+"pdf": {"status": "match", "title_in_pdf": true, "images": 3, "captions_checked": 3, "captions_found": 3}
+```
+
+The script lists the preprints that are not a `match`, or that have more images in the PDF than
+figures in the Markdown, so the Markdown (and therefore the figure metadata) can be checked by hand.
+With `--verbose` it also lists the figures whose caption is not in the PDF. The check is quick and
+always runs again. `make findFigures` runs the same check right after it has found the figures of a
+preprint, and reports the preprints that do not match on the standard output; `make checkPdfFigures`
+repeats the check for all preprints without fetching anything. `make findMarkdown` keeps the `figures` and
+`pdf` values when the file and commit are the same.
+
+```shell
+make checkPdfFigures
+make checkPdfFigures ARGS=--verbose
+make checkPdfFigures ARGS="24jst"
+```
+
+A caption that is only part of the image itself is not in the text of the PDF, so a `false` points to
+a difference to look at, not to a proof of one.
+

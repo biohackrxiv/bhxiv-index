@@ -22,6 +22,10 @@ finds the images: `![caption](path){#fig:label}` (Pandoc Markdown). It adds a li
   image that starts with "Figure N:" is used instead, and `caption_source` is "text".
 * `label` is the Pandoc identifier (`{#fig:x}`) or the LaTeX `\\label{x}` of the caption, if any.
 
+The figures are then checked against the cached PDF with checkPdfFigures.py (the PDF is leading):
+`in_pdf` is added to each figure and a `pdf` summary to the `markdown` object, and the preprints
+that do not match the PDF are reported on the standard output.
+
 Preprints that already have `figures` are skipped unless --force is given. When the repository
 cannot be fetched, `figures` is left out, so the next run tries again.
 
@@ -57,7 +61,8 @@ import sys
 import tempfile
 import urllib.parse
 
-from findMarkdown import METADATA, blob_url, parse_url, run_git
+from checkPdfFigures import PDFS, check, report_line
+from findMarkdown import METADATA, blob_url, load_titles, parse_url, run_git
 
 GENERIC_CAPTION = re.compile(r'^(figure|fig\.?|image|img|picture|screenshot)?\s*[\d_-]*[a-z]?$', re.I)
 FIGURE_TEXT = re.compile(r'^[*_]{0,2}(?:Figure|Fig\.?)\s*\d+\w*\s*[:.]', re.I)
@@ -199,17 +204,17 @@ def fetch_commit(repo_url, commit, folder):
             cwd=folder)
 
 
-def process(path, force):
-    """Return (status, message). Status: done, skipped, failed."""
+def process(path, titles, pdfs, force):
+    """Return (status, messages). Status: done, skipped, failed."""
     with open(path, encoding='utf-8') as f:
         metadata = json.load(f)
     markdown = metadata.get('markdown')
     if not markdown or (not force and 'figures' in markdown):
-        return 'skipped', None
+        return 'skipped', []
     name = metadata['id']
     parsed = parse_url(markdown['url'].split('/blob/')[0].split('/-/blob/')[0])
     if not parsed:
-        return 'failed', '%s: unsupported URL %s' % (name, markdown['url'])
+        return 'failed', ['%s: unsupported URL %s' % (name, markdown['url'])]
     host, repo_url, _ = parsed
     try:
         with tempfile.TemporaryDirectory() as folder:
@@ -219,16 +224,29 @@ def process(path, force):
             text = run_git('show', 'FETCH_HEAD:' + markdown['path'], cwd=folder)
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
         detail = (getattr(error, 'stderr', '') or str(error)).strip().splitlines()
-        return 'failed', '%s: cannot fetch %s: %s' % (name, repo_url, detail[-1] if detail else error)
+        return 'failed', ['%s: cannot fetch %s: %s' % (name, repo_url, detail[-1] if detail else error)]
     markdown['figures'] = find_figures(text, markdown['path'], files, host, repo_url,
                                        markdown['commit'])
+    messages = []
+    problems = [fig['source'] for fig in markdown['figures'] if fig.get('missing')]
+    if problems:
+        messages.append('%s: image not in the repository: %s' % (name, ', '.join(problems)))
+    pdf = os.path.join(pdfs, name + '.pdf')
+    markdown.pop('pdf', None)
+    if os.path.exists(pdf):
+        try:
+            summary = check(metadata, pdf, titles.get(name.lower()))
+            line = report_line(name, summary, markdown)
+            if line:
+                messages.append(line)
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
+            messages.append('%s: cannot check the PDF: %s' % (name, error))
+    else:
+        messages.append('%s: no cached PDF to check the figures against' % name)
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
         f.write('\n')
-    problems = [fig['source'] for fig in markdown['figures'] if fig.get('missing')]
-    if problems:
-        return 'done', '%s: image not in the repository: %s' % (name, ', '.join(problems))
-    return 'done', None
+    return 'done', messages
 
 
 def main():
@@ -237,6 +255,7 @@ def main():
                         help='folder with the metadata JSON files (default: cache/metadata)')
     parser.add_argument('--force', action='store_true',
                         help='search again for preprints that already have `figures`')
+    parser.add_argument('--pdfs', default=PDFS, help='folder with the PDFs (default: cache/pdfs)')
     parser.add_argument('--jobs', type=int, default=4, help='parallel fetches (default: 4)')
     parser.add_argument('ids', nargs='*', help='only these identifiers (default: all)')
     args = parser.parse_args()
@@ -247,11 +266,13 @@ def main():
         paths = [p for p in paths if os.path.basename(p)[:-5].lower() in wanted]
     if not paths:
         sys.exit('No metadata in %s; run `make extractPdfMetadata` first.' % args.metadata)
+    titles = load_titles()
     counts = {'done': 0, 'skipped': 0, 'failed': 0}
     with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:
-        for status, message in pool.map(lambda p: process(p, args.force), paths):
+        for status, messages in pool.map(lambda p: process(p, titles, args.pdfs, args.force),
+                                         paths):
             counts[status] += 1
-            if message:
+            for message in messages:
                 print(message)
     print('Done: %(done)d, skipped: %(skipped)d, failed: %(failed)d' % counts)
     return 1 if counts['failed'] else 0
