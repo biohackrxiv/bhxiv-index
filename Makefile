@@ -34,4 +34,7 @@ exportFigures:
 setImage:
 	python3 scripts/setImage.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage
+setDescription:
+	python3 scripts/setDescription.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription

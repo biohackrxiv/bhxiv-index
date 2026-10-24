@@ -342,3 +342,26 @@ make setImage
 make setImage ARGS=--update-changed
 ```
 
+### Short description of a preprint
+
+`scripts/setDescription.py` adds a `description:` line to the front matter of the posts. The body of a
+post is the whole abstract, but search engines and social media show only about 120 to 160 characters.
+jekyll-seo-tag uses the `description:` for the meta description, `og:description` and
+`twitter:description`. The script takes the start of the abstract (without Markdown, HTML and Liquid),
+cuts it after a sentence when that gives at least 70 characters, and otherwise at a word with an
+ellipsis, in at most 160 characters. The abstract, and the JSON-LD description of the article (which
+has the whole abstract), do not change.
+
+```yaml
+description: "In this paper we present the work executed on BioHackrXiv during the international ELIXIR BioHackathon in Barcelona, Spain, 2021."
+```
+
+As for the `git:` line, a post without a `description:` line gets one, and a post with a different one
+is only reported, unless `--update-changed` is given. That means a `description:` written by hand is
+kept by default.
+
+```shell
+make setDescription
+make setDescription ARGS=--update-changed
+```
+
