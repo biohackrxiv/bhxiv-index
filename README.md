@@ -320,3 +320,25 @@ make exportFigures
 make exportFigures ARGS=--force
 ```
 
+### Image of a preprint
+
+`scripts/setImage.py` adds an `image:` line to the front matter of the posts that have exported
+figures (see above), so only preprints with a figure that matches the PDF get one. The home page shows
+that image next to the title of the preprint. From the figures of a preprint it picks the one with the
+most color: the colorfulness of Hasler and Süsstrunk is measured on a 64 × 64 pixel version of the
+image made with ImageMagick, so grey diagrams and screenshots on a white background score low. Images
+less than 400 pixels wide are only used when there is no larger one, and SVG files are skipped. The
+value is the path of the original image:
+
+```yaml
+image: /assets/images/figures/kxqb7_v1/overview.png
+```
+
+As for the `git:` line, a post without an `image:` line gets one, and a post with a different one is
+only reported, unless `--update-changed` is given.
+
+```shell
+make setImage
+make setImage ARGS=--update-changed
+```
+
