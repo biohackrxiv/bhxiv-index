@@ -16,6 +16,7 @@ authors:
 europepmc: PPR1106117
 openalex: W4415386487
 git: https://github.com/biohackathon-japan/BH25-on2vec
+image: /assets/images/figures/4f763_v1/model_performance.png
 ---
 
 Ontologies provide structured vocabularies and relationships essential for organizing biological knowledge, yet their

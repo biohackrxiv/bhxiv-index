@@ -31,6 +31,7 @@ europepmc: PPR1147340
 wikidata: Q137969694
 openalex: W7125701914
 git: https://github.com/PhilReedData/bhde-training-schema-report
+image: /assets/images/figures/un6cd_v1/copilot.png
 ---
 
 The fragmentation of training materials across research infrastructures often results in unsustainable resource

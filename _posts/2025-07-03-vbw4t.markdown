@@ -55,6 +55,7 @@ authors:
 europepmc: PPR1046013
 openalex: W4411947936
 git: https://github.com/collaborativebioinformatics/BioAI_manuscript
+image: /assets/images/figures/vbw4t_v1/Fig5-2.png
 ---
 
 The BioAI Hackathon at the Centre of New Technologies at the University of Warsaw convened 43 international researchers to collaboratively

@@ -16,6 +16,7 @@ authors:
 europepmc: PPR1295228
 openalex: W7202140061
 git: https://github.com/mpc-bioinformatics/biohackGermany25_gamification
+image: /assets/images/figures/dfwm9_v1/Figure3_screenshot_swirl.png
 ---
 
 State of the art life science training features steep learning curves due to dense technical specifications and complex data formats,

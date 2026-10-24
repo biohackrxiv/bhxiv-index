@@ -22,6 +22,7 @@ authors:
 europepmc: PPR785687
 openalex: W4390699475
 git: https://github.com/ResearchObject/bh2023-enabling-fair-digital-objects
+image: /assets/images/figures/gmk2h/signposting-senckenberg.png
 ---
 
 As part of the BioHackathon Europe 2023, we here report from the progress of the hackathon project #15: "Enabling FAIR Digital Objects with RO-Crate, Signposting and Bioschemas". We added Signposting to three existing resources, and made a Chrome browser extension to show Signposting headers. We added RO-Crate to two existing resources, and explored making a hybrid FDO using both a Handle PID Record and Signposting/RO-Crate approach.

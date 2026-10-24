@@ -25,6 +25,7 @@ authors:
 europepmc: PPR618029
 openalex: W4321101951
 git: https://github.com/bio-tools/biohackathon2022
+image: /assets/images/figures/79kje/operation_usage.png
 ---
 
 Here we report the results of a project started at the BioHackathon Europe 2022. Its goals were to cross-compare and analyze the metadata centralized in the Tools Ecosystem, and linked to the EDAM ontology, as well as to explore methods for connecting tools used in registered Galaxy workflows (i.e. WorkflowHub entries) to the annotations available in bio.tools.

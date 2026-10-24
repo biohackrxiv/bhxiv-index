@@ -12,6 +12,7 @@ authors:
 europepmc: PPR1285777
 openalex: W7171288437
 git: https://github.com/arkinjo/mie-redesign
+image: /assets/images/figures/6v5ra_v1/ci_ladder.png
 ---
 
 MIE files are per-database YAML documents that TogoMCP supplies to a large language model at  query time so it can compose SPARQL against the

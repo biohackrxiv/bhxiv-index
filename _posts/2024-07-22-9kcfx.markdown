@@ -12,6 +12,7 @@ authors:
 europepmc: PPR885246
 openalex: W4400883626
 git: https://github.com/qgroom/proj12_bcubed_hack
+image: /assets/images/figures/9kcfx/european_males_interpolation_and_error.jpg
 ---
 
 This investigation uses biodiversity data cubes derived from the datasets mobilised by the Global Biodiversity Information Facility (GBIF), to conduct an analysis of sex ratios of ducks across Europe. Encompassing over 4 million occurrences extracted from nearly 5000 datasets, this study elucidates sex distribution patterns across various species, focussing on temporal and spatial dynamics. The aim of this study is to highlight the availability of open sex data and its potential usefulness in research and monitoring of sex ratios of wild organisms, particularly in sexual dimorphic species.

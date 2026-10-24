@@ -25,6 +25,7 @@ wikidata: Q136482088
 europepmc: PPR1100304
 openalex: W4415081807
 git: https://github.com/biohackathon-japan/BH25-ai-survey
+image: /assets/images/figures/pza7v_v1/AI_survey_main_figures.005.png
 ---
 
 Understanding the practical application of artificial intelligence (AI) in research is increasingly

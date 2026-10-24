@@ -49,6 +49,7 @@ authors:
 europepmc: PPR873047
 openalex: W4400014055
 git: https://github.com/saeyslab/VIB_Hackathon_June_2024
+image: /assets/images/figures/uf7d3/morphology.png
 ---
 
 During a three-day hackathon, work was performed on various topics within the field of spatial omics data analysis. The topics were organized in five workgroups and included benchmarking, pipelines, spatial transcriptomics, spatial proteomics, spatial multi-omics and cell-cell communication. Most tools and methods were considered in the context of the Python ecosystem for spatial (SpatialData) and single-cell (scverse) data analysis.

@@ -17,6 +17,7 @@ authors:
   - name: Pathmanaban Ramasamy
 openalex: W7106732968
 git: https://github.com/Bio2Byte/biohackathon-eu-2025-group-22
+image: /assets/images/figures/xvrud_v1/poster.jpg
 ---
 
 Scop3PTM Next was developed during BioHackathon Europe 2025 to address the need for integrated visualization of protein-centric data across sequence (and modification),

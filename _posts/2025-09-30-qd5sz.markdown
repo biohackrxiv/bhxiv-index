@@ -18,6 +18,7 @@ wikidata: Q136434653
 europepmc: PPR1093479
 openalex: W4414620899
 git: https://github.com/biohackathon-japan/BH25-Analysis-Workflow-Creators
+image: /assets/images/figures/qd5sz_v1/Figure1.jpg
 ---
 
 At the DBCLS BioHackathon 2025, we converted metatranscriptomic analytical shell scripts into Common Workflow Language (CWL) containerized

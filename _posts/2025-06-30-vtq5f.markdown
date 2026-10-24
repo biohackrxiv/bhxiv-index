@@ -15,6 +15,7 @@ authors:
 europepmc: PPR1044434
 openalex: W4411836188
 git: https://github.com/shelby-kroeger/biohackrxiv-paper
+image: /assets/images/figures/vtq5f_v1/figure3c.png
 ---
 
 Advances in precision medicine are reshaping cancer treatment by tailoring therapies to a patient’s specific genetic profile. Despite this,
