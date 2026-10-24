@@ -5,3 +5,26 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'auto' }}",
   "minima/initialize";
+
+
+.pagination li a.current-page {
+  padding: $spacing-unit * .25;
+  border-color: transparent;
+  color: inherit;
+  &:hover { border-color: transparent; text-decoration: none }
+}
+
+/**
+ * Hidden visually, but still read by screen readers
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
