@@ -23,6 +23,7 @@ authors:
     orcid: 0000-0001-9852-1987
 europepmc: PPR1139208
 git: https://github.com/research-software-ecosystem/micoreca
+description: "The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains…"
 ---
 
 The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains fragmented across disparate,

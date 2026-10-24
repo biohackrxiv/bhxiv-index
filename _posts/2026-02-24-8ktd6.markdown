@@ -30,6 +30,7 @@ authors:
 europepmc: PPR1158421
 openalex: W7131218866
 git: https://github.com/bio-tools/biohackathon2025-paper
+description: "Research software metadata can be found across many code repositories and software registries."
 ---
 
 Research software metadata can be found across many code repositories and software registries. Here, we describe the tooling for a

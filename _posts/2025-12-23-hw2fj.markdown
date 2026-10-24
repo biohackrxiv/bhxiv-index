@@ -18,6 +18,7 @@ authors:
 europepmc: PPR1137173
 openalex: W7116983957
 git: https://github.com/biohackathon-japan/bh23-plant
+description: "Japan’s National Agriculture and Food Research Organization initiated a collaborative research project with France’s National Research Institute for…"
 ---
 
 Japan’s National Agriculture and Food Research Organization initiated a collaborative research project with France’s National Research Institute

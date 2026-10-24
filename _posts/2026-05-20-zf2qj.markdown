@@ -37,6 +37,7 @@ europepmc: PPR1235373
 openalex: W7161829609
 git: https://github.com/TGX-UM/INTOXICOM_Workshop_5
 image: /assets/images/figures/zf2qj_v1/intoxicom_ws5_figure1.png
+description: "This report summarizes the ELIXIR Toxicology Community workshop on Systems Biology Models for Toxicology, held on 11–12 September 2025 in Athens, Greece."
 ---
 
 This report summarizes the ELIXIR Toxicology Community workshop on Systems Biology Models for Toxicology, held on 11–12 September

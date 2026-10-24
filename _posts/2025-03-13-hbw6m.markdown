@@ -20,6 +20,7 @@ authors:
     orcid: 0000-0002-5862-6132
 openalex: W4408349956
 git: https://github.com/matuskalas/bh2024-preprint
+description: "Although image analysis tools are available within the Galaxy platform, they remain underutilised."
 ---
 
 Although image analysis tools are available within the Galaxy platform, they remain underutilised. During the 2023 BioHackathon Europe, our eﬀorts focused on enhancing the image analysis community in Galaxy by cataloguing and annotating tools and facilitating community discussions to establish naming conventions that promote standardisation. These initial eﬀorts, detailed in the project outcomes, laid the foundation for the ongoing expansion of Galaxy’s image analysis capabilities.Building on these achievements, this year’s work aimed to exploit and demonstrate theGalaxy platform’s full potential to address the needs of the image analysis community.This project involved developing FAIR (Findable, Accessible, Interoperable, and Reusable)image analysis workflows, creating tutorials for the Galaxy Training Network (GTN) to providedocumentation, and fostering broader adoption and facilitating theapplication of these workflows across scientific domains.

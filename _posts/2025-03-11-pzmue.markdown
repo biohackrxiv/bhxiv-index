@@ -22,6 +22,7 @@ authors:
 openalex: W4408342272
 git: https://github.com/deNBI/2024_BioHackathon_DE_SPE
 image: /assets/images/figures/pzmue_v1/spe4hd_slide.png
+description: "Sensitive human data is crucial for biomedical research, enabling faster drug development and better understanding of diseases."
 ---
 
 Sensitive human data is crucial for biomedical research, enabling faster drug development and better understanding of diseases. The Biohackathon Germany project utilized ELIXIR Europe's services and external tools to create Secure Processing Environments, ensuring high protection of sensitive data while facilitating research across Germany and Europe.

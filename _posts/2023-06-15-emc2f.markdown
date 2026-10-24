@@ -24,6 +24,7 @@ authors:
 europepmc: PPR676438
 openalex: W4380607900
 git: https://github.com/daniwelter/BH22-proj31
+description: "This report describes the work completed during the ELIXIR Biohackathon 2022 for project 31: The What &amp;amp; How in data management: Improving connectivity…"
 ---
 
 This report describes the work completed during the ELIXIR Biohackathon 2022 for project 31: The What &amp;amp; How in data management: Improving connectivity between RDMkit and FAIR Cookbook. The project covered 3 subjects: the technical connectivity between the two primary resources, an editorial alignment and gap analysis of their content, and the creation of user journeys incorporating the wider ELIXIR Research Data Management (RDM) ecosystem.

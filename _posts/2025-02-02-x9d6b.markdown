@@ -35,6 +35,7 @@ authors:
 europepmc: PPR973314
 git: https://github.com/sebeier/sebeier-bhe24-19_arc-isa-ro-crate-machine-actionability
 image: /assets/images/figures/x9d6b_v1/ARC_ontology.png
+description: "As part of the BioHackathon Europe 2024, we here report on the progress that both project 19 and project 24 have made during the event."
 ---
 
 As part of the BioHackathon Europe 2024, we here report on the progress that both project 19 and project 24 have made during the event. For the purpose of this report we will present the abstract of both projects and then dive deeper on what work was done during the BioHackathon.

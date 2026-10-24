@@ -17,6 +17,7 @@ europepmc: PPR1338353
 openalex: W7221330615
 git: https://github.com/biohackathon-japan/BH26-biosample-curation
 image: /assets/images/figures/hm9fn_v1/fig3_provenance_stages.png
+description: "The BioSample database contains tens of millions of records describing biological samples, but their metadata are submitted largely as key-value pairs with…"
 ---
 
 The BioSample database contains tens of millions of records describing biological samples, but their metadata are submitted largely as

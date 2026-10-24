@@ -28,6 +28,7 @@ europepmc: PPR1134876
 openalex: W7115564966
 git: https://github.com/biohackathon-japan/BH25-MCP-server-shapes
 image: /assets/images/figures/8qeh5_v1/MCP_Server.png
+description: "In this paper, we present the work we have done during the Japan Biohackathon 2025 about implementing MCP servers supported by RDF data shapes to improve…"
 ---
 
 In this paper, we present the work we have done during the Japan Biohackathon 2025 about implementing MCP servers

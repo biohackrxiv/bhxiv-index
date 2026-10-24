@@ -18,6 +18,7 @@ wikidata: Q141500170
 openalex: W7213559782
 git: https://github.com/ryneches/rdfc2im-report
 image: /assets/images/figures/dqm3j_v1/figure3-gwas-template.png
+description: "InterMine databases such as HumanMine integrate many biological data sources, but each source needs its own loader, and keeping those loaders current is…"
 ---
 
 InterMine databases such as HumanMine integrate many biological data sources, but each source needs its own loader, and keeping

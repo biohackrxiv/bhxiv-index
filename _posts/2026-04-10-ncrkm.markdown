@@ -21,6 +21,7 @@ europepmc: PPR1176543
 wikidata: Q139149571
 openalex: W7153160257
 git: https://github.com/feserm/biohack-eu-25
+description: "The current landscape of animal phenomics is characterised by a substantial lack of standardisation, hindering data reuse, reproducibility, and…"
 ---
 
 The current landscape of animal phenomics is characterised by a substantial lack of standardisation, hindering data reuse, reproducibility, and interoperability across

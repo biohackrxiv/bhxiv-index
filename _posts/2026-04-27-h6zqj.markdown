@@ -39,6 +39,7 @@ authors:
   - name: Wytamma Wirth
 europepmc: PPR1182894
 wikidata: Q139590818
+description: "Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across all research domains."
 ---
 
 Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across

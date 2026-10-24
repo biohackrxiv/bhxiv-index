@@ -26,6 +26,7 @@ authors:
 europepmc: PPR1306823
 openalex: W7204477557
 git: https://github.com/sebeier/bhg25_edal_web
+description: "As part of the BioHackathon Germany 2025, we report here about the progress of Project 8 -Enhancing e!DAL-PGP: A Modern Data Submission Platform for Plant…"
 ---
 
 As part of the BioHackathon Germany 2025, we report here about the progress of Project 8 -Enhancing e!DAL-PGP: A Modern Data Submission Platform

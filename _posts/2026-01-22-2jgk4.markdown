@@ -47,6 +47,7 @@ europepmc: PPR1146607
 wikidata: Q138335642
 openalex: W7125407897
 git: https://github.com/arendd/bh-europe_2025_metrics
+description: "Key Performance Indicators (KPIs) are increasingly requested by a diverse range of stakeholders across the research ecosystem."
 ---
 
 Key Performance Indicators (KPIs) are increasingly requested by a diverse range of stakeholders across the research

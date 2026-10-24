@@ -13,6 +13,7 @@ authors:
   - name: Núria Queralt Rosinach
 europepmc: PPR1322363
 git: https://github.com/biohackathon-japan/BH26-logica
+description: "Clinical AI depends on both the relevance of the information it receives and the meaning of that information."
 ---
 
 Clinical AI depends on both the relevance of the information it receives and the meaning of that information. Logica is an

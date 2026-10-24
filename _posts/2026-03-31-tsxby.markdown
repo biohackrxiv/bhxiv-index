@@ -25,6 +25,7 @@ wikidata: Q138849430
 europepmc: PPR1172368
 openalex: W7144298364
 git: https://github.com/FAIR-imaging/bh2025-preprint
+description: "The increasing adoption of image-based technologies across life sciences, environmental research, and related domains has increased the demand for…"
 ---
 
 The increasing adoption of image-based technologies across life sciences, environmental research, and related domains has increased the demand for

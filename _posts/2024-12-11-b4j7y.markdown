@@ -26,6 +26,7 @@ authors:
 europepmc: PPR952820
 openalex: W4405219458
 git: https://github.com/biohackathon-japan/bh24-using-discovered-schema
+description: "RDF shapes are formal expressions of schema structures in RDF data. Their primary purposeis twofold: describing and validating RDF data."
 ---
 
 RDF shapes are formal expressions of schema structures in RDF data. Their primary purposeis twofold: describing and validating RDF data. However, as machine-readable representationsof the expected structures in a given data source, RDF shapes can be applied to varioustasks that require automatic comprehension of data schemas. In this paper, we present ourwork conducted during the DBCLS BioHackathon 2024 in Fukushima, Japan, to harness thepotential of RDF shapes. The identified and partially implemented use cases include thegeneration and validation of SPARQL queries, data and schema visualization, mappings toother formal syntaxes, and applications in data modeling scenarios.

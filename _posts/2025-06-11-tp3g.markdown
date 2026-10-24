@@ -35,6 +35,7 @@ authors:
 europepmc: PPR1051834
 openalex: W4412472427
 git: https://github.com/EvaMart/bh24-project5-report
+description: "Research software plays a central role in modern science, and its quality is increasinglyrecognized as essential for reproducibility, sustainability, and…"
 ---
 
 Research software plays a central role in modern science, and its quality is increasinglyrecognized as essential for reproducibility, sustainability, and trust. Numerous initiatives haveproposed indicators to guide quality assessment, yet these indicators are dispersed acrossdomains and vary in scope, terminology, and practical use. This work presents a curatedcatalogue of software quality indicators tailored to the needs of research software. Developedduring BioHackathon Europe 2024 and refined in collaboration with the ELIXIR Tools Platformand EVERSE project, the catalogue consolidates and structures indicators from a range ofauthoritative sources.

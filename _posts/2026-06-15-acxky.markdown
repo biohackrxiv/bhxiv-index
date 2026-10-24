@@ -17,6 +17,7 @@ authors:
 europepmc: PPR1252198
 openalex: W7164847239
 git: https://github.com/machlabd/SimpleBiocContainer_Biohackrxiv
+description: "Containers enhance reproducibility and provide an easy and convenient way to share the setups used to run an analysis."
 ---
 
 Containers enhance reproducibility and provide an easy and convenient way to share the setups used to run an analysis. As part of the EuroBioc 2026 Hackathon, this working group got

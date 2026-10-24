@@ -21,6 +21,7 @@ europepmc: PPR1322764
 openalex: W7213635365
 git: https://github.com/biohackathon-japan/BH26-QPX
 image: /assets/images/figures/7egfm_v1/Tanimoto_et_al_2024_FigS10A.png
+description: "We report progress on Quest for Pathways with eXpression (QPX), a pathway analysis environment for non-model organisms, developed during the DBCLS…"
 ---
 
 We report progress on Quest for Pathways with eXpression (QPX), a pathway analysis environment for non-model organisms, developed

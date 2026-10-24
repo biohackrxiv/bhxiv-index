@@ -12,6 +12,7 @@ authors:
 europepmc: PPR1322359
 wikidata: Q141499970
 git: https://github.com/biohackathon-japan/BH26-variants-clintrials
+description: "For the life science semantic web community, the provision of genomic variants ready for tools and applications is essential to deliver on the promise of…"
 ---
 
 For the life science semantic web community, the provision of genomic variants ready for tools and applications

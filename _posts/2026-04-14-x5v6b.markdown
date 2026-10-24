@@ -25,6 +25,7 @@ europepmc: PPR1177443
 openalex: W7154225272
 git: https://github.com/mblue9/BioHackEU25_preprint
 image: /assets/images/figures/x5v6b_v1/Fig4_mcp_baseline_model_comparison.png
+description: "Identifying the most appropriate bioinformatics tool for a task remains challenging across multiple domains."
 ---
 
 Identifying the most appropriate bioinformatics tool for a task remains challenging across multiple domains. Annotating tools with EDAM ontology

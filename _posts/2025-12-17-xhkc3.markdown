@@ -20,6 +20,7 @@ authors:
 europepmc: PPR1135242
 git: https://github.com/collaborativebioinformatics/HaploblocksBH25_manuscript
 image: /assets/images/figures/xhkc3_v1/haploblock_lengths.png
+description: "Background: Despite the ease and affordability of genome sequencing in biomedical research, the genetic causes of many diseases or their subtypes remain…"
 ---
 
 Background: Despite the ease and affordability of genome sequencing in biomedical research, the genetic causes of many diseases

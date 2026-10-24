@@ -17,6 +17,7 @@ europepmc: PPR1323240
 openalex: W7213774049
 git: https://github.com/biohackathon-japan/BH26-database-identifiers
 image: /assets/images/figures/p87z6_v1/coverage-comparison.png
+description: "Funders and data producers need to know not just which databases are cited in the literature, but whether a cited accession actually exists and how it was…"
 ---
 
 Funders and data producers need to know not just which databases are cited in the literature, but whether a cited accession actually exists

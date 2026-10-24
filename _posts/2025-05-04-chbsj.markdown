@@ -7,6 +7,7 @@ doi: 10.37044/osf.io/chbsj_v1
 europepmc: PPR1013414
 openalex: W4410062995
 git: https://github.com/ds-wizard/bh2024-report
+description: "This report provides an overview of our activities and accomplishments related to the creation of reusable RDM (Research Data Management) Planning…"
 ---
 
 This report provides an overview of our activities and accomplishments related to the creation of reusable RDM

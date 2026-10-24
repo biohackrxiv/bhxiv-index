@@ -102,6 +102,7 @@ authors:
     orcid: 0000-0001-5267-4988
 europepmc: PPR1168540
 openalex: W7139930073
+description: "The Carnegie Mellon University-NVIDIA Federated Learning Hackathon for Biomedical Applications (January 7-9, 2026) convened researchers from academia…"
 ---
 
 The Carnegie Mellon University-NVIDIA Federated Learning Hackathon for Biomedical Applications (January 7-9, 2026) convened researchers

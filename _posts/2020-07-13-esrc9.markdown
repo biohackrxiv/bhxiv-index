@@ -11,6 +11,7 @@ authors:
   - name: Takeya Kasukawa
 europepmc: PPR281942
 openalex: W3133411698
+description: "Report on the group 'TogoEx' in the BioHackathon Europe 2019."
 ---
 
 Report on the group 'TogoEx' in the BioHackathon Europe 2019.

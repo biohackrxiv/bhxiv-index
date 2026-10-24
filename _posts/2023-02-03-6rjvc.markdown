@@ -17,6 +17,7 @@ authors:
 europepmc: PPR612377
 openalex: W4319162015
 git: https://github.com/egonw/tmp
+description: "In this paper we present the work executed on BioHackrXiv during the international ELIXIR BioHackathon in Barcelona, Spain, 2021."
 ---
 
 In this paper we present the work executed on BioHackrXiv during the international ELIXIR BioHackathon in Barcelona, Spain, 2021.

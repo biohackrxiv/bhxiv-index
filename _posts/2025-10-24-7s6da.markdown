@@ -23,6 +23,7 @@ wikidata: Q136644078
 europepmc: PPR1107629
 git: https://github.com/biohackathon-japan/BH25-wikiblitz
 image: /assets/images/figures/7s6da_v1/top_species_biohackathon-2025.png
+description: "As part of the DBCLS BioHackathon 2025, we organized a WikiBlitz to improve biodiversity knowledge by integrating iNaturalist, GBIF, Wikidata, and Wikipedia."
 ---
 
 As part of the DBCLS BioHackathon 2025, we organized a WikiBlitz to improve biodiversity knowledge by integrating iNaturalist, GBIF, Wikidata, and Wikipedia.

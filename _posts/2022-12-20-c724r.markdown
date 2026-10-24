@@ -30,6 +30,7 @@ europepmc: PPR587343
 openalex: W4311948522
 git: https://github.com/sebeier/22_plant_data_exchange
 image: /assets/images/figures/c724r/Figure1.png
+description: "Status of discussions around the topic of data standard formats for plant sciences and their interoperability at the BioHackathon Europe 2022 in Paris."
 ---
 
 Status of discussions around the topic of data standard formats for plant sciences and their interoperability at the BioHackathon Europe 2022 in Paris.

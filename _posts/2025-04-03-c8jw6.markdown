@@ -17,6 +17,7 @@ authors:
 europepmc: PPR1000347
 wikidata: Q136482159
 git: https://github.com/biohackrxiv/bhxiv-gen-pdf
+description: "In this paper, we present the work executed on re-architecting BioHackrXiv during the international ELIXIR BioHackathon Europe 2023 in Barcelona, Spain."
 ---
 
 In this paper, we present the work executed on re-architecting BioHackrXiv during the international ELIXIR BioHackathon Europe 2023 in Barcelona, Spain.

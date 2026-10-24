@@ -18,6 +18,7 @@ authors:
 europepmc: PPR1275302
 git: https://github.com/tidyomics/tidyomicsHackathonTurku2026
 image: /assets/images/figures/cd9s6_v1/nanobanana2.png
+description: "The Tidyomics ecosystem facilitates the manipulation of computational omics data structures by bringing the intuitive and consistent syntax of the tidy…"
 ---
 
 The Tidyomics ecosystem facilitates the manipulation of computational omics data structures by bringing the intuitive and

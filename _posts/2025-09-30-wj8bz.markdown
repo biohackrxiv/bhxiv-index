@@ -10,6 +10,7 @@ authors:
 europepmc: PPR1093477
 openalex: W4414620780
 git: https://github.com/biohackathon-japan/BH25-Glyco-MIRAGE-Ontology
+description: "The Minimum Information Required for A Glycomics Experiment (MIRAGE) guidelines have established comprehensive reporting standards for glycomics research, yet…"
 ---
 
 The Minimum Information Required for A Glycomics Experiment (MIRAGE) guidelines have

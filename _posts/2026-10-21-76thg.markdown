@@ -20,6 +20,7 @@ authors:
   - name: Susumu Goto
     orcid: 0000-0003-2989-8486
 git: https://github.com/biohackathon-japan/BH26-MS-data
+description: "Public repositories for mass spectrometry (MS) data contain rapidly growing collections of proteomic, metaproteomic, and metabolomic data, but differences in…"
 ---
 
 Public repositories for mass spectrometry (MS) data contain rapidly growing collections of proteomic, metaproteomic, and metabolomic data,

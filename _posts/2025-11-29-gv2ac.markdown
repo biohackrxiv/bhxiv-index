@@ -22,6 +22,7 @@ authors:
     orcid: 0000-0002-1561-078X
 openalex: W4416811125
 git: https://github.com/elixir-europe-training/ELIXIR-TrP-KG-training-metadata
+description: "Training metadata in the life‑science community is increasingly standardized through Bioschemas, yet remains fragmented and under‑utilized."
 ---
 
 Training metadata in the life‑science community is increasingly standardized through Bioschemas, yet remains fragmented and under‑utilized. In
