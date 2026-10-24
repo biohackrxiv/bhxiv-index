@@ -58,8 +58,9 @@ def load_repositories(folder=METADATA):
     for path in glob.glob(os.path.join(folder, '*.json')):
         with open(path, encoding='utf-8') as f:
             metadata = json.load(f)
-        if metadata.get('repository'):
-            table[metadata['id'].lower()] = metadata['repository']
+        repository = metadata.get('repository')
+        if repository and repository.get('url'):
+            table[metadata['id'].lower()] = repository['url']
     return table
 
 

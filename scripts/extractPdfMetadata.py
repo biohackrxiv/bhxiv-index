@@ -11,9 +11,10 @@ position and link, and keeps the links in the left column between "BioHackathon 
     {"id": "kxqb7_v1",
      "links": [{"text": "DBCLS BioHackathon 2026", "url": "https://2026.biohackathon.org/"},
                {"text": "ZebraSeek", "url": "https://github.com/..."}],
-     "repository": "https://github.com/..."}
+     "repository": {"url": "https://github.com/..."}}
 
-`repository` is the URL of the second link, or null when there is none. The cache is not part of
+`repository` describes the source repository of the preprint; its `url` is the URL of the second
+link. It is null when there is no second link. The cache is not part of
 the git repository.
 
 Copyright (c) 2026 Egon Willighagen
@@ -97,7 +98,7 @@ def extract(pdf):
     return {
         'id': os.path.splitext(os.path.basename(pdf))[0],
         'links': links,
-        'repository': links[1]['url'] if len(links) > 1 else None,
+        'repository': {'url': links[1]['url']} if len(links) > 1 else None,
     }
 
 
