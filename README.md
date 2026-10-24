@@ -289,3 +289,32 @@ make checkPdfFigures ARGS="24jst"
 A caption that is only part of the image itself is not in the text of the PDF, so a `false` points to
 a difference to look at, not to a proof of one.
 
+### Figures on the preprint pages
+
+`scripts/exportFigures.py` copies the figures of the preprints that match their PDF to
+`assets/images/figures/<identifier>/` (one folder per preprint) and writes the list with the captions
+to `_data/figures.json`, which `_layouts/post.html` uses to show a "Figures" section below the text of
+the preprint. Unlike `cache/`, both are part of the git repository.
+
+A figure is exported when the `markdown.pdf.status` of its preprint is `match` and the caption of the
+figure itself is found in the PDF (`in_pdf` is `true`); see the check above. The images are taken from
+the git repository at the commit in the metadata, or downloaded when the Markdown uses a web address.
+Only PNG, JPEG, GIF, WebP and SVG files are used, as browsers cannot show PDF or TIFF images; the
+others are listed on the standard output. The captions are the Markdown captions, without citations
+and HTML.
+
+```json
+{"kxqb7_v1": {"commit": "<commit>",
+              "figures": [{"file": "assets/images/figures/kxqb7_v1/overview.png",
+                           "caption": "Overview of the workflow", "label": "fig:overview"}]}}
+```
+
+Preprints that are no longer eligible are removed from the list and their folder is deleted. A
+preprint is not fetched again when its commit and files have not changed, unless `--force` is given.
+
+```shell
+make findFigures        # and thereby the check against the PDF
+make exportFigures
+make exportFigures ARGS=--force
+```
+

@@ -1,0 +1,1449 @@
+{
+  "24jst": {
+    "commit": "956abc583bf0ff57e3e1cf0fa1574202467f88f8",
+    "figures": [
+      {
+        "caption": "RO-Crate export options in DSW",
+        "file": "assets/images/figures/24jst/dsw-ro-crate-export.png"
+      }
+    ]
+  },
+  "36g4c_v3": {
+    "commit": "a91779fa3ce867ca8c73115d9cbab0ccb90add3c",
+    "figures": [
+      {
+        "caption": "Architecture and trust boundaries of OSIRIS MCP. The language-model client communicates only with the read-only connector. OSIRIS retains responsibility for permissions, query construction, and access to the authoritative database.",
+        "file": "assets/images/figures/36g4c_v3/figure1.png"
+      },
+      {
+        "caption": "Processing an institutional question through OSIRIS MCP. Instance-specific discovery and typed filters precede the search. Only allowlisted, compact evidence bundles are returned, while verbose or sensitive source fields remain inside OSIRIS.",
+        "file": "assets/images/figures/36g4c_v3/figure2.png"
+      }
+    ]
+  },
+  "3a8cn_v1": {
+    "commit": "05932148f13eac45c4e231c88b3cf08075df7f04",
+    "figures": [
+      {
+        "caption": "**Overview of the methodology implemented**",
+        "file": "assets/images/figures/3a8cn_v1/image1.png"
+      },
+      {
+        "caption": "**Plot of Tetrad-discovered causal relationships from MIMIC-III CareVue subset**",
+        "file": "assets/images/figures/3a8cn_v1/image2.jpg"
+      },
+      {
+        "caption": "**Data integration and graph construction**",
+        "file": "assets/images/figures/3a8cn_v1/image3.png"
+      },
+      {
+        "caption": "**Protein network (from )**",
+        "file": "assets/images/figures/3a8cn_v1/image5.png"
+      },
+      {
+        "caption": "**Gene variants in population (from )**",
+        "file": "assets/images/figures/3a8cn_v1/image6.png"
+      },
+      {
+        "caption": "**Population gene graphs (from )**",
+        "file": "assets/images/figures/3a8cn_v1/image7.png"
+      },
+      {
+        "caption": "**Generate gene-specific graphs for variant annotation and analysis**",
+        "file": "assets/images/figures/3a8cn_v1/image8.png"
+      },
+      {
+        "caption": "**Nextflow pipeline**",
+        "file": "assets/images/figures/3a8cn_v1/image9.png"
+      }
+    ]
+  },
+  "3x274": {
+    "commit": "1c8d32526c32b6847302b53c833ce32820b4987b",
+    "figures": [
+      {
+        "caption": "Conceptual schematic of a federated microbiome analysis service, including work done during this BioHackathon. In this scenario, metagenomics samples' and studies' metadata should be captured following a common RO-Crate profile. Pipeline processes, embedded tools, and results should be annotated so that their execution and creation provenance can be maintained. This allows, for example, for various groups to reuse assemblies whilst maintaining a chain of provenance. Analyses of metagenomics raw reads and assemblies (or metagenome-assembled genomes) should also follow a shared standard, so that downstream users, clients, and indexes can automatically understand how to index and compare these analyses from heterogeneous pipelines. Finally, metagenomic RO-Crates should make use of RO-Crate's preview features so that they can be self-rendering: for example it should be easy to view any HTML renderings of metadata and results contained within the crate.",
+        "file": "assets/images/figures/3x274/fig1-federated-microbiome-analysis-schematic.png"
+      },
+      {
+        "caption": "Schematic flow for how we envisage standardised metagenomic crates may be produced. Crate publishers would use various means to input, store, and curate the metadata of their studies and samples, before perhaps building an \"internally useful\" RO-Crate. Finally, they would convert that into an RO-Crate of the specified format by mapping to the designated Schema.org and Bioschemas terms. Where mandatory metadata are not directly available, they may use methods to infer that metadata, for example using large language models (LLMs) on less structured metadata like free-text descriptions.",
+        "file": "assets/images/figures/3x274/fig-x-metadata.png"
+      },
+      {
+        "caption": "Composite screenshot summarising the features of the newly developed `pydantic-ro-crates` library. Pythonic code is used to construct crates from strongly typed entities corresponding to Schema.org types (or those derived from them). A plugin is available to construct HTML maps. Rich multi-page HTML previews are supported.",
+        "file": "assets/images/figures/3x274/fig-x-pydantic-ro-crate.png"
+      },
+      {
+        "caption": "The architecture of the `RO-Crate Browser`",
+        "file": "assets/images/figures/3x274/fig-x-ro-crate-browser-architecture.png"
+      },
+      {
+        "caption": "An image describing the RO-Crate conversion feature of the `RO-Crate Browser`",
+        "file": "assets/images/figures/3x274/fig-x-converting-ro-crates.png"
+      },
+      {
+        "caption": "An image describing the browsing feature of the `RO-Crate Browser`",
+        "file": "assets/images/figures/3x274/fig-x-ro-crate-browsing.png"
+      }
+    ]
+  },
+  "4f763_v1": {
+    "commit": "59223c1bbcac932336e41279f4a4b6152c938da0",
+    "figures": [
+      {
+        "caption": "Performance heatmap of ontology-enhanced models across MTEB biomedical clustering tasks",
+        "file": "assets/images/figures/4f763_v1/heatmap_sorted.png"
+      },
+      {
+        "caption": "Average model performance across biomedical clustering tasks with standard deviation",
+        "file": "assets/images/figures/4f763_v1/task_performance.png"
+      },
+      {
+        "caption": "Comparison of model performance across different architectures and fusion strategies",
+        "file": "assets/images/figures/4f763_v1/model_performance.png"
+      },
+      {
+        "caption": "Hyperparameter importance analysis across experimental configurations",
+        "file": "assets/images/figures/4f763_v1/hyperparameter_analysis.png"
+      },
+      {
+        "caption": "Performance breakdown by source ontology showing domain-specific patterns",
+        "file": "assets/images/figures/4f763_v1/ontology_analysis.png"
+      }
+    ]
+  },
+  "4sgdq_v1": {
+    "commit": "63ef16b768de09e6f7a749b9c16bdfdcb6793093",
+    "figures": [
+      {
+        "caption": "Generation workflow of Croissant RDF knowledge graph with croissant-rdf package.",
+        "file": "assets/images/figures/4sgdq_v1/figure1.png",
+        "label": "fig"
+      },
+      {
+        "caption": "Croissant metadata usage profiles for the Hugging Face and Kaggle registries.",
+        "file": "assets/images/figures/4sgdq_v1/figure2.png",
+        "label": "fig"
+      },
+      {
+        "caption": "Croissant metadata usage profiles for the Hugging Face and Kaggle registries.",
+        "file": "assets/images/figures/4sgdq_v1/figure3.png",
+        "label": "fig"
+      },
+      {
+        "caption": "True vs Predicted Copy Number in 5 examples in the training (left) and testing (right) dataset.",
+        "file": "assets/images/figures/4sgdq_v1/figure4.png",
+        "label": "fig"
+      }
+    ]
+  },
+  "4uskb": {
+    "commit": "eb217e1f93371a09dd94ad2e16e380d677716198",
+    "figures": [
+      {
+        "caption": "The CBD synthetic pathway authored during the BioHackathon.",
+        "file": "assets/images/figures/4uskb/wp5392.png"
+      }
+    ]
+  },
+  "5ue2s_v1": {
+    "commit": "fc7e83cd78a10629675a215c0fc314625a09860d",
+    "figures": [
+      {
+        "caption": "Screenshot of the iNaturalist platform showing the option to start a stub",
+        "file": "assets/images/figures/5ue2s_v1/iNaturalist_stub.png"
+      },
+      {
+        "caption": "Panorpa japonica",
+        "file": "assets/images/figures/5ue2s_v1/Panorpa_japonica.jpg"
+      },
+      {
+        "caption": "WikiBlitz Workflow",
+        "file": "assets/images/figures/5ue2s_v1/conclusion.png"
+      }
+    ]
+  },
+  "5uhwz_v2": {
+    "commit": "6d261cb9013168bf2022b005b16d84244e153eb5",
+    "figures": [
+      {
+        "caption": "Overview of hackathon topics by section of the article in the results below",
+        "file": "assets/images/figures/5uhwz_v2/figure1.png"
+      },
+      {
+        "caption": "Organisation of chunked data and json metadata in a typical OME-Zarr 0.4, based on Zarr V2 (figure adapted from original work by Trevor Manz )",
+        "file": "assets/images/figures/5uhwz_v2/figure2.png"
+      },
+      {
+        "caption": "OME-Zarr 0.5 using the Zarr v3 format. (Figure adapted from original work by Trevor Manz ))",
+        "file": "assets/images/figures/5uhwz_v2/figure3.png"
+      },
+      {
+        "caption": "Fractal OME-Zarr task model",
+        "file": "assets/images/figures/5uhwz_v2/figure4.png"
+      },
+      {
+        "caption": "Running the Fractal thresholding tasks in 4 different frameworks. A) Running the thresholding task in a Fractal workflow in the Fractal web interface. B) Configuration to run the thresholding task in a Nextflow workflow. C) Configuration for running the thresholding task via Snakemake. D) Running the thresholding task via a napari plugin.",
+        "file": "assets/images/figures/5uhwz_v2/figure5.png"
+      },
+      {
+        "caption": "A dataset explorer dialog that comes out as a result of Drag & drop of OME-Zarrs in Fiji. The dialog offers to choose a particular resolution to be loaded into Fiji.",
+        "file": "assets/images/figures/5uhwz_v2/figure6.png"
+      },
+      {
+        "caption": "The example data used in benchmarks",
+        "file": "assets/images/figures/5uhwz_v2/figure7.png"
+      }
+    ]
+  },
+  "6qrau": {
+    "commit": "df7606eff010e4532f8d7c99a59495cf50a44ee5",
+    "figures": [
+      {
+        "caption": "Example of conformance badges",
+        "file": "assets/images/figures/6qrau/conformance-badges.png"
+      },
+      {
+        "caption": "Detailed result of the conformance tests for `CommandLineTool` category by `shaft`",
+        "file": "assets/images/figures/6qrau/markdown-report.png"
+      }
+    ]
+  },
+  "6v5ra_v1": {
+    "commit": "c0a2aa59f2418c36027c872c8c7ffc5e5d4b587a",
+    "figures": [
+      {
+        "caption": "The redundancy arc. Eleven sections, three groups, the whole MIE, and three sufficiency conditions, all as paired per-question effects on judge score with 95% confidence intervals. Necessity is null everywhere; total value and the sufficiency of the query group are not. The shaded band marks the whole-MIE effect, +0.88 to +0.93. The daggered rows are not clean leave-one-outs: dropping `schema_info` — and with it the query group that contains it — also disables the `find_databases` discovery tool, making both dual ablations (Trap 3). Rows are comparable within a block but not across blocks: the two necessity blocks pair against their own baselines (17.13/20 for the sections, a separate in-batch 16.88/20 for the groups and the whole MIE), while sufficiency is measured against the no-MIE condition rather than against a baseline. The section and group rows are trimmed analyses; the whole-MIE and sufficiency rows are untrimmed (the whole MIE is +0.91 ± 0.72 trimmed), so the sum-versus-whole comparison in the panel title spans both treatments.",
+        "file": "assets/images/figures/6v5ra_v1/redundancy_arc.png"
+      },
+      {
+        "caption": "The v2.3 format's eleven author-function sections mapped onto v3's five need-based parts. `shape_expressions` and `sample_rdf_entries` do not survive as sections at all: a verified example subsumes both.",
+        "file": "assets/images/figures/6v5ra_v1/format_map.png"
+      },
+      {
+        "caption": "The equivalence ladder. The point estimate is stable and the interval tightens monotonically as questions accumulate, while continuing to straddle zero; the lower bound remains far inside the pre-declared non-regression margin.",
+        "file": "assets/images/figures/6v5ra_v1/ci_ladder.png"
+      }
+    ]
+  },
+  "79kje": {
+    "commit": "353570d03a3cccc73294b907c7c79ac9f814d815",
+    "figures": [
+      {
+        "caption": "Figure 1a: bio.tools entries annotation represented as a Venn diagram. Each set here represents the proportion of entries annotated with EDAM topics, operations and data. Overlap areas indicate the proportion of bio.tools entries annotated with e.g. both topics and operations, or topics, operations, and data.",
+        "file": "assets/images/figures/79kje/venn_biotools_entries_annot_notitle.jpg"
+      },
+      {
+        "caption": "Figure 1b: bio.tools entries annotation represented as an UpSet plot. Each line represents the proportion of entries annotated with EDAM topics, operations, data and formats. Columns indicate the proportion of bio.tools entries for each combination of intersections (e.g. proportion of entries annotated with topics and operations).",
+        "file": "assets/images/figures/79kje/upset_notitle.jpg"
+      },
+      {
+        "caption": "Figure 2: Usage of EDAM Topic concepts in bio.tools",
+        "file": "assets/images/figures/79kje/topic_usage.png"
+      },
+      {
+        "caption": "Figure 3: Usage of EDAM Operation concepts in bio.tools",
+        "file": "assets/images/figures/79kje/operation_usage.png"
+      },
+      {
+        "caption": "Figure 4: Usage of EDAM data concepts in bio.tools _(only one plot is shown as no new data concepts have been added to the current development version of EDAM)_",
+        "file": "assets/images/figures/79kje/data_usage.png"
+      },
+      {
+        "caption": "Figure 5: Usage of EDAM format concepts in bio.tools",
+        "file": "assets/images/figures/79kje/format_usage.png"
+      }
+    ]
+  },
+  "7egfm_v1": {
+    "commit": "5675d4ecc0a1de1cdbe0d7ce51de0fc2d30a02dc",
+    "figures": [
+      {
+        "caption": "Arabidopsis-to-rice pathway liftover: whole pathway and N-module detail",
+        "file": "assets/images/figures/7egfm_v1/PathLift_in_use_Arabidopsis_to_Oryza_overview_detail.png"
+      },
+      {
+        "caption": "Pentose phosphate biosynthesis pathway",
+        "file": "assets/images/figures/7egfm_v1/Tanimoto_et_al_2024_FigS10A.png"
+      }
+    ]
+  },
+  "7f95d": {
+    "commit": "4f0312a585fe48e00abed6d4911ed911ff81007d",
+    "figures": [
+      {
+        "caption": "An overview of the developed pipeline using LinkedPipes",
+        "file": "assets/images/figures/7f95d/the-pipeline.png",
+        "label": "fig-pipeline"
+      },
+      {
+        "caption": "The Extract part of the developed pipeline",
+        "file": "assets/images/figures/7f95d/extract.png",
+        "label": "fig-extract"
+      },
+      {
+        "caption": "The Transform part of the developed pipeline",
+        "file": "assets/images/figures/7f95d/transform.png",
+        "label": "fig-transform"
+      },
+      {
+        "caption": "The Load part of the developed pipeline",
+        "file": "assets/images/figures/7f95d/load.png",
+        "label": "fig-load"
+      },
+      {
+        "caption": "Simplified visualization of the LinkedPipes pipeline JSON-LD markup. Three types of entities were kept in the graph for simiplicity, namely, Pipeline, ExecutionProfile and Component. The pipeline itself is stored and exported as a JSON-LD file where components, connections and configurations are annotated with terms from the LinkedPipes ontology and other ontologies like SKOS. The figure is generated using classyschema.org",
+        "file": "assets/images/figures/7f95d/pipeline_visualization.png",
+        "label": "fig-viz"
+      }
+    ]
+  },
+  "7s6da_v1": {
+    "commit": "4ca582b1be185f51a708fd2b3b1fc3d7ad628500",
+    "figures": [
+      {
+        "caption": "Top 10 Species observed during BioHackathon 2025",
+        "file": "assets/images/figures/7s6da_v1/top_species_biohackathon-2025.png"
+      },
+      {
+        "caption": "Top 10 Observers contributing to the project",
+        "file": "assets/images/figures/7s6da_v1/top_observers_biohackathon-2025.png"
+      }
+    ]
+  },
+  "7y2jh": {
+    "commit": "3ae5f3372e53d3b1d6d1df47042e17731d5bb808",
+    "figures": [
+      {
+        "caption": "Conceptional view of the duality of LabProcess and LabProtocol from a ISA-model perspective",
+        "file": "assets/images/figures/7y2jh/LabProtocol_LabProcess.png"
+      }
+    ]
+  },
+  "8ck3e": {
+    "commit": "d1d119a7a4ec603fcdf0942ba740af470737effb",
+    "figures": [
+      {
+        "caption": "Example of visualization of SpatialData Zarr datasets from R. Top row: Visium HD mouse intestine dataset (from [https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-mouse-intestine](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-libraries-of-mouse-intestine)). Bottom row, right: MERFISH prototype pipeline, mouse brain",
+        "file": "assets/images/figures/8ck3e/fig1.png"
+      },
+      {
+        "caption": "Left: the plot used for testing, combining images, shapes, points and various annotations plotted on top of them. Right: the serialization of the plotting tree, containing all the parameters available for reproducing the plot.",
+        "file": "assets/images/figures/8ck3e/fig2.png"
+      },
+      {
+        "caption": "Profiling visualization obtained form gprof2dor \\+ graphviz, used to identify the computational bottleneck for querying points in the SpatialData framework.",
+        "file": "assets/images/figures/8ck3e/fig3.png"
+      },
+      {
+        "caption": "Visualization of the new lightweight mouse liver dataset used in the documentation. Molecular cartography dataset, processed using SPArrOW.",
+        "file": "assets/images/figures/8ck3e/fig4.png"
+      }
+    ]
+  },
+  "8kap3_v1": {
+    "commit": "e52283d7144e5daccd61e8399dcc405a17b874bf",
+    "figures": [
+      {
+        "caption": "Workflow diagram of the PURL resolver. Depending on the type of IRI requested, the resolver either redirects to the corresponding database entry, renders an ontology term, or forwards to a database-side resolver for indirect entities.",
+        "file": "assets/images/figures/8kap3_v1/purl-flowchart.png"
+      },
+      {
+        "caption": "Screenshot of a term page generated by the PURL resolver. The example shows the ontology class \"Strain\" from the DSMZ Digital Diversity Ontology (D3O), with its label, definition, and relationships rendered as human-readable HTML.",
+        "file": "assets/images/figures/8kap3_v1/purl-screenshot.png"
+      }
+    ]
+  },
+  "8qeh5_v1": {
+    "commit": "5f444c552a39da542fa924a7e42b6e6a2aa0ba0c",
+    "figures": [
+      {
+        "caption": "MCP Server with RDF Data shapes",
+        "file": "assets/images/figures/8qeh5_v1/MCP_Server.png"
+      }
+    ]
+  },
+  "8ukwz": {
+    "commit": "f1f7073bfa8ccc25dda7dabbe09df9d555de0b6e",
+    "figures": [
+      {
+        "caption": "Redesign of the validator with its components",
+        "file": "assets/images/figures/8ukwz/design.png"
+      }
+    ]
+  },
+  "94e6h": {
+    "commit": "69f889bb3ab745bea1e23cf8f63b66eaea8c9de2",
+    "figures": [
+      {
+        "caption": "Schematic of the Notebook Server technology stack. Other configurations (e.g. different servers or Docker base layers) are also possible.",
+        "file": "assets/images/figures/94e6h/notebooks-server-schematic.png",
+        "label": "schematic"
+      },
+      {
+        "caption": "MGnify-specific guidance is provided in a Jupyter Lab user interface extension.",
+        "file": "assets/images/figures/94e6h/help-extension.png",
+        "label": "help-extension"
+      },
+      {
+        "caption": "An `IGV.js` instance used as an interactive Jupyter Lab widget. Clicking a region on the \"Functional annotation\" track runs the `handle_track_annotation` method, rendering the dataframe shown below IGV.",
+        "file": "assets/images/figures/94e6h/igvjswidget.png",
+        "label": "igv"
+      },
+      {
+        "caption": "Notebook and API developed for the MGnify protein database",
+        "file": "assets/images/figures/94e6h/proteindb.png",
+        "label": "protein-db"
+      },
+      {
+        "caption": "Genome dataset exploration sample: a) Whole dataset gc-content statistics; b) Most represented genuses in the dataset; c) Genome count per taxonomic rank.",
+        "file": "assets/images/figures/94e6h/tables_section_3.png",
+        "label": "data-exploration"
+      },
+      {
+        "caption": "Sample of plots: a) Genomes in our dataset corresponding to bacteria from the Lactobacillales order; b) Number of genomes avalaible, genome length and GC-content of bacteria belonging the Lactobacillales order; c) Biome and Catalogue related to bacteria belonging the Lactobacillales order.",
+        "file": "assets/images/figures/94e6h/graphics_section_4.png",
+        "label": "graphics"
+      },
+      {
+        "caption": "Map examples: a) Interactive map representing the number of genomes according to their geographical origin. Hovering continents with the mouse curser allows to see the exact count per continent. b) Interactive map representing the localisation of the samples. Each blue dots represents the proportion of samples for a given longitude-latitude set. c) Zoom in b) on a sampling region of interest. d) In addition to the number of samples and the longitude and latitude, hovering the blue dots with the mouse cursor allow the users to display additional related information such as the ID of the study, the sample IDs and the genome IDs, when available.",
+        "file": "assets/images/figures/94e6h/maps.png",
+        "label": "maps"
+      }
+    ]
+  },
+  "9kcfx": {
+    "commit": "db3e6e54a2cc0ac473588227b7d8d5a6dce75bbb",
+    "figures": [
+      {
+        "caption": "The total number of male and female records of *Anas platyrhynchos* in Europe aggregate to decade",
+        "file": "assets/images/figures/9kcfx/count.jpg"
+      },
+      {
+        "caption": "A time series of of the percentage of male *Anas platyrhynchos* in Europe aggregate to decade",
+        "file": "assets/images/figures/9kcfx/ratiotimeseries.jpg"
+      },
+      {
+        "caption": "A map of the percentage of male ducks for *Anas platyrhynchos* in Europe aggregate to a 10 km using the EEA grid",
+        "file": "assets/images/figures/9kcfx/duckmap.jpg"
+      },
+      {
+        "caption": "An interpolated map of the proportion of males of *Anas platyrhynchos* and the associated kriging error",
+        "file": "assets/images/figures/9kcfx/european_males_interpolation_and_error.jpg"
+      }
+    ]
+  },
+  "c724r": {
+    "commit": "1974fbe330a33f80002244eb4547ca300e1954a9",
+    "figures": [
+      {
+        "caption": "Workflow of interaction between different systems and standards in the plant domain.",
+        "file": "assets/images/figures/c724r/Figure1.png"
+      }
+    ]
+  },
+  "cd9s6_v1": {
+    "commit": "3bd0f39af9b4b3ec8c0d93965642bcd9990bc04b",
+    "figures": [
+      {
+        "caption": "**Schematic representation of the Tidyomics hackathon aims.** 1. We introduced tidyAnnData to provide tidy operators for AnnData objects; 2. We fixed major bugs in information accessibility for Tidyomics core packages; 3. We updated and extended Tidyomics packages such as DFplyr and tidybulk; 4. We provide a comprehensive and concise vignette for the tidySingleCellExperiment package. This plot was created by Google Nano Banana 2.",
+        "file": "assets/images/figures/cd9s6_v1/nanobanana2.png"
+      }
+    ]
+  },
+  "d27fw": {
+    "commit": "d1fd1bd2850975239bb0169f5eab42b31351ec9b",
+    "figures": [
+      {
+        "caption": "Japanese words with the same pronunciation but different meanings",
+        "file": "assets/images/figures/d27fw/Fig1.png"
+      },
+      {
+        "caption": "Examples of using different symbols within the same character set (Kanji) for the same English word in Japanese - depending on the context",
+        "file": "assets/images/figures/d27fw/Fig2.png"
+      },
+      {
+        "caption": "Proposed workflow for HPO/MP translation, taken from “Choosing preferable labels for the Japanese translation of the Human Phenotype Ontology” [8]",
+        "file": "assets/images/figures/d27fw/Fig3.png"
+      },
+      {
+        "caption": "Structural differences between ontologies due to structural features of ontologies",
+        "file": "assets/images/figures/d27fw/Fig4.png"
+      },
+      {
+        "caption": "TSNE visualization of the embeddings generated from definitions in HPO and MP. Embeddings derived from MP are shown in blue, from HPO in red.",
+        "file": "assets/images/figures/d27fw/Fig5.png"
+      },
+      {
+        "caption": "Ontology alignment with multiple ontologies and biomedical terminologies. PATO hierarchy is green, HPO hierarchy is right blue, MP is green, uPheno is pink, MeSH is yellow, DOID is orange, and the desirable reference ontology is blue.",
+        "file": "assets/images/figures/d27fw/Fig6.png"
+      },
+      {
+        "caption": "Results of ontology term mapping to the RIKEN model mice",
+        "file": "assets/images/figures/d27fw/Fig7.png"
+      }
+    ]
+  },
+  "d8h69": {
+    "commit": "5bcc7ce556d97a5c9ab52801744b8a3172a327d4",
+    "figures": [
+      {
+        "caption": "A small section of the entire Network of Concepts (NoC) showing a few nodes (e.g. plant variety) and their relationships. Solid arrows denote a hierarchical relationship. Dotted lines denote a non-hierarchical relationship. Encircled terms are part of PLABREGLO.",
+        "file": "assets/images/figures/d8h69/PBO_NoC_snip.png",
+        "label": "Fig1"
+      },
+      {
+        "caption": "Three sample entries are shown along with their corresponging translations, definitions, and synonyms.",
+        "file": "assets/images/figures/d8h69/PBO_sample_entries.png",
+        "label": "Fig4"
+      },
+      {
+        "caption": "Example of a SPARQL Query and Interface Using GraphDB. This figure illustrates the SPARQL query editor and results interface of a SPARQL endpoint within GraphDB. The displayed query retrieves RDF classes with their labels and alternative labels, filtering for languages \"jp\" (Japanese) or \"fr\" (French). The query results are shown in tabular form below, listing unique identifiers, labels, and alternative labels for terms. This serves as an example of how queries can be constructed and executed in GraphDB. Additional example queries can be found in the appendix.",
+        "file": "assets/images/figures/d8h69/sample_queries.png",
+        "label": "Fig5"
+      },
+      {
+        "caption": "Visualization of the PBO schema expressed in ShEx",
+        "file": "assets/images/figures/d8h69/pbo_schema.png"
+      },
+      {
+        "caption": "Query 1 ShEx shape visualization",
+        "file": "assets/images/figures/d8h69/q1.1_shex.png"
+      },
+      {
+        "caption": "Query 6 ShEx shape visualization",
+        "file": "assets/images/figures/d8h69/q6.1_shex.png"
+      }
+    ]
+  },
+  "dfwm9_v1": {
+    "commit": "93a14e7c59227fe308bb0fd998617acbcebf8e50",
+    "figures": [
+      {
+        "caption": "Categorization of tools into low, medium and high effort as well as into the possible impact of engagement on trainees with addition of gamification tools, which can be used as is.",
+        "file": "assets/images/figures/dfwm9_v1/Figure1_GAMIFICATION_TOOLS_CATEGORIZED.png",
+        "label": "fig1"
+      },
+      {
+        "caption": "10 simple rules for gamification in bioinformatics training. The figure was created with Nano Banana Pro.",
+        "file": "assets/images/figures/dfwm9_v1/Figure2_10simplerules.png",
+        "label": "fig2"
+      },
+      {
+        "caption": "Screenshot of the R console during a swirl session.",
+        "file": "assets/images/figures/dfwm9_v1/Figure3_screenshot_swirl.png",
+        "label": "fig3"
+      },
+      {
+        "caption": "Screenshot of the swirlify GUI which allows generation and editing of swirl courses.",
+        "file": "assets/images/figures/dfwm9_v1/Figure4_screenshot_swirlify.png",
+        "label": "fig4"
+      }
+    ]
+  },
+  "dpnry": {
+    "commit": "42970143ac55c1e0f890b8438429d471a460c674",
+    "figures": [
+      {
+        "caption": "**Figure 1:** Overview of workflow. The data models from HumanMine and FlyMine were extracted in JSON and converted to LinkML YAML. JSON data for objects from the Gene, Protein and Disease classes were converted to RDF-compliant JSON-LD and loaded into Elasticsearch. This enabled data exploration and analysis using Kibana and Pandas, as well as facilitating conversion to triples that were loaded into Virtuoso.",
+        "file": "assets/images/figures/dpnry/Figure-1.png"
+      },
+      {
+        "caption": "**Figure 2:** An example of the JSON-LD that was generated.",
+        "file": "assets/images/figures/dpnry/Figure-2.png"
+      },
+      {
+        "caption": "**Figure 3:** an example SPARQL query run over InterMine data in Virtuoso and the resulting output.",
+        "file": "assets/images/figures/dpnry/Figure-3.png"
+      },
+      {
+        "caption": "**Figure 4:** Kibana running over the data in Elasticsearch was used to summarise the number of records from each database, including by taxon, and to allow the documents to be browsed.",
+        "file": "assets/images/figures/dpnry/Figure-4.png"
+      },
+      {
+        "caption": "**Figure 5:** The classes present in HumanMine and FlyMine were summarised and compared using Kibana.",
+        "file": "assets/images/figures/dpnry/Figure-5.png"
+      }
+    ]
+  },
+  "dqm3j_v1": {
+    "commit": "7c6a567b67181846f7fc1c1c865d1706b6952b61",
+    "figures": [
+      {
+        "caption": "The \"GWAS associations for a gene\" template, one of the six added for the panel, with its gene constraint left open (`*`), so the preview lists associations for every gene in the mine. HumanMine's category filter (top) shows the added templates tagged into the same categories as the three original templates.",
+        "file": "assets/images/figures/dqm3j_v1/figure3-gwas-template.png",
+        "label": "fig:gwastemplate"
+      }
+    ]
+  },
+  "em3rk": {
+    "commit": "f53fa2c98bce05ca7cd444c90c64134e2ae38f73",
+    "figures": [
+      {
+        "caption": "A photograph of *Isodontia mexicana* visiting flowers of *Pycnanthemum tenuifolium*. Posted to iNaturalist (https://www.inaturalist.org/observations/91809468) from its native range in North America. &copy; Louise Woodrich, used under the CC-By (http://creativecommons.org/licenses/by/4.0/) license.",
+        "file": "assets/images/figures/em3rk/Figure1.jpg"
+      },
+      {
+        "caption": "Matching plant species (a), genera (b) and families (c) from expert and app identification, with scores higher than 0.8 or 0.5, respectively.",
+        "file": "assets/images/figures/em3rk/Figure2_sm.jpg"
+      },
+      {
+        "caption": "a) Colour preferences and b) type of interaction as classified from iNaturalist images by experts.",
+        "file": "assets/images/figures/em3rk/Figure3_sm.jpg"
+      }
+    ]
+  },
+  "fy49g": {
+    "commit": "047e0d012f4f2b611731c760950df1848c2f39e1",
+    "figures": [
+      {
+        "caption": "Species used to test annotation pipelines. Clockwise from top left: *Citrullus colocynthis*, *Drosophila melanogaster*, *Helleia helle*, *Melampus jaumei*, *Phakellia ventilabrum*, *Pocillopora cf. efusa* and *Trifolium dubium*",
+        "file": "assets/images/figures/fy49g/fig1.png"
+      },
+      {
+        "caption": "Structure of annotation workflows tested. Shown are the input data, software and pipeline structure of the UNIL (top-left), CNAG (top-right), ANNOTATO (bottom-left) and Braker3 (bottom-right) workflows",
+        "file": "assets/images/figures/fy49g/fig2.png"
+      },
+      {
+        "caption": "Number of genes annotated per genome and pipeline. Bars are coloured by workflow and grouped by species",
+        "file": "assets/images/figures/fy49g/no_genes.png"
+      },
+      {
+        "caption": "BUSCO completeness scores for each annotation. For each protein sequence in the BUSCO database of the respective lineage, the sequence is marked as present in a Single-Copy (light-blue) or Duplicated (dark-blue), present but Fragmented (yellow) or Missing (Red) from the annotated protein sequences. Note: As only chromosome 19 of the human genome was used, y-scale is different.",
+        "file": "assets/images/figures/fy49g/busco_complete.png"
+      },
+      {
+        "caption": "OMArk completeness scores for each annotation performed on each species genome. For each protein sequence in the OMAmer database of the respective lineage, the sequence is marked as Missing (red) or Complete either once (Single - light blue) or multiple times (Duplicated - dark blue) based on its presence in the protein sequences of the given annotation. Note: As only chromosome 19 of the human genome was used, y-scale is different.",
+        "file": "assets/images/figures/fy49g/omark_complete.png"
+      },
+      {
+        "caption": "Correlation between completeness scores computed by BUSCO (x-axis) and OMArk (y-axis). Pearson’s correlation coefficient is shown.",
+        "file": "assets/images/figures/fy49g/busco_omark.png"
+      },
+      {
+        "caption": "OMArk consistency scores for each annotation performed on each species genome. Each protein sequence annotated as part of a particular pipeline was marked by OMArk as being Consistent (light-blue) with the species lineage, Inconsistent (purple) or Unknown (grey) - i.e., not present in the OMAmer database.",
+        "file": "assets/images/figures/fy49g/omark_consistency.png"
+      },
+      {
+        "caption": "Comparison of exon structures of genes predicted in a 15kb region of the *Pocillopora cf. effusa* genome.",
+        "file": "assets/images/figures/fy49g/fig_8.png"
+      },
+      {
+        "caption": "SnpEff in HelHell1.1 - Number of effects annotated in the SNVs by region",
+        "file": "assets/images/figures/fy49g/fig_9.png"
+      },
+      {
+        "caption": "SNV counts across ilHelHell1.1 chromosome 21. The analysis pinpoints a terminal area poor in genetic variants compared with the rest of the chromosome",
+        "file": "assets/images/figures/fy49g/fig_10.png"
+      }
+    ]
+  },
+  "gmk2h": {
+    "commit": "b6abf9763c046359a3856d07c9b77b5c90012374",
+    "figures": [
+      {
+        "caption": "Browser extension showing detected Signposting. The HoloFood Data Portal (www.holofooddata.org) now includes machine-readable Signposting links directing clients to the API for a JSON description of the each Sample as well as the collection to which the Sample belongs. The browser extension is shown here rendering these Signposts to the user.",
+        "file": "assets/images/figures/gmk2h/signposting-browser-extension.jpg"
+      },
+      {
+        "caption": "Single Page application of Wildlive portal showing a capture event, with Signposting overlaid by the signposting-chrome-extension.",
+        "file": "assets/images/figures/gmk2h/signposting-senckenberg.png"
+      },
+      {
+        "caption": "Schematic overview of how Signposting headers are added to the HTTP response in NGINX.",
+        "file": "assets/images/figures/gmk2h/signposting-nginx-architecture.png"
+      },
+      {
+        "caption": "HTML preview rendering of the Wildlive RO-Crate for a capture event. Each observation event is listed as `hasPart` and described further.",
+        "file": "assets/images/figures/gmk2h/senkcenberg-crate.png"
+      },
+      {
+        "caption": "The same crate also describes nested objects, such as the taxon for identifying species.",
+        "file": "assets/images/figures/gmk2h/senkcenberg-taxon.png"
+      },
+      {
+        "caption": "ZBMed web page with HTML Signposting to the RO-Crate metadata file along with the Bioschemas JSON-LD.",
+        "file": "assets/images/figures/gmk2h/signposting-zbmed.png"
+      }
+    ]
+  },
+  "hm9fn_v1": {
+    "commit": "efd04ce67e98b97b6c2c7e74d3c32fdd53698639",
+    "figures": [
+      {
+        "caption": "The flowchart of the error detection and categorization process. Error categories are defined in Table \\ref{tab:categories}.",
+        "file": "assets/images/figures/hm9fn_v1/fig1_error_analysis_flowchart.png",
+        "label": "fig:flowchart"
+      },
+      {
+        "caption": "Screenshots of the sample search and visualization system. (A) Results of selecting liver as the tissue and searching for liver samples from human RNA-seq experiments. (B) Heatmap showing the number of human RNA-seq samples to which the selected ontology terms were mapped, with 10 disease terms and 10 drug terms specified. (C) Distribution of the experimental conditions investigated under Kras knockout in mouse RNA-seq samples, with Kras specified as the knockout gene. (D) Line graph showing the annual number of submissions of human lung RNA-seq samples.",
+        "file": "assets/images/figures/hm9fn_v1/fig2_viewer_screenshots.png",
+        "label": "fig:viewer"
+      },
+      {
+        "caption": "Contribution of successive provenance-tracing stages, stratified by target attribute. Each extracted value is assigned to the first stage that identified acceptable supporting evidence. For legibility, the case-insensitive, normalised, and bag-of-words deterministic strategies are grouped and shown together as \"normalised\".",
+        "file": "assets/images/figures/hm9fn_v1/fig3_provenance_stages.png",
+        "label": "fig:provenance"
+      },
+      {
+        "caption": "Heterogeneity of submitted BioSample field names. (A) Number of distinct field names required to account for 90% of provenance evidence for each target attribute, split into the core needed for 90% coverage, names reused across more than one BioProject, names confined to one BioProject, and names confined to one BioSample (a BioSample with no linked BioProject counts as its own singleton BioProject). Numbers at the first boundary give the names needed for 90% coverage; numbers at bar ends give total distinct names. (B) Mean annual number of distinct field names observed across the nine target attributes in DDBJ RNA-seq BioSample records, 2012--2025, with the annual number of published BioProjects shown for comparison.",
+        "file": "assets/images/figures/hm9fn_v1/fig4_field_name_heterogeneity.png",
+        "label": "fig:fieldnames"
+      }
+    ]
+  },
+  "jazsb_v1": {
+    "commit": "f43fa2df818078677c5432c91b7084780cb079c7",
+    "figures": [
+      {
+        "caption": "Illustration of the SemBeacon RDF model mapping to GA4GH VRS RDF model.",
+        "file": "assets/images/figures/jazsb_v1/swat4ls_bh25_mapping.png"
+      }
+    ]
+  },
+  "jh3m7_v1": {
+    "commit": "8b4089be4e32e52a8cf46255ef637df489117708",
+    "figures": [
+      {
+        "caption": "Example of Claude extracting metadata from a PDF in JSON format",
+        "file": "assets/images/figures/jh3m7_v1/claude-extract.png",
+        "label": "extract"
+      },
+      {
+        "caption": "Screenshot of the DBCLS BioHackathon 2025 index page.",
+        "file": "assets/images/figures/jh3m7_v1/bh25jp_index.png",
+        "label": "index"
+      }
+    ]
+  },
+  "kxqb7_v1": {
+    "commit": "71e5b2fdd36854861a058df067528668c6e62eb6",
+    "figures": [
+      {
+        "caption": "**From complementary evidence to a reviewable differential.** Different representations can retrieve shared or source-specific disease hypotheses. The conceptual distinction is between candidate availability and retention during shortlist formation. A source-specific candidate may be useful even without cross-tool agreement. Candidate-level integration connects specialist retrieval with LLM ranking and external-information checks; correctness and the value of each stage require separate evaluation.",
+        "file": "assets/images/figures/kxqb7_v1/concept_candidate_retention.png"
+      },
+      {
+        "caption": "**ZebraSeek workflow.** Facial images are analyzed by GestaltMatcher; HPO terms are supplied to PubCaseFinder and SemanticSearch; and HPO terms together with recorded sex are supplied to the direct LLM component. Each component provides up to five candidates. LLM-based ranking and literature-based verification produce a final top-five list with explanatory text.",
+        "file": "assets/images/figures/kxqb7_v1/figure1_workflow.png"
+      },
+      {
+        "caption": "**ZebraSeek clinical input interface.** The input form supports Phenopacket import, observed and excluded findings, sex, age of onset and facial-image upload. No patient photograph or populated patient record is shown.",
+        "file": "assets/images/figures/kxqb7_v1/zebraseek_input_interface.png"
+      },
+      {
+        "caption": "**Top-k diagnostic recall across five methods.** Top-k recall is the percentage of 74 cases whose recorded diagnosis appears within the first k predictions. The same denominator is used at all cutoffs; this figure reports aggregate results without uncertainty estimates.",
+        "file": "assets/images/figures/kxqb7_v1/figure2_recall.png"
+      },
+      {
+        "caption": "**Component overlap among the 59 ZebraSeek successes at rank five.** Each column represents an exclusive combination of component tools whose top-five lists contained the recorded diagnosis. Connected filled circles identify the tools in each combination; gray circles indicate absence. Bar heights show case counts. The totals at left are conditional on ZebraSeek success and are not the full-cohort recalls of the component tools.",
+        "file": "assets/images/figures/kxqb7_v1/figure3_overlap.png"
+      },
+      {
+        "caption": "**Correct-candidate availability among the 15 ZebraSeek failures at rank five.** Eight cases had no correct candidate in any component's top-five list. Five had a correct candidate only in PubCaseFinder and two only in GestaltMatcher. The latter seven cases distinguish failure to retain an available diagnosis from absence of that diagnosis in all initial lists.",
+        "file": "assets/images/figures/kxqb7_v1/figure4_failures.png"
+      },
+      {
+        "caption": "**Deeper specialist rankings expose candidates hidden by a fixed top-five input limit.** Exact OMIM inclusion was evaluated for 462 facial-image instances linked to 368 patients across 54 disorders. Bars show candidate coverage for PubCaseFinder (PCF), GestaltMatcher (GM) and their combined lists after duplicate diseases were removed at increasing retrieval depths. Coverage increased from 77.5% at top five to 89.0% at top 30. This figure characterizes the candidate set available before ZebraSeek integration; it is not an end-to-end diagnostic-performance comparison.",
+        "file": "assets/images/figures/kxqb7_v1/expanded_candidate_depth_recall.svg"
+      }
+    ]
+  },
+  "m37f2_v1": {
+    "commit": "0676e0ffad866b8f517a72b1542b51714664e48b",
+    "figures": [
+      {
+        "caption": "Pathway diagram for Caffeine synthesis in *Coffea arabica*",
+        "file": "assets/images/figures/m37f2_v1/WP5586_diagram.png"
+      },
+      {
+        "caption": "Pathway diagram for Caffeine synthesis in *Coffea arabica*",
+        "file": "assets/images/figures/m37f2_v1/WP5586_IDtable.png"
+      }
+    ]
+  },
+  "mhsqp": {
+    "commit": "552b3a239e602e35955348053c59ab268ec4e7bd",
+    "figures": [
+      {
+        "caption": "The BioDataFuse framework",
+        "file": "assets/images/figures/mhsqp/pyBiodatafuse-pipeline.png",
+        "label": "fig-framework"
+      },
+      {
+        "caption": "The BioDataFuse graph schema",
+        "file": "assets/images/figures/mhsqp/pybiodatafuse-graph.png",
+        "label": "fig-graph-model"
+      }
+    ]
+  },
+  "mprew": {
+    "commit": "340c1ebf13d14d27003f875e071b6133c72c8a99",
+    "figures": [
+      {
+        "caption": "Number of ortholog pairs between Arabidopsis and soybean in different orthologous groups using OMA (left) and OrthoDB (right). The numbers in parentheses indicate the total ortholog pairs identified in each level of the tool. Venn diagrams were prepared using the online tool (https://bioinformatics.psb.ugent.be/webtools/Venn/).",
+        "file": "assets/images/figures/mprew/Fig1.png"
+      },
+      {
+        "caption": "Number of ortholog pairs between Arabidopsis and soybean among three different tools. OMA and OrthoDB are analyzed at the level of green plants (left) or land plants (right). The numbers in parentheses indicate the total ortholog pairs identified at each level of the tool.",
+        "file": "assets/images/figures/mprew/Fig2.png"
+      }
+    ]
+  },
+  "nstjb": {
+    "commit": "948e2555a046d87e2f586f0a8dc84734e18d6898",
+    "figures": [
+      {
+        "caption": "An overview of the state of the system. This can be filtered by submitters, file status and also assigned dataset. It shows the status of every file and can also show some overall statistics.",
+        "file": "assets/images/figures/nstjb/paper-overview.png",
+        "label": "fig1"
+      },
+      {
+        "caption": "Detailed event log for a file. The top panel shows the current state of a file while the bottom panel contains a log of every event the file has gone through.",
+        "file": "assets/images/figures/nstjb/paper-file-detail.png",
+        "label": "fig2"
+      }
+    ]
+  },
+  "p85m9": {
+    "commit": "d2b4c060ae662ab055ed8212e5172760628a4672",
+    "figures": [
+      {
+        "caption": "Most commonly used words on Biology SE. The 1000 most frequently used words in the Meta SE dataset were removed from the Biology SE dataset. The Meta SE dataset contained the first 100000 records for Posts and the same for Comments; the records on archive.org were updated on 08-Oct-2022 10:24 and 08-Oct-2022 00:47 for Meta SE and Biology SE respectively.",
+        "file": "assets/images/figures/p85m9/wordcloud.png"
+      }
+    ]
+  },
+  "p87z6_v1": {
+    "commit": "86d488cbb78c87d44f3967c78bf8d0c27a34e3c2",
+    "figures": [
+      {
+        "caption": "Pipeline architecture: PMC full text to a verified, entry-level data-reuse dashboard, in five stages.",
+        "file": "assets/images/figures/p87z6_v1/pipeline-architecture.png",
+        "label": "pipelineArchFig"
+      },
+      {
+        "caption": "Database-namespace coverage: Europe PMC's TextMinedTerms vs. this pipeline's TogoID-derived pattern set.",
+        "file": "assets/images/figures/p87z6_v1/coverage-comparison.png",
+        "label": "coverageFig"
+      },
+      {
+        "caption": "Data Reuse Dashboard: database usage drill-down",
+        "file": "assets/images/figures/p87z6_v1/dashboard.png",
+        "label": "dashboardFigure"
+      }
+    ]
+  },
+  "p9u42_v1": {
+    "commit": "8b4089be4e32e52a8cf46255ef637df489117708",
+    "figures": [
+      {
+        "caption": "Screenshot of the PDF output by the BioHackrXib Preview service.",
+        "file": "assets/images/figures/p9u42_v1/orcid_and_ror.png"
+      }
+    ]
+  },
+  "pqfws": {
+    "commit": "0c8ed075b9ce1743826e7d4dd0b62a6353694a1d",
+    "figures": [
+      {
+        "caption": "A true colour RGB satellite image (Map data: Google, Maxar Technologies 2023) giving an overview of the study site and its surroundings within Calabria. The eight different plant community types are overlaid as differently coloured masks in transparency upon the image. The subset of the study site which was extracted from Sentinel-2 data is indicated within the red rectangle.",
+        "file": "assets/images/figures/pqfws/Figure_1_study_area_V1.0.png"
+      },
+      {
+        "caption": "A time series illustrating changes in the value of the Plant Phenological Index (PPI) for every pixel within the Macchia Sacra Special Protection Area study site in Calabria.",
+        "file": "assets/images/figures/pqfws/Figure_2_Time_Series_of_PPI_for_Study_Site_V1.1.png"
+      },
+      {
+        "caption": "A four panel plot comparing the efficacy of different diversity indices at measuring biodiversity within our grassland ecosystem in Calabria. The white contour lines represent different plant communities classified by an expert botanist from the drone high-resolution image. The scale bar to the right of each plot indicates the assessed biodiversity value in the index being tested (e.g. Shannon's H index or Rao's Quadratic Diversity index).",
+        "file": "assets/images/figures/pqfws/Figure_3_Results_Overview_Index_Comparison_V1.0.png"
+      }
+    ]
+  },
+  "ptmg5_v1": {
+    "commit": "306dafe910da09cc67057f3b39c8a8aee38ca63d",
+    "figures": [
+      {
+        "caption": "Data model overview",
+        "file": "assets/images/figures/ptmg5_v1/Dataschemas-biohack24.png"
+      }
+    ]
+  },
+  "py5jq": {
+    "commit": "420ac75309468ff6c0be8224c2a635c744428325",
+    "figures": [
+      {
+        "caption": "Co-author network of participants of BioHackathon Europe 2023, as defined by data in Wikidata on 2023-11-02 at 15:00 CET.",
+        "file": "assets/images/figures/py5jq/coauthor-network-20231102-1500.png"
+      },
+      {
+        "caption": "Screenshot of the Scholia page for the BioHackathon Europe event series.",
+        "file": "assets/images/figures/py5jq/BioHackEU-Series.png"
+      }
+    ]
+  },
+  "pza7v_v1": {
+    "commit": "d6bc30d07f63ad757d7e036b7acf6e3861ff305f",
+    "figures": [
+      {
+        "caption": "Respondent Demographics.",
+        "file": "assets/images/figures/pza7v_v1/AI_survey_main_figures.001.png"
+      },
+      {
+        "caption": "AI Usage Patterns.",
+        "file": "assets/images/figures/pza7v_v1/AI_survey_main_figures.002.png"
+      },
+      {
+        "caption": "Challenges and Areas for Improvement in AI.",
+        "file": "assets/images/figures/pza7v_v1/AI_survey_main_figures.003.png"
+      },
+      {
+        "caption": "User Satisfaction and Institutional Support.",
+        "file": "assets/images/figures/pza7v_v1/AI_survey_main_figures.004.png"
+      },
+      {
+        "caption": "Analysis of Institutional Support.",
+        "file": "assets/images/figures/pza7v_v1/AI_survey_main_figures.005.png"
+      },
+      {
+        "caption": "Heatmap of participant concerns regarding AI usage.",
+        "file": "assets/images/figures/pza7v_v1/Fig21-AI-harms.png"
+      }
+    ]
+  },
+  "pzmue_v1": {
+    "commit": "6604a1a7033e8189cbc27e75d06cf24eb660856d",
+    "figures": [
+      {
+        "caption": "concept for using MinIO with LS AAI at the de.NBI cloud site in Bielefeld.",
+        "file": "assets/images/figures/pzmue_v1/fa52187f-d8d7-4a63-be86-6b02853942f9.png"
+      },
+      {
+        "caption": "demonstration platform at the de.NBI cloud site at the Charité.",
+        "file": "assets/images/figures/pzmue_v1/spe4hd_slide.png"
+      }
+    ]
+  },
+  "q4zgx": {
+    "commit": "f90aff6e7d5b929b14d018bcbe3a8bd8551c84e6",
+    "figures": [
+      {
+        "caption": "Figure 1. SDV model comparison",
+        "file": "assets/images/figures/q4zgx/SDV-Model-Comparison.png"
+      },
+      {
+        "caption": "Figure 2. Utility classification using RF",
+        "file": "assets/images/figures/q4zgx/RF-Classification-Real-and-Synthetic.png"
+      },
+      {
+        "caption": "Figure 3. Infrastructure prototype design we envisioned during the hackathon: photographs of the whiteboard taken during brainstorming.",
+        "file": "assets/images/figures/q4zgx/webui_design.png"
+      },
+      {
+        "caption": "Figure 4. Settings component of the Web UI to generate synthetic data.",
+        "file": "assets/images/figures/q4zgx/settings_webui.png"
+      },
+      {
+        "caption": "Figure 5. Quality assessment component of the Web UI to score and visually check the quality of the synthetic data.",
+        "file": "assets/images/figures/q4zgx/quality_webui.png"
+      }
+    ]
+  },
+  "qd5sz_v1": {
+    "commit": "917f3a01b3e91631ea708cd6c4653047e586a8e8",
+    "figures": [
+      {
+        "caption": "Metatranscriptomic Analysis Workflow",
+        "file": "assets/images/figures/qd5sz_v1/workflow_cwlization.png"
+      },
+      {
+        "caption": "Pangenome-Based SV-Calling Benchmark: Design and Evaluation Flow",
+        "file": "assets/images/figures/qd5sz_v1/Figure1.jpg"
+      }
+    ]
+  },
+  "qjbxc": {
+    "commit": "a5a0a3a8ab905b3c7c5e6bb4e9e892aaeed0ea71",
+    "figures": [
+      {
+        "caption": "Workflow of the Galaxy tool metadata extractor pipeline. Tool wrappers are parsed from different repositories and additional metadata is retrieved from bio.tools, Bioconda, and the main public Galaxy servers. Upon filtering and manual curation of the data for specific scientific communities, the data is transformed into interactive web tables and a tool usage statistics-based word cloud, that can be integrated into any website.",
+        "file": "assets/images/figures/qjbxc/flowchart.png",
+        "label": "metadata_extractor_pipeline"
+      },
+      {
+        "caption": "xref snippet example for a Galaxy tool wrapper that contains the tool Racon.",
+        "file": "assets/images/figures/qjbxc/xref.png",
+        "label": "xref_snippet"
+      },
+      {
+        "caption": "Step-by-step workflow for systematically improving metadata annotations across bio.tools registry entries and Galaxy tool wrappers. After selecting a Galaxy tool and checking for the presence of a bio.tools ID in its XML file, a curator needs to review bio.tools, create a new bio.tools entry (if needed), and then ensure that both this entry and the Galaxy tool XML file are up-to-date. Updating bio.tools makes use of the registry wizard, and updating a Galaxy tool wrapper to include a bio.tools xref snippet requires a pull request against the development repository.",
+        "file": "assets/images/figures/qjbxc/annotation.png",
+        "label": "annotation_workflow"
+      },
+      {
+        "caption": "Screenshot of the interactive web table. The table provides comprehensive metadata for all Galaxy wrappers of a specific community and allows for custom searches based on logic filters over all columns. In the shown example, the user queries for all up-to-date tools that are annotated with an EDAM operation that includes \"assembly\".",
+        "file": "assets/images/figures/qjbxc/itable.png",
+        "label": "web_table"
+      }
+    ]
+  },
+  "qy4td_v1": {
+    "commit": "17559c4742e7a78d6d57d1e861e7eda73ec0f4cb",
+    "figures": [
+      {
+        "caption": "Illustration of the GA4GH VRS RDF schema as ShEx shapes.",
+        "file": "assets/images/figures/qy4td_v1/ga4gh_vrs_schema_shex.png"
+      }
+    ]
+  },
+  "s6bph_v1": {
+    "commit": "247e0fe80a16a2c4ec1062db1e36ff855a7b9edc",
+    "figures": [
+      {
+        "caption": "Comparison of Zarr, bioimaging and single-cell/spatial omics packages across scverse and Bioconductor ecosystems that interface with SpatialData objects on disk (*\"Database-icon\" by Zahra Ibrahem is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse.)*",
+        "file": "assets/images/figures/s6bph_v1/r-interop.png"
+      },
+      {
+        "caption": "**a)** Left: SpatialData object representation in R. Middle: Spatial plot of cell centroids from Xenium breast cancer tissue section colored by cell type assignment; black = bounding box query. Right: Image cropped to bounding box, including transcripts falling within another bounding box query, colored by in nucleus (pink) or not (hidden). The full-resolution image is ~25x35k pixels, and there are ~42M molecules; the visualization takes about 3 seconds, realizing only a small low-resolution array and a few thousand points into memory. **b)** Schematic of the anndataR roundtrip testing approach. An AnnData object containing a specific element for testing is generated in Python and saved to disk. This file is then re-read in R and saved to a new file. In the final step, the R output is read by Python and compared to the Python output. The reverse process where data is generated in R is also tested. **c)** Output of the `plot.ome_zarr()` method in the romeo R package. The top image applied a Z-stack operation to merge all channels and the bottom image shows all channels within separate panels. Image from a Breast cancer imaging mass cytometry (IMC) dataset .",
+        "file": "assets/images/figures/s6bph_v1/1.png"
+      },
+      {
+        "caption": "Annotation of the invasive tumor of a breast cancer tissue in a Jupyter Widget using anybioimage.",
+        "file": "assets/images/figures/s6bph_v1/2.png"
+      },
+      {
+        "caption": "Gallery of spatialdata-plot examples with copy-able code. Visium breast cancer dataset (right) was visualized .",
+        "file": "assets/images/figures/s6bph_v1/3.png"
+      },
+      {
+        "caption": "Benchmark results for multiscale, chunked point representations on 10M points across five query types (Q1–Q4), comparing spatial first, gene first, and baseline (unindexed) parquet layouts.",
+        "file": "assets/images/figures/s6bph_v1/4.png",
+        "label": "vis-figure"
+      },
+      {
+        "caption": "SpatialData.js labels layer with interactive element picking and tooltip display, using Xenium Human Pancreas dataset .",
+        "file": "assets/images/figures/s6bph_v1/5.png"
+      },
+      {
+        "caption": "Overview of the cloud-based IO architecture for SpatialData, supporting remote object stores via UPath and fsspec.",
+        "file": "assets/images/figures/s6bph_v1/6.png"
+      },
+      {
+        "caption": "Schematic of Prototype 1 for bidirectional element-table linking in SpatialData.",
+        "file": "assets/images/figures/s6bph_v1/7.png"
+      },
+      {
+        "caption": "Schematic of Prototype 1 for soft-linking external files within SpatialData via LazyContainer.",
+        "file": "assets/images/figures/s6bph_v1/8.png"
+      },
+      {
+        "caption": "**a)** OME-Zarr test cases for each transformation stored in ome\\_zarr\\_transformations\\_conformance. **b)** Transformations from an OME-Zarr implementation tested on given coordinates.",
+        "file": "assets/images/figures/s6bph_v1/9.png",
+        "label": "omezarr-figure"
+      },
+      {
+        "caption": "**a)** Field of view images of CosMx datasets before stitching. **b)** Proposed `fuse_spatialdata_images` function fusing image elements that are backed by dask arrays or in memory. **c)** napari view of the stitched image elements. The demo uses a subset of a CosMx example dataset .",
+        "file": "assets/images/figures/s6bph_v1/10.png",
+        "label": "multis-figure"
+      }
+    ]
+  },
+  "spf3q": {
+    "commit": "49ea4f2b015dd583125a3b8ab6753146a76990f4",
+    "figures": [
+      {
+        "caption": "Figure for the overview",
+        "file": "assets/images/figures/spf3q/Figure1.png"
+      },
+      {
+        "caption": "Pathway diagram with GPML generated by txt2gpml",
+        "file": "assets/images/figures/spf3q/Figure2.png"
+      }
+    ]
+  },
+  "u3fnh_v1": {
+    "commit": "848669669b5ebf0ca5a4523d40738f9365f1266e",
+    "figures": [
+      {
+        "caption": "Screenshot of the SciLifeLab Serve website.",
+        "file": "assets/images/figures/u3fnh_v1/SciLifeLabServe.png"
+      }
+    ]
+  },
+  "uf7d3": {
+    "commit": "743af7a15cb363af486417c08f5b54e21eaba45d",
+    "figures": [
+      {
+        "caption": "Morphology clusters from feature extraction",
+        "file": "assets/images/figures/uf7d3/morphology.png"
+      }
+    ]
+  },
+  "un6cd_v1": {
+    "commit": "cb2afeb8e004c36709e9aff096752dcedf1587f7",
+    "figures": [
+      {
+        "caption": "Curated crosswalks between MoDALIA and Schema.org metadata models for training materials",
+        "file": "assets/images/figures/un6cd_v1/mapping-sssom.png"
+      },
+      {
+        "caption": "Interchange via the OERbservatory",
+        "file": "assets/images/figures/un6cd_v1/interchange-repo.png"
+      },
+      {
+        "caption": "mTeSS-X strategic planning. Prepared for focus group demonstration of exchanged training materials. Looking ahead to share to the EOSC Catalogue.",
+        "file": "assets/images/figures/un6cd_v1/tesshub.png"
+      },
+      {
+        "caption": "Suggest learning paths from materials using LLM",
+        "file": "assets/images/figures/un6cd_v1/copilot.png"
+      },
+      {
+        "caption": "Example path 1: Constructed Turtle files RDF representation (Galaxy Training Network)",
+        "file": "assets/images/figures/un6cd_v1/lp-ex-1.png"
+      },
+      {
+        "caption": "Example path 2: Constructed Turtle files RDF representation (Helmholtz)",
+        "file": "assets/images/figures/un6cd_v1/lp-ex-2.png"
+      },
+      {
+        "caption": "Class diagram: proposal for Bioschemas and Schema.org with two new profiles",
+        "file": "assets/images/figures/un6cd_v1/lp-class.png"
+      },
+      {
+        "caption": "SPARQL query on the learning path as a knowledge graph",
+        "file": "assets/images/figures/un6cd_v1/sparql.png"
+      }
+    ]
+  },
+  "vbw4t_v1": {
+    "commit": "2c01a7c671a9a8ee43203525f292d68b49d420db",
+    "figures": [
+      {
+        "caption": "Figure Team 1-1. Overview of Team 1’s gene prioritization workflow using graph neural networks (GNNs).",
+        "file": "assets/images/figures/vbw4t_v1/Fig1-1.png"
+      },
+      {
+        "caption": "Figure Team 2-1. Overview of Team 2’s microbiome analysis pipeline integrating AI-based interpretation.).",
+        "file": "assets/images/figures/vbw4t_v1/Fig2-1.png"
+      },
+      {
+        "caption": "Figure Team 4-1. Overview of Team 4’s AI-driven pipeline for drug target discovery in rare diseases.",
+        "file": "assets/images/figures/vbw4t_v1/Fig4-1.png"
+      },
+      {
+        "caption": "Figure Team 5-1. Overview of Team 5’s structural variant phasing pipeline, SvPhaser.",
+        "file": "assets/images/figures/vbw4t_v1/Fig5-1.png"
+      },
+      {
+        "caption": "Figure Team 5-2. Data preprocessing and SV discovery module.",
+        "file": "assets/images/figures/vbw4t_v1/Fig5-2.png"
+      },
+      {
+        "caption": "Figure Team 5-3. Phasing and haplotype resolution methodology.",
+        "file": "assets/images/figures/vbw4t_v1/Fig5-3.png"
+      },
+      {
+        "caption": "Figure Team 5-4. Visualization interface for phased SVs.",
+        "file": "assets/images/figures/vbw4t_v1/Fig5-4.png"
+      },
+      {
+        "caption": "Figure Team 6-1. Introduction – Generic background to alternative splicing.",
+        "file": "assets/images/figures/vbw4t_v1/Fig6-1.png"
+      },
+      {
+        "caption": "Figure Team 6-2. Methods – Overview of the methodology.",
+        "file": "assets/images/figures/vbw4t_v1/Fig6-2.png"
+      },
+      {
+        "caption": "Figure Team 6-3. Methods – Overview of data processing.",
+        "file": "assets/images/figures/vbw4t_v1/Fig6-3.png"
+      },
+      {
+        "caption": "Figure Team 6-4. Results – Alternative splicing model.",
+        "file": "assets/images/figures/vbw4t_v1/Fig6-4.png"
+      },
+      {
+        "caption": "Figure Team 6-5. Results – Sequence length variation.",
+        "file": "assets/images/figures/vbw4t_v1/Fig6-5.png"
+      },
+      {
+        "caption": "Figure Team 7-1. Overview of Team 7’s EpiXposome framework for integrating epigenomic and exposomic data.",
+        "file": "assets/images/figures/vbw4t_v1/Fig7-1.png"
+      },
+      {
+        "caption": "Figure Team 7-2. Epigenomic and exposome data preprocessing.",
+        "file": "assets/images/figures/vbw4t_v1/Fig7-2.png"
+      },
+      {
+        "caption": "Figure Team 7-3. Machine learning modeling and interpretation phase.",
+        "file": "assets/images/figures/vbw4t_v1/Fig7-3.png"
+      },
+      {
+        "caption": "Figure Team 7-4. Visualization and biological insight reporting.",
+        "file": "assets/images/figures/vbw4t_v1/Fig7-4.png"
+      },
+      {
+        "caption": "Figure Team 8-1. Overview of Team 8’s phase-specific chromatin state change workflow.",
+        "file": "assets/images/figures/vbw4t_v1/Fig8-1.png"
+      },
+      {
+        "caption": "Figure Team 8-2. Gene examples illustrating expression differences across phases.",
+        "file": "assets/images/figures/vbw4t_v1/Fig8-2.png"
+      },
+      {
+        "caption": "Figure Team 8-3A. Chromatin accessibility vs expression in S phase.",
+        "file": "assets/images/figures/vbw4t_v1/Fig8-3A.png"
+      },
+      {
+        "caption": "Figure Team 8-3B. Chromatin accessibility vs expression in G1 phase.",
+        "file": "assets/images/figures/vbw4t_v1/Fig8-3B.png"
+      },
+      {
+        "caption": "Figure Team 8-3C. Chromatin accessibility vs expression in G2 phase.",
+        "file": "assets/images/figures/vbw4t_v1/Fig8-3C.png"
+      },
+      {
+        "caption": "Figure Team 9-1. Overview of Team 9’s AI-powered toxicological profiling pipeline.",
+        "file": "assets/images/figures/vbw4t_v1/Fig9-1.png"
+      },
+      {
+        "caption": "Figure Team 10-1. Workflow of Team 10’s 3D gene regulatory network inference using GNN.",
+        "file": "assets/images/figures/vbw4t_v1/Fig10-1.png"
+      },
+      {
+        "caption": "Figure Team 10-2. Comparative visualization of data inputs across multiple configurations.",
+        "file": "assets/images/figures/vbw4t_v1/Fig10-2.jpg"
+      }
+    ]
+  },
+  "vcyr7": {
+    "commit": "fb8909a67e0e5623ef0bbc15f217c8bd84ad20ab",
+    "figures": [
+      {
+        "caption": "Simulation framework for biodiversity data cubes. An example of three species, represented by different colours, that differ in rarity, clustering, and detection probability/sampling effort. White dots are undetected occurrences.",
+        "file": "assets/images/figures/vcyr7/visual_proposal.png",
+        "label": "Figure_1"
+      },
+      {
+        "caption": "Schematic overview of the different types of tasks. See text for explanation.",
+        "file": "assets/images/figures/vcyr7/task_types.png",
+        "label": "Figure_2"
+      },
+      {
+        "caption": "Scrum board progress during code development. Categories from left to right: 'Ice Box', 'In Progress', 'Review', and 'Complete'. Day 1 was mainly introduction and discussion. Day 2-3 mainly code development. Day 4 was primarily review and pull request merging. Coding ended before the final presentations on day 4 in the afternoon.",
+        "file": "assets/images/figures/vcyr7/scrum_board.jpg",
+        "label": "Figure_3"
+      },
+      {
+        "caption": "Overview of the **gcube** pkgdown website.",
+        "file": "assets/images/figures/vcyr7/pkgdown_site.png",
+        "label": "Figure_4"
+      }
+    ]
+  },
+  "vn4dx": {
+    "commit": "b5eb7823b618a9b5e9775f2fcedf5b92012789a3",
+    "figures": [
+      {
+        "caption": "EasyBuild growth",
+        "file": "assets/images/figures/vn4dx/EasyBuild_growth.png"
+      },
+      {
+        "caption": "EasyBuild software category repartition",
+        "file": "assets/images/figures/vn4dx/EasyBuild_soft_categories.png"
+      }
+    ]
+  },
+  "vtq5f_v1": {
+    "commit": "8b5e9cba443f395eebd0a12b19f36cd86d048aab",
+    "figures": [
+      {
+        "caption": "Figure 1. Overlap of drugs shared between DrugCentral , LINCS L1000 , and DeepCoverMOA .",
+        "file": "assets/images/figures/vtq5f_v1/figure1.png"
+      },
+      {
+        "caption": "Figure 2. OncoMatch Web Application. (A) Overview of the OncoMatch workflow, including user input, backend data integration, and output generation. (B) Screenshot of the interactive web interface, which allows users to explore bioactivity values, specifically Kd and IC50, of genes associated with a selected cancer type.",
+        "file": "assets/images/figures/vtq5f_v1/figure2b.png"
+      },
+      {
+        "caption": "Figure 3. Compound similarity views within the OncoMatch web application. A) Bar plot showing the top 10 compounds with the highest transcriptomic similarity to a selected compound, based on LINCS L1000 gene expression profiles, grouped by cell line. B) Bar plot showing the top 10 compounds with the most similar proteomic response profiles in the HCT116 cell line, based on DeepCoverMOA data. C) Heatmap of Tanimoto similarity scores between a selected compound and compounds identified by transcriptomic or proteomic similarity.",
+        "file": "assets/images/figures/vtq5f_v1/figure3c.png"
+      }
+    ]
+  },
+  "w8dsz": {
+    "commit": "6e1ba191cc008a6451184cbab36ff821c4845207",
+    "figures": [
+      {
+        "caption": "Distribution of tools across repositories",
+        "file": "assets/images/figures/w8dsz/B1RQLDUHT.png"
+      }
+    ]
+  },
+  "wd3bu": {
+    "commit": "0ac0c5c27bbbc8dae9215498686381237d1fef10",
+    "figures": [
+      {
+        "caption": "The overview figure for the metadata extraction",
+        "file": "assets/images/figures/wd3bu/GEM_figure_20220916.png"
+      },
+      {
+        "caption": "The screenshot of current web user interface (histgrams for searching the dataset)",
+        "file": "assets/images/figures/wd3bu/gem_figs.png"
+      },
+      {
+        "caption": "The screenshot of current web user interface (pagination table)",
+        "file": "assets/images/figures/wd3bu/gem_table.png"
+      }
+    ]
+  },
+  "x5v6b_v1": {
+    "commit": "a25e73f2b0328b470a190ebe5f80adb9f130045c",
+    "figures": [
+      {
+        "caption": "Mid-week reporting poster used during BioHackathon Europe 2025 to communicate early design decisions, illustrate EDAM branches, and motivate the use of the Model Context Protocol to mitigate LLM hallucinations during ontology-driven tool annotation.",
+        "file": "assets/images/figures/x5v6b_v1/Fig1_biohack25_poster.png"
+      },
+      {
+        "caption": "Example of hallucination: operation_3225 is actually “Variant classification”.",
+        "file": "assets/images/figures/x5v6b_v1/Fig2_llm_hallucination.png"
+      },
+      {
+        "caption": "Schematic view of the workflow and its interactions.",
+        "file": "assets/images/figures/x5v6b_v1/Fig3_edam_mcp_workflow.png"
+      },
+      {
+        "caption": "Evaluation on 2 examples shows significantly better performance over the baseline LLM.",
+        "file": "assets/images/figures/x5v6b_v1/Fig4_mcp_baseline_model_comparison.png"
+      }
+    ]
+  },
+  "x9d6b_v1": {
+    "commit": "bb6113ffa3b81c1835aed07ec0dc53452508f7e0",
+    "figures": [
+      {
+        "caption": "Schematic flow of creating arbitrary ARCs from any kind of data structrue.",
+        "file": "assets/images/figures/x9d6b_v1/sqltoarc.png"
+      },
+      {
+        "caption": "Concept to data harmonization using the ontology provides by the ARC datahub.",
+        "file": "assets/images/figures/x9d6b_v1/ARC_ontology.png"
+      }
+    ]
+  },
+  "xhkc3_v1": {
+    "commit": "d67a4192e8d175511a12483819b7ef25c468607c",
+    "figures": [
+      {
+        "caption": "Fig. 1. Workflow of the pipeline.",
+        "file": "assets/images/figures/xhkc3_v1/flowchart.png"
+      },
+      {
+        "caption": "Fig. 2. Distribution of haploblock lengths in chromosome 6.",
+        "file": "assets/images/figures/xhkc3_v1/haploblock_lengths.png"
+      }
+    ]
+  },
+  "xvrud_v1": {
+    "commit": "1b026140f243900b52672dea7c6b3caebeb30f90",
+    "figures": [
+      {
+        "caption": "Presentation of Project #22's goals and required skills during the kick-off meeting on Monday.",
+        "file": "assets/images/figures/xvrud_v1/kickoff.jpg"
+      },
+      {
+        "caption": "The complete group picture including on-site and online members.",
+        "file": "assets/images/figures/xvrud_v1/group.jpg"
+      },
+      {
+        "caption": "The kick-off slide at the \"flash presentation\" meeting on Monday.",
+        "file": "assets/images/figures/xvrud_v1/initial.jpg"
+      },
+      {
+        "caption": "The visual library of components generated using the Storybook framework.",
+        "file": "assets/images/figures/xvrud_v1/storybook_3d.jpg"
+      },
+      {
+        "caption": "Example of the lollipop component for positional values created by **Natalia Tichshenko**.",
+        "file": "assets/images/figures/xvrud_v1/lollipop.jpg"
+      },
+      {
+        "caption": "The network component for contact maps created by **Mahfouz Shehu** and **Yusuf Shehu**.",
+        "file": "assets/images/figures/xvrud_v1/network.jpg"
+      },
+      {
+        "caption": "Example of the tracks migrated by **Elyse Cheng**.",
+        "file": "assets/images/figures/xvrud_v1/combined_tracks.jpg"
+      },
+      {
+        "caption": "The Topology viewer connected to the two-panel component.",
+        "file": "assets/images/figures/xvrud_v1/storybook_2d.jpg"
+      },
+      {
+        "caption": "The hand-written poster elaborated for the \"Mid-week reporting poster session & coffee break\" on Wednesday afternoon.",
+        "file": "assets/images/figures/xvrud_v1/poster.jpg"
+      },
+      {
+        "caption": "The recap slide presented during the “Final Project Presentations” meeting on Friday morning.",
+        "file": "assets/images/figures/xvrud_v1/final.jpg"
+      }
+    ]
+  },
+  "ybnx9": {
+    "commit": "673e97e7c4fca929afba2d096307390920ef6f88",
+    "figures": [
+      {
+        "caption": "Distribution of journals in each sample group. The frequency of papers analyzed from each journal is represented by both the size and color of dots (n = 16 per group).",
+        "file": "assets/images/figures/ybnx9/journals.png"
+      },
+      {
+        "caption": "Distribution of compliance scores A) for each evaluated group, B) between papers either citing or not citing any version of ARRIVE and C) between papers from 2018 or 2020, regardless of citing or not ARRIVE. p-values are presented from a 2-way ANOVA comparing group scores using time, ARRIVE citation and their interaction as factors. Sample size is n=16 articles per group, and n=32 when comparing only ARRIVE and Time factors.",
+        "file": "assets/images/figures/ybnx9/compliance_scores.png"
+      },
+      {
+        "caption": "Percentage of compliance for the 18 individual ARRIVE E10 sub-items across all 64 papers included in the sample.",
+        "file": "assets/images/figures/ybnx9/percentage_sub_items.png"
+      },
+      {
+        "caption": "Number of papers that complied with each sub-item for groups A) not citing (0) versus citing (1) any version of ARRIVE and B) from 2018 or 2020 regardless of citing or not ARRIVE (n = 32). E10 Sub-items are ordered by the difference in number of papers between groups.",
+        "file": "assets/images/figures/ybnx9/number_sub_items.png"
+      }
+    ]
+  },
+  "ywsmq_v1": {
+    "commit": "0cb422a4d013d04135273a377d4345a2873ffd97",
+    "figures": [
+      {
+        "caption": "Hex sticker for the BiocExecute package.",
+        "file": "assets/images/figures/ywsmq_v1/hex_sticker.png"
+      }
+    ]
+  },
+  "zf2qj_v1": {
+    "commit": "c5d0a8ef2c89f7d667c3c054db5c0a86f2e0d046",
+    "figures": [
+      {
+        "caption": "outcome of multilevel discussion",
+        "file": "assets/images/figures/zf2qj_v1/intoxicom_ws5_figure1.png"
+      }
+    ]
+  },
+  "zxc8m": {
+    "commit": "06d984c1a1718d2dfc89f02e9869245f089c1520",
+    "figures": [
+      {
+        "caption": "A. Connecting events and tools from TeSS and bio.tools via Bioschemas markup and the EDAM ontology implementation is feasible, but currently not straightforward. B. This data model represents the data objects and links linking training and software tools as well as EDAM with Bioschemas links. It summarises information that can be linked in an interoperable way between bio.tools and TeSS, using EDAM and Bioschemas/Schema.org.",
+        "file": "assets/images/figures/zxc8m/Figure1AB.png"
+      },
+      {
+        "caption": "The update of existing terms and tools in the ecosystem (dark-coloured tags) and the addition of new terms and tools (pale-coloured tags) allow the connection of events and tools through Bioschemas markup annotations, specifically, by using (1) the \"ComputationalTool\" profile (Group Tools), (2) the \"Course\", \"CourseInstance\" and \"TrainingMaterial\" profiles (Group Training) and (3) the EDAM ontology (controlled vocabulary).",
+        "file": "assets/images/figures/zxc8m/Figure2.png"
+      },
+      {
+        "caption": "A. From bio.tools to TeSS: enable browsing on found tools in bio.tools and provide links that will search with the same terms on TeSS. B. From TeSS to bio.tools: enable browsing on found materials in TeSS and provide links that will search with the same terms on bio.tools.",
+        "file": "assets/images/figures/zxc8m/Figure3AB.png"
+      }
+    ]
+  }
+}

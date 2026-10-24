@@ -105,6 +105,21 @@ layout: base
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
 
+    {%- assign osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
+    {%- assign preprint_figures = site.data.figures[osf_id].figures -%}
+    {%- if preprint_figures.size > 0 %}
+    <section class="preprint-figures" aria-labelledby="figures-heading">
+      <h2 id="figures-heading">Figures</h2>
+      {%- for figure in preprint_figures %}
+      <figure>
+        <a href="{{ figure.file | relative_url }}"><img src="{{ figure.file | relative_url }}" alt="{{ figure.caption | strip_html | markdownify | strip_html | normalize_whitespace | escape }}" loading="lazy" /></a>
+        <figcaption>{{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
+      </figure>
+      {%- endfor %}
+      <p class="post-meta">These figures come from the {% if page.git %}<a href="{{ page.git }}">source repository</a>{% else %}source repository{% endif %} of the preprint; their captions are also in the PDF.</p>
+    </section>
+    {%- endif %}
+
     {% if page.blogger-link %}
     <p class="post-meta"><i>This post was originally posted as {{ page.blogger-link }}.</i></p>
     {% endif %}

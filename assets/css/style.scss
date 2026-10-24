@@ -28,3 +28,19 @@
   white-space: nowrap;
   border: 0;
 }
+
+.preprint-figures {
+  figure {
+    margin: $spacing-unit * .5 0 $spacing-unit;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  figcaption {
+    margin-top: $spacing-unit * .25;
+    font-size: 0.9em;
+    text-align: left;
+  }
+}
