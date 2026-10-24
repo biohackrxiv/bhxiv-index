@@ -99,9 +99,49 @@
         "headline": {{ page.title | jsonify }},
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         {%- if page.modified_date -%}"dateModified": "{{ page.modified_date | date_to_xmlschema }}",{%- endif -%}
+        {%- assign article_url = page.url | prepend: site.baseurl | prepend: site.url -%}
+        {%- assign article_osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' %}
+        "url": {{ article_url | jsonify }},
+        "mainEntityOfPage": {{ article_url | jsonify }},
+        "identifier": {
+          "@type": "PropertyValue", "propertyID": "DOI",
+          "value": {{ page.doi | jsonify }}, "url": {{ page.doi | prepend: 'https://doi.org/' | jsonify }}
+        },
+        "inLanguage": {{ page.lang | default: site.lang | default: 'en' | jsonify }},
+        "publisher": { "@type": "Organization", "name": "BioHackrXiv" },
+        {%- if page.image %}
+        "image": {{ page.image | prepend: site.baseurl | prepend: site.url | jsonify }},
+        {%- endif %}
+        {%- assign article_keywords = '' | split: '' -%}
+        {%- for tag in page.tags %}{% unless tag contains ':' %}{% assign article_keywords = article_keywords | push: tag %}{% endunless %}{% endfor -%}
+        {%- if article_keywords.size > 0 %}
+        "keywords": {{ article_keywords | jsonify }},
+        {%- endif %}
+        {%- if article_osf_id != page.doi %}
+        "encoding": {
+          "@type": "MediaObject", "encodingFormat": "application/pdf",
+          "contentUrl": {{ article_osf_id | prepend: 'https://osf.io/download/' | append: '/' | jsonify }}
+        },
+        {%- endif %}
+        {%- assign article_figures = site.data.figures[article_osf_id].figures -%}
+        {%- if article_figures.size > 0 %}
+        "hasPart": [
+          {%- for figure in article_figures %}
+          {
+            "@type": "ImageObject",
+            "contentUrl": {{ figure.file | prepend: '/' | prepend: site.baseurl | prepend: site.url | jsonify }},
+            "caption": {{ figure.caption | strip_html | markdownify | strip_html | normalize_whitespace | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ],
+        {%- endif %}
+        {%- if page.git %}
+        "isBasedOn": { "@type": "SoftwareSourceCode", "codeRepository": {{ page.git | jsonify }} },
+        {%- endif %}
         "sameAs": [
           {% if page.europepmc %}"{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}",{% endif %}
           {% if page.wikidata %}"{{ page.wikidata| prepend:'http://wikidata.org/entity/' }}",{% endif %}
+          {% if page.openalex %}"{{ page.openalex | prepend:'https://openalex.org/works/' }}",{% endif %}
           "https://doi.org/{{ page.doi }}"
         ],
         {% assign authorCount = page.authors | size %}
@@ -123,7 +163,7 @@
         "description": {{ page.excerpt | strip_html | normalize_whitespace | jsonify }},
         "isPartOf": [ { "@id": "#periodical" } ],
         "name": {{ page.title | jsonify }},
-        "license": [ { "@type": "CreativeWork", "name": "CC-BY 4.0 International", "url": "https://creativecommons.org/licenses/by/4.0/legalcode" } ]
+        "license": "https://creativecommons.org/licenses/by/4.0/"
       }
     ]
   }
