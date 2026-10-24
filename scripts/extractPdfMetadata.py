@@ -121,7 +121,13 @@ def main():
             print('FAILED %s: %s' % (os.path.basename(pdf), error))
             failed += 1
             continue
-        with open(os.path.join(args.output, metadata['id'] + '.json'), 'w', encoding='utf-8') as f:
+        target = os.path.join(args.output, metadata['id'] + '.json')
+        if os.path.exists(target):  # keep what findMarkdown.py added
+            with open(target, encoding='utf-8') as f:
+                previous = json.load(f)
+            if previous.get('repository') == metadata['repository'] and 'markdown' in previous:
+                metadata['markdown'] = previous['markdown']
+        with open(target, 'w', encoding='utf-8') as f:
             json.dump(metadata, f, indent=2, ensure_ascii=False)
             f.write('\n')
         if metadata['repository']:

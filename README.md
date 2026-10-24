@@ -145,7 +145,7 @@ link, so the script can pick the links in the left column between "BioHackathon 
 "Submitted:" or "License:" heading, and ignore the license and BioHackrXiv.org links. (Pandoc cannot
 read PDF, and converting to HTML or Markdown first would lose the column positions that separate the
 sidebar from the paper text.) Each JSON file has the `links` (text and URL) and the `repository`: the
-second link, or `null` when the PDF has no second link.
+second link as an object with its `url`, or `null` when the PDF has no second link.
 
 ```shell
 make cachePdfs
@@ -168,3 +168,44 @@ or `https://gitlab.com/<group>/<project>`, with optional subfolder). A trailing 
 `https://`. Posts whose second link is something else (Discord, an unfilled template
 placeholder, or only an organization) are listed as skipped, and posts whose PDF has no second link
 are left unchanged. The script uses only the Python 3 standard library.
+
+### Markdown source of the preprints
+
+`scripts/findMarkdown.py` looks in the repository of each preprint (the `repository` in
+`cache/metadata/<identifier>.json`) for the Markdown source of the paper. It makes a shallow clone
+without the file contents (this needs `git`, but no API key and has no API rate limit), and lists the
+files named `paper.md`. The file can be in the root folder or in a subfolder, and a repository can
+have more than one. If the repository URL points to a folder (`.../tree/<branch>/<folder>`), that
+folder is searched first.
+
+Each candidate is confirmed with the YAML header of the file, which must match what is known
+already:
+
+* `title` is the title of the post in `_posts/` (matched on the DOI), and
+* `biohackathon_url` is the first link of the PDF, the event.
+
+URLs are compared without the scheme, `www.` and trailing slashes, and titles without differences
+in case, punctuation and spacing. The result is added to the JSON file as `markdown`:
+
+```json
+"markdown": {
+  "path": "paper/paper.md",
+  "url": "https://github.com/<owner>/<repo>/blob/<commit>/paper/paper.md",
+  "commit": "<commit>",
+  "alternatives": ["other/paper.md"]
+}
+```
+
+`alternatives` is only present when more than one `paper.md` matches; the file closest to the root
+folder is the main one. `markdown` is `null` when the repository was searched but no `paper.md`
+matches (for example because the file has no `biohackathon_url`), and is left out when the
+repository could not be cloned, so a next run tries again. Preprints that already have `markdown`
+are skipped, unless `--force` is given. Running `make extractPdfMetadata` again keeps the value.
+
+```shell
+make findMarkdown
+make findMarkdown ARGS="--force"
+make findMarkdown ARGS="24jst"
+```
+
+Like the other scripts, it uses only the Python 3 standard library.

@@ -19,4 +19,7 @@ extractPdfMetadata:
 updateGit:
 	python3 scripts/git.py $(ARGS)
 
-.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit
+findMarkdown:
+	python3 scripts/findMarkdown.py $(ARGS)
+
+.PHONY: updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown
