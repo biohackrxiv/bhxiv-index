@@ -301,7 +301,9 @@ figure itself is found in the PDF (`in_pdf` is `true`); see the check above. The
 the git repository at the commit in the metadata, or downloaded when the Markdown uses a web address.
 Only PNG, JPEG, GIF, WebP and SVG files are used, as browsers cannot show PDF or TIFF images; the
 others are listed on the standard output. The captions are the Markdown captions, without citations
-and HTML.
+and HTML. The layout shows the images as panels, three in a row (two on narrow screens, one on very
+narrow ones), scaled with CSS, each linking to the full image; long captions are shortened and expand
+when clicked.
 
 ```json
 {"kxqb7_v1": {"commit": "<commit>",

@@ -110,12 +110,21 @@ layout: base
     {%- if preprint_figures.size > 0 %}
     <section class="preprint-figures" aria-labelledby="figures-heading">
       <h2 id="figures-heading">Figures</h2>
+      <div class="figure-panels">
       {%- for figure in preprint_figures %}
-      <figure>
-        <a href="{{ figure.file | relative_url }}"><img src="{{ figure.file | relative_url }}" alt="{{ figure.caption | strip_html | markdownify | strip_html | normalize_whitespace | escape }}" loading="lazy" /></a>
-        <figcaption>{{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>
-      </figure>
+        {%- assign caption_text = figure.caption | strip_html | markdownify | strip_html | normalize_whitespace -%}
+        <figure>
+          <a href="{{ figure.file | relative_url }}"><img src="{{ figure.file | relative_url }}" alt="{{ caption_text | truncate: 125 | escape }}" loading="lazy" /></a>
+          <figcaption>
+          {%- if caption_text.size > 140 %}
+            <details><summary>{{ caption_text | truncate: 120 }}</summary>{{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}</details>
+          {%- else %}
+            {{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}
+          {%- endif %}
+          </figcaption>
+        </figure>
       {%- endfor %}
+      </div>
       <p class="post-meta">These figures come from the {% if page.git %}<a href="{{ page.git }}">source repository</a>{% else %}source repository{% endif %} of the preprint; their captions are also in the PDF.</p>
     </section>
     {%- endif %}

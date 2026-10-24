@@ -30,17 +30,32 @@
 }
 
 .preprint-figures {
-  figure {
-    margin: $spacing-unit * .5 0 $spacing-unit;
-    text-align: center;
+  .figure-panels {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $spacing-unit * .5;
+    @media screen and (max-width: 600px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media screen and (max-width: 400px) { grid-template-columns: minmax(0, 1fr); }
   }
+  figure {
+    margin: 0;
+    padding: $spacing-unit * .25;
+    border: 1px solid $border-color-01;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  a { display: block; }
   img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
   }
   figcaption {
     margin-top: $spacing-unit * .25;
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: left;
+    summary { cursor: pointer; }
   }
 }
