@@ -16,6 +16,10 @@ layout: base
     <p class="post-meta">
       {%- if page.doi -%}
         <span class="post-meta"><i class="fa-solid fa-file"></i> <a style="color: #828282" href="https://doi.org/{{ page.doi }}">https://doi.org/{{ page.doi }}</a></span><br />
+        {%- assign pdf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
+        {%- if pdf_id != page.doi %}
+        <span class="post-meta"><i class="fa-solid fa-file-pdf"></i> <a style="color: #828282" href="https://osf.io/download/{{ pdf_id }}/">PDF</a></span><br />
+        {%- endif %}
       {%- endif -%}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <i class="fa-regular fa-calendar-days"></i>
