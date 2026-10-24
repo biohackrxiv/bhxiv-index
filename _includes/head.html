@@ -25,6 +25,10 @@
   <meta name="citation_journal_title" content="BioHackrXiv">
   <meta name="citation_doi" content="{{ page.doi }}">
   <meta name="citation_abstract_html_url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+  {%- assign pdf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' %}
+  {%- if pdf_id != page.doi %}
+  <meta name="citation_pdf_url" content="https://osf.io/download/{{ pdf_id }}/">
+  {%- endif %}
   <meta name="citation_language" content="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- for tag in page.tags %}{% unless tag contains ':' %}
   <meta name="citation_keywords" content="{{ tag | escape }}">
@@ -70,6 +74,9 @@
   {%- endunless %}{% endfor %}
   <link rel="cite-as" href="https://doi.org/{{ page.doi }}">
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  {%- if pdf_id != page.doi %}
+  <link rel="item" type="application/pdf" href="https://osf.io/download/{{ pdf_id }}/">
+  {%- endif %}
   {%- for author in page.authors %}{% if author.orcid %}
   <link rel="author" href="https://orcid.org/{{ author.orcid }}" title="{{ author.name | escape }}">
   {%- endif %}{% endfor %}
