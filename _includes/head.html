@@ -31,6 +31,29 @@
   {%- endunless %}{% endfor %}
   {% endif %}
 
+  <!-- the next is Dublin Core (read by Zotero, among others) and FAIR Signposting links -->
+  {% if page.doi %}
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+  <meta name="DC.title" content="{{ page.title | strip_html | escape }}">
+  {%- for author in page.authors %}
+  <meta name="DC.creator" content="{{ author.name | escape }}">
+  {%- endfor %}
+  <meta name="DC.identifier" content="doi:{{ page.doi }}">
+  <meta name="DC.date" content="{{ page.date | date: '%Y-%m-%d' }}">
+  <meta name="DC.type" content="Text">
+  <meta name="DC.format" content="text/html">
+  <meta name="DC.language" content="{{ page.lang | default: site.lang | default: 'en' }}">
+  <meta name="DC.rights" content="https://creativecommons.org/licenses/by/4.0/">
+  {%- for tag in page.tags %}{% unless tag contains ':' %}
+  <meta name="DC.subject" content="{{ tag | escape }}">
+  {%- endunless %}{% endfor %}
+  <link rel="cite-as" href="https://doi.org/{{ page.doi }}">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  {%- for author in page.authors %}{% if author.orcid %}
+  <link rel="author" href="https://orcid.org/{{ author.orcid }}" title="{{ author.name | escape }}">
+  {%- endif %}{% endfor %}
+  {% endif %}
+
   <!-- the next is for Google Rich Results -->
   {% if page.doi %}
   <script type="application/ld+json">
