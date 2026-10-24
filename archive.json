@@ -7,7 +7,6 @@ layout:
   "description": "{{ site.description | xml_escape }}",
   "home_page_url": "{{ site.url }}{{ site.baseurl }}/",
   "feed_url": "{{ site.url }}{{ site.baseurl }}/feed.json",
-  "icon": "{{ site.url }}{{ site.baseurl }}/assets/images/chem-bla-ics_logo.png",
   "language": "en",
   "authors": [
     {
