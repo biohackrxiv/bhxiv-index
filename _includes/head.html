@@ -31,6 +31,27 @@
   {%- endunless %}{% endfor %}
   {% endif %}
 
+  <!-- the next is for sharing: large image previews, the alt text of the image, and Open Graph article tags -->
+  <meta name="robots" content="max-image-preview:large">
+  {%- if page.image %}
+  {%- assign osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
+  {%- assign image_alt = page.title | strip_html -%}
+  {%- for figure in site.data.figures[osf_id].figures -%}
+    {%- capture figure_path %}/{{ figure.file }}{% endcapture -%}
+    {%- if figure_path == page.image -%}
+      {%- assign image_alt = figure.caption | strip_html | markdownify | strip_html | normalize_whitespace -%}
+    {%- endif -%}
+  {%- endfor %}
+  <meta property="og:image:alt" content="{{ image_alt | truncate: 200 | escape }}">
+  <meta name="twitter:image:alt" content="{{ image_alt | truncate: 200 | escape }}">
+  {%- endif %}
+  {%- for author in page.authors %}{% if author.orcid %}
+  <meta property="article:author" content="https://orcid.org/{{ author.orcid }}">
+  {%- endif %}{% endfor %}
+  {%- for tag in page.tags %}{% unless tag contains ':' %}
+  <meta property="article:tag" content="{{ tag | escape }}">
+  {%- endunless %}{% endfor %}
+
   <!-- the next is Dublin Core (read by Zotero, among others) and FAIR Signposting links -->
   {% if page.doi %}
   <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
