@@ -1,4 +1,12 @@
 meetings:
+
+- BCM_SV_8:
+  tag: BCM_SV_8
+  title: "8th Annual Structural Variant Hackathon at Baylor College of Medicine"
+  year: 2026
+  url: https://fritzsedlazeck.github.io/blog/2026/hackathon-2026/
+
+
 - CytoData26:
   tag: CytoData26
   title: "CytoData–SBI2 Hackathon 2026"
