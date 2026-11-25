@@ -103,10 +103,22 @@
         {%- assign article_osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' %}
         "url": {{ article_url | jsonify }},
         "mainEntityOfPage": {{ article_url | jsonify }},
-        "identifier": {
-          "@type": "PropertyValue", "propertyID": "DOI",
-          "value": {{ page.doi | jsonify }}, "url": {{ page.doi | prepend: 'https://doi.org/' | jsonify }}
-        },
+        {%- comment %} all DOIs of the preprint: the latest version first, then the other versions and the DOI without version suffix {% endcomment %}
+        {%- assign article_dois = '' | split: '' | push: page.doi -%}
+        {%- for version in page.versions %}{% assign article_dois = article_dois | push: version.doi %}{% endfor -%}
+        {%- if page.concept.doi %}{% assign article_dois = article_dois | push: page.concept.doi %}{% endif -%}
+        {%- assign article_concept_doi = page.doi | split: '_v' | first -%}
+        {%- if article_concept_doi != page.doi %}{% assign article_dois = article_dois | push: article_concept_doi %}{% endif -%}
+        {%- assign article_dois = article_dois | uniq %}
+        "identifier": [
+          {%- for doi in article_dois %}
+          { "@type": "PropertyValue", "propertyID": "DOI", "value": {{ doi | jsonify }}, "url": {{ doi | prepend: 'https://doi.org/' | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ],
+        {%- if page.versions.size > 0 %}
+        {%- assign article_latest = page.versions | last %}
+        "version": {{ article_latest.version | jsonify }},
+        {%- endif %}
         "inLanguage": {{ page.lang | default: site.lang | default: 'en' | jsonify }},
         "publisher": { "@type": "Organization", "name": "BioHackrXiv" },
         {%- if page.image %}
@@ -138,12 +150,20 @@
         {%- if page.git %}
         "isBasedOn": { "@type": "SoftwareSourceCode", "codeRepository": {{ page.git | jsonify }} },
         {%- endif %}
-        "sameAs": [
-          {% if page.europepmc %}"{{ page.europepmc | prepend:'https://europepmc.org/article/PPR/' }}",{% endif %}
-          {% if page.wikidata %}"{{ page.wikidata| prepend:'http://wikidata.org/entity/' }}",{% endif %}
-          {% if page.openalex %}"{{ page.openalex | prepend:'https://openalex.org/works/' }}",{% endif %}
-          "https://doi.org/{{ page.doi }}"
-        ],
+        {%- comment %} the records of the preprint and of each of its versions in other databases {% endcomment %}
+        {%- assign article_same = '' | split: '' -%}
+        {%- if page.europepmc %}{% capture record %}https://europepmc.org/article/PPR/{{ page.europepmc }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- if page.wikidata %}{% capture record %}http://wikidata.org/entity/{{ page.wikidata }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- if page.openalex %}{% capture record %}https://openalex.org/works/{{ page.openalex }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- for version in page.versions -%}
+          {%- if version.europepmc %}{% capture record %}https://europepmc.org/article/PPR/{{ version.europepmc }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+          {%- if version.openalex %}{% capture record %}https://openalex.org/works/{{ version.openalex }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- endfor -%}
+        {%- if page.concept.europepmc %}{% capture record %}https://europepmc.org/article/PPR/{{ page.concept.europepmc }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- if page.concept.openalex %}{% capture record %}https://openalex.org/works/{{ page.concept.openalex }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endif -%}
+        {%- for doi in article_dois %}{% capture record %}https://doi.org/{{ doi }}{% endcapture %}{% assign article_same = article_same | push: record %}{% endfor -%}
+        {%- assign article_same = article_same | uniq %}
+        "sameAs": {{ article_same | jsonify }},
         {% assign authorCount = page.authors | size %}
         {% if authorCount == 0 %}
         {% else %}
