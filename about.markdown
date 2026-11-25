@@ -7,7 +7,8 @@ permalink: /about/
 [BioHackrXiv](https://biohackrxiv.org/) is a preprint server to report on works done during BioHackathons, CodeFests, Sprints or similar events and related to
 Life Sciences and Health Care domains. Articles in BioHackrXiv commonly report on-going work as a couple of days of hacking are commonly not enough to get the
 things fully done. However, hackathon reports should still show work that people can build upon.
-BioHackrXiv is [indexed by Europe PMC](https://europepmc.org/search?query=PUBLISHER%3A%22BioHackrXiv%22).
+BioHackrXiv is [indexed by Europe PMC](https://europepmc.org/search?query=PUBLISHER%3A%22BioHackrXiv%22)
+and [OpenAlex](https://openalex.org/sources/s4306402587).
 The metadata of the preprints in this index is also available as JSON, see the [API](/api/).
 
 One of the reasons behind BioHackathons and similar is sharing: ideas, data, designs, software, documentations and tutorials among others. We therefore kindly
