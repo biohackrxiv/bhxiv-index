@@ -23,6 +23,7 @@ git: https://github.com/biohackathon-japan/BH26-MS-data
 description: "Public repositories for mass spectrometry (MS) data contain rapidly growing collections of proteomic, metaproteomic, and metabolomic data, but differences in…"
 europepmc: PPR1347139
 openalex: W7223150081
+image: /assets/images/figures/76thg_v1/image3.png
 ---
 
 Public repositories for mass spectrometry (MS) data contain rapidly growing collections of proteomic, metaproteomic, and metabolomic data,
