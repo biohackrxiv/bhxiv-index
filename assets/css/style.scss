@@ -54,7 +54,8 @@
     display: flex;
     flex-direction: column;
   }
-  a { display: block; }
+  // only the link around the image, not the links in the text below the figures
+  figure > a { display: block; }
   img {
     display: block;
     width: 100%;
