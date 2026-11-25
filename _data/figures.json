@@ -226,6 +226,23 @@
       }
     ]
   },
+  "76thg_v1": {
+    "commit": "43986f6ae82882234ccb7e7f1f7f0bd7f4db9fa3",
+    "figures": [
+      {
+        "caption": "jPOST data reanalysis workflow",
+        "file": "assets/images/figures/76thg_v1/image1.png"
+      },
+      {
+        "caption": "Metaproteome visualization. (Top left) Per-sample UniProt Pathway class composition, grouped by sample category. (Top right) Group comparison of mean pathway composition. (Bottom) Pathways by phylum for a single sample. Bars show the share of all mapped PSMs; cells show the share of each phylum's own mapped PSMs (darker is larger, scaled per level). Phylum assignments are taken from the eggNOG lineage of each protein. Pathway distributions are thus linked to the phyla contributing the detected proteins.",
+        "file": "assets/images/figures/76thg_v1/image2.png"
+      },
+      {
+        "caption": "Numbers of distinct values recorded for metadata fields across all raw-data files registered in MB-POST.",
+        "file": "assets/images/figures/76thg_v1/image3.png"
+      }
+    ]
+  },
   "79kje": {
     "commit": "353570d03a3cccc73294b907c7c79ac9f814d815",
     "figures": [
@@ -1048,6 +1065,58 @@
       }
     ]
   },
+  "s6bph_v2": {
+    "commit": "247e0fe80a16a2c4ec1062db1e36ff855a7b9edc",
+    "figures": [
+      {
+        "caption": "Comparison of Zarr, bioimaging and single-cell/spatial omics packages across scverse and Bioconductor ecosystems that interface with SpatialData objects on disk (*\"Database-icon\" by Zahra Ibrahem is licensed under CC BY-SA 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse.)*",
+        "file": "assets/images/figures/s6bph_v2/r-interop.png"
+      },
+      {
+        "caption": "**a)** Left: SpatialData object representation in R. Middle: Spatial plot of cell centroids from Xenium breast cancer tissue section colored by cell type assignment; black = bounding box query. Right: Image cropped to bounding box, including transcripts falling within another bounding box query, colored by in nucleus (pink) or not (hidden). The full-resolution image is ~25x35k pixels, and there are ~42M molecules; the visualization takes about 3 seconds, realizing only a small low-resolution array and a few thousand points into memory. **b)** Schematic of the anndataR roundtrip testing approach. An AnnData object containing a specific element for testing is generated in Python and saved to disk. This file is then re-read in R and saved to a new file. In the final step, the R output is read by Python and compared to the Python output. The reverse process where data is generated in R is also tested. **c)** Output of the `plot.ome_zarr()` method in the romeo R package. The top image applied a Z-stack operation to merge all channels and the bottom image shows all channels within separate panels. Image from a Breast cancer imaging mass cytometry (IMC) dataset .",
+        "file": "assets/images/figures/s6bph_v2/1.png"
+      },
+      {
+        "caption": "Annotation of the invasive tumor of a breast cancer tissue in a Jupyter Widget using anybioimage.",
+        "file": "assets/images/figures/s6bph_v2/2.png"
+      },
+      {
+        "caption": "Gallery of spatialdata-plot examples with copy-able code. Visium breast cancer dataset (right) was visualized .",
+        "file": "assets/images/figures/s6bph_v2/3.png"
+      },
+      {
+        "caption": "Benchmark results for multiscale, chunked point representations on 10M points across five query types (Q1–Q4), comparing spatial first, gene first, and baseline (unindexed) parquet layouts.",
+        "file": "assets/images/figures/s6bph_v2/4.png",
+        "label": "vis-figure"
+      },
+      {
+        "caption": "SpatialData.js labels layer with interactive element picking and tooltip display, using Xenium Human Pancreas dataset .",
+        "file": "assets/images/figures/s6bph_v2/5.png"
+      },
+      {
+        "caption": "Overview of the cloud-based IO architecture for SpatialData, supporting remote object stores via UPath and fsspec.",
+        "file": "assets/images/figures/s6bph_v2/6.png"
+      },
+      {
+        "caption": "Schematic of Prototype 1 for bidirectional element-table linking in SpatialData.",
+        "file": "assets/images/figures/s6bph_v2/7.png"
+      },
+      {
+        "caption": "Schematic of Prototype 1 for soft-linking external files within SpatialData via LazyContainer.",
+        "file": "assets/images/figures/s6bph_v2/8.png"
+      },
+      {
+        "caption": "**a)** OME-Zarr test cases for each transformation stored in ome\\_zarr\\_transformations\\_conformance. **b)** Transformations from an OME-Zarr implementation tested on given coordinates.",
+        "file": "assets/images/figures/s6bph_v2/9.png",
+        "label": "omezarr-figure"
+      },
+      {
+        "caption": "**a)** Field of view images of CosMx datasets before stitching. **b)** Proposed `fuse_spatialdata_images` function fusing image elements that are backed by dask arrays or in memory. **c)** napari view of the stitched image elements. The demo uses a subset of a CosMx example dataset .",
+        "file": "assets/images/figures/s6bph_v2/10.png",
+        "label": "multis-figure"
+      }
+    ]
+  },
   "spf3q": {
     "commit": "49ea4f2b015dd583125a3b8ab6753146a76990f4",
     "figures": [
@@ -1067,6 +1136,15 @@
       {
         "caption": "Screenshot of the SciLifeLab Serve website.",
         "file": "assets/images/figures/u3fnh_v1/SciLifeLabServe.png"
+      }
+    ]
+  },
+  "u3fnh_v2": {
+    "commit": "074432e74493bc80cd110e6b6cb01936fc9aea13",
+    "figures": [
+      {
+        "caption": "Screenshot of the SciLifeLab Serve website.",
+        "file": "assets/images/figures/u3fnh_v2/SciLifeLabServe.png"
       }
     ]
   },
