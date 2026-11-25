@@ -6,7 +6,7 @@ Generated on 2026-11-25 by `make checkAuthors` in the [BioHackrXiv index](https:
 
 These ORCIDs do not have the format of an ORCID or have a wrong check digit. Some PDFs and Markdown sources use `0000-0000-0000-0000` for an author without ORCID.
 
-5 preprints.
+3 preprints.
 
 * [Enhancing bio.tools by Semantic Literature Mining](https://index.biohackrxiv.org/2025/05/04/8m5ey.html) (8m5ey_v1)
   * ORCID of Aleksandra Szmigiel in the PDF is not valid: 0000-0000-0000-0000
@@ -21,11 +21,6 @@ These ORCIDs do not have the format of an ORCID or have a wrong check digit. Som
   * ORCID of Julie Koblitz in the PDF is not valid: 0000-0000-0000-0000
   * ORCID of Núria Queralt Rosinach in the Markdown is not valid: 0000-0000-0000-0000
   * ORCID of Julie Koblitz in the Markdown is not valid: 0000-0000-0000-0000
-* [BioHackEU25 report: Towards a Robust Validation Service for Data and Metadata in ARC RO-Crates](https://index.biohackrxiv.org/2025/12/16/zah28.html) (zah28_v3)
-  * ORCID of Stuart Owen in the index is not valid: /0000-0003-2130-0865
-* [BioHackEU25 Report Project 16: MiCoReCa (Microbiome Community Resource Catalogue) - Towards Centralized Curation And Integration Of Microbiome Bioinformatics Resources](https://index.biohackrxiv.org/2025/12/31/jfpsx.html) (jfpsx_v2)
-  * ORCID of Paul Zierep in the index is not valid: 0000-0000-0000-0000
-  * ORCID of Nikolaos Strepis in the index is not valid: 0000-0000-0000-0000
 
 ## ORCIDs that differ between the index and the PDF
 

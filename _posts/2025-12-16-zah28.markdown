@@ -28,7 +28,7 @@ authors:
   - name: Timo Mühlhaus
     orcid: 0000-0003-3925-6778
   - name: Stuart Owen
-    orcid: /0000-0003-2130-0865
+    orcid: 0000-0003-2130-0865
   - name: Cyril Pommier
     orcid: 0000-0002-9040-8733
   - name: Heinrich Lukas Weil
