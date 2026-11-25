@@ -30,6 +30,15 @@ europepmc: PPR1326048
 openalex: W7213773590
 git: https://github.com/arkinjo/BH26-TogoMCP
 description: "TogoMCP is a Model Context Protocol (MCP) server that lets large language model (LLM) agents query life-science knowledge graphs in SPARQL, guided by…"
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/t25ng_v1
+    date: 2026-09-18
+    europepmc: PPR1323241
+  - version: 2
+    doi: 10.37044/osf.io/t25ng_v2
+    date: 2026-09-23
+    europepmc: PPR1326048
 ---
 
 TogoMCP is a Model Context Protocol (MCP) server that lets large language model (LLM) agents query life-science knowledge graphs in SPARQL,

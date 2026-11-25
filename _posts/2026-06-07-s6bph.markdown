@@ -39,11 +39,20 @@ authors:
   - name: Lorenzo Cerrone
   - name: Sonja Stockhaus
   - name: Samir Moustafa
-europepmc: PPR1247452
+europepmc: PPR1264462
 openalex: W7163805504
 git: https://github.com/scverse/2026_04_hackathon_padua/tree/main/BioHackArxiv
 image: /assets/images/figures/s6bph_v1/2.png
 description: "This preprint outlines the results of the \"2nd SpatialData Hackathon\" organised by the scverse and Bioconductor teams."
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/s6bph_v1
+    date: 2026-06-07
+    europepmc: PPR1247452
+  - version: 2
+    doi: 10.37044/osf.io/s6bph_v2
+    date: 2026-06-29
+    europepmc: PPR1264462
 ---
 
 This preprint outlines the results of the "2nd SpatialData Hackathon" organised by the scverse and Bioconductor teams. The event gathered experts to

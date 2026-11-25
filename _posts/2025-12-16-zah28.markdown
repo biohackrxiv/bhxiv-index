@@ -29,9 +29,22 @@ authors:
   - name: Heinrich Lukas Weil
     orcid: 0000-0003-1945-6342
 wikidata: Q137438732
-europepmc: PPR1134875
+europepmc: PPR1278118
 git: https://github.com/sebeier/bhe25_project28
 description: "Robust validation of both research data and its accompanying metadata is essential for ensuring adherence to FAIR principles."
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/zah28_v1
+    date: 2025-12-16
+    europepmc: PPR1134875
+  - version: 2
+    doi: 10.37044/osf.io/zah28_v2
+    date: 2026-04-29
+    europepmc: PPR1183662
+  - version: 3
+    doi: 10.37044/osf.io/zah28_v3
+    date: 2026-07-13
+    europepmc: PPR1278118
 ---
 
 Robust validation of both research data and its accompanying metadata is essential for ensuring adherence to FAIR principles.

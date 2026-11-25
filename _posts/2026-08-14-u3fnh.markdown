@@ -27,10 +27,19 @@ authors:
     orcid: 0000-0003-3470-157X
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
-europepmc: PPR1301280
+europepmc: PPR1361333
 git: https://github.com/TGX-UM/INTOXICOM_Workshop_3
 image: /assets/images/figures/u3fnh_v1/SciLifeLabServe.png
 description: "As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized (Martens et al., 2024)."
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/u3fnh_v1
+    date: 2026-08-14
+    europepmc: PPR1301280
+  - version: 2
+    doi: 10.37044/osf.io/u3fnh_v2
+    date: 2026-11-08
+    europepmc: PPR1361333
 ---
 
 As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized (Martens et al., 2024). Here,

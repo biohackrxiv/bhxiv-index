@@ -37,9 +37,18 @@ authors:
   - name: Filipe G. Vieira
   - name: Luke Vomber
   - name: Wytamma Wirth
-europepmc: PPR1182894
+europepmc: PPR1183661
 wikidata: Q139590818
 description: "Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across all research domains."
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/h6zqj_v1
+    date: 2026-04-27
+    europepmc: PPR1182894
+  - version: 2
+    doi: 10.37044/osf.io/h6zqj_v2
+    date: 2026-04-29
+    europepmc: PPR1183661
 ---
 
 Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across

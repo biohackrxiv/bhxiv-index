@@ -14,6 +14,15 @@ wikidata: Q141500200
 git: https://github.com/biohackathon-japan/BH26-OSIRIS-MCP
 image: /assets/images/figures/36g4c_v3/figure2.png
 description: "Research information systems contain structured information about researchers, organisational units, projects, publications, and other research activities."
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/36g4c_v1
+    date: 2026-09-18
+    europepmc: PPR1322362
+  - version: 3
+    doi: 10.37044/osf.io/36g4c_v3
+    date: 2026-09-18
+    europepmc: PPR1322361
 ---
 
 Research information systems contain structured information about researchers, organisational units, projects, publications,

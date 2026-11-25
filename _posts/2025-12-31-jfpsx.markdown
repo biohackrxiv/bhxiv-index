@@ -21,9 +21,18 @@ authors:
     orcid: 0000-0000-0000-0000
   - name: Bérénice Batut
     orcid: 0000-0001-9852-1987
-europepmc: PPR1139208
+europepmc: PPR1140179
 git: https://github.com/research-software-ecosystem/micoreca
 description: "The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains…"
+versions:
+  - version: 1
+    doi: 10.37044/osf.io/jfpsx_v1
+    date: 2025-12-31
+    europepmc: PPR1139208
+  - version: 2
+    doi: 10.37044/osf.io/jfpsx_v2
+    date: 2026-01-06
+    europepmc: PPR1140179
 ---
 
 The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains fragmented across disparate,
