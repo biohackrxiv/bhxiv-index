@@ -1,0 +1,69 @@
+---
+layout: post
+unlisted: true
+title:  "BioHackrXiv template this is an example of a (too) long title mpla mpla mpla mpla mpla mpla mpla mpla mpla mpla mpla c wjfc wjknwjek nwjkwen jk"
+date:   2026-11-23
+tags: justdoi:10.3233/SW-150191 justdoi:10.1371/journal.pone.0122802 justdoi:10.1093/bioinformatics/btw214 cito:agreesWith:10.1186/s13326-016-0067-z
+doi: 10.5281/zenodo.24497647
+authors:
+  - name: Chris Mungall
+    orcid: 0000-0002-6601-2165
+  - name: Hirokazu Chiba
+    orcid: 0000-0003-4062-8903
+  - name: Shuichi Kawashima
+    orcid: 0000-0001-7883-3756
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+  - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
+  - name: Nada Amin
+    orcid: 0000-0002-0830-7248
+  - name: Deepak Unni
+    orcid: 0000-0002-3583-7340
+  - name: William E. Byrd
+    orcid: 0000-0003-4730-5293
+git: https://github.com/biohackrxiv/bhxiv-gen-pdf
+description: "As part of the one week Biohackathion 2019 in Fukuoka (福岡) Japan, we formed a working group on logic programming for the biomedical sciences."
+zenodo: 24497647
+concept:
+  doi: 10.5281/zenodo.24466632
+  zenodo: 24466632
+versions:
+  - version: 1
+    doi: 10.5281/zenodo.24466633
+    zenodo: 24466633
+    date: 2026-11-23
+  - version: 2
+    doi: 10.5281/zenodo.24491990
+    zenodo: 24491990
+    date: 2026-11-24
+  - version: 3
+    doi: 10.5281/zenodo.24492257
+    zenodo: 24492257
+    date: 2026-11-24
+  - version: 4
+    doi: 10.5281/zenodo.24492518
+    zenodo: 24492518
+    date: 2026-11-24
+  - version: 5
+    doi: 10.5281/zenodo.24496261
+    zenodo: 24496261
+    date: 2026-11-24
+  - version: 6
+    doi: 10.5281/zenodo.24497647
+    zenodo: 24497647
+    date: 2026-11-24
+---
+
+As part of the one week Biohackathion 2019 in Fukuoka (福岡) Japan, we formed a working group on logic programming for the
+biomedical sciences. Logic programming is understood by many bioinformaticians when it is presented in the form of
+relational SQL queries or SPARQL queries. More advanced logic programming, however, is underutilized in bioinformatics.
+Prolog, for example, is a high-level programming language that has its roots in first-order logic or first-order
+predicate calculus. Another example, miniKanren, is an embedded Domain Specific Language for logic programming. Core
+miniKanren is exceptionally simple, with only three logical operators and one interface operator
+[@uses_method_in:reasoned2nd].
+
+The introduction of logic programming is particularly relevant in the context of multi-model data representations where
+data can be accessed in memory as free data structures, but also on disk where data can be represented as tables, trees
+(documents), and graphs. In bioinformatics we can make use of all these different data sources and have a query engine
+that can mine them all efficiently.
