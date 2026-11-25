@@ -4,6 +4,19 @@
 The identifiers come from the Europe PMC preprints with the publisher
 BioHackrXiv (search API: https://europepmc.org/RestfulWebService).
 
+Europe PMC has a separate identifier for each version of a preprint. The
+top-level `europepmc:` is that of the top-level `doi:` (the latest version),
+and each item of a `versions:` list gets the identifier of its own `doi:`:
+
+    versions:
+      - version: 1
+        doi: 10.37044/osf.io/xqe8h_v1
+        date: 2025-05-04
+        europepmc: PPR1013743
+
+A missing line is added; a line that differs from Europe PMC is only reported,
+unless --update-changed is given.
+
 Copyright (c) 2026 Egon Willighagen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -64,37 +77,98 @@ def fetch_doi_to_europepmc(query=QUERY):
     return table
 
 
-def update_europepmc(path, table, update_changed=False):
-    """Add or correct the `europepmc:` line of a post.
+def version_items(lines, end):
+    """Return the (first, stop) line ranges of the items of the `versions:` list."""
+    starts = [i for i in range(1, end) if lines[i].startswith('versions:')]
+    if not starts:
+        return []
+    items = []
+    i = starts[0] + 1
+    while i < end and lines[i].startswith(' '):
+        if lines[i].lstrip().startswith('- '):
+            items.append([i, i + 1])
+        elif items:
+            items[-1][1] = i + 1
+        i += 1
+    return [tuple(item) for item in items]
 
-    Return 'added', 'changed' (the ID differs from the table; only written
-    when update_changed is true) or None (nothing to do).
+
+def item_value(lines, first, stop, key):
+    """Return (line number, value) of `key:` in a list item, or (None, None)."""
+    for i in range(first, stop):
+        text = lines[i].strip()
+        if text.startswith('- '):
+            text = text[2:].strip()
+        if text.startswith(key + ':'):
+            return i, text[len(key) + 1:].strip()
+    return None, None
+
+
+def update_europepmc(path, table, update_changed=False):
+    """Add or correct the `europepmc:` lines of a post: the top-level one and
+    those of the items of a `versions:` list.
+
+    Return a list of (where, status) pairs, with `where` 'europepmc' or
+    'version N', and status 'added' or 'changed' (the ID differs from the
+    table; only written when update_changed is true). Lines that are correct
+    or have no Europe PMC record are not listed.
     """
     with open(path, encoding='utf-8') as f:
         lines = f.read().split('\n')
     if lines[0] != '---':
-        return None
+        return []
     end = lines.index('---', 1)
+    results = []
+    write = False
+
+    # the items of `versions:`, from the last one up, so that inserted lines
+    # do not shift the line numbers of the items still to do
+    for first, stop in reversed(version_items(lines, end)):
+        _, doi = item_value(lines, first, stop, 'doi')
+        identifier = table.get(normalize_doi(doi)) if doi else None
+        if not identifier:
+            continue
+        _, version = item_value(lines, first, stop, 'version')
+        where = 'version %s' % version
+        indent = ' ' * (len(lines[first]) - len(lines[first].lstrip()) + 2)
+        new = indent + 'europepmc: ' + identifier
+        line, value = item_value(lines, first, stop, 'europepmc')
+        if line is None:
+            # right after `date:` (or `doi:`), keeping version, doi, date, europepmc
+            after = item_value(lines, first, stop, 'date')[0]
+            if after is None:
+                after = item_value(lines, first, stop, 'doi')[0]
+            lines.insert(after + 1, new)
+            results.append((where, 'added'))
+            write = True
+        elif value != identifier:
+            results.append((where, 'changed'))
+            if update_changed:
+                lines[line] = new
+                write = True
+    end = lines.index('---', 1)
+
     front = lines[1:end]
     dois = [normalize_doi(line[4:]) for line in front if line.startswith('doi:')]
     identifier = table.get(dois[0]) if dois else None
-    if not identifier:
-        return None
-    new = 'europepmc: ' + identifier
-    existing = [i for i in range(1, end) if lines[i].startswith('europepmc:')]
-    if not existing:
-        lines.insert(end, new)
-        status = 'added'
-    elif lines[existing[0]].strip() == new:
-        return None
-    elif update_changed:
-        lines[existing[0]] = new
-        status = 'changed'
-    else:
-        return 'changed'
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines))
-    return status
+    if identifier:
+        new = 'europepmc: ' + identifier
+        existing = [i for i in range(1, end) if lines[i].startswith('europepmc:')]
+        if not existing:
+            versions = [i for i in range(1, end) if lines[i].startswith('versions:')]
+            lines.insert(versions[0] if versions else end, new)
+            results.append(('europepmc', 'added'))
+            write = True
+        elif lines[existing[0]].strip() != new:
+            results.append(('europepmc', 'changed'))
+            if update_changed:
+                lines[existing[0]] = new
+                write = True
+
+    if write:
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+    return results
 
 
 def main():
@@ -109,16 +183,16 @@ def main():
     paths = sorted(glob.glob(POSTS))
     added = changed = 0
     for path in paths:
-        status = update_europepmc(path, table, args.update_changed)
-        if status == 'added':
-            added += 1
-        elif status == 'changed':
-            changed += 1
-            print('%s: europepmc differs from Europe PMC (%s)' % (
-                os.path.basename(path),
-                'updated' if args.update_changed else 'not updated'))
-    print('Posts with a new line: %d' % added)
-    print('Posts with a changed ID: %d%s' % (
+        for where, status in update_europepmc(path, table, args.update_changed):
+            if status == 'added':
+                added += 1
+            elif status == 'changed':
+                changed += 1
+                print('%s (%s): europepmc differs from Europe PMC (%s)' % (
+                    os.path.basename(path), where,
+                    'updated' if args.update_changed else 'not updated'))
+    print('New europepmc lines: %d' % added)
+    print('Changed europepmc IDs: %d%s' % (
         changed, '' if args.update_changed else ' (use --update-changed to update)'))
 
 
