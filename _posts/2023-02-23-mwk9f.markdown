@@ -7,13 +7,18 @@ doi: 10.37044/osf.io/mwk9f
 wikidata: Q117715424
 authors:
   - name: Flora D'Anna
+    orcid: 0000-0003-4665-6673
   - name: Zahra Waheed
     orcid: 0000-0002-7224-5280
   - name: Anliat Mohamed
+    orcid: 0000-0002-1105-8262
   - name: Dipayan Gupta
+    orcid: 0000-0001-8753-7369
   - name: Pedram A Keyvani
   - name: Rafael Andrade Buono
+    orcid: 0000-0002-6675-3836
   - name: Sara El-Gebali
+    orcid: 0000-0003-1378-5495
   - name: Sveinung Gundersen
     orcid: 0000-0001-9888-7954
   - name: Vahid Kiani

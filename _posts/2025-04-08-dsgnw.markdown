@@ -10,21 +10,27 @@ authors:
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679
   - name: Aurélien Barre
+    orcid: 0009-0006-4773-3369
   - name: Benjamin Dartigues
+    orcid: 0000-0003-1882-123X
   - name: Vincent J Carey
   - name: Matus Kalas
+    orcid: 0000-0002-1509-4981
   - name: Sebastian Lobentanzer
     orcid: 0000-0003-3399-6695
   - name: Hervé MENAGER
     orcid: 0000-0002-7552-1009
   - name: Steffen Neumann
+    orcid: 0000-0002-7899-7192
   - name: Kozo Nishida
   - name: Veit Schwämmle
+    orcid: 0000-0002-9708-6722
   - name: Anh Nguyet Vu
     orcid: 0000-0003-1488-6730
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
   - name: Maria A Doyle
+    orcid: 0000-0003-4847-8436
 openalex: W4409229290
 git: https://github.com/mblue9/BioHackEU24_preprint
 description: "This project seeks to enhance the ELIXIR Research Software Ecosystem (RSEc) by increasing the findability, accessibility, interoperability, and reusability…"

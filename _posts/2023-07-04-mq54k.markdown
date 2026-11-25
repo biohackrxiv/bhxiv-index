@@ -7,12 +7,15 @@ doi: 10.37044/osf.io/mq54k
 wikidata: Q120669334
 authors:
   - name: Kiyoko Flora Aoki-Kinoshita
+    orcid: 0000-0002-6662-8015
   - name: Evan Bolton
     orcid: 0000-0002-5959-6190
   - name: Issaku Yamada
     orcid: 0000-0001-9504-189X
   - name: Akihiro Fujita
+    orcid: 0000-0003-3748-7791
   - name: Masaaki Matsubara
+    orcid: 0000-0001-6809-1568
   - name: Jerven Bolleman
     orcid: 0000-0002-7449-1266
   - name: Yasunori Yamamoto

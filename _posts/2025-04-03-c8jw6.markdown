@@ -8,12 +8,15 @@ authors:
   - name: Arun Isaac
     orcid: 0000-0002-6810-8195
   - name: Yuhao Wang
+    orcid: 0009-0001-2129-1762
   - name: Tazro Ohta
     orcid: 0000-0003-3777-5945
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Toshiaki Katayama
+    orcid: 0000-0003-2391-0384
   - name: Pjotr Prins
+    orcid: 0000-0002-8021-9162
 europepmc: PPR1000347
 wikidata: Q136482159
 git: https://github.com/biohackrxiv/bhxiv-gen-pdf

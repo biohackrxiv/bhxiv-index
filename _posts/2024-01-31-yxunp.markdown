@@ -9,6 +9,7 @@ authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
   - name: Alessio Del Conte
+    orcid: 0000-0002-8052-3519
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Yojana Gadiya
@@ -18,11 +19,15 @@ authors:
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Ivan Mičetić
+    orcid: 0000-0003-1691-8425
   - name: Sebastien Moretti
     orcid: 0000-0003-3947-488X
   - name: Steffen Neumann
+    orcid: 0000-0002-7899-7192
   - name: Noura Rayya
+    orcid: 0009-0001-5998-5030
   - name: Ginger Tsueng
+    orcid: 0000-0001-9536-9115
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
   - name: Ulrike Wittig

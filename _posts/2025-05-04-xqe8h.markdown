@@ -8,14 +8,21 @@ europepmc: PPR1022456
 wikidata: Q134351095
 authors:
   - name: David Steinberg
+    orcid: 0000-0001-6683-2270
   - name: Birgit Meldal
+    orcid: 0000-0003-4062-6158
   - name: James Wilsenach
+    orcid: 0000-0001-8214-9009
   - name: StefanDvoretskii
   - name: Agoritsa T. Kalampaliki
+    orcid: 0009-0005-9948-2242
   - name: Vincent Emonet
+    orcid: 0000-0002-1501-1082
   - name: JervenBolleman
   - name: Sophie Eisele
+    orcid: 0009-0000-2965-7370
   - name: Johannes Kalmbach
+    orcid: 0000-0002-5582-1610
   - name: SatwantKaur
 git: https://github.com/stefanches7/ai-ready-datasets
 description: "At the SWAT4HCLS 2025 Hackathon, we continued our work on dataset interoperability and AI-readiness, extending our efforts from the 2024 Elixir Biohackathon."

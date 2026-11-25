@@ -21,6 +21,7 @@ authors:
   - name: Julia Koblitz
     orcid: 0000-0002-7260-2129
   - name: Samuel Bustamante Larriet
+    orcid: 0009-0005-8631-2682
   - name: Daniel Fernández-Álvarez
     orcid: 0000-0002-8666-7660
 wikidata: Q137438800

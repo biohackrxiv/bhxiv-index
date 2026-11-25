@@ -6,14 +6,20 @@ tags: BH22EU
 doi: 10.37044/osf.io/nstjb
 authors:
   - name: Johan Viklund
+    orcid: 0000-0003-1984-8522
   - name: Stefan Negru
+    orcid: 0000-0002-6544-5022
   - name: Silva Bahena
+    orcid: 0000-0002-2734-0449
   - name: Dimitrios Bampalikis
     orcid: 0000-0002-2078-3079
   - name: Joshua Baskaran
   - name: Marcos Casado Barbero
+    orcid: 0000-0002-7747-6256
   - name: Betül Eren Keskin
+    orcid: 0000-0003-2439-2558
   - name: Shreyas Shivakumara
+    orcid: 0009-0006-8443-9839
 europepmc: PPR642149
 openalex: W4362672922
 git: https://github.com/neicnordic/sda-dashboard

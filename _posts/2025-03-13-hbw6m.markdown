@@ -8,14 +8,19 @@ europepmc: PPR988770
 wikidata: Q133280308
 authors:
   - name: Leonid Kostrykin
+    orcid: 0000-0003-1323-3762
   - name: Boris Depoortere
+    orcid: 0009-0002-2539-116X
   - name: Diana Chiang
+    orcid: 0000-0002-5857-1477
   - name: Sven Klumpe
     orcid: 0000-0002-8350-6503
   - name: Riccardo Massei
+    orcid: 0000-0003-2104-9519
   - name: Matúš Kalaš
     orcid: 0000-0002-1509-4981
   - name: Anne Fouilloux
+    orcid: 0000-0002-1784-2920
   - name: Beatriz Serrano-Solano
     orcid: 0000-0002-5862-6132
 openalex: W4408349956

@@ -11,9 +11,13 @@ authors:
     orcid: 0000-0002-7518-2676
   - name: Luca Bolzani
   - name: Muhammad Shoaib
+    orcid: 0000-0002-4854-4635
   - name: Marcos Casado Barbero
+    orcid: 0000-0002-7747-6256
   - name: Sergi Aguiló-Castillo
+    orcid: 0000-0003-0830-5733
   - name: Davide Cirillo
+    orcid: 0000-0003-4982-4716
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Ginger Tsueng
@@ -24,8 +28,11 @@ authors:
   - name: Danielle Welter
     orcid: 0000-0003-1058-2668
   - name: Soumyabrata Ghosh
+    orcid: 0000-0002-9646-1439
   - name: Venkata Satagopam
+    orcid: 0000-0002-6532-5880
   - name: Rahuman S. Malik Sheriff
+    orcid: 0000-0003-0705-9809
 europepmc: PPR695850
 openalex: W4385144051
 git: https://github.com/LBolzani/synthetic-health-data-generator

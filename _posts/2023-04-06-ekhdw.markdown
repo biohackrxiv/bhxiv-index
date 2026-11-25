@@ -17,15 +17,21 @@ authors:
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Kevin Frey
+    orcid: 0000-0002-8510-6810
   - name: Patrick König
     orcid: 0000-0002-8948-6793
   - name: Oliver Maus
+    orcid: 0000-0002-8241-5300
   - name: Dennis Psaroudakis
+    orcid: 0000-0002-7521-798X
   - name: Cristina Martins Rodrigues
+    orcid: 0000-0002-4849-1537
   - name: Andrea Schrader
     orcid: 0000-0002-3879-7057
   - name: Elisa Senger
+    orcid: 0000-0001-9984-0971
   - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
 europepmc: PPR642148
 openalex: W4362671866
 git: https://github.com/arendd/biohackgermany22plant

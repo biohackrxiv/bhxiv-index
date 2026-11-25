@@ -14,18 +14,24 @@ authors:
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
   - name: Agoritsa Kalampaliki
+    orcid: 0009-0005-9948-2242
   - name: Matúš Kalaš
     orcid: 0000-0002-1509-4981
   - name: Edwin Jun Kiat Ong
+    orcid: 0009-0009-8910-444X
   - name: Núria Queralt-Rosinach
     orcid: 0000-0003-0169-8159
   - name: Nelson Quiñones
+    orcid: 0000-0002-5037-0443
   - name: Rohitha Ravinder
+    orcid: 0009-0004-4484-6283
   - name: Dhwani Solanki
+    orcid: 0009-0004-1529-0095
   - name: David Steinberg
     orcid: 0000-0001-6683-2270
   - name: Claus Weiland
   - name: Daphne Wijnbergen
+    orcid: 0000-0002-7449-6657
 openalex: W4409084738
 git: https://github.com/zbmed-semtec/bheu24-cm4mlds
 image: /assets/images/figures/4sgdq_v1/figure4.png

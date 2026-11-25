@@ -17,10 +17,12 @@ authors:
   - name: Andra Waagmeester
     orcid: 0000-0001-9773-4008
   - name: Kozo Nishida
+    orcid: 0000-0001-8501-7319
   - name: Hikaru Nagazumi
   - name: Núria Queralt-Rosinach
     orcid: 0000-0003-0169-8159
   - name: Gos Micklem
+    orcid: 0000-0002-6883-6168
   - name: Chunlei Wu
     orcid: 0000-0002-2629-6124
 europepmc: PPR952820

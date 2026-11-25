@@ -11,12 +11,15 @@ authors:
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Rohitha Ravinder
+    orcid: 0009-0004-4484-6283
   - name: Claus Weiland
     orcid: 0000-0003-0351-6523
   - name: Jonas Grieb
+    orcid: 0000-0002-8876-1722
   - name: Alexander Rogers
     orcid: 0000-0002-4283-6135
   - name: Christophe Blanchi
+    orcid: 0000-0003-2277-5176
   - name: Herbert Van de Sompel
     orcid: 0000-0002-0715-6126
 europepmc: PPR785687

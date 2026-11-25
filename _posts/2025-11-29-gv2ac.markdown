@@ -9,9 +9,11 @@ authors:
   - name: Dimitris Panouris
     orcid: 0009-0005-2282-2982
   - name: Harshita Gupta
+    orcid: 0009-0000-1141-3116
   - name: Vincent Emonet
     orcid: 0000-0002-1501-1082
   - name: Jacobo Miranda
+    orcid: 0009-0005-0673-021X
   - name: Phil Reed
     orcid: 0000-0002-4479-715X
   - name: Jerven Bollman

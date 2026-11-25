@@ -12,7 +12,9 @@ authors:
   - name: Quentin John Groom
     orcid: 0000-0002-0596-5376
   - name: Daniyar Memedemin
+    orcid: 0000-0001-5233-5441
   - name: Lien Reyserhove
+    orcid: 0000-0001-7484-9267
 europepmc: PPR493397
 openalex: W4280559649
 git: https://github.com/npernat/interactions

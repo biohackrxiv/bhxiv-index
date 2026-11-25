@@ -7,15 +7,21 @@ doi: 10.37044/osf.io/w8dsz
 wikidata: Q125470379
 authors:
   - name: Leonid Kostrykin
+    orcid: 0000-0003-1323-3762
   - name: Tatiana Woller
+    orcid: 0000-0002-6958-6498
   - name: Matúš Kalaš
     orcid: 0000-0002-1509-4981
   - name: Bugra Özdemir
+    orcid: 0000-0001-9823-0581
   - name: Rafael Andrade Buono
+    orcid: 0000-0002-6675-3836
   - name: Yi Sun
     orcid: 0000-0002-7636-0200
   - name: Anup Kumar
+    orcid: 0000-0002-2068-4695
   - name: Nadia Goué
+    orcid: 0000-0003-2750-1473
   - name: Björn Grüning
     orcid: 0000-0002-3079-6586
   - name: Beatriz Serrano-Solano

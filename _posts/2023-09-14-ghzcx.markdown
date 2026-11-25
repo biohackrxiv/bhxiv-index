@@ -10,6 +10,7 @@ authors:
   - name: Hiromi Kajiya-Kanegae
     orcid: 0000-0002-5719-7559
   - name: Andrea Ghelfi
+    orcid: 0000-0001-9617-3309
 europepmc: PPR725281
 openalex: W4386752147
 git: https://github.com/biohackathon-japan/bh23-plant

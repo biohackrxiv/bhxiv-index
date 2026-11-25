@@ -10,11 +10,15 @@ authors:
   - name: Adrián Díaz
     orcid: 0000-0003-0165-1318
   - name: Natalia Tichshenko
+    orcid: 0000-0001-7914-0759
   - name: Mahfouz Shehu
+    orcid: 0009-0002-9470-0368
   - name: Elyse Cheng
+    orcid: 0009-0007-6402-9709
   - name: Yusuf Shehu
     orcid: 0009-0009-3732-7051
   - name: Pathmanaban Ramasamy
+    orcid: 0000-0003-4039-5230
 openalex: W7106732968
 git: https://github.com/Bio2Byte/biohackathon-eu-2025-group-22
 image: /assets/images/figures/xvrud_v1/poster.jpg

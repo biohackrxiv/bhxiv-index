@@ -15,6 +15,7 @@ authors:
     orcid: 0000-0002-9123-5686
   - name: Eric Prud'hommeaux
   - name: Sabah Ul-Hasan
+    orcid: 0000-0001-6334-452X
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
   - name: Ammar Ammar

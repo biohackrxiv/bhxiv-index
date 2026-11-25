@@ -9,10 +9,13 @@ authors:
   - name: José María Fernández
     orcid: 0000-0002-4806-5140
   - name: Paula Iborra
+    orcid: 0000-0003-0504-3029
   - name: Sebastien Moretti
     orcid: 0000-0003-3947-488X
   - name: Arun Isaac
+    orcid: 0000-0002-6810-8195
   - name: Paul De Geest
+    orcid: 0000-0002-8940-4946
   - name: Stian Soiland-Reyes
     orcid: 0000-0001-9842-9718
 europepmc: PPR829714

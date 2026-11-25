@@ -7,15 +7,22 @@ doi: 10.37044/osf.io/79kje
 wikidata: Q117355989
 authors:
   - name: Lucie Lamothe
+    orcid: 0000-0002-4134-4040
   - name: Jennifer Rugaard Bregndahl Jensen
   - name: Hans Ienasescu
+    orcid: 0000-0001-9727-2544
   - name: Ove Johan Ragnar Gustafsson
+    orcid: 0000-0002-2977-5032
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
   - name: Dmitry Repchevsky
+    orcid: 0000-0001-6415-0532
   - name: Radka Svobodová
+    orcid: 0000-0002-3840-8760
   - name: Tomáš Raček
+    orcid: 0000-0002-0296-2452
   - name: Matej Antol
+    orcid: 0000-0002-1380-5647
   - name: Magnus Palmblad
     orcid: 0000-0002-5865-8994
   - name: Matúš Kalaš

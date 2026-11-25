@@ -10,20 +10,31 @@ authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781
   - name: Pedro Miguel Barros
+    orcid: 0000-0001-5626-0619
   - name: Johann Confais
+    orcid: 0000-0003-2945-5036
   - name: Nicolas Francillonne
+    orcid: 0000-0002-0665-4350
   - name: Hugo Miguel Costa Rodrigues
+    orcid: 0000-0001-5497-4810
   - name: Hiromi Kajiya-Kanegae
     orcid: 0000-0002-5719-7559
   - name: Ryokei Tanaka
+    orcid: 0000-0002-3479-377X
   - name: Bruno Eduardo Costa
+    orcid: 0000-0002-3794-4262
   - name: Raphaël Flores
+    orcid: 0000-0002-0278-5441
   - name: Célia Michotey
     orcid: 0000-0003-1877-1703
   - name: Helene Rimbert
+    orcid: 0000-0002-2288-6864
   - name: Pierre Larmande
+    orcid: 0000-0002-2923-9790
   - name: Carissa Robyn BLEKER
+    orcid: 0000-0003-1617-7145
   - name: Maxime Multari
+    orcid: 0009-0001-4704-3580
   - name: Sebastian Lobentanzer
     orcid: 0000-0003-3399-6695
 europepmc: PPR988772

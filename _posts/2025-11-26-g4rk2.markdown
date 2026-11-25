@@ -9,9 +9,11 @@ authors:
   - name: Mina P. Peyton
     orcid: 0000-0002-0250-1429
   - name: Cheng-Han Chung
+    orcid: 0000-0003-3722-2101
   - name: Samarpan Mohanty
     orcid: 0009-0001-1309-7425
   - name: Van Q. Truong
+    orcid: 0000-0002-5485-1818
   - name: Andrew Scouten
     orcid: 0009-0004-6418-7158
   - name: Sangeeta Shukla
@@ -21,52 +23,79 @@ authors:
   - name: Daniall Masood
     orcid: 0000-0001-7441-1628
   - name: John D. Murphy
+    orcid: 0000-0002-7714-9976
   - name: Anne Ketter
   - name: Taha Mohseni Ahooyi
+    orcid: 0000-0003-0262-6413
   - name: Viren R. Amin
   - name: Arshi Arora
+    orcid: 0000-0002-4040-1787
   - name: J. Allen Baron
+    orcid: 0000-0002-0593-3569
   - name: Fateema Bazzi
     orcid: 0009-0002-8160-4262
   - name: Arun Bondali
   - name: Nishat Anjum Bristy
+    orcid: 0000-0002-8649-7390
   - name: E. Kathleen Carter
+    orcid: 0000-0002-5083-0614
   - name: Yibei Chen
     orcid: 0000-0003-2882-0900
   - name: Jean-Paul Courneya
+    orcid: 0000-0001-9014-649X
   - name: Camille Daniels
+    orcid: 0000-0002-5227-5394
   - name: Marcin J. Domagalski
     orcid: 0000-0002-2579-9133
   - name: Victor Felix
+    orcid: 0000-0002-9773-0629
   - name: Vivien W. Ho
+    orcid: 0000-0002-2992-0252
   - name: Michelle Holko
+    orcid: 0000-0001-9325-4082
   - name: Toshiaki Katayama
     orcid: 0000-0003-2391-0384
   - name: Yaphet Kebede
+    orcid: 0000-0002-5046-0246
   - name: Mariia Kim
+    orcid: 0009-0002-5733-1495
   - name: Raghavendra Kini
   - name: Carmen Lidia Diaz Soria
     orcid: 0000-0003-1793-1074
   - name: Anurag Limdi
+    orcid: 0000-0002-4891-8254
   - name: Shakuntala Mitra
+    orcid: 0000-0003-4014-903X
   - name: Evan Molinelli
+    orcid: 0009-0001-3821-2549
   - name: Evan Morris
+    orcid: 0009-0006-1496-2771
   - name: Aymen Maqsood Mulbagal
+    orcid: 0009-0006-5874-4338
   - name: Bijan Paul
+    orcid: 0000-0003-3685-6575
   - name: Seeta Ramaraju Pericherla
     orcid: 0009-0008-6462-8688
   - name: Kara Quaid
+    orcid: 0000-0002-4725-322X
   - name: Radu Robotin
+    orcid: 0009-0007-0201-4368
   - name: Polina Rusina
     orcid: 0000-0001-7917-3120
   - name: Irene Lopez Santiago
+    orcid: 0000-0002-2417-7324
   - name: Ben Stear
     orcid: 0000-0003-2972-0354
   - name: Karthick Subramanian
+    orcid: 0000-0001-7879-1832
   - name: Shilpa Sundar
+    orcid: 0000-0003-4097-3395
   - name: Likhitha Surapaneni
+    orcid: 0000-0002-0575-7673
   - name: Deanne M. Taylor
+    orcid: 0000-0002-3302-4610
   - name: Simone Weyand
+    orcid: 0000-0002-7965-0895
   - name: Benjamin Wingfield
     orcid: 0000-0002-2913-0779
   - name: Christine Withers
@@ -75,6 +104,7 @@ authors:
     orcid: 0000-0003-1075-1628
   - name: Emily Richardson
   - name: Beryl Rabindran
+    orcid: 0000-0002-2937-7798
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 openalex: W4416696036

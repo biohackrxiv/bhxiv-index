@@ -10,7 +10,9 @@ authors:
   - name: Sami Saarenpää
     orcid: 0000-0003-4731-6857
   - name: Naveed Ishaque
+    orcid: 0000-0002-8426-901X
   - name: Sara Carsanaro
+    orcid: 0009-0002-8634-7138
   - name: Maja Križnik
 europepmc: PPR902761
 openalex: W4401979617

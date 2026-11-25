@@ -8,15 +8,20 @@ europepmc: PPR1013744
 authors:
   - name: Aleksandra Szmigiel
   - name: Ana Mendes
+    orcid: 0009-0008-5170-0927
   - name: Erik Jaaniso
+    orcid: 0009-0003-4246-6546
   - name: Magnus Palmblad
     orcid: 0000-0002-5865-8994
   - name: Rob M. Ewing
+    orcid: 0000-0001-6510-4001
   - name: SANTOSH TIRUNAGARI
   - name: Tess AV Afanasyeva
+    orcid: 0000-0003-3962-0779
   - name: Vedran Kasalica
     orcid: 0000-0002-0097-1056
   - name: Veit Schwämmle
+    orcid: 0000-0002-9708-6722
   - name: Zunaira Shafique
 openalex: W4410074514
 git: https://github.com/bio-tools/biohackathon2024-paper

@@ -8,20 +8,31 @@ authors:
   - name: Ward Langeraert
     orcid: 0000-0002-5900-8109
   - name: Wissam Barhdadi
+    orcid: 0000-0001-9304-3971
   - name: Dimitri Brosens
     orcid: 0000-0002-0846-9116
   - name: Rocìo Cortès
+    orcid: 0009-0004-8440-958X
   - name: Peter Desmet
     orcid: 0000-0002-8442-8025
   - name: Michele Di Musciano
+    orcid: 0000-0002-3130-7270
   - name: Chandra Earl
+    orcid: 0000-0001-9850-882X
   - name: Sanne Govaert
+    orcid: 0000-0002-8939-1305
   - name: Pieter Huybrechts
+    orcid: 0000-0002-6658-6062
   - name: Matilde Martini
+    orcid: 0009-0003-5612-925X
   - name: Arthur Vinícius Rodrigues
+    orcid: 0000-0003-2656-558X
   - name: Annegreet Veeken
+    orcid: 0000-0003-4291-5981
   - name: Mukhtar Muhammed Yahaya
+    orcid: 0009-0008-9200-0863
   - name: Toon Van Daele
+    orcid: 0000-0002-1362-853X
 europepmc: PPR931521
 openalex: W4403806251
 git: https://github.com/wlangera/gcube-bcubed-hack

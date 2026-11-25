@@ -6,16 +6,20 @@ tags: BH22EU
 doi: 10.37044/osf.io/3b9gp
 authors:
   - name: Ginger Tsueng
+    orcid: 0000-0001-9536-9115
   - name: Sahar Frika
   - name: Alasdair J. G. Gray
     orcid: 0000-0002-5711-4872
   - name: Marcos Casado Barbero
+    orcid: 0000-0002-7747-6256
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
   - name: Ivan Mičetić
+    orcid: 0000-0003-1691-8425
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
   - name: Nick Juty
+    orcid: 0000-0002-2036-8350
 europepmc: PPR640898
 openalex: W4362544143
 git: https://github.com/gtsueng/biohackathon_project5_report

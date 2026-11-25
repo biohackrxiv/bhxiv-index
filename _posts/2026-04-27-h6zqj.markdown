@@ -6,37 +6,64 @@ tags: SnakemakeHackathon2026
 doi: 10.37044/osf.io/h6zqj_v2
 authors:
   - name: Manar Abdalazem
+    orcid: 0009-0009-6196-9732
   - name: Felix Bartusch
+    orcid: 0000-0003-0711-5196
   - name: Ed Bennett
+    orcid: 0000-0002-1678-6701
   - name: Oliver But
+    orcid: 0009-0002-2166-4159
   - name: Ben Carrillo
+    orcid: 0009-0003-5704-4151
   - name: Christopher Condon
+    orcid: 0000-0002-7804-0745
   - name: Lea Evers
+    orcid: 0009-0006-2896-1091
   - name: Matthew Feickert
+    orcid: 0000-0003-4124-7862
   - name: Jonas Freimuth
+    orcid: 0000-0002-9259-3696
   - name: Till Harrmann
   - name: Lukas Heinrich
+    orcid: 0000-0002-4048-7584
   - name: Yana Holoborodko
+    orcid: 0009-0002-5268-7804
   - name: Aoran Hu
+    orcid: 0000-0003-2754-1635
   - name: Michael Jahn
+    orcid: 0000-0002-3913-153X
   - name: Johannes Köster
+    orcid: 0000-0001-9818-9320
   - name: David Koppstein
+    orcid: 0000-0002-8618-7237
   - name: Luis Kress
+    orcid: 0009-0000-6440-3114
   - name: Clemens Lange
+    orcid: 0000-0002-3632-3157
   - name: David Lähnemann
+    orcid: 0000-0002-9138-4112
   - name: Alessandro Leone
+    orcid: 0009-0008-4701-9573
   - name: Alexander Mattausch
+    orcid: 0000-0003-0901-8701
   - name: Cameron MyClymont
   - name: Christian Meesters
     orcid: 0000-0003-2408-7588
   - name: Cade Mirchandani
+    orcid: 0009-0002-1970-430X
   - name: Thomas Mulvaney
+    orcid: 0000-0002-4373-6160
   - name: Mohit Navandar
+    orcid: 0009-0009-7377-6153
   - name: Matthias Peter
+    orcid: 0009-0001-2106-7736
   - name: Gaspard Reulet
+    orcid: 0009-0002-1797-0145
   - name: Filipe G. Vieira
+    orcid: 0000-0002-8464-7770
   - name: Luke Vomber
   - name: Wytamma Wirth
+    orcid: 0000-0001-7070-0078
 europepmc: PPR1183661
 wikidata: Q139590818
 description: "Reproducible, scalable, and portable data-analysis pipelines are now a fundamental prerequisite for modern data analysis research across all research domains."

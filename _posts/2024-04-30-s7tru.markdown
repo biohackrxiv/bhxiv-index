@@ -9,16 +9,21 @@ authors:
   - name: Bérénice Batut
     orcid: 0000-0001-9852-1987
   - name: Matthias Bernt
+    orcid: 0000-0003-3763-0797
   - name: Mina Hojat Ansari
   - name: Matúš Kalaš
     orcid: 0000-0002-1509-4981
   - name: Paul Klemm
+    orcid: 0000-0002-3609-5713
   - name: Romane Libouban
+    orcid: 0009-0001-4920-9951
   - name: Engy Nasr
+    orcid: 0000-0001-9047-4215
   - name: Claire Rioualen
     orcid: 0000-0002-7684-8679
   - name: Wai Cheng Thang
   - name: Rand Zoabi
+    orcid: 0009-0000-2501-8053
   - name: Paul Zierep
     orcid: 0000-0003-2982-388X
 europepmc: PPR846350

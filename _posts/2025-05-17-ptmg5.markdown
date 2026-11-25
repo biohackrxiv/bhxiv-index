@@ -7,6 +7,7 @@ doi: 10.37044/osf.io/ptmg5_v1
 europepmc: PPR1022222
 authors:
   - name: Javier Millán Acosta
+    orcid: 0000-0002-4166-7093
   - name: Shuichi Kawashima
     orcid: 0000-0001-7883-3756
   - name: Toshiaki Katayama
@@ -14,8 +15,11 @@ authors:
   - name: Jerven Bolleman
     orcid: 0000-0002-7449-1266
   - name: Dominik Martinat
+    orcid: 0000-0001-6611-7883
   - name: Harald Detering
+    orcid: 0000-0002-0134-7618
   - name: Jose Emilio Labra Gayo
+    orcid: 0000-0001-8907-5348
   - name: Yojana Gadiya
     orcid: 0000-0002-7683-0452
   - name: Tooba Abbassi-Daloii

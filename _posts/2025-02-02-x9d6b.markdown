@@ -11,27 +11,41 @@ authors:
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
   - name: Daniel Bauer
+    orcid: 0000-0001-9447-460X
   - name: Marco Brandizi
+    orcid: 0000-0002-5427-2496
   - name: Dominik Brilhaus
+    orcid: 0000-0001-9021-3197
   - name: Eli Chadwick
+    orcid: 0000-0002-0035-6475
   - name: Vera Clemens
+    orcid: 0000-0002-9917-4443
   - name: Michael Robin Crusoe
     orcid: 0000-0002-2961-9670
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Jonas Grieb
+    orcid: 0000-0002-8876-1722
   - name: Xiaoming Hu
+    orcid: 0000-0002-8318-3222
   - name: Abigail Miller
     orcid: 0000-0001-9228-2882
   - name: Timo Mühlhaus
+    orcid: 0000-0003-3925-6778
   - name: Stuart Owen
+    orcid: 0000-0003-2130-0865
   - name: Maja Rey
+    orcid: 0000-0003-4724-3926
   - name: Gabriel Schneider
     orcid: 0000-0001-6573-3115
   - name: Julian Schneider
+    orcid: 0000-0002-3322-8672
   - name: Kevin Schneider
+    orcid: 0000-0002-2198-5262
   - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
   - name: Florian Wetzels
+    orcid: 0000-0002-5526-7138
 europepmc: PPR973314
 git: https://github.com/sebeier/sebeier-bhe24-19_arc-isa-ro-crate-machine-actionability
 image: /assets/images/figures/x9d6b_v1/ARC_ontology.png

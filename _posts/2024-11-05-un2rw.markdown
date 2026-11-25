@@ -7,25 +7,35 @@ doi: 10.37044/osf.io/un2rw
 wikidata: Q131007824
 authors:
   - name: Marvin Martens
+    orcid: 0000-0003-2230-0840
   - name: Iseult Lynch
     orcid: 0000-0003-4250-4584
   - name: Thomas Exner
+    orcid: 0000-0002-1849-5246
   - name: Rob Stierum
+    orcid: 0000-0002-4409-1974
   - name: Penny Nymark
     orcid: 0000-0002-3435-7775
   - name: Dominik Martinát
+    orcid: 0000-0001-6611-7883
   - name: Javier Millán Acosta
+    orcid: 0000-0002-4166-7093
   - name: Ulrike Wittig
     orcid: 0000-0002-9077-5664
   - name: Clemens Wittwehr
+    orcid: 0000-0003-2760-7702
   - name: Meike Bünger
+    orcid: 0009-0002-7664-0058
   - name: Tooba Abbassi-Daloii
     orcid: 0000-0002-4904-3269
   - name: Gerhard Burger
     orcid: 0000-0003-1062-5576
   - name: Uday Killi
+    orcid: 0000-0001-6267-7541
   - name: Jente Houweling
+    orcid: 0009-0005-3680-0645
   - name: Riju Roy Chowdhury
+    orcid: 0009-0002-4110-241X
   - name: Tamara Danilyuk
     orcid: 0000-0001-6125-6147
   - name: Lucy Sinke

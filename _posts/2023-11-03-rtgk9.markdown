@@ -16,6 +16,7 @@ authors:
   - name: Amy Heather Fitzpatrick
     orcid: 0000-0002-1883-0489
   - name: Gabriele Leoni
+    orcid: 0000-0002-4899-5284
 europepmc: PPR753125
 openalex: W4388303057
 git: https://github.com/fpsom/BH2022-Wastewater-Report

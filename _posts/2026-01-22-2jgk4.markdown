@@ -24,6 +24,7 @@ authors:
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Anna Golobardes Vilarasau
+    orcid: 0009-0003-1330-6586
   - name: Gavin Farrell
     orcid: 0000-0001-5166-8551
   - name: Adel Bouhraoua
@@ -31,6 +32,7 @@ authors:
   - name: Espen Åberg
     orcid: 0000-0002-2280-7978
   - name: David Lloyd
+    orcid: 0000-0003-1222-5912
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781
   - name: Vedran Kasalica

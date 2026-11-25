@@ -10,6 +10,7 @@ authors:
   - name: Hirokazu Chiba
     orcid: 0000-0003-4062-8903
   - name: Yuki Moriya
+    orcid: 0000-0001-8195-5893
   - name: Toyoyuki Takada
     orcid: 0000-0001-6796-2085
 europepmc: PPR790328

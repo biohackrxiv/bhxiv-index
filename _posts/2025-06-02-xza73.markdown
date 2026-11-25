@@ -9,9 +9,13 @@ authors:
   - name: Renato Juacaba Neto
     orcid: 0000-0002-0626-984X
   - name: Nick Juty
+    orcid: 0000-0002-2036-8350
   - name: Vijay Subramoniam
+    orcid: 0009-0000-1394-2513
   - name: Rose Neis
+    orcid: 0000-0002-6113-776X
   - name: Shuya Ikeda
+    orcid: 0000-0002-1357-5159
   - name: Shuichi Kawashima
     orcid: 0000-0001-7883-3756
   - name: Yasunori Yamamoto
@@ -19,6 +23,7 @@ authors:
   - name: Toshiaki Katayama
     orcid: 0000-0003-2391-0384
   - name: Henning Hermjakob
+    orcid: 0000-0001-8479-0262
 europepmc: PPR1030229
 openalex: W4410956799
 git: https://github.com/identifiers-org/biohackrxiv2025

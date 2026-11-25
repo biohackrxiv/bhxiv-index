@@ -8,44 +8,74 @@ authors:
   - name: Benjamin Rombaut
     orcid: 0000-0002-4022-715X
   - name: Lotte Pollaris
+    orcid: 0000-0002-0262-0540
   - name: Chananchida Sang-aram
   - name: Michiel Ver Cruysse
   - name: Robrecht Cannoodt
+    orcid: 0000-0003-3641-729X
   - name: Frank Vernaillen
   - name: Arne Defauw
   - name: Julien Mortier
   - name: Mayar Ali
   - name: Kresimir Bestak
+    orcid: 0009-0009-8245-9846
   - name: Quentin Blampey
+    orcid: 0000-0002-3836-2889
   - name: Michele Bortolomeazzi
+    orcid: 0000-0001-5805-5774
   - name: Paula V M Cauhy
+    orcid: 0000-0003-1004-3656
   - name: Miraj Cetin
+    orcid: 0009-0001-7711-0211
   - name: Daniel Dimitrov
+    orcid: 0000-0002-5197-2112
   - name: Francesca Drummer
   - name: Lorenzo Giordani
+    orcid: 0000-0002-3417-2965
   - name: Aroj Hada
+    orcid: 0000-0002-0691-1214
   - name: Luuk Harbers
+    orcid: 0000-0003-3910-6497
   - name: Migual A. Ibarra-Arellano
+    orcid: 0000-0001-8411-4854
   - name: Paul Kiessling
     orcid: 0000-0002-9794-9532
   - name: Laurens Lehner
+    orcid: 0000-0001-7690-7168
   - name: Susmita Mandal
+    orcid: 0000-0003-2248-7860
   - name: Benedetta Manzato
+    orcid: 0009-0008-8369-2327
   - name: Luca Marconato
+    orcid: 0000-0003-3198-1326
   - name: Claudio Novella-Rausell
+    orcid: 0000-0002-7383-6090
   - name: Anastasiia Okhtienko
+    orcid: 0009-0003-5886-811X
   - name: Giovanni Palla
+    orcid: 0000-0002-8004-4462
   - name: Daryna Pikulska
+    orcid: 0009-0005-1638-0268
   - name: Carlos Ariel Pulido-Vicuna
+    orcid: 0000-0001-5049-6997
   - name: Guillaume Sacchetti
+    orcid: 0000-0002-8779-352X
   - name: Alexander Sudy
+    orcid: 0000-0002-7338-4119
   - name: Lotte Van de Vreken
+    orcid: 0009-0000-9283-4720
   - name: Wouter-Michiel Vierdag
+    orcid: 0000-0003-1666-5421
   - name: Vladislav Vlasov
+    orcid: 0009-0005-9514-4860
   - name: Sai Nirmayi Yasa
+    orcid: 0009-0003-6319-9803
   - name: Estella Yixing Dong
+    orcid: 0009-0003-5115-5686
   - name: Ruth Seurinck
+    orcid: 0000-0002-6636-7572
   - name: Yvan Saeys
+    orcid: 0000-0002-0415-1506
 europepmc: PPR873047
 openalex: W4400014055
 git: https://github.com/saeyslab/VIB_Hackathon_June_2024

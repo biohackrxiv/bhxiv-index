@@ -8,6 +8,7 @@ authors:
   - name: David Steinberg
     orcid: 0000-0001-6683-2270
   - name: Maxat Kulmanov
+    orcid: 0000-0003-1710-1820
   - name: Núria Queralt-Rosinach
     orcid: 0000-0003-0169-8159
   - name: Hirokazu Chiba

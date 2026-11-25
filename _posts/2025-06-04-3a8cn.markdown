@@ -7,34 +7,52 @@ doi: 10.37044/osf.io/3a8cn_v1
 europepmc: PPR1030665
 authors:
   - name: Siddharth Sabata
+    orcid: 0009-0003-8909-4794
   - name: Jędrzej Kubica
+    orcid: 0000-0001-7037-3900
   - name: Rishika Gupta
+    orcid: 0000-0001-6246-3906
   - name: Lars Warren Ericson
+    orcid: 0000-0001-8299-9361
   - name: Halimat Chisom Atanda
+    orcid: 0000-0003-4785-468X
   - name: Gobikrishnan Subramaniam
+    orcid: 0009-0001-4118-7591
   - name: Abraham G. Moller
   - name: Rachael Oluwakamiye Abolade
+    orcid: 0000-0002-4855-3961
   - name: Arth Banka
+    orcid: 0009-0005-8600-5340
   - name: Samuel Blechman
+    orcid: 0009-0005-6878-6411
   - name: Rorry Brenner
   - name: Maria Chikina
   - name: Li Chuin Chong
+    orcid: 0000-0002-3574-1365
   - name: Nicholas Cooley
+    orcid: 0000-0002-6029-304X
   - name: Daniel Chang
+    orcid: 0009-0002-4148-143X
   - name: Phil Greer
+    orcid: 0000-0003-2266-4265
   - name: Anshika Gupta
   - name: Avish A. Jha
+    orcid: 0000-0003-1479-0456
   - name: Emrah Kacar
   - name: Nanami Kubota
   - name: William Lu
   - name: Louison Luo
   - name: Tien Ly
+    orcid: 0009-0006-6323-587X
   - name: Rajarshi Mondal
   - name: Ciara O’Donoghue
+    orcid: 0000-0003-0728-6083
   - name: Aung Myat Phyo
+    orcid: 0009-0009-2893-3631
   - name: Peng Qiu
   - name: Glenn Ross-Dolan
   - name: Ali Saadat
+    orcid: 0000-0002-1479-1304
   - name: Shivank Sadasivan
   - name: Rebecca Satterwhite
   - name: Soham Shirolkar
@@ -42,6 +60,7 @@ authors:
   - name: Huajin Wang
     orcid: 0000-0003-0121-4257
   - name: Melanie Gainey
+    orcid: 0000-0002-4782-9647
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 europepmc: PPR1030665

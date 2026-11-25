@@ -6,50 +6,82 @@ tags: BIOAI25
 doi: 10.37044/osf.io/vbw4t_v1
 authors:
   - name: Michał Denkiewicz
+    orcid: 0000-0001-8890-9988
   - name: Rahaf M. Ahmad
   - name: Rishika Gupta
+    orcid: 0000-0001-6246-3906
   - name: Sachin Gadakh
+    orcid: 0000-0002-7524-7898
   - name: Jędrzej Kubica
     orcid: 0000-0001-7037-3900
   - name: Alishba Nadeem
+    orcid: 0000-0003-4194-5337
   - name: Alicja Małgorzata Olszewska
     orcid: 0000-0002-3995-8166
   - name: Federico Rossi
+    orcid: 0000-0002-3058-9448
   - name: John Adedeji
+    orcid: 0009-0004-1257-4551
   - name: Abolhassan Bahari
+    orcid: 0009-0003-8417-2327
   - name: Krzysztof H. Banecki
+    orcid: 0000-0001-9573-0804
   - name: Nilabja Bhattacharjee
+    orcid: 0009-0007-7752-6990
   - name: Joanna Borkowska
+    orcid: 0009-0003-5503-1314
   - name: Jacob R. Bumgarner
+    orcid: 0000-0002-0387-9263
   - name: Kirtan Dave
+    orcid: 0000-0003-3886-8895
   - name: German Demidov
+    orcid: 0000-0001-9075-4276
   - name: Konrad Józef Dębski
+    orcid: 0000-0001-5949-9211
   - name: Ritwik Ganguly
+    orcid: 0009-0000-4626-3760
   - name: Radosław Gersz
   - name: Paulina Kaczyńska
+    orcid: 0000-0002-8690-8436
   - name: Pu Kao
   - name: Fahad Ali Khan
   - name: Mikolaj Kocikowski
+    orcid: 0000-0001-7396-9005
   - name: Maciej Kowalski
+    orcid: 0009-0005-1155-197X
   - name: Halina Krzystek
+    orcid: 0009-0004-8363-0039
   - name: Sabrina Kwak
+    orcid: 0009-0007-9588-4513
   - name: David Liu
   - name: Pranjul Mishra
   - name: Diya Patidar
+    orcid: 0009-0007-0238-2363
   - name: Sreeram Chandra Murthy Peela
+    orcid: 0000-0003-3379-6263
   - name: Aung Myat Phyo
+    orcid: 0009-0009-2893-3631
   - name: Weronika Plichta
   - name: Ammara Saleem
+    orcid: 0009-0004-3754-8907
   - name: Palash Sethi
+    orcid: 0009-0003-5423-8313
   - name: Mukul Sherekar
+    orcid: 0000-0002-3638-9420
   - name: Jatin Shrinet
+    orcid: 0000-0002-4274-613X
   - name: Anna Simonyan
+    orcid: 0000-0001-8760-2298
   - name: Asha Ajithakumari Sobhanakumar
   - name: Aleksandra Sobieska
   - name: Marek Sokołowski
+    orcid: 0009-0009-3958-3526
   - name: Gobikrishnan Subramaniam
+    orcid: 0009-0001-4118-7591
   - name: Rafał Kazimierz Wóycicki
+    orcid: 0000-0001-7991-7150
   - name: Dariusz Plewczynski
+    orcid: 0000-0002-3840-7610
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 europepmc: PPR1046013

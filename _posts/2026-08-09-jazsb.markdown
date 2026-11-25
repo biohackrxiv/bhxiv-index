@@ -10,10 +10,13 @@ authors:
   - name: Alexander Jonathan Kellmann
     orcid: 0000-0001-6108-5552
   - name: Alexandrina Bodrug-Schepers
+    orcid: 0009-0006-3873-102X
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
   - name: Elias Crum
+    orcid: 0009-0005-3991-754X
   - name: Pierre Larmande
+    orcid: 0000-0002-2923-9790
   - name: Andra Waagmeester
     orcid: 0000-0001-9773-4008
   - name: Jerven Bolleman

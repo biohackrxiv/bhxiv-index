@@ -8,34 +8,52 @@ authors:
   - name: Helena Crowell
     orcid: 0000-0002-4801-1767
   - name: Luca Marconato
+    orcid: 0000-0003-3198-1326
   - name: Ilaria Billato
+    orcid: 0000-0002-3335-3254
   - name: Matteo Calgaro
+    orcid: 0000-0002-3056-518X
   - name: Robert Castelo
+    orcid: 0000-0003-2229-4508
   - name: Riccardo Ceccaroni
   - name: Carissa Chen
+    orcid: 0000-0002-9225-7086
   - name: Patrick Danaher
   - name: Sean Davis
     orcid: 0000-0002-8991-6458
   - name: Martin Emons
+    orcid: 0009-0000-5219-5311
   - name: Gabriel Grajeda
+    orcid: 0009-0003-7242-7476
   - name: Hugo Gruson
     orcid: 0000-0002-4094-1476
   - name: Samuel Gunz
+    orcid: 0000-0002-8909-0932
   - name: Juan Henao
+    orcid: 0000-0003-0783-1432
   - name: Rafael Irizarry
   - name: Sviatoslav Kharuk
+    orcid: 0009-0006-9901-6185
   - name: Daria Lazic
+    orcid: 0000-0002-8793-6885
   - name: Artur Manukyan
     orcid: 0000-0002-0441-9517
   - name: Pere Moles-Seró
   - name: Elizabeth Purdom
+    orcid: 0000-0001-9455-7990
   - name: Dario Righelli
+    orcid: 0000-0003-1504-3583
   - name: Gabriele Sales
+    orcid: 0000-0003-2078-5661
   - name: Mike L. Smith
+    orcid: 0000-0002-7800-3848
   - name: Charlotte Soneson
+    orcid: 0000-0003-3833-2169
   - name: Michael B. Stadler
+    orcid: 0000-0002-2269-4934
   - name: Wolfgang Huber
   - name: Davide Risso
+    orcid: 0000-0001-8508-5012
 europepmc: PPR1251368
 openalex: W7164753454
 git: https://github.com/BiocCodingCollaborations/VeniceHackathon2026

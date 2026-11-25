@@ -11,6 +11,7 @@ authors:
   - name: Bérénice Batut
     orcid: 0000-0001-9852-1987
   - name: Virginie Grosboillot
+    orcid: 0000-0002-8249-7182
   - name: Martin Beracochea
     orcid: 0000-0003-3472-3736
 europepmc: PPR615442

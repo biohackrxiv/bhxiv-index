@@ -16,9 +16,13 @@ authors:
     orcid: 0000-0003-0315-4403
   - name: Matt Burridge
   - name: Benedikt Osterholz
+    orcid: 0009-0007-0183-2799
   - name: Alexander Sczyrba
+    orcid: 0000-0002-4405-3847
   - name: Mahfouz Shehu
+    orcid: 0009-0002-9470-0368
   - name: Tom Tubbesing
+    orcid: 0000-0003-2101-0200
   - name: Anil Wipat
     orcid: 0000-0001-7310-4191
 europepmc: PPR962805

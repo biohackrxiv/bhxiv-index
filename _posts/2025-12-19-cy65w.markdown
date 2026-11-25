@@ -12,7 +12,9 @@ authors:
   - name: Cyril Pommier
     orcid: 0000-0002-9040-8733
   - name: Carissa Robyn BLEKER
+    orcid: 0000-0003-1617-7145
   - name: Pedro Miguel Barros
+    orcid: 0000-0001-5626-0619
   - name: Filippo Bergeretti
     orcid: 0000-0002-6863-5577
   - name: Ana Usié
@@ -22,12 +24,17 @@ authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781
   - name: Marco Brandizi
+    orcid: 0000-0002-5427-2496
   - name: Dominik Brilhaus
+    orcid: 0000-0001-9021-3197
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Jonas Grieb
+    orcid: 0000-0002-8876-1722
   - name: Daniel Martini
+    orcid: 0000-0002-6953-4524
   - name: Cristina Martins Rodrigues
+    orcid: 0000-0002-4849-1537
   - name: Dennis Psaroudakis
     orcid: 0000-0002-7521-798X
   - name: Nils Reinosch

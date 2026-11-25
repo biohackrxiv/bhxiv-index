@@ -13,8 +13,11 @@ authors:
   - name: Egon Willighagen
     orcid: 0000-0001-7542-0286
   - name: Dominik Martinat
+    orcid: 0000-0001-6611-7883
   - name: Ana Claudia Sima
+    orcid: 0000-0003-3213-4495
   - name: Hasan Balci
+    orcid: 0000-0001-8319-7758
   - name: Tooba Abbassi-Daloii
     orcid: 0000-0002-4904-3269
 europepmc: PPR767904

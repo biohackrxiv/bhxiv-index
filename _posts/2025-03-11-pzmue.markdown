@@ -7,14 +7,22 @@ doi: 10.37044/osf.io/pzmue_v1
 europepmc: PPR988771
 authors:
   - name: Martin Braun
+    orcid: 0009-0003-6061-0863
   - name: Alexander Kanitz
+    orcid: 0000-0002-3468-0652
   - name: Jan Krüger
+    orcid: 0009-0006-4245-1653
   - name: Landfried Kraatz
   - name: Jacobo Miranda
+    orcid: 0009-0005-0673-021X
   - name: Carsten Schelp
+    orcid: 0009-0008-5871-1485
   - name: Valentin Schneider-Lunitz
+    orcid: 0000-0002-3980-3789
   - name: Sanjay Kumar Srikakulam
+    orcid: 0000-0002-1752-5060
   - name: Xaver Stiensmeier
+    orcid: 0009-0005-3274-122X
   - name: Nils Hoffmann
     orcid: 0000-0002-6540-6875
   - name: Sven Twardziok

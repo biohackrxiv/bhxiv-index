@@ -9,23 +9,31 @@ authors:
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781
   - name: Timo Mühlhaus
+    orcid: 0000-0003-3925-6778
   - name: Cyril Pommier
     orcid: 0000-0002-9040-8733
   - name: Stuart Owen
+    orcid: 0000-0003-2130-0865
   - name: Dominik Brilhaus
     orcid: 0000-0001-9021-3197
   - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
   - name: Florian Wetzels
+    orcid: 0000-0002-5526-7138
   - name: Gavin Chait
+    orcid: 0000-0003-3733-6299
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Gajendra Doniparthi
+    orcid: 0009-0005-5417-2275
   - name: Jonathan Bauer
+    orcid: 0000-0002-5624-2055
   - name: Sveinung Gundersen
     orcid: 0000-0001-9888-7954
   - name: Pável Vázquez
+    orcid: 0000-0003-0471-9517
 europepmc: PPR782164
 openalex: W4390572613
 git: https://github.com/sebeier/bhe23_project14

@@ -16,12 +16,17 @@ authors:
   - name: Finn Bacall
     orcid: 0000-0002-0048-3300
   - name: Etienne Bardet
+    orcid: 0009-0006-6288-4173
   - name: Sebastian Beier
     orcid: 0000-0002-2177-8781
   - name: Dominik Brilhaus
+    orcid: 0000-0001-9021-3197
   - name: Xiaoming Hu
+    orcid: 0000-0002-8318-3222
   - name: Emma Le Roy Pardonche
+    orcid: 0009-0006-3181-0059
   - name: Timo Mühlhaus
+    orcid: 0000-0003-3925-6778
   - name: Stuart Owen
     orcid: /0000-0003-2130-0865
   - name: Cyril Pommier

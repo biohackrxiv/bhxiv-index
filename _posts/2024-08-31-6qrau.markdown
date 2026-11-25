@@ -13,11 +13,13 @@ authors:
   - name: Michael Robin Crusoe
     orcid: 0000-0002-2961-9670
   - name: Arto Bendiken
+    orcid: 0009-0002-0725-4874
   - name: Pitiporn Noisagul
   - name: Kentaro Yamamoto
   - name: Manabu Ishii
   - name: Naohisa Goto
   - name: Chihiro Higuchi
+    orcid: 0000-0003-2808-2813
 europepmc: PPR904221
 openalex: W4402097515
 git: https://github.com/biohackathon-japan/bh24-everything-about-workflow-and-container

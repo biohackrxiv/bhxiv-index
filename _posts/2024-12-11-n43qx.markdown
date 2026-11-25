@@ -12,6 +12,7 @@ authors:
   - name: Hirokazu Chiba
     orcid: 0000-0003-4062-8903
   - name: Susumu Goto
+    orcid: 0000-0003-2989-8486
 europepmc: PPR952821
 wikidata: Q136482099
 openalex: W4405219447

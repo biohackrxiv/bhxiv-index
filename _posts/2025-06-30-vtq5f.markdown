@@ -8,8 +8,11 @@ authors:
   - name: Shelby Kroeger
     orcid: 0009-0009-1343-299X
   - name: Lisa Boatner
+    orcid: 0000-0003-0757-4982
   - name: Manasi Ghogare
+    orcid: 0009-0008-8765-167X
   - name: Stanisław Giziński
+    orcid: 0000-0002-3695-9809
   - name: Ben Busby
     orcid: 0000-0001-5267-4988
 europepmc: PPR1044434

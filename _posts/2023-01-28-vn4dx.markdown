@@ -9,10 +9,15 @@ authors:
   - name: Sebastien Moretti
     orcid: 0000-0003-3947-488X
   - name: Kenneth Hoste
+    orcid: 0000-0001-8034-648X
   - name: Alan O’Cais
+    orcid: 0000-0002-8254-8752
   - name: Jurij Pečar
+    orcid: 0000-0002-6096-3808
   - name: Elisabeth Ortega
+    orcid: 0000-0001-5410-5375
   - name: Anthony Fullam
+    orcid: 0000-0002-0884-8124
 europepmc: PPR609406
 openalex: W4318321055
 git: https://github.com/smoretti/biohackrxiv-publication-template

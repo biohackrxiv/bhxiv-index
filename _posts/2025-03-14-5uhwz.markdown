@@ -9,52 +9,87 @@ authors:
   - name: Joel Lüthi
     orcid: 0000-0003-3023-170X
   - name: Marvin Albert
+    orcid: 0000-0003-2536-2545
   - name: Liviu Anita
+    orcid: 0000-0001-8808-6395
   - name: Kola Babalola
+    orcid: 0000-0003-1384-8433
   - name: Davis Bennett
+    orcid: 0000-0001-7579-2848
   - name: John A. Bogovic
+    orcid: 0000-0002-4829-9457
   - name: Lorenzo Cerrone
+    orcid: 0000-0001-7337-2313
   - name: Rémy Dornier
+    orcid: 0009-0006-1381-4582
   - name: Jan Eglinger
+    orcid: 0000-0001-7234-1435
   - name: Vera Galinova
+    orcid: 0009-0001-0166-0399
   - name: Reto Gerber
     orcid: 0000-0001-5414-8906
   - name: Oane Gros
+    orcid: 0000-0003-2459-9858
   - name: Stefan Hahmann
+    orcid: 0000-0002-8145-7090
   - name: Max Hess
+    orcid: 0000-0001-9528-4445
   - name: Ruth Hornbachner
+    orcid: 0000-0003-4912-3725
   - name: Dmytro Horyslavets
+    orcid: 0000-0002-6780-0235
   - name: Rachael Huxford
+    orcid: 0009-0009-2686-5022
   - name: Daniel Krentzel
     orcid: 0000-0002-6234-7259
   - name: Tong LI
     orcid: 0000-0002-8240-4476
   - name: Luca Marconato
+    orcid: 0000-0003-3198-1326
   - name: Matthew McCormick
     orcid: 0000-0001-9475-3756
   - name: Franziska Moos
+    orcid: 0000-0002-1852-983X
   - name: Filip Mroz
+    orcid: 0009-0002-7021-5325
   - name: Bugra Özdemir
+    orcid: 0000-0001-9823-0581
   - name: Benjamin Pavie
+    orcid: 0000-0002-0249-3844
   - name: Eric Perlman
+    orcid: 0000-0001-5542-1302
   - name: Maximilian Schulz
+    orcid: 0009-0006-3710-6492
   - name: Leonardo Schwarz
+    orcid: 0009-0003-1828-6924
   - name: Hannes M. Spitz
+    orcid: 0009-0003-0010-1995
   - name: David Stansby
+    orcid: 0000-0002-1365-1908
   - name: Fabio Steffen
+    orcid: 0000-0001-8795-2212
   - name: Szymon Stoma
+    orcid: 0000-0001-5127-8553
   - name: Flurin Sturzenegger
+    orcid: 0009-0000-1306-6605
   - name: Wouter-Michiel Vierdag
     orcid: 0000-0003-1666-5421
   - name: Jonas Windhager
+    orcid: 0000-0002-2111-5291
   - name: Kevin Yamauchi
+    orcid: 0000-0002-7818-1388
   - name: Igor Zubarev
+    orcid: 0009-0008-6705-0949
   - name: Josh Moore
     orcid: 0000-0003-4028-811X
   - name: Norman Rzepka
+    orcid: 0000-0002-8168-7929
   - name: Christian Tischer
+    orcid: 0000-0003-4105-1990
   - name: Vladimir Ulman
+    orcid: 0000-0002-4270-7982
   - name: Virginie Uhlmann
+    orcid: 0000-0002-2859-9241
 wikidata: Q136768514
 git: https://github.com/jluethi/2024-ome-ngff-workflows-hackathon
 image: /assets/images/figures/5uhwz_v2/figure1.png

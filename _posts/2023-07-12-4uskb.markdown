@@ -7,6 +7,7 @@ doi: 10.37044/osf.io/4uskb
 wikidata: Q120669123
 authors:
   - name: Alexander Pico
+    orcid: 0000-0001-5706-2163
   - name: Hiromasa Ono
     orcid: 0000-0001-8675-963X
   - name: Ryo Nozu

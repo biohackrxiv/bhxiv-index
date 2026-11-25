@@ -9,7 +9,9 @@ authors:
   - name: Phil Reed
     orcid: 0000-0002-4479-715X
   - name: Helena Schnitzer
+    orcid: 0000-0002-6382-9452
   - name: Nick Juty
+    orcid: 0000-0002-2036-8350
 europepmc: PPR973986
 git: https://github.com/PhilReedData/bioschemas-for-mortals
 description: "We report here on the progress of project #10: \"Bioschemas for Mortals\" from BioHackathon Europe 2024."

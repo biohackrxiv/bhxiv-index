@@ -9,14 +9,21 @@ authors:
   - name: Manuel Feser
     orcid: 0000-0001-6546-1818
   - name: Sebastian Beyvers
+    orcid: 0000-0002-9747-7096
   - name: Daniel Arend
     orcid: 0000-0002-2455-5938
   - name: Constantin Breß
+    orcid: 0000-0002-2133-1541
   - name: Maria Hansen
+    orcid: 0009-0001-3265-8654
   - name: Christian Henke
+    orcid: 0000-0002-4541-4018
   - name: Stephan Lesch
+    orcid: 0000-0002-4324-3868
   - name: Carmen Scheuner
+    orcid: 0009-0007-8738-5247
   - name: Heinrich Lukas Weil
+    orcid: 0000-0003-1945-6342
 europepmc: PPR988773
 openalex: W4408312932
 git: https://github.com/feserm/biohack-de-2024

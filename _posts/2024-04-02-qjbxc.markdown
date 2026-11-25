@@ -13,11 +13,15 @@ authors:
   - name: Matúš Kalaš
     orcid: 0000-0002-1509-4981
   - name: Tunc Kayikcioglu
+    orcid: 0000-0003-2205-8062
   - name: Engy Nasr
+    orcid: 0000-0001-9047-4215
   - name: Nicola Soranzo
+    orcid: 0000-0003-3627-5340
   - name: Wai Cheng Thang
   - name: Joseph Wang
   - name: Ove Johan Ragnar Gustafsson
+    orcid: 0000-0002-2977-5032
 europepmc: PPR842513
 openalex: W4393403464
 git: https://github.com/galaxyproject/galaxy_tool_metadata_extractor
