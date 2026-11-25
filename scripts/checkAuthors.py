@@ -545,6 +545,59 @@ def markdown_escape(text):
     return re.sub(r'([\\`*_\[\]<>])', r'\\\1', text)
 
 
+NAME_DIFFERENCE = re.compile(r'^name in the (\w+): "(.*)", in the (\w+): "(.*)"$')
+
+
+def mark(kind, text):
+    """Text marked as removed (`del`) or added (`ins`), coloured by the website CSS."""
+    return '<%s class="name-diff">%s</%s>' % (kind, markdown_escape(html.escape(text)), kind)
+
+
+def name_diff(old, new):
+    """The difference between two names, as Markdown with inline HTML: words (or, for words that
+    are only spelled differently, letters) that are only in `old` are marked as removed, those only
+    in `new` as added."""
+    words_old, words_new = old.split(), new.split()
+    out = []
+    matcher = difflib.SequenceMatcher(None, words_old, words_new, autojunk=False)
+    for tag, i1, i2, j1, j2 in matcher.get_opcodes():
+        if tag == 'equal':
+            out += [markdown_escape(html.escape(w)) for w in words_old[i1:i2]]
+            continue
+        if tag == 'replace' and i2 - i1 == j2 - j1:
+            for a, b in zip(words_old[i1:i2], words_new[j1:j2]):
+                letters = difflib.SequenceMatcher(None, a, b, autojunk=False)
+                if letters.ratio() < 0.5:  # another word: show it as a whole
+                    out.append(mark('del', a) + mark('ins', b))
+                    continue
+                word = ''
+                for t, a1, a2, b1, b2 in letters.get_opcodes():
+                    if t == 'equal':
+                        word += markdown_escape(html.escape(a[a1:a2]))
+                    else:
+                        word += (mark('del', a[a1:a2]) if a2 > a1 else '') + \
+                            (mark('ins', b[b1:b2]) if b2 > b1 else '')
+                out.append(word)
+            continue
+        if i2 > i1:
+            out.append(mark('del', ' '.join(words_old[i1:i2])))
+        if j2 > j1:
+            out.append(mark('ins', ' '.join(words_new[j1:j2])))
+    return ' '.join(out)
+
+
+def report_line(text):
+    """A finding as a Markdown list item; name differences also get the marked difference."""
+    text = text.replace(' the post', ' the index')
+    match = NAME_DIFFERENCE.match(text)
+    if not match:
+        return '  * ' + markdown_escape(text)
+    first, old, second, new = match.groups()
+    first = 'index' if first == 'post' else first
+    return '  * %s (%s: "%s", %s: "%s")' % (name_diff(old, new), first, markdown_escape(old),
+                                           second, markdown_escape(new))
+
+
 def report(results, today):
     """The text of feedback/biohackrxiv.md: the findings per kind, per preprint."""
     listed = [(path, findings) for path, findings in results if not post_info(path)[3]]
@@ -553,7 +606,10 @@ def report(results, today):
            'BioHackrXiv team. For each of the %d preprints in the index, the authors on the page of '
            'the preprint in the index are compared with the first page of the PDF of its latest '
            'version, and, for %d preprints, with the `authors:` in the YAML header of its Markdown '
-           'source (paper.md). Names are compared without case, accents and punctuation.'
+           'source (paper.md). Names are compared without case, accents and punctuation. In the '
+           'name differences, what is only in the index (or the PDF, compared with the Markdown) is '
+           'shown as <del class="name-diff">removed</del>, and what the PDF (or the Markdown) has '
+           'instead as <ins class="name-diff">added</ins>.'
            % (today, SITE, len(listed),
               sum(1 for _, f in listed if ('compared-markdown', '') in f)), '']
     for key, heading, explanation in SECTIONS:
@@ -569,7 +625,7 @@ def report(results, today):
         for path, texts in entries:
             title, url, identifier, _ = post_info(path)
             out.append('* [%s](%s) (%s)' % (markdown_escape(title), url, identifier))
-            out += ['  * ' + markdown_escape(text.replace(' the post', ' the index')) for text in texts]
+            out += [report_line(text) for text in texts]
         out.append('')
     return '\n'.join(out)
 

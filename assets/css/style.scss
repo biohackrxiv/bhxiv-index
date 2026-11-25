@@ -69,3 +69,7 @@
     summary { cursor: pointer; }
   }
 }
+
+// the differences between names in the feedback report of make checkAuthors
+del.name-diff { color: #c62828; }
+ins.name-diff { color: #2e7d32; text-decoration: none; font-weight: bold; }

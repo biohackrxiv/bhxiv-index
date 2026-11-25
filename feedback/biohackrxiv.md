@@ -1,6 +1,6 @@
 # Author metadata of BioHackrXiv preprints: possible problems
 
-Generated on 2026-11-25 by `make checkAuthors` in the [BioHackrXiv index](https://index.biohackrxiv.org), for the BioHackrXiv team. For each of the 175 preprints in the index, the authors on the page of the preprint in the index are compared with the first page of the PDF of its latest version, and, for 110 preprints, with the `authors:` in the YAML header of its Markdown source (paper.md). Names are compared without case, accents and punctuation.
+Generated on 2026-11-25 by `make checkAuthors` in the [BioHackrXiv index](https://index.biohackrxiv.org), for the BioHackrXiv team. For each of the 175 preprints in the index, the authors on the page of the preprint in the index are compared with the first page of the PDF of its latest version, and, for 110 preprints, with the `authors:` in the YAML header of its Markdown source (paper.md). Names are compared without case, accents and punctuation. In the name differences, what is only in the index (or the PDF, compared with the Markdown) is shown as <del class="name-diff">removed</del>, and what the PDF (or the Markdown) has instead as <ins class="name-diff">added</ins>.
 
 ## ORCIDs that are not valid
 
@@ -161,31 +161,31 @@ The first or the family name differs between the index and the PDF, which can be
 11 preprints.
 
 * [SnpReportR: A Tool for Clinical Reporting of RNAseq Expression and Variants](https://index.biohackrxiv.org/2021/06/29/5j7cm.html) (5j7cm)
-  * name in the index: "Sam Hokin", in the PDF: "Samuel Hokin"
+  * Sam<ins class="name-diff">uel</ins> Hokin (index: "Sam Hokin", PDF: "Samuel Hokin")
 * [Rapid metagenomic workflow using annotated 16S RNA dataset](https://index.biohackrxiv.org/2021/09/30/gbt8p.html) (gbt8p)
-  * name in the index: "Naoya Oec", in the PDF: "Naoaya Oec"
+  * Nao<ins class="name-diff">a</ins>ya Oec (index: "Naoya Oec", PDF: "Naoaya Oec")
 * [Operator dashboard for controlling the NeIC Sensitive Data Archive](https://index.biohackrxiv.org/2023/04/06/nstjb.html) (nstjb)
-  * name in the index: "Silva Bahena", in the PDF: "Silvia Bahena"
-  * name in the index: "Dimitrios Bampalikis", in the PDF: "Dimitris Bampalikis"
+  * Silv<ins class="name-diff">i</ins>a Bahena (index: "Silva Bahena", PDF: "Silvia Bahena")
+  * Dimitri<del class="name-diff">o</del>s Bampalikis (index: "Dimitrios Bampalikis", PDF: "Dimitris Bampalikis")
 * [Efforts to analyze pathways in non-model organisms](https://index.biohackrxiv.org/2023/10/26/spf3q.html) (spf3q)
-  * name in the index: "Naoya Oec", in the PDF: "Naoaya Oec"
+  * Nao<ins class="name-diff">a</ins>ya Oec (index: "Naoya Oec", PDF: "Naoaya Oec")
 * [Genome Annotation and Other Post-Assembly Workflows for the Tree of Life](https://index.biohackrxiv.org/2024/02/12/fy49g.html) (fy49g)
-  * name in the index: "Locedi Mansueto", in the PDF: "Locedie Mansueto"
+  * Locedi<ins class="name-diff">e</ins> Mansueto (index: "Locedi Mansueto", PDF: "Locedie Mansueto")
 * [VIB Hackathon on spatial omics tools and methods](https://index.biohackrxiv.org/2024/06/25/uf7d3.html) (uf7d3)
-  * name in the index: "Miraj Cetin", in the PDF: "Miray Cetin"
-  * name in the index: "Migual A. Ibarra-Arellano", in the PDF: "Miguel A. Ibarra-Arellano"
+  * Mira<del class="name-diff">j</del><ins class="name-diff">y</ins> Cetin (index: "Miraj Cetin", PDF: "Miray Cetin")
+  * Migu<del class="name-diff">a</del><ins class="name-diff">e</ins>l A. Ibarra-Arellano (index: "Migual A. Ibarra-Arellano", PDF: "Miguel A. Ibarra-Arellano")
 * [AI in Practice: Insights from a Community Survey of Biohackathon Participants](https://index.biohackrxiv.org/2025/10/12/pza7v.html) (pza7v_v1)
-  * name in the index: "Julie Koblitz", in the PDF: "Julia Koblitz"
-  * name in the index: "Pipiporn Noisagul", in the PDF: "Pitiporn Noisagul"
+  * Juli<del class="name-diff">e</del><ins class="name-diff">a</ins> Koblitz (index: "Julie Koblitz", PDF: "Julia Koblitz")
+  * Pi<del class="name-diff">p</del><ins class="name-diff">t</ins>iporn Noisagul (index: "Pipiporn Noisagul", PDF: "Pitiporn Noisagul")
 * [METRICS - Monitoring of Key Performance Indicators for ELIXIR Services](https://index.biohackrxiv.org/2026/01/22/2jgk4.html) (2jgk4_v1)
-  * name in the index: "Adel Bouhraoua", in the PDF: "Kamel Eddine Adel Bouhraoua"
+  * <ins class="name-diff">Kamel Eddine</ins> Adel Bouhraoua (index: "Adel Bouhraoua", PDF: "Kamel Eddine Adel Bouhraoua")
 * [Towards Federated Learning Across Biobanks: Prototype Software from the 2026 Carnegie Mellon University–NVIDIA Hackathon](https://index.biohackrxiv.org/2026/03/20/5psfj.html) (5psfj_v2)
-  * name in the index: "Enamul Hoq", in the PDF: "Md Enamul Hoq"
-  * name in the index: "Seungjin Han", in the PDF: "Seung jin Han"
+  * <ins class="name-diff">Md</ins> Enamul Hoq (index: "Enamul Hoq", PDF: "Md Enamul Hoq")
+  * <del class="name-diff">Seungjin</del> <ins class="name-diff">Seung jin</ins> Han (index: "Seungjin Han", PDF: "Seung jin Han")
 * [Bioconductor Spatial Data and Image Analysis Hackathon](https://index.biohackrxiv.org/2026/06/14/9ej32.html) (9ej32_v1)
-  * name in the index: "Artur Manukyan", in the PDF: "Artr Manukyan"
+  * Art<del class="name-diff">u</del>r Manukyan (index: "Artur Manukyan", PDF: "Artr Manukyan")
 * [Eurobioc2026 BiocContainer Report](https://index.biohackrxiv.org/2026/06/15/acxky.html) (acxky_v1)
-  * name in the index: "MichaelB. Stadler", in the PDF: "Michael B. Stadler"
+  * <del class="name-diff">MichaelB.</del> <ins class="name-diff">Michael B.</ins> Stadler (index: "MichaelB. Stadler", PDF: "Michael B. Stadler")
 
 ## Names with other middle names or initials
 
@@ -194,106 +194,106 @@ The first and family names are the same, but the index and the PDF differ in mid
 43 preprints.
 
 * [Global analysis of human SARS-CoV-2 infection and host-virus interaction](https://index.biohackrxiv.org/2020/05/14/b4zkp.html) (b4zkp)
-  * name in the index: "Mariana Ferrarini", in the PDF: "Mariana G. Ferrarini"
+  * Mariana <ins class="name-diff">G.</ins> Ferrarini (index: "Mariana Ferrarini", PDF: "Mariana G. Ferrarini")
 * [Determining a novel feature-space for SARS-CoV-2 sequence data](https://index.biohackrxiv.org/2020/05/14/xt7gw.html) (xt7gw)
-  * name in the index: "Fotis E. Psomopoulos", in the PDF: "Fotis Psomopoulos"
+  * Fotis <del class="name-diff">E.</del> Psomopoulos (index: "Fotis E. Psomopoulos", PDF: "Fotis Psomopoulos")
 * [Progress on Data Stewardship Wizard during BioHackathon Europe 2020](https://index.biohackrxiv.org/2020/12/06/9mnkb.html) (9mnkb)
-  * name in the index: "Rob W.W. Hooft", in the PDF: "Rob Hooft"
+  * Rob <del class="name-diff">W.W.</del> Hooft (index: "Rob W.W. Hooft", PDF: "Rob Hooft")
 * [Connecting molecular sequences to their voucher specimens](https://index.biohackrxiv.org/2021/03/03/93qf4.html) (93qf4)
-  * name in the index: "Quentin John Groom", in the PDF: "Quentin Groom"
+  * Quentin <del class="name-diff">John</del> Groom (index: "Quentin John Groom", PDF: "Quentin Groom")
 * [Exploiting Bioschemas Markup to Populate IDPcentral](https://index.biohackrxiv.org/2021/06/22/v3jct.html) (v3jct)
-  * name in the index: "Alasdair J. G. Gray", in the PDF: "Alasdair Gray"
+  * Alasdair <del class="name-diff">J. G.</del> Gray (index: "Alasdair J. G. Gray", PDF: "Alasdair Gray")
 * [SnpReportR: A Tool for Clinical Reporting of RNAseq Expression and Variants](https://index.biohackrxiv.org/2021/06/29/5j7cm.html) (5j7cm)
-  * name in the index: "Brandon Blobner", in the PDF: "Brandon M. Blobner"
-  * name in the index: "Sierra Miller", in the PDF: "Sierra D. Miller"
-  * name in the index: "Olaitan Awe", in the PDF: "Olaitan I. Awe"
-  * name in the index: "Nicholas Cooley", in the PDF: "Nicholas P. Cooley"
-  * name in the index: "Brian W. Haas", in the PDF: "Brian Haas"
+  * Brandon <ins class="name-diff">M.</ins> Blobner (index: "Brandon Blobner", PDF: "Brandon M. Blobner")
+  * Sierra <ins class="name-diff">D.</ins> Miller (index: "Sierra Miller", PDF: "Sierra D. Miller")
+  * Olaitan <ins class="name-diff">I.</ins> Awe (index: "Olaitan Awe", PDF: "Olaitan I. Awe")
+  * Nicholas <ins class="name-diff">P.</ins> Cooley (index: "Nicholas Cooley", PDF: "Nicholas P. Cooley")
+  * Brian <del class="name-diff">W.</del> Haas (index: "Brian W. Haas", PDF: "Brian Haas")
 * [The COVID-19 epidemiology and monitoring ontology](https://index.biohackrxiv.org/2021/08/11/n6tcz.html) (n6tcz)
-  * name in the index: "Erik Anthony Schultes", in the PDF: "Erik Schultes"
+  * Erik <del class="name-diff">Anthony</del> Schultes (index: "Erik Anthony Schultes", PDF: "Erik Schultes")
 * [ELIXIR Software Management Plan for Life Sciences](https://index.biohackrxiv.org/2021/10/25/k8znb.html) (k8znb)
-  * name in the index: "José María Fernández", in the PDF: "José M. Fernández"
-  * name in the index: "Fotis E. Psomopoulos", in the PDF: "Fotis Psomopoulos"
+  * José <del class="name-diff">María</del><ins class="name-diff">M.</ins> Fernández (index: "José María Fernández", PDF: "José M. Fernández")
+  * Fotis <del class="name-diff">E.</del> Psomopoulos (index: "Fotis E. Psomopoulos", PDF: "Fotis Psomopoulos")
 * [Bioschemas data harvesting project report](https://index.biohackrxiv.org/2022/03/25/y6gbq.html) (y6gbq)
-  * name in the index: "Alasdair J. G. Gray", in the PDF: "Alasdair Gray"
+  * Alasdair <del class="name-diff">J. G.</del> Gray (index: "Alasdair J. G. Gray", PDF: "Alasdair Gray")
 * [An iNaturalist-Pl@ntNet-workflow to identify plant-pollinator interactions – a case study of Isodontia mexicana](https://index.biohackrxiv.org/2022/05/16/em3rk.html) (em3rk)
-  * name in the index: "Quentin John Groom", in the PDF: "Quentin Groom"
+  * Quentin <del class="name-diff">John</del> Groom (index: "Quentin John Groom", PDF: "Quentin Groom")
 * [CWLD: Mapping colloquial wet lab language to ontologies](https://index.biohackrxiv.org/2022/11/12/p85m9.html) (p85m9)
-  * name in the index: "James Alastair McLaughlin", in the PDF: "James McLaughlin"
+  * James <del class="name-diff">Alastair</del> McLaughlin (index: "James Alastair McLaughlin", PDF: "James McLaughlin")
 * [An ETL pipeline to construct the Intrinsically Disordered Proteins Knowledge Graph (IDP-KG) using Bioschemas JSON-LD data dumps](https://index.biohackrxiv.org/2022/11/26/7f95d.html) (7f95d)
-  * name in the index: "Alasdair J. G. Gray", in the PDF: "Alasdair Gray"
+  * Alasdair <del class="name-diff">J. G.</del> Gray (index: "Alasdair J. G. Gray", PDF: "Alasdair Gray")
 * [Metadata for BioHackrXiv Markdown publications](https://index.biohackrxiv.org/2022/11/30/ueqkj.html) (ueqkj)
-  * name in the index: "Leyla Jael Castro", in the PDF: "Leyla Garcia Castro"
+  * Leyla <del class="name-diff">Jael</del><ins class="name-diff">Garcia</ins> Castro (index: "Leyla Jael Castro", PDF: "Leyla Garcia Castro")
 * [Empowering the community with notebooks for bespoke microbiome analyses](https://index.biohackrxiv.org/2023/02/10/94e6h.html) (94e6h)
-  * name in the index: "Alexander Rogers", in the PDF: "Alexander B Rogers"
+  * Alexander <ins class="name-diff">B</ins> Rogers (index: "Alexander Rogers", PDF: "Alexander B Rogers")
 * [RDF Data integration using Shape Expressions](https://index.biohackrxiv.org/2023/07/04/md73k.html) (md73k)
-  * name in the index: "Deepak Unni", in the PDF: "Deepak R. Unni"
-  * name in the index: "Kiyoko Flora Aoki-Kinoshita", in the PDF: "Kiyoko F. Aoki-Kinoshita"
+  * Deepak <ins class="name-diff">R.</ins> Unni (index: "Deepak Unni", PDF: "Deepak R. Unni")
+  * Kiyoko <del class="name-diff">Flora</del><ins class="name-diff">F.</ins> Aoki-Kinoshita (index: "Kiyoko Flora Aoki-Kinoshita", PDF: "Kiyoko F. Aoki-Kinoshita")
 * [BioHackJP 2023 Report R4: integration of glyco data with chemo-, geno-, lipid-omics and pathway data](https://index.biohackrxiv.org/2023/07/04/mq54k.html) (mq54k)
-  * name in the index: "Kiyoko Flora Aoki-Kinoshita", in the PDF: "Kiyoko F. Aoki-Kinoshita"
+  * Kiyoko <del class="name-diff">Flora</del><ins class="name-diff">F.</ins> Aoki-Kinoshita (index: "Kiyoko Flora Aoki-Kinoshita", PDF: "Kiyoko F. Aoki-Kinoshita")
 * [Redesign of the validation framework in LinkML](https://index.biohackrxiv.org/2023/07/18/8ukwz.html) (8ukwz)
-  * name in the index: "Deepak Unni", in the PDF: "Deepak R. Unni"
+  * Deepak <ins class="name-diff">R.</ins> Unni (index: "Deepak Unni", PDF: "Deepak R. Unni")
 * [Infrastructure for synthetic health data](https://index.biohackrxiv.org/2023/07/22/q4zgx.html) (q4zgx)
-  * name in the index: "Venkata Satagopam", in the PDF: "Venkata Pardhasaradhi Satagopam"
+  * Venkata <ins class="name-diff">Pardhasaradhi</ins> Satagopam (index: "Venkata Satagopam", PDF: "Venkata Pardhasaradhi Satagopam")
 * [Exploring the landscape of the genomic wastewater surveillance ecosystem: a roadmap towards standardization](https://index.biohackrxiv.org/2023/11/03/rtgk9.html) (rtgk9)
-  * name in the index: "Fotis E. Psomopoulos", in the PDF: "Fotis Psomopoulos"
-  * name in the index: "Konstantinos A. Kyritsis", in the PDF: "Konstantinos Kyritsis"
+  * Fotis <del class="name-diff">E.</del> Psomopoulos (index: "Fotis E. Psomopoulos", PDF: "Fotis Psomopoulos")
+  * Konstantinos <del class="name-diff">A.</del> Kyritsis (index: "Konstantinos A. Kyritsis", PDF: "Konstantinos Kyritsis")
 * [The fourth annual Carnegie Mellon Libraries hackathon for biomedical data management, knowledge graphs, and deep learning](https://index.biohackrxiv.org/2023/11/28/k4rh6.html) (k4rh6)
-  * name in the index: "Glenda Tan", in the PDF: "Glenda Hui-En Tan"
-  * name in the index: "Nicholas Cooley", in the PDF: "Nicholas P. Cooley"
-  * name in the index: "Kristen L Scotti", in the PDF: "Kristen Scotti"
+  * Glenda <ins class="name-diff">Hui-En</ins> Tan (index: "Glenda Tan", PDF: "Glenda Hui-En Tan")
+  * Nicholas <ins class="name-diff">P.</ins> Cooley (index: "Nicholas Cooley", PDF: "Nicholas P. Cooley")
+  * Kristen <del class="name-diff">L</del> Scotti (index: "Kristen L Scotti", PDF: "Kristen Scotti")
 * [Genome Annotation and Other Post-Assembly Workflows for the Tree of Life](https://index.biohackrxiv.org/2024/02/12/fy49g.html) (fy49g)
-  * name in the index: "Thomas W. Harrop", in the PDF: "Thomas W. R. Harrop"
+  * Thomas W. <ins class="name-diff">R.</ins> Harrop (index: "Thomas W. Harrop", PDF: "Thomas W. R. Harrop")
 * [Metadata handling for BioHackathon publications through BioHackrXiv](https://index.biohackrxiv.org/2024/02/22/qvftj.html) (qvftj)
-  * name in the index: "Leyla Jael Castro", in the PDF: "Leyla Garcia Castro"
+  * Leyla <del class="name-diff">Jael</del><ins class="name-diff">Garcia</ins> Castro (index: "Leyla Jael Castro", PDF: "Leyla Garcia Castro")
 * [Building Towards a Machine-Actionable Software Management Plan: A BioHackathon Europe 2023 Report](https://index.biohackrxiv.org/2024/03/19/t94g8.html) (t94g8)
-  * name in the index: "Fotis E. Psomopoulos", in the PDF: "Fotis Psomopoulos"
+  * Fotis <del class="name-diff">E.</del> Psomopoulos (index: "Fotis E. Psomopoulos", PDF: "Fotis Psomopoulos")
 * [BioHackEU23: FAIR Workflow Execution with WfExS and Workflow Run Crate](https://index.biohackrxiv.org/2024/03/28/7f94w.html) (7f94w)
-  * name in the index: "José María Fernández", in the PDF: "José M. Fernández"
+  * José <del class="name-diff">María</del><ins class="name-diff">M.</ins> Fernández (index: "José María Fernández", PDF: "José M. Fernández")
 * [SPARQL services for InterMine databases](https://index.biohackrxiv.org/2024/04/24/dpnry.html) (dpnry)
-  * name in the index: "Deepak Unni", in the PDF: "Deepak R. Unni"
+  * Deepak <ins class="name-diff">R.</ins> Unni (index: "Deepak Unni", PDF: "Deepak R. Unni")
 * [Phenological Diversity Trends with Remote Sensing  Datacubes](https://index.biohackrxiv.org/2024/06/08/pqfws.html) (pqfws)
-  * name in the index: "Elliot Samuel Shayle", in the PDF: "Elliot Shayle"
+  * Elliot <del class="name-diff">Samuel</del> Shayle (index: "Elliot Samuel Shayle", PDF: "Elliot Shayle")
 * [An analysis of sex ratios using a biodiversity data cube](https://index.biohackrxiv.org/2024/07/22/9kcfx.html) (9kcfx)
-  * name in the index: "Quentin John Groom", in the PDF: "Quentin Groom"
+  * Quentin <del class="name-diff">John</del> Groom (index: "Quentin John Groom", PDF: "Quentin Groom")
 * [Unveiling ecological dynamics through simulation and visualization of biodiversity data cubes](https://index.biohackrxiv.org/2024/10/28/vcyr7.html) (vcyr7)
-  * name in the index: "Arthur Vinícius Rodrigues", in the PDF: "Arthur V. Rodrigues"
+  * Arthur <del class="name-diff">Vinícius</del><ins class="name-diff">V.</ins> Rodrigues (index: "Arthur Vinícius Rodrigues", PDF: "Arthur V. Rodrigues")
 * [Enhancing multi-omic analyses through a federated microbiome analysis service](https://index.biohackrxiv.org/2025/01/06/3x274.html) (3x274)
-  * name in the index: "Alexander Rogers", in the PDF: "Alexander B. Rogers"
+  * Alexander <ins class="name-diff">B.</ins> Rogers (index: "Alexander Rogers", PDF: "Alexander B. Rogers")
 * [BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine-actionability & Increasing FAIRness of digital agrosystem resources by extending Bioschemas](https://index.biohackrxiv.org/2025/02/02/x9d6b.html) (x9d6b_v1)
-  * name in the index: "Michael Robin Crusoe", in the PDF: "Michael R. Crusoe"
+  * Michael <del class="name-diff">Robin</del><ins class="name-diff">R.</ins> Crusoe (index: "Michael Robin Crusoe", PDF: "Michael R. Crusoe")
 * [Report: Workshop on connecting Knowledge Graphs with BioChatter](https://index.biohackrxiv.org/2025/03/11/m7xr6.html) (m7xr6_v1)
-  * name in the index: "Pedro Miguel Barros", in the PDF: "Pedro M Barros"
-  * name in the index: "Hugo Miguel Costa Rodrigues", in the PDF: "Hugo Rodrigues"
-  * name in the index: "Bruno Eduardo Costa", in the PDF: "Bruno Costa"
-  * name in the index: "Carissa Robyn BLEKER", in the PDF: "Carissa Bleker"
+  * Pedro <del class="name-diff">Miguel</del><ins class="name-diff">M</ins> Barros (index: "Pedro Miguel Barros", PDF: "Pedro M Barros")
+  * Hugo <del class="name-diff">Miguel Costa</del> Rodrigues (index: "Hugo Miguel Costa Rodrigues", PDF: "Hugo Rodrigues")
+  * Bruno <del class="name-diff">Eduardo</del> Costa (index: "Bruno Eduardo Costa", PDF: "Bruno Costa")
+  * Carissa <del class="name-diff">Robyn BLEKER</del> <ins class="name-diff">Bleker</ins> (index: "Carissa Robyn BLEKER", PDF: "Carissa Bleker")
 * [Secure Processing Environments as a Service in the de.NBI Cloud](https://index.biohackrxiv.org/2025/03/11/pzmue.html) (pzmue_v1)
-  * name in the index: "Sven Twardziok", in the PDF: "Sven Olaf Twardziok"
+  * Sven <ins class="name-diff">Olaf</ins> Twardziok (index: "Sven Twardziok", PDF: "Sven Olaf Twardziok")
 * [2024 OME-NGFF workflows hackathon](https://index.biohackrxiv.org/2025/03/14/5uhwz.html) (5uhwz_v2)
-  * name in the index: "Kevin Yamauchi", in the PDF: "Kevin A. Yamauchi"
+  * Kevin <ins class="name-diff">A.</ins> Yamauchi (index: "Kevin Yamauchi", PDF: "Kevin A. Yamauchi")
 * [Persistence, metadata collection and re-architecture of BioHackrXiv](https://index.biohackrxiv.org/2025/04/03/c8jw6.html) (c8jw6_v1)
-  * name in the index: "Leyla Jael Castro", in the PDF: "Leyla Garcia Castro"
+  * Leyla <del class="name-diff">Jael</del><ins class="name-diff">Garcia</ins> Castro (index: "Leyla Jael Castro", PDF: "Leyla Garcia Castro")
 * [Leveraging RDF and CURIE metadata resolution with identifiers.org](https://index.biohackrxiv.org/2025/06/02/xza73.html) (xza73_v1)
-  * name in the index: "Renato Juacaba Neto", in the PDF: "Renato C. Juaçaba Neto"
+  * Renato <del class="name-diff">Juacaba</del> <ins class="name-diff">C. Juaçaba</ins> Neto (index: "Renato Juacaba Neto", PDF: "Renato C. Juaçaba Neto")
 * [Addressing Background Genomic and Environmental Effects on Health through Accelerated Computing and Machine Learning: Results from the 2025 Hackathon at Carnegie Mellon University](https://index.biohackrxiv.org/2025/06/04/3a8cn.html) (3a8cn_v1)
-  * name in the index: "Nicholas Cooley", in the PDF: "Nicholas P. Cooley"
+  * Nicholas <ins class="name-diff">P.</ins> Cooley (index: "Nicholas Cooley", PDF: "Nicholas P. Cooley")
 * [Software Quality Indicators: extraction, categorisation and recommendations from canonical sources](https://index.biohackrxiv.org/2025/06/11/tp3g.html) (etp3g_v1)
-  * name in the index: "Fotis E. Psomopoulos", in the PDF: "Fotis Psomopoulos"
+  * Fotis <del class="name-diff">E.</del> Psomopoulos (index: "Fotis E. Psomopoulos", PDF: "Fotis Psomopoulos")
 * [Oncomatch- Optimizing Oncology Combination Therapy Prediction](https://index.biohackrxiv.org/2025/06/30/vtq5f.html) (vtq5f_v1)
-  * name in the index: "Shelby Kroeger", in the PDF: "Shelby R. Kroeger"
-  * name in the index: "Lisa Boatner", in the PDF: "Lisa M. Boatner"
+  * Shelby <ins class="name-diff">R.</ins> Kroeger (index: "Shelby Kroeger", PDF: "Shelby R. Kroeger")
+  * Lisa <ins class="name-diff">M.</ins> Boatner (index: "Lisa Boatner", PDF: "Lisa M. Boatner")
 * [AI for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw](https://index.biohackrxiv.org/2025/07/03/vbw4t.html) (vbw4t_v1)
-  * name in the index: "Alicja Małgorzata Olszewska", in the PDF: "Alicja M. Olszewska"
+  * Alicja <del class="name-diff">Małgorzata</del><ins class="name-diff">M.</ins> Olszewska (index: "Alicja Małgorzata Olszewska", PDF: "Alicja M. Olszewska")
 * [Increasing FAIRness in agrosystem sciences and plant phenomics](https://index.biohackrxiv.org/2025/12/19/cy65w.html) (cy65w_v1)
-  * name in the index: "Carissa Robyn BLEKER", in the PDF: "Carissa Bleker"
-  * name in the index: "Pedro Miguel Barros", in the PDF: "Pedro M. Barros"
+  * Carissa <del class="name-diff">Robyn BLEKER</del> <ins class="name-diff">Bleker</ins> (index: "Carissa Robyn BLEKER", PDF: "Carissa Bleker")
+  * Pedro <del class="name-diff">Miguel</del><ins class="name-diff">M.</ins> Barros (index: "Pedro Miguel Barros", PDF: "Pedro M. Barros")
 * [Tools to develop constraint-based models in R: adapting existing toolboxes](https://index.biohackrxiv.org/2026/03/13/ey4c5.html) (ey4c5_v1)
-  * name in the index: "Rahuman S. Malik Sheriff", in the PDF: "Rahuman Sheriff"
+  * Rahuman <del class="name-diff">S. Malik</del> Sheriff (index: "Rahuman S. Malik Sheriff", PDF: "Rahuman Sheriff")
 * [Towards Federated Learning Across Biobanks: Prototype Software from the 2026 Carnegie Mellon University–NVIDIA Hackathon](https://index.biohackrxiv.org/2026/03/20/5psfj.html) (5psfj_v2)
-  * name in the index: "Abraham G. Moller", in the PDF: "Abraham Moller"
-  * name in the index: "Shreyan Balaji Nalwad", in the PDF: "Shreyan Nalwad"
+  * Abraham <del class="name-diff">G.</del> Moller (index: "Abraham G. Moller", PDF: "Abraham Moller")
+  * Shreyan <del class="name-diff">Balaji</del> Nalwad (index: "Shreyan Balaji Nalwad", PDF: "Shreyan Nalwad")
 * [DBCLS BioHackathon 2026 report: Open, Reproducible Extraction of Data-Entity References from the Biomedical Literature – with Entry-Level Resolution via Identifiers.org / TogoID](https://index.biohackrxiv.org/2026/09/20/p87z6.html) (p87z6_v1)
-  * name in the index: "Vijay Subramoniam", in the PDF: "Vijay Venkatesh Subramoniam"
+  * Vijay <ins class="name-diff">Venkatesh</ins> Subramoniam (index: "Vijay Subramoniam", PDF: "Vijay Venkatesh Subramoniam")
 
 ## Authors in a different order
 
