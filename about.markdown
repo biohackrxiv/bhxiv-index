@@ -22,6 +22,13 @@ The metadata of the preprints in this index is also available as JSON, see the [
 {%- endfor -%}
 We published {{ site.posts.size }} preprints so far, with {{ in_this_year }} preprints in {{ this_year }}.
 {{ with_versions }} preprints have more than one version.
+{%- assign authors = site.data.author_stats %}
+The preprints have {{ authors.unique }} different authors with an ORCID (authors without an ORCID
+are not counted), and {{ authors.single }} of them are an author of just one preprint.
+The three most prolific authors have
+{% for author in authors.top -%}
+{{ author.count }}{% if forloop.rindex == 2 %}, and {% elsif forloop.last == false %}, {% endif %}
+{%- endfor %} preprints.
 
 One of the reasons behind BioHackathons and similar is sharing: ideas, data, designs, software, documentations and tutorials among others. We therefore kindly
 ask you to use the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode) for your work. We also encourage you to share your code on GitHub,
