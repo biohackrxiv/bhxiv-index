@@ -112,7 +112,11 @@ layout: base
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
 
-    {%- if page.versions.size > 0 %}
+    {%- comment %} a preprint without a `versions:` list has one version: the post itself {% endcomment -%}
+    {%- if page.versions.size > 0 %}{% assign history = page.versions %}{% else %}{% assign history = '' | split: '' | push: page %}{% endif -%}
+    {%- assign only_version = page.doi | split: '_v' -%}
+    {%- if only_version.size > 1 %}{% assign only_version = only_version | last %}{% else %}{% assign only_version = 1 %}{% endif %}
+    {%- if page.doi %}
     <section class="preprint-versions" aria-labelledby="versions-heading">
       <h2 id="versions-heading">Version history</h2>
       <div class="table-wrapper">
@@ -121,10 +125,10 @@ layout: base
           <tr><th scope="col">Version</th><th scope="col">Posted</th><th scope="col">DOI</th><th scope="col">Links</th></tr>
         </thead>
         <tbody>
-        {%- for version in page.versions reversed %}
+        {%- for version in history reversed %}
           {%- assign version_id = version.doi | downcase | remove_first: '10.37044/osf.io/' %}
           <tr{% if version.doi == page.doi %} class="current-version"{% endif %}>
-            <td>{{ version.version }}{% if version.doi == page.doi %} <span class="version-note">(this page)</span>{% endif %}</td>
+            <td>{{ version.version | default: only_version }}{% if version.doi == page.doi %} <span class="version-note">(this page)</span>{% endif %}</td>
             <td><time datetime="{{ version.date | date: '%Y-%m-%d' }}">{{ version.date | date: date_format }}</time></td>
             <td><a href="https://doi.org/{{ version.doi }}">{{ version.doi }}</a></td>
             <td>
@@ -132,7 +136,7 @@ layout: base
               {%- if version.europepmc %}{% if version_id != version.doi %} · {% endif %}<a href="https://europepmc.org/article/PPR/{{ version.europepmc }}">Europe PMC</a>{% endif -%}
             </td>
           </tr>
-          {%- if version.title %}
+          {%- if version.title and page.versions.size > 0 %}
           <tr class="version-changes"><td></td><td colspan="3">Title of this version: {{ version.title | escape }}</td></tr>
           {%- endif %}
         {%- endfor %}
