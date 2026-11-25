@@ -3,6 +3,37 @@
 This repository keeps an overview of published preprints of current, registered, and past
 BioHackathon events.
 
+## Order of the commands
+
+The scripts below are run with `make`. Each step uses the output of the steps before it, so for new
+preprints the logical order is:
+
+1. **New posts.** `make updateFromOSF ARGS="<BH_CODE> <DOI>"` for preprints on OSF, and
+   `make updateFromZenodo ARGS="<DOI>"` for preprints on Zenodo.
+2. **Short description.** `make setDescription` makes the `description:` from the abstract in the
+   post.
+3. **PDFs and their metadata.**
+   1. `make cachePdfs` downloads the PDFs.
+   2. `make extractPdfMetadata` reads the event and repository links from the PDFs.
+   3. `make updateGit` adds the repository as `git:` to the posts.
+4. **Figures.**
+   1. `make findMarkdown` finds the Markdown source in the repository.
+   2. `make findFigures` finds the figures in it, and checks them against the PDF.
+   3. `make exportFigures` copies them to `assets/images/figures/` and `_data/figures.json`.
+   4. `make setImage` picks the image of each post.
+   5. `make checkPdfFigures` only repeats the check against the PDF, without fetching anything.
+5. **Identifiers from other databases.** It takes days to weeks before new preprints are in them.
+   1. `make updateOpenAlex`, `make updateEuropePMC` and `make updateWikidata` add the identifiers.
+      They do not depend on each other.
+   2. Then `make createQuickstatements` writes the statements that are missing in Wikidata.
+6. **Reports.** `make openalexReport` and `make europepmcReport` write the feedback for OpenAlex
+   and Europe PMC.
+7. **Check the website** locally with `make serve`.
+
+Posts from Zenodo are supported by steps 1 and 2, `cachePdfs` and `extractPdfMetadata`.
+`updateFromZenodo` already adds `git:` to them. The other steps still assume OSF DOIs; see
+`TODO.md`.
+
 ## Scripts
 
 ### New preprints from OSF
