@@ -21,13 +21,15 @@ preprints on OSF the logical order is:
    3. `make exportFigures` copies them to `assets/images/figures/` and `_data/figures.json`.
    4. `make setImage` picks the image of each post.
    5. `make checkPdfFigures` only repeats the check against the PDF, without fetching anything.
-5. **Identifiers from other databases.** It takes days to weeks before new preprints are in them.
+5. **Authors.** `make checkAuthors` compares the authors with the PDF and `paper.md`, and adds
+   missing ORCIDs.
+6. **Identifiers from other databases.** It takes days to weeks before new preprints are in them.
    1. `make updateOpenAlex`, `make updateEuropePMC` and `make updateWikidata` add the identifiers.
       They do not depend on each other.
    2. Then `make createQuickstatements` writes the statements that are missing in Wikidata.
-6. **Reports.** `make openalexReport` and `make europepmcReport` write the feedback for OpenAlex
+7. **Reports.** `make openalexReport` and `make europepmcReport` write the feedback for OpenAlex
    and Europe PMC.
-7. **Check the website** locally with `make serve`.
+8. **Check the website** locally with `make serve`.
 
 ## Order of the commands for Zenodo preprints
 
@@ -44,7 +46,8 @@ Support for preprints on Zenodo is not complete yet. For now, the logical order 
    come from the copy of the source repository in the Zenodo record (the `~contrib/` folder), and
    only from the record of the latest version.
    1. `make findMarkdown`, 2. `make findFigures`, 3. `make exportFigures`, 4. `make setImage`.
-5. **Check the website** locally with `make serve`.
+5. **Authors.** `make checkAuthors`, as for OSF preprints.
+6. **Check the website** locally with `make serve`.
 
 The other commands do not work for Zenodo posts yet:
 
@@ -457,6 +460,43 @@ only reported, unless `--update-changed` is given.
 ```shell
 make setImage
 make setImage ARGS=--update-changed
+```
+
+### Authors of a preprint
+
+`scripts/checkAuthors.py` compares the authors of each post with the PDF of its `doi:` in
+`cache/pdfs/`, and with the `authors:` in the YAML header of the Markdown source (`paper.md`), when
+`findMarkdown.py` found it. The PDF metadata has no authors, so they are read from the first page
+(with `pdftohtml -xml`, as `extractPdfMetadata.py` does): the bold names below the title, with the
+ORCID links on the names and the ORCID icons. `paper.md` comes from the git repository at the
+commit in the metadata, or from the Zenodo record, and is kept in `cache/markdown/`.
+
+It reports, per post:
+
+* authors that are only in the post or only in the PDF, names that differ, and a different order
+  (names are compared without case, accents and punctuation);
+* ORCIDs that differ between the post and the PDF, and ORCIDs that are not valid (format or check
+  digit; some PDFs have `0000-0000-0000-0000`);
+* the same differences between the PDF and `paper.md`.
+
+An author without an ORCID in the post gets the ORCID of the same author in the PDF, or else in
+`paper.md`. An ORCID is not added when other posts have it for someone with another family name
+(a `paper.md` can have the ORCID of a co-author by mistake), or when another author of the post
+has it; these cases are reported. All other differences are only reported, unless
+`--update-changed` is given: then the author list of the post is replaced with that of the PDF.
+The names are then taken from `paper.md` when it has as many authors as the PDF, because some PDFs
+miss letters that their font does not have (for example "Seró" as "Ser").
+
+The findings that are left are also written to `feedback/biohackrxiv.md`, a report for the
+BioHackrXiv team grouped by kind (invalid and differing ORCIDs, missing authors, names, order, and
+differences with `paper.md`), shown on the website as `/feedback/biohackrxiv.html`. The report is
+only written when all posts are checked, and leaves out unlisted posts.
+
+```shell
+make checkAuthors
+make checkAuthors ARGS="--dry-run"
+make checkAuthors ARGS="--no-markdown jh3m7_v1"
+make checkAuthors ARGS="--update-changed 8qdse"
 ```
 
 ### Short description of a preprint

@@ -1,0 +1,16 @@
+---
+layout: page
+title: Author metadata of BioHackrXiv preprints
+permalink: /feedback/biohackrxiv.html
+sitemap: false
+---
+{%- comment -%}
+  The report itself is feedback/biohackrxiv.md, written by `make checkAuthors`
+  (scripts/checkAuthors.py). This page shows it as HTML, without its first
+  line (the title, which the layout already shows).
+{%- endcomment -%}
+{%- capture report %}{% include_relative biohackrxiv.md %}{% endcapture -%}
+{%- assign title_line = report | split: "
+" | first -%}
+<p class="post-meta">Also available as <a href="{{ '/feedback/biohackrxiv.md' | relative_url }}">Markdown</a>.</p>
+{{ report | remove_first: title_line | markdownify }}

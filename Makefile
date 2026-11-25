@@ -52,4 +52,7 @@ setImage:
 setDescription:
 	python3 scripts/setDescription.py $(ARGS)
 
-.PHONY: serve updateFromZenodo updateFromOSF updateOpenAlex openalexReport europepmcReport updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription
+checkAuthors:
+	python3 scripts/checkAuthors.py $(ARGS)
+
+.PHONY: serve updateFromZenodo updateFromOSF updateOpenAlex openalexReport europepmcReport updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription checkAuthors
