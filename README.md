@@ -3,13 +3,12 @@
 This repository keeps an overview of published preprints of current, registered, and past
 BioHackathon events.
 
-## Order of the commands
+## Order of the commands for OSF preprints
 
 The scripts below are run with `make`. Each step uses the output of the steps before it, so for new
-preprints the logical order is:
+preprints on OSF the logical order is:
 
-1. **New posts.** `make updateFromOSF ARGS="<BH_CODE> <DOI>"` for preprints on OSF, and
-   `make updateFromZenodo ARGS="<DOI>"` for preprints on Zenodo.
+1. **New posts.** `make updateFromOSF ARGS="<BH_CODE> <DOI>"`.
 2. **Short description.** `make setDescription` makes the `description:` from the abstract in the
    post.
 3. **PDFs and their metadata.**
@@ -30,9 +29,29 @@ preprints the logical order is:
    and Europe PMC.
 7. **Check the website** locally with `make serve`.
 
-Posts from Zenodo are supported by steps 1 and 2, `cachePdfs` and `extractPdfMetadata`.
-`updateFromZenodo` already adds `git:` to them. The other steps still assume OSF DOIs; see
-`TODO.md`.
+## Order of the commands for Zenodo preprints
+
+Support for preprints on Zenodo is not complete yet. For now, the logical order is:
+
+1. **New posts.** `make updateFromZenodo ARGS="<DOI>"`. The post already has `git:` and
+   `description:`, so `make updateGit` is not needed.
+2. **Short description.** `make setDescription` only reports a `description:` that differs from
+   the abstract, as for OSF posts.
+3. **PDFs and their metadata.**
+   1. `make cachePdfs` downloads the PDF of the latest version.
+   2. `make extractPdfMetadata` reads the event and repository links from the PDF.
+4. **Check the website** locally with `make serve`.
+
+The other commands do not work for Zenodo posts yet:
+
+* `findMarkdown` and `setImage` skip them, so there are no figures. `findFigures`,
+  `checkPdfFigures` and `exportFigures` have nothing to work on without `findMarkdown`.
+* `updateOpenAlex` and `updateWikidata` only search for BioHackrXiv preprints on OSF, and
+  `updateEuropePMC` may find nothing: it is not known yet whether Europe PMC has Zenodo preprints.
+  `createQuickstatements` only uses posts with a `wikidata:` line.
+* `openalexReport` and `europepmcReport` assume OSF DOIs.
+
+See the Zenodo section of `TODO.md`.
 
 ## Scripts
 
