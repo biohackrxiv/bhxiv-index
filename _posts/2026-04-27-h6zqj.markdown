@@ -3,7 +3,7 @@ layout: post
 title:  "Snakemake Hackathon 2026"
 date:   2026-04-27
 tags: SnakemakeHackathon2026
-doi: 10.37044/osf.io/h6zqj_v1
+doi: 10.37044/osf.io/h6zqj_v2
 authors:
   - name: Manar Abdalazem
   - name: Felix Bartusch

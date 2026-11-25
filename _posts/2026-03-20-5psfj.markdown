@@ -3,7 +3,7 @@ layout: post
 title:  "Towards Federated Learning Across Biobanks: Prototype Software from the 2026 Carnegie Mellon University–NVIDIA Hackathon"
 date:   2026-03-20
 tags: CMU26
-doi: 10.37044/osf.io/5psfj_v1
+doi: 10.37044/osf.io/5psfj_v2
 authors:
   - name: James Mu
     orcid: 0009-0008-1598-9292

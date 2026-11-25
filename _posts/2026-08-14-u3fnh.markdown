@@ -3,7 +3,7 @@ layout: post
 title: "INTOXICOM Workshop Report: Making toxicology tools more accessible and interoperable"
 date: 2026-08-14
 tags: INTOXICOM
-doi: 10.37044/osf.io/u3fnh_v1
+doi: 10.37044/osf.io/u3fnh_v2
 authors:
   - name: Meike Bünger
     orcid: 0009-0002-7664-0058

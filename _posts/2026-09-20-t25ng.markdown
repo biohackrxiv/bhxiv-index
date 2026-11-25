@@ -3,7 +3,7 @@ layout: post
 title:  "DBCLS BioHackathon 2026 report: Extending TogoMCP beyond RDF Portal while making its schema guides check their own answers"
 date:   2026-09-20
 tags: BH26JP
-doi: 10.37044/osf.io/t25ng_v1
+doi: 10.37044/osf.io/t25ng_v2
 authors:
   - name: Akira R Kinjo
     orcid: 0000-0002-4006-8208

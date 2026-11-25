@@ -3,7 +3,7 @@ layout: post
 title:  "BioHackSWAT4HCLS25 report: Towards AI-Ready Datasets for the Life Sciences"
 date:   2025-05-04
 tags: SWAT4HCLS25
-doi: 10.37044/osf.io/xqe8h_v1
+doi: 10.37044/osf.io/xqe8h_v2
 europepmc: PPR1013743
 wikidata: Q134351095
 authors:
