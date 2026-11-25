@@ -31,7 +31,8 @@ with in the front matter:
     the list), `doi`, `zenodo` and `date`, plus `title` and `authors` when they differ from the
     latest version.
 
-The body is the abstract (the Zenodo description), converted from HTML to Markdown.
+The body is the abstract (the Zenodo description) as plain text: HTML, Markdown and Pandoc
+annotations, including citations ([@key]), are removed.
 
 What cannot be found is reported per post: for example authors without ORCID, an event without a
 tag page. The other scripts add `image:`, `europepmc:`, `openalex:` and
@@ -224,27 +225,47 @@ def authors(record):
             for c in record['metadata'].get('creators', [])]
 
 
-def markdown_abstract(description):
-    """The HTML description of a record as Markdown paragraphs of at most WIDTH characters."""
+# Pandoc citations: [@key] and [see @key, p. 3; @intention:key2]
+CITATION = r'\s*\[[^\[\]]*@[^\[\]]*\]'
+
+
+def strip_markdown(text):
+    """The text without Markdown and Pandoc annotations: citations, images and footnotes are
+    removed, of links, emphasis and code only the text is kept, and headings, block quotes and
+    list markers are removed from the start of lines. Line breaks are kept."""
+    text = re.sub(CITATION, '', text)
+    text = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', text)               # images
+    text = re.sub(r'\[([^\]]+)\]\([^)]*\)', r'\1', text)            # links
+    text = re.sub(r'<(https?://[^>]+)>', r'\1', text)                # automatic links
+    text = re.sub(r'\[\^[^\]]+\]', '', text)                         # footnotes
+    text = re.sub(r'\{[#.][^{}]*\}', '', text)                         # {#fig:x} and {.class}
+    text = re.sub(r'(?m)^[ \t]{0,3}(#{1,6}\s+|>\s?|[*+-]\s+|\d+[.)]\s+)', '', text)
+    for mark in (r'\*\*\*', r'\*\*', r'\*', '___', '__', '_', '~~'):  # emphasis, strikethrough
+        text = re.sub(r'(?<![\w*_~])%s(?=\S)(.+?)(?<=\S)%s(?![\w*_~])' % (mark, mark), r'\1', text)
+    text = re.sub(r'`+([^`]+)`+', r'\1', text)                        # code
+    text = re.sub(r'\\([\\`*_{}\[\]()#+\-.!|~<>])', r'\1', text)       # escaped characters
+    return text
+
+
+def plain_abstract(description):
+    """The HTML description of a record as plain text paragraphs of at most WIDTH characters,
+    without HTML, Markdown and Pandoc annotations, and the Pandoc citations that were removed."""
     text = description or ''
-    # Zenodo turned the underscores of citation keys into emphasis: [@uses<em>method</em>in:x]
-    text = re.sub(r'\[@[^\]]*\]', lambda m: re.sub(r'</?em>', '_', m.group(0)), text)
-    text = re.sub(r'<(em|i)>(.*?)</\1>', r'*\2*', text, flags=re.S)
-    text = re.sub(r'<(strong|b)>(.*?)</\1>', r'**\2**', text, flags=re.S)
-    text = re.sub(r'<code>(.*?)</code>', r'`\1`', text, flags=re.S)
-    text = re.sub(r'<a\s[^>]*href="([^"]+)"[^>]*>(.*?)</a>', r'[\2](\1)', text, flags=re.S)
-    text = re.sub(r'<li[^>]*>', '\n\n* ', text)
-    text = re.sub(r'<br\s*/?>|</p>|</li>|</[uo]l>|<p[^>]*>|<[uo]l[^>]*>', '\n\n', text)
-    text = html.unescape(re.sub(r'<[^>]+>', '', text))
+    # Zenodo may have turned the underscores of citation keys into emphasis:
+    # [@uses<em>method</em>in:x]; list the citations before the HTML is removed
+    removed = [re.sub(r'</?em>', '_', c).strip() for c in re.findall(CITATION, text)]
+    text = re.sub(CITATION, '', text)
+    # HTML: keep the text, one paragraph per paragraph, line break and list item
+    text = re.sub(r'<br\s*/?>|</?p[^>]*>|</?li[^>]*>|</?[uo]l[^>]*>|</?h\d[^>]*>', '\n\n', text)
+    text = strip_markdown(html.unescape(re.sub(r'<[^>]+>', '', text)))
     paragraphs = []
     for paragraph in re.split(r'\n\s*\n', text):
         paragraph = re.sub(r'\s+', ' ', paragraph).strip()
+        paragraph = re.sub(r'\s+([.,;:!?)])', r'\1', paragraph)         # left by removed citations
         if paragraph:
-            indent = '  ' if paragraph.startswith('* ') else ''
             paragraphs.append('\n'.join(textwrap.wrap(
-                paragraph, WIDTH, subsequent_indent=indent,
-                break_long_words=False, break_on_hyphens=False)))
-    return '\n\n'.join(paragraphs)
+                paragraph, WIDTH, break_long_words=False, break_on_hyphens=False)))
+    return '\n\n'.join(paragraphs), removed
 
 
 def quoted(text):
@@ -282,7 +303,7 @@ def build_post(record, versions, paper_md):
     date = versions[0]['created'][:10]
 
     tag = event_tag(paper, metadata.get('notes'), missing)
-    abstract = markdown_abstract(metadata.get('description'))
+    abstract, citations = plain_abstract(metadata.get('description'))
     git = repository(record, paper)
 
     lines = ['---', 'layout: post', 'title:  ' + quoted(title), 'date:   ' + date]
@@ -318,8 +339,12 @@ def build_post(record, versions, paper_md):
     for person in people:
         if not person['orcid']:
             missing.append('ORCID of author %s' % person['name'])
-    if re.search(r'\[@', abstract):
-        missing.append('the abstract has Pandoc citations ([@key]), which are shown as they are')
+    if citations:
+        missing.append('citations removed from the abstract: ' + ' '.join(citations))
+    if re.search(r'(?<![\w.])@\w', abstract):
+        missing.append('the abstract may have Pandoc citations in the text (@key), which are kept')
+    if re.search(r'\\[a-zA-Z]+', abstract):
+        missing.append('the abstract has LaTeX commands (\\name), which are kept')
     if re.search(r'{[{%]', abstract):
         missing.append('the abstract has {{ or {%, which Jekyll reads as Liquid')
     for key in ('image', 'europepmc', 'openalex', 'wikidata'):

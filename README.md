@@ -20,9 +20,11 @@ The post is named after the concept record (`<date of version 1>-<concept record
 its URL stays the same for new versions. The front matter has the title, authors (with ORCID),
 `doi:` and `zenodo:` of the latest version, `concept:` with the concept DOI and record, the
 repository (`git:`), a `description:`, and a `versions:` list when there is more than one version.
-The event tag comes from the `paper.md` in the record. The body is the abstract (the Zenodo description). For each post, the
-script prints what it could not find, such as authors without ORCID or an event without a page in
-`tag/`. Existing posts are not changed; the differences with Zenodo are printed instead.
+The event tag comes from the `paper.md` in the record. The body is the abstract (the Zenodo
+description) as plain text, without HTML, Markdown and citations (`[@key]`). For each post, the
+script prints what it could not find or removed, such as authors without ORCID, an event without a
+page in `tag/`, or the citations taken out of the abstract. Existing posts are not changed; the
+differences with Zenodo are printed instead.
 
 Without DOIs, the script will use all records of the BioHackrXiv community on Zenodo
 (`--community`), once that community exists.
