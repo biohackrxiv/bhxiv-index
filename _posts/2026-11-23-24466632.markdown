@@ -52,6 +52,7 @@ versions:
     doi: 10.5281/zenodo.24497647
     zenodo: 24497647
     date: 2026-11-24
+image: /assets/images/figures/24497647/logic-programming.png
 ---
 
 As part of the one week Biohackathion 2019 in Fukuoka (福岡) Japan, we formed a working group on logic programming for the
