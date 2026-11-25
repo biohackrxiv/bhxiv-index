@@ -1,6 +1,9 @@
 serve:
 	bundle exec jekyll serve $(ARGS)
 
+updateFromZenodo:
+	python3 scripts/updateFromZenodo.py $(ARGS)
+
 updateOpenAlex:
 	python3 scripts/openalex.py $(ARGS)
 
@@ -46,4 +49,4 @@ setImage:
 setDescription:
 	python3 scripts/setDescription.py $(ARGS)
 
-.PHONY: serve updateOpenAlex openalexReport europepmcReport updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription
+.PHONY: serve updateFromZenodo updateOpenAlex openalexReport europepmcReport updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription

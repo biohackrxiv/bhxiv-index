@@ -5,6 +5,28 @@ BioHackathon events.
 
 ## Scripts
 
+### New preprints from Zenodo
+
+`scripts/updateFromZenodo.py` creates a post in `_posts/` for a BioHackrXiv preprint on
+[Zenodo](https://zenodo.org/), from the [Zenodo API](https://developers.zenodo.org/). It takes the
+Zenodo DOI (`10.5281/zenodo.<number>`) of any version of the preprint, or its concept DOI:
+
+```shell
+make updateFromZenodo ARGS="10.5281/zenodo.24497647"
+make updateFromZenodo ARGS="--dry-run 10.5281/zenodo.24466632"
+```
+
+The post is named after the concept record (`<date of version 1>-<concept record>.markdown`), so
+its URL stays the same for new versions. The front matter has the title, authors (with ORCID),
+`doi:` and `zenodo:` of the latest version, `concept:` with the concept DOI and record, the
+repository (`git:`), a `description:`, and a `versions:` list when there is more than one version.
+The event tag comes from the `paper.md` in the record. The body is the abstract (the Zenodo description). For each post, the
+script prints what it could not find, such as authors without ORCID or an event without a page in
+`tag/`. Existing posts are not changed; the differences with Zenodo are printed instead.
+
+Without DOIs, the script will use all records of the BioHackrXiv community on Zenodo
+(`--community`), once that community exists.
+
 ### OpenAlex IDs
 
 `scripts/openalex.py` adds the OpenAlex work ID of each preprint to the front matter of the
