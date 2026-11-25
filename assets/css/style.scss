@@ -29,6 +29,15 @@
   border: 0;
 }
 
+.preprint-versions {
+  .table-wrapper { overflow-x: auto; }
+  table { font-size: 0.9em; margin-bottom: $spacing-unit * .5; }
+  td, th { white-space: nowrap; }
+  .current-version td { font-weight: bold; }
+  .version-note { font-weight: normal; opacity: .7; }
+  .version-changes td { white-space: normal; font-size: 0.9em; border-top: 0; }
+}
+
 .preprint-figures {
   .figure-panels {
     display: grid;

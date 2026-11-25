@@ -109,6 +109,36 @@ layout: base
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
 
+    {%- if page.versions.size > 0 %}
+    <section class="preprint-versions" aria-labelledby="versions-heading">
+      <h2 id="versions-heading">Version history</h2>
+      <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th scope="col">Version</th><th scope="col">Posted</th><th scope="col">DOI</th><th scope="col">Links</th></tr>
+        </thead>
+        <tbody>
+        {%- for version in page.versions reversed %}
+          {%- assign version_id = version.doi | downcase | remove_first: '10.37044/osf.io/' %}
+          <tr{% if version.doi == page.doi %} class="current-version"{% endif %}>
+            <td>{{ version.version }}{% if version.doi == page.doi %} <span class="version-note">(this page)</span>{% endif %}</td>
+            <td><time datetime="{{ version.date | date: '%Y-%m-%d' }}">{{ version.date | date: date_format }}</time></td>
+            <td><a href="https://doi.org/{{ version.doi }}">{{ version.doi }}</a></td>
+            <td>
+              {%- if version_id != version.doi %}<a href="https://osf.io/download/{{ version_id }}/">PDF</a>{% endif -%}
+              {%- if version.europepmc %}{% if version_id != version.doi %} · {% endif %}<a href="https://europepmc.org/article/PPR/{{ version.europepmc }}">Europe PMC</a>{% endif -%}
+            </td>
+          </tr>
+          {%- if version.title %}
+          <tr class="version-changes"><td></td><td colspan="3">Title of this version: {{ version.title | escape }}</td></tr>
+          {%- endif %}
+        {%- endfor %}
+        </tbody>
+      </table>
+      </div>
+    </section>
+    {%- endif %}
+
     {%- assign osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
     {%- assign preprint_figures = site.data.figures[osf_id].figures -%}
     {%- if preprint_figures.size > 0 %}
