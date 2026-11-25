@@ -135,10 +135,13 @@ statement that was just added look missing.
 example for text mining or checking the content of the preprints. The cache is listed in
 `.gitignore` and is not part of the git repository.
 
-The OSF identifier is taken from the `doi:` of each post (for example `c8jw6_v1` from
-`10.37044/osf.io/c8jw6_v1`). The script asks the [OSF API](https://developer.osf.io/) for the primary
-file of that preprint, which is the PDF offered on the preprint page, and saves it as
-`cache/pdfs/<identifier>.pdf`. A download that is not a PDF is not stored, and is reported as failed.
+The identifier is taken from the `doi:` of each post. For OSF preprints it is the OSF identifier
+(for example `c8jw6_v1` from `10.37044/osf.io/c8jw6_v1`), and the script asks the
+[OSF API](https://developer.osf.io/) for the primary file of that preprint, which is the PDF offered
+on the preprint page. For Zenodo preprints it is the record number of the version (for example
+`24497647` from `10.5281/zenodo.24497647`), and the script takes `paper.pdf` from the files of the
+record (or the only other PDF that is not in `~contrib/`), using the
+[Zenodo API](https://developers.zenodo.org/). The PDF is saved as `cache/pdfs/<identifier>.pdf`. A download that is not a PDF is not stored, and is reported as failed.
 
 ```shell
 make cachePdfs

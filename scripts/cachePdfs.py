@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """Download the PDF of each preprint in _posts/ into a local cache (cache/pdfs/).
 
-For each post, the OSF identifier is taken from the `doi:` (for example `c8jw6_v1` from
-10.37044/osf.io/c8jw6_v1). The OSF API (https://developer.osf.io/) gives the primary file of the
-preprint, which is downloaded as cache/pdfs/<identifier>.pdf. PDFs that are already in the cache are
-not downloaded again. The cache is not part of the git repository.
+The identifier is taken from the `doi:` of each post, which is the latest version:
+
+  * OSF: the OSF identifier (for example `c8jw6_v1` from 10.37044/osf.io/c8jw6_v1). The OSF API
+    (https://developer.osf.io/) gives the primary file of the preprint.
+  * Zenodo: the record number of the version (for example `24497647` from
+    10.5281/zenodo.24497647). The Zenodo API (https://developers.zenodo.org/) gives the files of the
+    record; the PDF is `paper.pdf`, or else the only PDF that is not in the `~contrib/` folder.
+
+The PDF is downloaded as cache/pdfs/<identifier>.pdf. PDFs that are already in the cache are not
+downloaded again. The cache is not part of the git repository.
 
 Copyright (c) 2026 Egon Willighagen
 
@@ -43,6 +49,8 @@ POSTS = os.path.join(HERE, '..', '_posts', '*.markdown')
 CACHE = os.path.join(HERE, '..', 'cache', 'pdfs')
 USER_AGENT = 'bhxiv-index/0.1 (https://github.com/biohackrxiv/bhxiv-index)'
 DOI_PREFIX = '10.37044/osf.io/'
+ZENODO_API_URL = 'https://zenodo.org/api/records/'
+ZENODO_DOI_PREFIX = '10.5281/zenodo.'
 
 
 def open_url(url, retries=3):
@@ -58,8 +66,9 @@ def open_url(url, retries=3):
             time.sleep(wait)
 
 
-def osf_ids():
-    """Return the sorted OSF identifiers from the `doi:` lines of the posts."""
+def preprint_ids():
+    """Return the sorted (identifier, source) of the `doi:` lines of the posts; the source is
+    'osf' or 'zenodo'. Posts with another DOI are skipped."""
     ids = set()
     for path in glob.glob(POSTS):
         with open(path, encoding='utf-8') as handle:
@@ -67,8 +76,23 @@ def osf_ids():
         if match:
             doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', match.group(1).lower())
             if doi.startswith(DOI_PREFIX):
-                ids.add(doi[len(DOI_PREFIX):])
+                ids.add((doi[len(DOI_PREFIX):], 'osf'))
+            elif doi.startswith(ZENODO_DOI_PREFIX) and doi[len(ZENODO_DOI_PREFIX):].isdigit():
+                ids.add((doi[len(ZENODO_DOI_PREFIX):], 'zenodo'))
+            else:
+                print('skipped %s: not an OSF or Zenodo DOI (%s)' % (os.path.basename(path), doi))
     return sorted(ids)
+
+
+def save_pdf(content, target):
+    """Write the content to target; raise when it is not a PDF."""
+    if not content.startswith(b'%PDF'):
+        raise ValueError('the file is not a PDF')
+    partial = target + '.part'
+    with open(partial, 'wb') as handle:
+        handle.write(content)
+    os.replace(partial, target)
+    return len(content)
 
 
 def download_pdf(osf_id, target):
@@ -79,14 +103,24 @@ def download_pdf(osf_id, target):
     if not primary:
         raise ValueError('no primary file')
     with open_url(DOWNLOAD_URL + primary['id'] + '/') as response:
-        content = response.read()
-    if not content.startswith(b'%PDF'):
-        raise ValueError('primary file is not a PDF')
-    partial = target + '.part'
-    with open(partial, 'wb') as handle:
-        handle.write(content)
-    os.replace(partial, target)
-    return len(content)
+        return save_pdf(response.read(), target)
+
+
+def download_zenodo_pdf(record, target):
+    """Download the PDF of a Zenodo record to target; raise when there is no single PDF."""
+    with open_url(ZENODO_API_URL + record) as response:
+        files = json.load(response).get('files', [])
+    pdfs = [f for f in files if f['key'].lower().endswith('.pdf') and '/' not in f['key']]
+    paper = [f for f in pdfs if f['key'] == 'paper.pdf']
+    if paper:
+        pdfs = paper
+    if len(pdfs) != 1:
+        raise ValueError('%d PDFs in the record: %s' % (len(pdfs), ', '.join(f['key'] for f in pdfs)))
+    with open_url(pdfs[0]['links']['self']) as response:
+        return save_pdf(response.read(), target)
+
+
+DOWNLOADERS = {'osf': download_pdf, 'zenodo': download_zenodo_pdf}
 
 
 def main():
@@ -97,20 +131,20 @@ def main():
     args = parser.parse_args()
 
     os.makedirs(args.cache, exist_ok=True)
-    ids = osf_ids()
+    ids = preprint_ids()
     downloaded, cached, failed = 0, 0, []
-    for osf_id in ids:
-        target = os.path.join(args.cache, osf_id + '.pdf')
+    for identifier, source in ids:
+        target = os.path.join(args.cache, identifier + '.pdf')
         if os.path.exists(target):
             cached += 1
             continue
         try:
-            size = download_pdf(osf_id, target)
+            size = DOWNLOADERS[source](identifier, target)
         except (urllib.error.URLError, ValueError, KeyError, OSError) as error:
-            print('FAILED %s: %s' % (osf_id, error))
-            failed.append(osf_id)
+            print('FAILED %s (%s): %s' % (identifier, source, error))
+            failed.append(identifier)
         else:
-            print('downloaded %s (%d bytes)' % (osf_id, size))
+            print('downloaded %s from %s (%d bytes)' % (identifier, source, size))
             downloaded += 1
         time.sleep(args.delay)
     print('%d preprints: %d downloaded, %d already cached, %d failed'
