@@ -2,7 +2,7 @@ serve:
 	bundle exec jekyll serve $(ARGS)
 
 updateOpenAlex:
-	python3 scripts/openalex.py
+	python3 scripts/openalex.py $(ARGS)
 
 updateEuropePMC:
 	python3 scripts/europepmc.py $(ARGS)

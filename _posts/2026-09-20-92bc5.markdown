@@ -14,6 +14,7 @@ authors:
 europepmc: PPR1323242
 git: https://github.com/biohackathon-japan/BH26-logica
 description: "Clinical AI depends on both the relevance of the information it receives and the meaning of that information."
+openalex: W7213547962
 versions:
   - version: 1
     doi: 10.37044/osf.io/92bc5_v1

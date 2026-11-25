@@ -31,6 +31,7 @@ europepmc: PPR1361333
 git: https://github.com/TGX-UM/INTOXICOM_Workshop_3
 image: /assets/images/figures/u3fnh_v1/SciLifeLabServe.png
 description: "As part of the INTOXICOM Implementation Study for the ELIXIR Toxicology Community a series of workshops is organized (Martens et al., 2024)."
+openalex: W7203735421
 versions:
   - version: 1
     doi: 10.37044/osf.io/u3fnh_v1

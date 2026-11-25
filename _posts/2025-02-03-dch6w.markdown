@@ -13,6 +13,7 @@ authors:
 europepmc: PPR973986
 git: https://github.com/PhilReedData/bioschemas-for-mortals
 description: "We report here on the progress of project #10: \"Bioschemas for Mortals\" from BioHackathon Europe 2024."
+openalex: W4407070450
 versions:
   - version: 1
     doi: 10.37044/osf.io/dch6w_v1
@@ -22,6 +23,9 @@ versions:
     doi: 10.37044/osf.io/dch6w_v2
     date: 2025-02-03
     europepmc: PPR973986
+concept:
+  doi: 10.37044/osf.io/dch6w
+  openalex: W4406796082
 ---
 
 We report here on the progress of project #10: "Bioschemas for Mortals" from BioHackathon Europe 2024. The goal of this project is to reimagine, reframe and supplement the existing Bioschemas guidance available. We identified patterns of use, commonly undertaken tasks and user personas and roles. This information will be used to identify what is needed by less technical users, ultimately providing specific code examples that can be copy/pasted, documented examples for different web setups, customised guidance for different personas, and to address usability and content accessibility. We will also use the learnings from the Bioschemas hackathons to progress more quickly on the domain-agnostic schemas.sci site.

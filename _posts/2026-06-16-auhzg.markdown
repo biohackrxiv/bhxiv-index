@@ -17,6 +17,7 @@ europepmc: PPR1253144
 wikidata: Q140288058
 git: https://github.com/andrawaag/oviedo-goblin-hackathon26
 description: "SSSOM shares ontology mappings as a TSV+YAML file usually consumed as a dataframe."
+openalex: W7164968853
 ---
 
 SSSOM shares ontology mappings as a TSV+YAML file usually consumed as a dataframe. At the GOBLIN hackathon we explored rendering

@@ -24,6 +24,7 @@ authors:
 europepmc: PPR1140179
 git: https://github.com/research-software-ecosystem/micoreca
 description: "The rapid growth of microbiome research has led to the development of numerous bioinformatics tools and databases, but information about them remains…"
+openalex: W7117743452
 versions:
   - version: 1
     doi: 10.37044/osf.io/jfpsx_v1

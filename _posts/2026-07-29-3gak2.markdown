@@ -19,6 +19,7 @@ wikidata: Q140915208
 europepmc: PPR1292945
 git: https://github.com/algarfer/goblin-hackathon-ovd-26
 description: "We describe how synthetic HL7 FHIR data in RDF was produced directly from Shape Expressions (ShEx), using the authoritative FHIR R4 ShEx schema as the sole…"
+openalex: W7171680136
 versions:
   - version: 1
     doi: 10.37044/osf.io/3gak2_v1

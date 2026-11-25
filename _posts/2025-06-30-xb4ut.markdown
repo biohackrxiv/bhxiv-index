@@ -40,6 +40,7 @@ authors:
 europepmc: PPR1044435
 git: https://github.com/bge-barcoding/BGE-Barcoding-Hackathon-Report
 description: "The 2024 BGE Barcoding Hackathon, hosted by the Biodiversity Genomics Europe (BGE) project in Leiden, Netherlands, focused on advancing digital…"
+openalex: W4411836265
 ---
 
 The 2024 BGE Barcoding Hackathon, hosted by the Biodiversity Genomics Europe (BGE) project in Leiden, Netherlands, focused on

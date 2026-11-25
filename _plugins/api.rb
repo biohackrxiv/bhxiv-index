@@ -91,6 +91,7 @@ module BioHackrXivApi
         'figures' => figures(osf_id)
       }
       article['versions'] = versions(data['versions']) if data['versions'].is_a?(Array)
+      article['concept'] = data['concept'].to_h { |key, value| [key.to_s, value] } if data['concept'].is_a?(Hash)
       article
     end
 
