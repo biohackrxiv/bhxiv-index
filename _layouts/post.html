@@ -112,6 +112,35 @@ layout: base
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
 
+    {%- comment %} the key in _data/figures.json: the OSF identifier or the Zenodo record {% endcomment -%}
+    {%- assign figures_id = page.doi | downcase | remove_first: '10.37044/osf.io/' | remove_first: '10.5281/zenodo.' -%}
+    {%- assign preprint_figures = site.data.figures[figures_id].figures -%}
+    {%- if preprint_figures.size > 0 %}
+    <section class="preprint-figures" aria-labelledby="figures-heading">
+      <h2 id="figures-heading">Figures</h2>
+      <div class="figure-panels">
+      {%- for figure in preprint_figures %}
+        {%- assign caption_text = figure.caption | strip_html | markdownify | strip_html | normalize_whitespace -%}
+        <figure>
+          <a href="{{ figure.file | relative_url }}"><img src="{{ figure.file | relative_url }}" alt="{{ caption_text | truncate: 125 | escape }}" loading="lazy" /></a>
+          <figcaption>
+          {%- if caption_text.size > 140 %}
+            <details><summary>{{ caption_text | truncate: 120 }}</summary>{{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}</details>
+          {%- else %}
+            {{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}
+          {%- endif %}
+          </figcaption>
+        </figure>
+      {%- endfor %}
+      </div>
+      {%- if page.zenodo %}
+      <p class="post-meta">These figures come from the copy of the source repository in the <a href="https://zenodo.org/records/{{ page.zenodo }}">Zenodo record</a> of the preprint; their captions are also in the PDF.</p>
+      {%- else %}
+      <p class="post-meta">These figures come from the {% if page.git %}<a href="{{ page.git }}">source repository</a>{% else %}source repository{% endif %} of the preprint; their captions are also in the PDF.</p>
+      {%- endif %}
+    </section>
+    {%- endif %}
+
     {%- comment %} a preprint without a `versions:` list has one version: the post itself {% endcomment -%}
     {%- if page.versions.size > 0 %}{% assign history = page.versions %}{% else %}{% assign history = '' | split: '' | push: page %}{% endif -%}
     {%- assign only_version = page.doi | split: '_v' -%}
@@ -143,35 +172,6 @@ layout: base
         </tbody>
       </table>
       </div>
-    </section>
-    {%- endif %}
-
-    {%- comment %} the key in _data/figures.json: the OSF identifier or the Zenodo record {% endcomment -%}
-    {%- assign figures_id = page.doi | downcase | remove_first: '10.37044/osf.io/' | remove_first: '10.5281/zenodo.' -%}
-    {%- assign preprint_figures = site.data.figures[figures_id].figures -%}
-    {%- if preprint_figures.size > 0 %}
-    <section class="preprint-figures" aria-labelledby="figures-heading">
-      <h2 id="figures-heading">Figures</h2>
-      <div class="figure-panels">
-      {%- for figure in preprint_figures %}
-        {%- assign caption_text = figure.caption | strip_html | markdownify | strip_html | normalize_whitespace -%}
-        <figure>
-          <a href="{{ figure.file | relative_url }}"><img src="{{ figure.file | relative_url }}" alt="{{ caption_text | truncate: 125 | escape }}" loading="lazy" /></a>
-          <figcaption>
-          {%- if caption_text.size > 140 %}
-            <details><summary>{{ caption_text | truncate: 120 }}</summary>{{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}</details>
-          {%- else %}
-            {{ figure.caption | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}
-          {%- endif %}
-          </figcaption>
-        </figure>
-      {%- endfor %}
-      </div>
-      {%- if page.zenodo %}
-      <p class="post-meta">These figures come from the copy of the source repository in the <a href="https://zenodo.org/records/{{ page.zenodo }}">Zenodo record</a> of the preprint; their captions are also in the PDF.</p>
-      {%- else %}
-      <p class="post-meta">These figures come from the {% if page.git %}<a href="{{ page.git }}">source repository</a>{% else %}source repository{% endif %} of the preprint; their captions are also in the PDF.</p>
-      {%- endif %}
     </section>
     {%- endif %}
 
