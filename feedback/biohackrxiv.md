@@ -302,30 +302,60 @@ The first and family names are the same, but the index and the PDF differ in mid
 
 ## Authors in a different order
 
-The index and the PDF have the same authors, in a different order.
+The PDF is leading for the order of the authors. Either the index and the PDF have the same authors in a different order, or, when the author lists also differ in other ways, the authors that are in both are in a different order; then the authors that are in another place are listed.
 
-10 preprints.
+25 preprints.
 
+* [Logic Programming for the Biomedical Sciences](https://index.biohackrxiv.org/2020/04/10/km9ux.html) (km9ux)
+  * the authors that are in both are in another order in the PDF; moved: Yasunori Yamamoto
 * [Comparison of SARS-CoV-2 variants with INSaFLU and galaxyproject](https://index.biohackrxiv.org/2020/05/14/9d3cz.html) (9d3cz)
   * the order of the authors differs from the PDF
+* [Knowledge graphs and wikidata subsetting](https://index.biohackrxiv.org/2021/04/02/wu9et.html) (wu9et)
+  * the authors that are in both are in another order in the PDF; moved: Alejandro González Hevia; Daniel Fernández Álvarez
+* [Network analysis of specimen co-collection](https://index.biohackrxiv.org/2021/12/07/4ahng.html) (4ahng)
+  * the authors that are in both are in another order in the PDF; moved: Lien Reyserhove
+* [Enhancement and Reusage of Biomedical Knowledge Graph Subsets](https://index.biohackrxiv.org/2022/11/17/n7qku.html) (n7qku)
+  * the authors that are in both are in another order in the PDF; moved: Seyed Amir Hosseini Beghaeiraveri; Ammar Ammar
+* [RDF Data integration using Shape Expressions](https://index.biohackrxiv.org/2023/07/04/md73k.html) (md73k)
+  * the authors that are in both are in another order in the PDF; moved: Yasunori Yamamoto
 * [BioHackEU22 Report: Enhancing Research Data Management in Galaxy and Data Stewardship Wizard by utilising RO-Crates](https://index.biohackrxiv.org/2023/07/30/24jst.html) (24jst)
   * the order of the authors differs from the PDF
+* [Secure data-out API - enabling encrypted htsget transactions](https://index.biohackrxiv.org/2024/04/04/at9f7.html) (at9f7)
+  * the authors that are in both are in another order in the PDF; moved: Stefan Negru; Johan Viklund
 * [Ontologies for single-cell experiments](https://index.biohackrxiv.org/2024/08/29/wr93q.html) (wr93q)
   * the order of the authors differs from the PDF
+* [DBCLS BioHackathon 2024 report: Everything about workflow and container](https://index.biohackrxiv.org/2024/08/31/6qrau.html) (6qrau)
+  * the authors that are in both are in another order in the PDF; moved: Pitiporn Noisagul; Kentaro Yamamoto; Manabu Ishii; Naohisa Goto
+* [INTOXICOM Workshop Report: FAIRification of Toxicological Research Output: Leveraging ELIXIR Resources](https://index.biohackrxiv.org/2024/11/05/un2rw.html) (un2rw)
+  * the authors that are in both are in another order in the PDF; moved: Gerhard Burger
 * [Exploring Bioinformatics in the Wild: Insights from Real LLM Conversations](https://index.biohackrxiv.org/2024/12/11/n43qx.html) (n43qx)
   * the order of the authors differs from the PDF
 * [On the value of data](https://index.biohackrxiv.org/2024/12/18/7dux8.html) (7dux8)
   * the order of the authors differs from the PDF
+* [1st SpatialData Developer Workshop](https://index.biohackrxiv.org/2024/12/20/8ck3e.html) (8ck3e)
+  * the authors that are in both are in another order in the PDF; moved: Wouter-Michiel Vierdag; Clarence Mah; Helena Crowell; Quentin Blampey; Benjamin Rombaut; Lotte Pollaris; Estella Yixing Dong; Laurens Lehner; Grzegorz Bokota; Tong LI; Dario Righelli; Vincent J Carey
+* [Enhancing multi-omic analyses through a federated microbiome analysis service](https://index.biohackrxiv.org/2025/01/06/3x274.html) (3x274)
+  * the authors that are in both are in another order in the PDF; moved: Matt Burridge
+* [BioHackEU24 report: Creating user benefit from ARC-ISA RO-Crate machine-actionability & Increasing FAIRness of digital agrosystem resources by extending Bioschemas](https://index.biohackrxiv.org/2025/02/02/x9d6b.html) (x9d6b_v1)
+  * the authors that are in both are in another order in the PDF; moved: Sebastian Beier
+* [Secure Processing Environments as a Service in the de.NBI Cloud](https://index.biohackrxiv.org/2025/03/11/pzmue.html) (pzmue_v1)
+  * the authors that are in both are in another order in the PDF; moved: Landfried Kraatz
 * [BioHackEU24 report: Integrating Bioconductor packages with the ELIXIR Research Software Ecosystem using EDAM](https://index.biohackrxiv.org/2025/04/08/dsgnw.html) (dsgnw_v1)
   * the order of the authors differs from the PDF
+* [AI for Computational Biology: Highlights from the first BioAI Hackathon at University of Warsaw](https://index.biohackrxiv.org/2025/07/03/vbw4t.html) (vbw4t_v1)
+  * the authors that are in both are in another order in the PDF; moved: Rahaf M. Ahmad
 * [on2vec: Ontology Embeddings with Graph Neural Networks and Sentence Transformers](https://index.biohackrxiv.org/2025/10/21/4f763.html) (4f763_v1)
   * the order of the authors differs from the PDF
 * [DBCLS BioHackathon 2025 report on the WikiBlitz](https://index.biohackrxiv.org/2025/10/24/7s6da.html) (7s6da_v1)
   * the order of the authors differs from the PDF
 * [BioHackEU25 report: Scop3PTM Next - Interactive visualization of PTM data across sequence, structure and interactions](https://index.biohackrxiv.org/2025/11/26/xvrud.html) (xvrud_v1)
   * the order of the authors differs from the PDF
+* [Towards Federated Learning Across Biobanks: Prototype Software from the 2026 Carnegie Mellon University–NVIDIA Hackathon](https://index.biohackrxiv.org/2026/03/20/5psfj.html) (5psfj_v2)
+  * the authors that are in both are in another order in the PDF; moved: Mariona Jaramillo Civill
 * [INTOXICOM Workshop Report: Advancing FAIR toxicology research output across Europe: ELIXIR & FAIRsharing studies](https://index.biohackrxiv.org/2026/05/01/64dfv.html) (64dfv_v1)
   * the order of the authors differs from the PDF
+* [2nd SpatialData Hackathon: Frameworks, Formats and Interoperability](https://index.biohackrxiv.org/2026/06/07/s6bph.html) (s6bph_v2)
+  * the authors that are in both are in another order in the PDF; moved: Marvin Albert; Selman Özleyen; Wouter-Michiel Vierdag; Luke Zappia; Marco Varrone; Yimin Zheng; Silvia Maria Macri; Alexander Blume; Aaron Kollotzek; Helena Crowell; Lorenzo Cerrone; Sonja Stockhaus; Samir Moustafa
 
 ## Differences between the PDF and the Markdown source
 

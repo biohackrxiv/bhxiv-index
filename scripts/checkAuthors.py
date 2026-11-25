@@ -101,7 +101,10 @@ SECTIONS = [
      'The first and family names are the same, but the index and the PDF differ in middle names, '
      'initials or accents. These are listed for completeness.'),
     ('order', 'Authors in a different order',
-     'The index and the PDF have the same authors, in a different order.'),
+     'The PDF is leading for the order of the authors. Either the index and the PDF have the same '
+     'authors in a different order, or, when the author lists also differ in other ways, the '
+     'authors that are in both are in a different order; then the authors that are in another '
+     'place are listed.'),
     ('markdown', 'Differences between the PDF and the Markdown source',
      'The authors in the YAML header of the Markdown source (paper.md) of the preprint differ from '
      'the PDF. The PDF is what was published; the Markdown may have been changed later.'),
@@ -346,6 +349,33 @@ def same_first_and_family(a, b):
     return bool(words_a and words_b) and words_a[0] == words_b[0] and words_a[-1] == words_b[-1]
 
 
+def moved_authors(first, second):
+    """The authors of `first` that are in another place relative to the others in `second`,
+    for lists that only partly match. Authors are matched on the whole name, or else on a family
+    name that occurs once in both lists; the authors outside the longest sequence in the same
+    order in both lists are the ones that moved."""
+    keys2 = [name_key(a['name']) for a in second]
+    families1 = [family_key(a['name']) for a in first]
+    families2 = [family_key(a['name']) for a in second]
+    matched, used = [], set()
+    for i, author in enumerate(first):
+        key = name_key(author['name'])
+        j = keys2.index(key) if key in keys2 and keys2.index(key) not in used else None
+        if j is None and families1.count(families1[i]) == 1 and families2.count(families1[i]) == 1:
+            j = families2.index(families1[i])
+            j = None if j in used else j
+        if j is not None:
+            matched.append((i, j))
+            used.add(j)
+    # the longest increasing sequence of the places in `second`
+    best = []
+    for index, (_, j) in enumerate(matched):
+        best.append(max((best[k] for k in range(index) if matched[k][1] < j), key=len, default=[])
+                    + [index])
+    keep = set(max(best, key=len, default=[]))
+    return [first[i]['name'] for index, (i, _) in enumerate(matched) if index not in keep]
+
+
 def differences(label, first, second, first_label='post'):
     """[(kind, text)] describing how the author list `second` (from `label`) differs from
     `first`; kind is order, name, name-variant, missing or orcid-differs."""
@@ -367,6 +397,10 @@ def differences(label, first, second, first_label='post'):
                               % (first_label, first[i]['name'], label, second[j]['name'])))
         only1 = [first[i]['name'] for i in range(len(first)) if i not in same1]
         only2 = [second[j]['name'] for j in range(len(second)) if j not in same2]
+        moved = moved_authors(first, second)
+        if moved:
+            found.append(('order', 'the authors that are in both are in another order in the %s; '
+                                   'moved: %s' % (label, '; '.join(moved))))
         if only1:
             found.append(('missing', 'not in the %s: %s' % (label, '; '.join(only1))))
         if only2:
