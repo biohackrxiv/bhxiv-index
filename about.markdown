@@ -11,6 +11,18 @@ BioHackrXiv is [indexed by Europe PMC](https://europepmc.org/search?query=PUBLIS
 and [OpenAlex](https://openalex.org/sources/s4306402587).
 The metadata of the preprints in this index is also available as JSON, see the [API](/api/).
 
+{% comment %} counted on each build of the website; unlisted posts are not in site.posts (_plugins/unlisted.rb) {% endcomment -%}
+{%- assign this_year = site.time | date: '%Y' -%}
+{%- assign in_this_year = 0 -%}
+{%- assign with_versions = 0 -%}
+{%- for post in site.posts -%}
+  {%- assign post_year = post.date | date: '%Y' -%}
+  {%- if post_year == this_year %}{% assign in_this_year = in_this_year | plus: 1 %}{% endif -%}
+  {%- if post.versions.size > 1 %}{% assign with_versions = with_versions | plus: 1 %}{% endif -%}
+{%- endfor -%}
+We published {{ site.posts.size }} preprints so far, with {{ in_this_year }} preprints in {{ this_year }}.
+{{ with_versions }} preprints have more than one version.
+
 One of the reasons behind BioHackathons and similar is sharing: ideas, data, designs, software, documentations and tutorials among others. We therefore kindly
 ask you to use the [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode) for your work. We also encourage you to share your code on GitHub,
 with an open license whenever possible.
