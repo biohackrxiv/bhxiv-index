@@ -33,6 +33,13 @@ feed:
 
 tags:
 
-# local-only folders that are not part of the website
+# files and folders of the repository that are not part of the website
 exclude:
   - background
+  - cache
+  - scripts
+  - Makefile
+  - README.md
+  - TODO.md
+  - quickstatements.csv
+  - tips.txt
