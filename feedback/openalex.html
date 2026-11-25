@@ -1,0 +1,16 @@
+---
+layout: page
+title: BioHackrXiv preprints in OpenAlex
+permalink: /feedback/openalex.html
+sitemap: false
+---
+{%- comment -%}
+  The report itself is feedback/openalex.md, written by `make openalexReport`
+  (scripts/openalexReport.py). This page shows it as HTML, without its first
+  line (the title, which the layout already shows).
+{%- endcomment -%}
+{%- capture report %}{% include_relative openalex.md %}{% endcapture -%}
+{%- assign title_line = report | split: "
+" | first -%}
+<p class="post-meta">Also available as <a href="{{ '/feedback/openalex.md' | relative_url }}">Markdown</a>.</p>
+{{ report | remove_first: title_line | markdownify }}

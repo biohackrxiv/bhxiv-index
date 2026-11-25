@@ -4,6 +4,9 @@ serve:
 updateOpenAlex:
 	python3 scripts/openalex.py $(ARGS)
 
+openalexReport:
+	python3 scripts/openalexReport.py $(ARGS)
+
 updateEuropePMC:
 	python3 scripts/europepmc.py $(ARGS)
 
@@ -40,4 +43,4 @@ setImage:
 setDescription:
 	python3 scripts/setDescription.py $(ARGS)
 
-.PHONY: serve updateOpenAlex updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription
+.PHONY: serve updateOpenAlex openalexReport updateEuropePMC updateWikidata createQuickstatements cachePdfs extractPdfMetadata updateGit findMarkdown findFigures checkPdfFigures exportFigures setImage setDescription
