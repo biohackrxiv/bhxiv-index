@@ -1,0 +1,16 @@
+---
+layout: page
+title: BioHackrXiv preprints in Europe PMC
+permalink: /feedback/europepmc.html
+sitemap: false
+---
+{%- comment -%}
+  The report itself is feedback/europepmc.md, written by `make europepmcReport`
+  (scripts/europepmcReport.py). This page shows it as HTML, without its first
+  line (the title, which the layout already shows).
+{%- endcomment -%}
+{%- capture report %}{% include_relative europepmc.md %}{% endcapture -%}
+{%- assign title_line = report | split: "
+" | first -%}
+<p class="post-meta">Also available as <a href="{{ '/feedback/europepmc.md' | relative_url }}">Markdown</a>.</p>
+{{ report | remove_first: title_line | markdownify }}
