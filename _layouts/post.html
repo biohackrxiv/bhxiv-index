@@ -1,16 +1,19 @@
 ---
 layout: base
 ---
+{%- comment %} unlisted posts (_plugins/unlisted.rb) have no Altmetric and Dimensions badges {% endcomment %}
+{%- unless page.unlisted %}
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+{%- endunless %}
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/Report">
 
   <header class="post-header">
-    {% if page.doi %}
+    {% if page.doi and page.unlisted != true %}
       <div style="float: right; width: 200px" class='altmetric-embed' data-badge-type='donut' data-condensed='true' data-badge-details='right' data-doi="{{ page.doi }}"></div>
     {% endif %}
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    {% if page.doi %}
+    {% if page.doi and page.unlisted != true %}
     <div style="float: right; width: 200px"><span class="__dimensions_badge_embed__" data-doi="{{ page.doi }}" data-legend="always" data-style="small_circle"></span></div>
     {% endif %}
     <p class="post-meta">
