@@ -65,99 +65,21 @@ import argparse
 import difflib
 import glob
 import html
-import json
 import os
 import re
 import sys
 import textwrap
-import time
 import urllib.error
-import urllib.parse
-import urllib.request
 
+import zenodo
 from git import git_url
 from setDescription import plain_text, shorten
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 POSTS = os.path.join(HERE, '..', '_posts')
 TAGS = os.path.join(HERE, '..', 'tag', '*.markdown')
-API_URL = 'https://zenodo.org/api/'
-DOI_PREFIX = '10.5281/zenodo.'
 COMMUNITY = None  # the slug of the BioHackrXiv community on Zenodo, once it exists
-PAGE_SIZE = 25  # the maximum without an access token
-USER_AGENT = 'bhxiv-index/0.1 (https://github.com/biohackrxiv/bhxiv-index)'
 WIDTH = 120  # line length of the abstract in the post
-
-
-
-# --- Zenodo API ------------------------------------------------------------------------------
-
-def open_url(url, retries=4):
-    for attempt in range(retries):
-        try:
-            request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
-            with urllib.request.urlopen(request, timeout=60) as response:
-                return response.read()
-        except urllib.error.HTTPError as error:
-            if error.code not in (429, 500, 502, 503, 504) or attempt == retries - 1:
-                raise
-        except (urllib.error.URLError, TimeoutError):
-            if attempt == retries - 1:
-                raise
-        time.sleep(5 * (attempt + 1))
-    return None
-
-
-def get_json(url):
-    return json.loads(open_url(url))
-
-
-def record_id(doi):
-    """The Zenodo record number of a Zenodo DOI, or None when it is not a Zenodo DOI."""
-    doi = doi.strip().lower()
-    doi = re.sub(r'^(https?://(dx\.)?doi\.org/|doi:)', '', doi)
-    match = re.match(re.escape(DOI_PREFIX) + r'(\d+)$', doi)
-    return match.group(1) if match else None
-
-
-def fetch_record(identifier):
-    """The latest version of the record (also for the DOI of an older version or the concept)."""
-    record = get_json(API_URL + 'records/' + identifier)
-    latest = record.get('links', {}).get('latest')
-    return get_json(latest) if latest else record
-
-
-def fetch_versions(record):
-    """All published versions of the record, oldest first."""
-    url = record['links']['versions'] + '?' + urllib.parse.urlencode({'size': PAGE_SIZE})
-    versions = []
-    while url:
-        page = get_json(url)
-        versions += page['hits']['hits']
-        url = page.get('links', {}).get('next')
-    unique = {str(v['id']): v for v in versions}
-    return sorted(unique.values(), key=lambda v: v['created'])
-
-
-def fetch_file(record, name):
-    """The text of a file of the record (also in the ~contrib/ folder), or None."""
-    for file in record.get('files', []):
-        if file['key'] in (name, '~contrib/' + name):
-            return open_url(file['links']['self']).decode('utf-8', errors='replace')
-    return None
-
-
-def community_records(slug):
-    """The record numbers of all records of a community, one per concept."""
-    url = API_URL + 'communities/%s/records?%s' % (slug, urllib.parse.urlencode({'size': PAGE_SIZE}))
-    concepts = {}
-    while url:
-        page = get_json(url)
-        for hit in page['hits']['hits']:
-            concept = str(hit.get('conceptrecid') or hit.get('parent', {}).get('id') or hit['id'])
-            concepts.setdefault(concept, str(hit['id']))
-        url = page.get('links', {}).get('next')
-    return list(concepts.values())
 
 
 # --- paper.md ------------------------------------------------------------------------------------
@@ -367,14 +289,22 @@ def existing_post(record):
     return None
 
 
+def read_paper(record):
+    """The text of the paper.md of a record (also in the ~contrib/ folder), or None."""
+    key = zenodo.find_file(record, 'paper.md')
+    if not key:
+        return None
+    return zenodo.file_bytes(record['id'], key).decode('utf-8', errors='replace')
+
+
 def handle(identifier, dry_run):
-    record = fetch_record(identifier)
+    record = zenodo.fetch_latest(identifier)
     if record['metadata'].get('resource_type', {}).get('subtype') != 'preprint':
         print('%s: not a preprint on Zenodo (%s), skipped' % (
             identifier, record['metadata'].get('resource_type', {}).get('title')))
         return
-    versions = fetch_versions(record)
-    name, text, missing = build_post(record, versions, fetch_file(record, 'paper.md'))
+    versions = zenodo.versions(record)
+    name, text, missing = build_post(record, versions, read_paper(record))
     path = existing_post(record)
     if dry_run:
         print(text)
@@ -408,12 +338,12 @@ def main():
     if args.dois:
         identifiers = []
         for doi in args.dois:
-            identifier = record_id(doi)
+            identifier = zenodo.record_number(doi)
             if not identifier:
-                parser.error('not a Zenodo DOI (%s<number>): %s' % (DOI_PREFIX, doi))
+                parser.error('not a Zenodo DOI (%s<number>): %s' % (zenodo.DOI_PREFIX, doi))
             identifiers.append(identifier)
     elif args.community:
-        identifiers = community_records(args.community)
+        identifiers = zenodo.community_records(args.community)
         print('Community %s: %d preprints' % (args.community, len(identifiers)))
     else:
         parser.error('give one or more DOIs; there is no BioHackrXiv community on Zenodo yet')
@@ -421,7 +351,7 @@ def main():
     for identifier in identifiers:
         try:
             handle(identifier, args.dry_run)
-        except urllib.error.HTTPError as error:
+        except (urllib.error.URLError, ValueError) as error:
             print('FAILED %s: %s' % (identifier, error))
 
 

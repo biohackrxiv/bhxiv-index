@@ -42,6 +42,8 @@ import time
 import urllib.error
 import urllib.request
 
+import zenodo
+
 API_URL = 'https://api.osf.io/v2/preprints/'
 DOWNLOAD_URL = 'https://osf.io/download/'
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -49,8 +51,6 @@ POSTS = os.path.join(HERE, '..', '_posts', '*.markdown')
 CACHE = os.path.join(HERE, '..', 'cache', 'pdfs')
 USER_AGENT = 'bhxiv-index/0.1 (https://github.com/biohackrxiv/bhxiv-index)'
 DOI_PREFIX = '10.37044/osf.io/'
-ZENODO_API_URL = 'https://zenodo.org/api/records/'
-ZENODO_DOI_PREFIX = '10.5281/zenodo.'
 
 
 def open_url(url, retries=3):
@@ -77,8 +77,8 @@ def preprint_ids():
             doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', match.group(1).lower())
             if doi.startswith(DOI_PREFIX):
                 ids.add((doi[len(DOI_PREFIX):], 'osf'))
-            elif doi.startswith(ZENODO_DOI_PREFIX) and doi[len(ZENODO_DOI_PREFIX):].isdigit():
-                ids.add((doi[len(ZENODO_DOI_PREFIX):], 'zenodo'))
+            elif zenodo.record_number(doi):
+                ids.add((zenodo.record_number(doi), 'zenodo'))
             else:
                 print('skipped %s: not an OSF or Zenodo DOI (%s)' % (os.path.basename(path), doi))
     return sorted(ids)
@@ -108,16 +108,13 @@ def download_pdf(osf_id, target):
 
 def download_zenodo_pdf(record, target):
     """Download the PDF of a Zenodo record to target; raise when there is no single PDF."""
-    with open_url(ZENODO_API_URL + record) as response:
-        files = json.load(response).get('files', [])
-    pdfs = [f for f in files if f['key'].lower().endswith('.pdf') and '/' not in f['key']]
-    paper = [f for f in pdfs if f['key'] == 'paper.pdf']
-    if paper:
-        pdfs = paper
+    keys = zenodo.file_keys(zenodo.fetch_record(record))
+    pdfs = [k for k in keys if k.lower().endswith('.pdf') and '/' not in k]
+    if 'paper.pdf' in pdfs:
+        pdfs = ['paper.pdf']
     if len(pdfs) != 1:
-        raise ValueError('%d PDFs in the record: %s' % (len(pdfs), ', '.join(f['key'] for f in pdfs)))
-    with open_url(pdfs[0]['links']['self']) as response:
-        return save_pdf(response.read(), target)
+        raise ValueError('%d PDFs in the record: %s' % (len(pdfs), ', '.join(pdfs)))
+    return save_pdf(zenodo.file_bytes(record, pdfs[0]), target)
 
 
 DOWNLOADERS = {'osf': download_pdf, 'zenodo': download_zenodo_pdf}

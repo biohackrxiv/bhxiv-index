@@ -35,7 +35,9 @@ import urllib.request
 API_URL = 'https://zenodo.org/api/records/'
 RECORD_URL = 'https://zenodo.org/records/'
 DOI_PREFIX = '10.5281/zenodo.'
+COMMUNITIES_URL = 'https://zenodo.org/api/communities/'
 USER_AGENT = 'bhxiv-index/0.1 (https://github.com/biohackrxiv/bhxiv-index)'
+PAGE_SIZE = 25  # the maximum without an access token
 MAX_BYTES = 50 * 1024 * 1024
 
 
@@ -71,9 +73,46 @@ def get(url, retries=4):
     return None
 
 
+def get_json(url):
+    return json.loads(get(url))
+
+
 def fetch_record(record):
-    """The JSON of a record (of that version, not the latest)."""
-    return json.loads(get(API_URL + str(record)))
+    """The JSON of a record (of that version, not the latest). For a concept record, Zenodo
+    answers with the latest version."""
+    return get_json(API_URL + str(record))
+
+
+def fetch_latest(record):
+    """The JSON of the latest version of the preprint of a record (any version, or the concept)."""
+    record_json = fetch_record(record)
+    latest = record_json.get('links', {}).get('latest')
+    return get_json(latest) if latest else record_json
+
+
+def versions(record_json):
+    """The JSON of all published versions of the preprint of a record, oldest first."""
+    url = record_json['links']['versions'] + '?' + urllib.parse.urlencode({'size': PAGE_SIZE})
+    found = []
+    while url:
+        page = get_json(url)
+        found += page['hits']['hits']
+        url = page.get('links', {}).get('next')
+    unique = {str(v['id']): v for v in found}
+    return sorted(unique.values(), key=lambda v: v['created'])
+
+
+def community_records(slug):
+    """The record numbers of the records of a community, one per concept."""
+    url = COMMUNITIES_URL + '%s/records?%s' % (slug, urllib.parse.urlencode({'size': PAGE_SIZE}))
+    concepts = {}
+    while url:
+        page = get_json(url)
+        for hit in page['hits']['hits']:
+            concept = str(hit.get('conceptrecid') or hit.get('parent', {}).get('id') or hit['id'])
+            concepts.setdefault(concept, str(hit['id']))
+        url = page.get('links', {}).get('next')
+    return list(concepts.values())
 
 
 def latest_record(record_json):
@@ -82,7 +121,7 @@ def latest_record(record_json):
         if relation.get('is_last'):
             return str(record_json['id'])
     latest = record_json.get('links', {}).get('latest')
-    return str(json.loads(get(latest))['id']) if latest else str(record_json['id'])
+    return str(get_json(latest)['id']) if latest else str(record_json['id'])
 
 
 def file_keys(record_json):
@@ -102,3 +141,11 @@ def content_url(record, key):
 
 def file_bytes(record, key):
     return get(content_url(record, key))
+
+
+def find_file(record_json, name):
+    """The key of the file `name` of a record, also when it is in the `~contrib/` folder, or None."""
+    for key in file_keys(record_json):
+        if key in (name, '~contrib/' + name):
+            return key
+    return None
