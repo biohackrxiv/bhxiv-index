@@ -5,6 +5,22 @@ BioHackathon events.
 
 ## Scripts
 
+### New preprints from OSF
+
+`scripts/updateFromOSF.py` creates a post in `_posts/` for a BioHackrXiv preprint on OSF. It takes
+the tag of the meeting, which must be in `_data/meetings.yml`, and the OSF DOI of the preprint:
+
+```shell
+make updateFromOSF ARGS="BH25JP 10.37044/osf.io/jh3m7_v1"
+make updateFromOSF ARGS="--dry-run BH25JP 10.37044/osf.io/jh3m7_v1"
+```
+
+The metadata comes from the DOI itself, as CSL JSON (content negotiation at `https://doi.org/`).
+The post is named `<date the DOI was created>-<OSF id>.markdown`, and has the title, date, meeting
+tag, DOI and authors; an author gets an ORCID only when Crossref marks it as authenticated. The
+body is the abstract. An existing post is not replaced, unless `--force` is given. This script
+replaces `_posts/createPostFromDOI.groovy`, and takes the same arguments.
+
 ### New preprints from Zenodo
 
 `scripts/updateFromZenodo.py` creates a post in `_posts/` for a BioHackrXiv preprint on
