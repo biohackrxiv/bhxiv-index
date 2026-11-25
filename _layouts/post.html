@@ -142,8 +142,9 @@ layout: base
     </section>
     {%- endif %}
 
-    {%- assign osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
-    {%- assign preprint_figures = site.data.figures[osf_id].figures -%}
+    {%- comment %} the key in _data/figures.json: the OSF identifier or the Zenodo record {% endcomment -%}
+    {%- assign figures_id = page.doi | downcase | remove_first: '10.37044/osf.io/' | remove_first: '10.5281/zenodo.' -%}
+    {%- assign preprint_figures = site.data.figures[figures_id].figures -%}
     {%- if preprint_figures.size > 0 %}
     <section class="preprint-figures" aria-labelledby="figures-heading">
       <h2 id="figures-heading">Figures</h2>
@@ -162,7 +163,11 @@ layout: base
         </figure>
       {%- endfor %}
       </div>
+      {%- if page.zenodo %}
+      <p class="post-meta">These figures come from the copy of the source repository in the <a href="https://zenodo.org/records/{{ page.zenodo }}">Zenodo record</a> of the preprint; their captions are also in the PDF.</p>
+      {%- else %}
       <p class="post-meta">These figures come from the {% if page.git %}<a href="{{ page.git }}">source repository</a>{% else %}source repository{% endif %} of the preprint; their captions are also in the PDF.</p>
+      {%- endif %}
     </section>
     {%- endif %}
 

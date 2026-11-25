@@ -41,7 +41,7 @@ import os
 import subprocess
 import sys
 
-from git import POSTS, osf_id
+from git import POSTS, preprint_id
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, '..')
@@ -130,7 +130,7 @@ def main():
         exported = json.load(f)
     counts = {'added': 0, 'changed': 0, 'unchanged': 0, 'no pick': 0}
     for path in sorted(glob.glob(POSTS)):
-        identifier = osf_id(path)
+        identifier = preprint_id(path)
         entry = exported.get((identifier or '').lower())
         if not entry:
             continue

@@ -30,6 +30,8 @@ import json
 import os
 import re
 
+import zenodo
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 POSTS = os.path.join(HERE, '..', '_posts', '*.markdown')
 METADATA = os.path.join(HERE, '..', 'cache', 'metadata')
@@ -64,12 +66,16 @@ def load_repositories(folder=METADATA):
     return table
 
 
-def osf_id(path):
-    """Return the OSF identifier from the `doi:` of a post, or None."""
+def preprint_id(path):
+    """Return the identifier of the preprint version in the `doi:` of a post, or None: the OSF
+    identifier for OSF DOIs (`c8jw6_v1`), and the record number for Zenodo DOIs (`24497647`).
+    This is the name of the files in cache/ and the key in _data/figures.json."""
     with open(path, encoding='utf-8') as f:
         match = re.search(r'^doi:\s*(\S+)', f.read(), re.MULTILINE)
     doi = normalize_doi(match.group(1)) if match else ''
-    return doi[len(DOI_PREFIX):] if doi.startswith(DOI_PREFIX) else None
+    if doi.startswith(DOI_PREFIX):
+        return doi[len(DOI_PREFIX):]
+    return zenodo.record_number(doi)
 
 
 def update_git(path, table, update_changed=False):
@@ -138,7 +144,7 @@ def main():
         elif status == 'skipped':
             skipped += 1
             print('%s: second link in the PDF is not a GitHub or GitLab repository: %s' % (
-                name, table[osf_id(path)]))
+                name, table[preprint_id(path)]))
     print('Posts with a new line: %d' % added)
     print('Posts with a changed URL: %d%s' % (
         changed, '' if args.update_changed else ' (use --update-changed to update)'))

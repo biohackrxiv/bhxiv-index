@@ -22,6 +22,19 @@ was searched but no paper.md matches. When the repository cannot be cloned, `mar
 out, so the next run tries again. Preprints that already have `markdown` are skipped unless
 --force is given.
 
+Preprints on Zenodo (the identifier is a record number, see cachePdfs.py) are not looked up in the
+git repository: the record has a copy of the repository in its `~contrib/` folder, so paper.md is
+taken from there, without the checks on the title and event. Only the record of the latest
+version is used; for an older version, `markdown` is not added. The `markdown` object then is:
+
+    "markdown": {"source": "zenodo",
+                 "record": "24497647",
+                 "path": "~contrib/paper.md",
+                 "url": "https://zenodo.org/records/24497647/files/~contrib/paper.md",
+                 "commit": null}
+
+The files of a record cannot change, so the record number takes the place of the commit.
+
 Copyright (c) 2026 Egon Willighagen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -53,7 +66,8 @@ import subprocess
 import sys
 import tempfile
 
-from git import METADATA, POSTS, git_url, osf_id
+import zenodo
+from git import METADATA, POSTS, git_url, preprint_id
 
 PAPER = 'paper.md'
 TIMEOUT = 300
@@ -148,7 +162,7 @@ def load_titles(posts=POSTS):
     """Return {OSF identifier (lower case): title} from the posts."""
     titles = {}
     for path in glob.glob(posts):
-        identifier = osf_id(path)
+        identifier = preprint_id(path)
         if not identifier:
             continue
         with open(path, encoding='utf-8') as f:
@@ -198,6 +212,57 @@ def find_markdown(repository_url, title, event_url):
     return result
 
 
+def zenodo_markdown(record):
+    """Return the `markdown` object for a Zenodo record, None when it has no paper.md; raise
+    ValueError when the record is not the latest version."""
+    record_json = zenodo.fetch_record(record)
+    latest = zenodo.latest_record(record_json)
+    if latest != record:
+        raise ValueError('not the latest version, which is record %s' % latest)
+    papers = [k for k in zenodo.file_keys(record_json) if k.rsplit('/', 1)[-1].casefold() == PAPER]
+    if not papers:
+        return None
+    papers.sort(key=lambda k: (k.count('/'), k))
+    result = {'source': 'zenodo', 'record': record, 'path': papers[0],
+              'url': zenodo.file_url(record, papers[0]), 'commit': None}
+    if len(papers) > 1:
+        result['alternatives'] = papers[1:]
+    return result
+
+
+def keep_figures(markdown, previous):
+    """Keep the figures and PDF check of the previous `markdown` when it is the same file."""
+    if markdown and previous and 'figures' in previous and \
+            (previous.get('path'), previous.get('commit'), previous.get('record')) == \
+            (markdown['path'], markdown['commit'], markdown.get('record')):
+        # added by findFigures.py and checkPdfFigures.py
+        markdown['figures'] = previous['figures']
+        if 'pdf' in previous:
+            markdown['pdf'] = previous['pdf']
+
+
+def save(path, metadata):
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, indent=2, ensure_ascii=False)
+        f.write('\n')
+
+
+def process_zenodo(path, metadata):
+    name = metadata['id']
+    try:
+        markdown = zenodo_markdown(name)
+    except ValueError as error:
+        return 'skipped', '%s: %s' % (name, error)
+    except OSError as error:
+        return 'failed', '%s: cannot read the Zenodo record: %s' % (name, error)
+    keep_figures(markdown, metadata.get('markdown'))
+    metadata['markdown'] = markdown
+    save(path, metadata)
+    if markdown:
+        return 'found', '%s: %s' % (name, markdown['path'])
+    return 'missing', '%s: no paper.md in Zenodo record %s' % (name, name)
+
+
 def process(path, titles, force):
     """Return (status, message). Status: found, missing, skipped, failed."""
     with open(path, encoding='utf-8') as f:
@@ -205,6 +270,8 @@ def process(path, titles, force):
     name = metadata['id']
     if 'markdown' in metadata and not force:
         return 'skipped', None
+    if zenodo.is_record(name):
+        return process_zenodo(path, metadata)
     url = git_url((metadata.get('repository') or {}).get('url'))
     if not url:
         return 'skipped', None
@@ -217,17 +284,9 @@ def process(path, titles, force):
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
         detail = (getattr(error, 'stderr', '') or str(error)).strip().splitlines()
         return 'failed', '%s: cannot search %s: %s' % (name, url, detail[-1] if detail else error)
-    previous = metadata.get('markdown')
-    if markdown and previous and 'figures' in previous and \
-            (previous.get('path'), previous.get('commit')) == (markdown['path'], markdown['commit']):
-        # added by findFigures.py and checkPdfFigures.py
-        markdown['figures'] = previous['figures']
-        if 'pdf' in previous:
-            markdown['pdf'] = previous['pdf']
+    keep_figures(markdown, metadata.get('markdown'))
     metadata['markdown'] = markdown
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(metadata, f, indent=2, ensure_ascii=False)
-        f.write('\n')
+    save(path, metadata)
     if markdown:
         return 'found', '%s: %s%s' % (name, markdown['path'],
                                       ' (+%d more)' % len(markdown['alternatives'])

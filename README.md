@@ -40,12 +40,14 @@ Support for preprints on Zenodo is not complete yet. For now, the logical order 
 3. **PDFs and their metadata.**
    1. `make cachePdfs` downloads the PDF of the latest version.
    2. `make extractPdfMetadata` reads the event and repository links from the PDF.
-4. **Check the website** locally with `make serve`.
+4. **Figures.** The same commands as for OSF preprints, but the Markdown source and the figures
+   come from the copy of the source repository in the Zenodo record (the `~contrib/` folder), and
+   only from the record of the latest version.
+   1. `make findMarkdown`, 2. `make findFigures`, 3. `make exportFigures`, 4. `make setImage`.
+5. **Check the website** locally with `make serve`.
 
 The other commands do not work for Zenodo posts yet:
 
-* `findMarkdown` and `setImage` skip them, so there are no figures. `findFigures`,
-  `checkPdfFigures` and `exportFigures` have nothing to work on without `findMarkdown`.
 * `updateOpenAlex` and `updateWikidata` only search for BioHackrXiv preprints on OSF, and
   `updateEuropePMC` may find nothing: it is not known yet whether Europe PMC has Zenodo preprints.
   `createQuickstatements` only uses posts with a `wikidata:` line.
@@ -295,6 +297,24 @@ matches (for example because the file has no `biohackathon_url`), and is left ou
 repository could not be cloned, so a next run tries again. Preprints that already have `markdown`
 are skipped, unless `--force` is given. Running `make extractPdfMetadata` again keeps the value.
 
+For preprints on Zenodo (the identifier is the record number, for example `24497647`), the git
+repository is not used: the Zenodo record has a copy of it in its `~contrib/` folder, so `paper.md`
+is taken from the record, without the checks of the title and event. This is only done for the
+record of the latest version; an older version is skipped with a message. The files of a record
+cannot change, so the record number takes the place of the commit:
+
+```json
+"markdown": {
+  "source": "zenodo",
+  "record": "24497647",
+  "path": "~contrib/paper.md",
+  "url": "https://zenodo.org/records/24497647/files/~contrib/paper.md",
+  "commit": null
+}
+```
+
+`findFigures.py` and `exportFigures.py` then read `paper.md` and the images from the same record.
+
 ```shell
 make findMarkdown
 make findMarkdown ARGS="--force"
@@ -403,6 +423,10 @@ when clicked.
               "figures": [{"file": "assets/images/figures/kxqb7_v1/overview.png",
                            "caption": "Overview of the workflow", "label": "fig:overview"}]}}
 ```
+
+For a preprint on Zenodo, the images come from the Zenodo record, and only the record that is the
+`doi:` of a post (the latest version) is exported. When a post moves to a newer version, the
+figures of the older record are removed.
 
 Preprints that are no longer eligible are removed from the list and their folder is deleted. A
 preprint is not fetched again when its commit and files have not changed, unless `--force` is given.

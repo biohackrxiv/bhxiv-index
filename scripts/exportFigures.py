@@ -16,6 +16,10 @@ assets/images/figures/<identifier>/. The list for the layout is _data/figures.js
                                "caption": "Overview of the workflow",
                                "label": "fig:overview"}]}}
 
+For preprints on Zenodo (`"source": "zenodo"` in `markdown`), the images come from the files of
+the Zenodo record, and only the record that is the `doi:` of a post (its latest version) is
+exported. When a post moves to a new version, the figures of the old record are removed.
+
 Preprints that are not eligible (any more) are removed from the list and their folder is deleted.
 A preprint is not fetched again when its commit and files are the same, unless --force is given.
 
@@ -52,7 +56,9 @@ import tempfile
 import urllib.parse
 import urllib.request
 
+import zenodo
 from findFigures import fetch_commit
+from git import POSTS, preprint_id
 from findMarkdown import METADATA, parse_url
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -121,7 +127,9 @@ def eligible(metadata):
 def export(metadata, figures, target, problems):
     """Write the images of one preprint to `target`; return the list for _data/figures.json."""
     name = metadata['id']
-    parsed = parse_url(metadata['markdown']['url'].split('/blob/')[0].split('/-/blob/')[0])
+    from_zenodo = metadata['markdown'].get('source') == 'zenodo'
+    if not from_zenodo:
+        parsed = parse_url(metadata['markdown']['url'].split('/blob/')[0].split('/-/blob/')[0])
     entries, used = [], set()
     os.makedirs(target, exist_ok=True)
     with tempfile.TemporaryDirectory() as folder:
@@ -130,12 +138,15 @@ def export(metadata, figures, target, problems):
             try:
                 if figure.get('remote'):
                     data = download(figure['url'])
+                elif from_zenodo:
+                    data = zenodo.file_bytes(metadata['markdown']['record'], figure['path'])
                 else:
                     if not fetched:
                         fetch_commit(parsed[1], metadata['markdown']['commit'], folder)
                         fetched = True
                     data = git_bytes(folder, figure['path'])
-            except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError,
+                    ValueError) as error:
                 problems.append('%s: cannot get %s: %s' % (name, figure['source'], error))
                 continue
             extension = sniff(data) if len(data) <= MAX_BYTES else None
@@ -167,9 +178,12 @@ def main():
             previous = json.load(f)
     data, problems = {}, []
     exported = unchanged = 0
+    current = {preprint_id(path) for path in glob.glob(POSTS)}
     for path in sorted(glob.glob(os.path.join(args.metadata, '*.json'))):
         with open(path, encoding='utf-8') as f:
             metadata = json.load(f)
+        if zenodo.is_record(metadata['id']) and metadata['id'] not in current:
+            continue  # an older version of a Zenodo preprint
         figures = eligible(metadata)
         if not figures:
             continue

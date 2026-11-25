@@ -1,4 +1,14 @@
 {
+  "24497647": {
+    "commit": null,
+    "figures": [
+      {
+        "caption": "Logic programming resolver traverses the solution space to find all matches",
+        "file": "assets/images/figures/24497647/logic-programming.png",
+        "label": "fig"
+      }
+    ]
+  },
   "24jst": {
     "commit": "956abc583bf0ff57e3e1cf0fa1574202467f88f8",
     "figures": [

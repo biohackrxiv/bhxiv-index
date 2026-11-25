@@ -26,6 +26,11 @@ The figures are then checked against the cached PDF with checkPdfFigures.py (the
 `in_pdf` is added to each figure and a `pdf` summary to the `markdown` object, and the preprints
 that do not match the PDF are reported on the standard output.
 
+For preprints on Zenodo (`"source": "zenodo"` in `markdown`), paper.md and the images are read
+from the files of the Zenodo record instead of the git repository, and `url` is the address of the
+file in the record. An image that is not at its path in the record is also looked up by its file
+name, in case the folders of the repository were not kept.
+
 Preprints that already have `figures` are skipped unless --force is given. When the repository
 cannot be fetched, `figures` is left out, so the next run tries again.
 
@@ -62,6 +67,7 @@ import tempfile
 import urllib.parse
 
 from checkPdfFigures import PDFS, check, report_line
+import zenodo
 from findMarkdown import METADATA, blob_url, load_titles, parse_url, run_git
 
 GENERIC_CAPTION = re.compile(r'^(figure|fig\.?|image|img|picture|screenshot)?\s*[\d_-]*[a-z]?$', re.I)
@@ -138,10 +144,12 @@ def text_caption(text, end):
     return clean(paragraph) if FIGURE_TEXT.match(paragraph.lstrip()) else None
 
 
-def resolve(destination, paper_path, files, lower):
+def resolve(destination, paper_path, files, lower, by_name=False):
     """Return (repository path or None, flag) for an image destination.
 
     flag is 'remote' for web addresses, 'missing' for files not in the repository, else None.
+    With by_name, a file that is not at the path is looked up by its file name, when only one
+    file has that name.
     """
     if re.match(r'^[a-z][a-z0-9+.-]*:', destination, re.I):
         return None, 'remote'
@@ -154,10 +162,16 @@ def resolve(destination, paper_path, files, lower):
         return path, None
     if path.casefold() in lower:
         return lower[path.casefold()], None
+    if by_name:
+        name = posixpath.basename(path).casefold()
+        same = [f for f in files if posixpath.basename(f).casefold() == name]
+        if len(same) == 1:
+            return same[0], None
     return None, 'missing'
 
 
-def find_figures(text, paper_path, files, host, repo_url, commit):
+def find_figures(text, paper_path, files, url_of, by_name=False):
+    """The figures in paper.md; url_of(path) gives the address of a file of the repository."""
     lower = {f.casefold(): f for f in files}
     files = set(files)
     figures = []
@@ -174,10 +188,10 @@ def find_figures(text, paper_path, files, host, repo_url, commit):
         if found:
             label = found.group(1)
         figure = {'source': destination}
-        path, flag = resolve(destination, paper_path, files, lower)
+        path, flag = resolve(destination, paper_path, files, lower, by_name)
         figure['path'] = path
         if path:
-            figure['url'] = blob_url(host, repo_url, commit, path)
+            figure['url'] = url_of(path)
         elif flag == 'remote':
             figure['url'] = destination
             figure['remote'] = True
@@ -212,25 +226,39 @@ def process(path, titles, pdfs, force):
     if not markdown or (not force and 'figures' in markdown):
         return 'skipped', []
     name = metadata['id']
-    parsed = parse_url(markdown['url'].split('/blob/')[0].split('/-/blob/')[0])
-    if not parsed:
-        return 'failed', ['%s: unsupported URL %s' % (name, markdown['url'])]
-    host, repo_url, _ = parsed
-    try:
-        with tempfile.TemporaryDirectory() as folder:
-            fetch_commit(repo_url, markdown['commit'], folder)
-            files = [f for f in run_git('ls-tree', '-r', '-z', '--name-only', 'FETCH_HEAD',
-                                        cwd=folder).split('\0') if f]
-            text = run_git('show', 'FETCH_HEAD:' + markdown['path'], cwd=folder)
-    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
-        detail = (getattr(error, 'stderr', '') or str(error)).strip().splitlines()
-        return 'failed', ['%s: cannot fetch %s: %s' % (name, repo_url, detail[-1] if detail else error)]
-    markdown['figures'] = find_figures(text, markdown['path'], files, host, repo_url,
-                                       markdown['commit'])
+    if markdown.get('source') == 'zenodo':
+        record = markdown['record']
+        try:
+            files = zenodo.file_keys(zenodo.fetch_record(record))
+            text = zenodo.file_bytes(record, markdown['path']).decode('utf-8', errors='replace')
+        except (OSError, ValueError) as error:
+            return 'failed', ['%s: cannot read Zenodo record %s: %s' % (name, record, error)]
+        markdown['figures'] = find_figures(text, markdown['path'], files,
+                                           lambda p: zenodo.file_url(record, p), by_name=True)
+    else:
+        parsed = parse_url(markdown['url'].split('/blob/')[0].split('/-/blob/')[0])
+        if not parsed:
+            return 'failed', ['%s: unsupported URL %s' % (name, markdown['url'])]
+        host, repo_url, _ = parsed
+        try:
+            with tempfile.TemporaryDirectory() as folder:
+                fetch_commit(repo_url, markdown['commit'], folder)
+                files = [f for f in run_git('ls-tree', '-r', '-z', '--name-only', 'FETCH_HEAD',
+                                            cwd=folder).split('\0') if f]
+                text = run_git('show', 'FETCH_HEAD:' + markdown['path'], cwd=folder)
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError) as error:
+            detail = (getattr(error, 'stderr', '') or str(error)).strip().splitlines()
+            return 'failed', ['%s: cannot fetch %s: %s'
+                              % (name, repo_url, detail[-1] if detail else error)]
+        markdown['figures'] = find_figures(
+            text, markdown['path'], files,
+            lambda p: blob_url(host, repo_url, markdown['commit'], p))
     messages = []
     problems = [fig['source'] for fig in markdown['figures'] if fig.get('missing')]
     if problems:
-        messages.append('%s: image not in the repository: %s' % (name, ', '.join(problems)))
+        messages.append('%s: image not in the %s: %s' % (
+            name, 'Zenodo record' if markdown.get('source') == 'zenodo' else 'repository',
+            ', '.join(problems)))
     pdf = os.path.join(pdfs, name + '.pdf')
     markdown.pop('pdf', None)
     if os.path.exists(pdf):

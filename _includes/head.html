@@ -48,9 +48,10 @@
   <meta name="robots" content="max-image-preview:large">
   {%- endif %}
   {%- if page.image %}
-  {%- assign osf_id = page.doi | downcase | remove_first: '10.37044/osf.io/' -%}
+  {%- comment %} the key in _data/figures.json: the OSF identifier or the Zenodo record {% endcomment -%}
+  {%- assign figures_id = page.doi | downcase | remove_first: '10.37044/osf.io/' | remove_first: '10.5281/zenodo.' -%}
   {%- assign image_alt = page.title | strip_html -%}
-  {%- for figure in site.data.figures[osf_id].figures -%}
+  {%- for figure in site.data.figures[figures_id].figures -%}
     {%- capture figure_path %}/{{ figure.file }}{% endcapture -%}
     {%- if figure_path == page.image -%}
       {%- assign image_alt = figure.caption | strip_html | markdownify | strip_html | normalize_whitespace -%}
@@ -157,7 +158,8 @@
           "contentUrl": {{ article_osf_id | prepend: 'https://osf.io/download/' | append: '/' | jsonify }}
         },
         {%- endif %}
-        {%- assign article_figures = site.data.figures[article_osf_id].figures -%}
+        {%- assign article_figures_id = page.doi | downcase | remove_first: '10.37044/osf.io/' | remove_first: '10.5281/zenodo.' -%}
+        {%- assign article_figures = site.data.figures[article_figures_id].figures -%}
         {%- if article_figures.size > 0 %}
         "hasPart": [
           {%- for figure in article_figures %}
