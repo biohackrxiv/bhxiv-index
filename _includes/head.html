@@ -171,6 +171,11 @@
   {% endif %}
 
   <link type="application/feed+json" rel="alternate" href="https://index.biohackrxiv.org/feed.json" title="BioHackrXiv Index">
+  {%- assign api_doi = page.doi | downcase %}
+  {%- if page.layout == "post" and api_doi contains "10.37044/osf.io/" %}
+  {%- assign api_id = api_doi | remove_first: "10.37044/osf.io/" | split: "_v" | first %}
+  <link type="application/json" rel="alternate" href="{{ site.url }}/api/v1/articles/{{ api_id }}.json" title="Metadata as JSON">
+  {%- endif %}
 
   {% if site.tags != "" %}
     {% include_cached collecttags.html %}
